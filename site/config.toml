@@ -16,7 +16,7 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
 [params]
 mode = "toggle"
 useCDN=false
-subtitle = "My experimental software engineering blog ([source](https://github.com/derekcuevas/fygt))"
+subtitle = "My experimental software engineering blog ([source](https://github.com/DerekCuevas/derekcuevas.github.io))"
 schedule = 21900000
 customcss = ["css/overrides.css"]
 

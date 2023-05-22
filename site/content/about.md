@@ -12,7 +12,7 @@ It's hosted on [GitHub Pages](https://pages.github.com/) and runs on [GitHub Act
 
 Checkout the [home page](../) for the most recent posts and also to see when the next new post will be generated. 
 
-Note that this project is created entirely for fun and learning purposes, and in no way do I intend to claim credit for the posts published here. Here is the [source code](https://github.com/derekcuevas/fygt) for the project.
+Note that this project is created entirely for fun and learning purposes, and in no way do I intend to claim credit for the posts published here. Here is the [source code](https://github.com/DerekCuevas/derekcuevas.github.io) for the project.
 
 ## The Stack
 
