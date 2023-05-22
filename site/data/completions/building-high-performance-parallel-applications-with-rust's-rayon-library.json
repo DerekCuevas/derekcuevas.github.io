@@ -1,0 +1,61 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog off of the contents of the following resume:\n+++\ntitle = \"Resume\"\ndescription = \"Derek Cuevas's Resume\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n\n## Technologies, Skills, and Interests\n\n- *Paradigms:* Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- *Rust:* Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- *Protocols:* HTTP, TCP, HLS, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- *Services:* Pulsar, RabbitMQ, PostgreSQL, Node.js, AWS (S3, EC2, SQS, ect.)\n- *Frameworks:* React, Redux, RxJs \n- *Tooling:* Git, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Your previous 10 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a interesting topic for and advanced level audience that is not related to a previous post and then output a post following the rules defined above."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the article formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7ITXG5wWTAsExr5FbqiR73Nmslwaa",
+  "object": "chat.completion",
+  "created": 1684637794,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 507,
+   "completion_tokens": 474,
+   "total_tokens": 981
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Building High-Performance Parallel Applications with Rust's Rayon Library\n\nAre you looking for a way to speed up your application's performance with parallel processing? Rust's Rayon library is an excellent solution. In this post, we will dive into the Rayon library and demonstrate how it can accelerate your program's computations with very little effort.\n\n## What is Rayon?\n\nRayon is a Rust library designed for data parallelism. It enables users to write parallel code that is safe, data-race free, and easy to use. Rayon is built on top of Rust's compiler, and it can automatically determine the best way to parallelize a computation based on the size of the input and the number of available threads of your computer's processor.\n\n## How to Use Rayon\n\nRayon provides a `par_iter()` method that transforms an iterator into a parallel iterator. Essentially, any code that requires iteration can become parallelized just by changing one method call.\n\nHere is a simple example:\n\n```rust\nuse rayon::prelude::*;\n\nfn main() {\n    let numbers = vec![1,2,3,4,5,6,7,8,9,10];\n    let sum: i32 = numbers.par_iter().map(|n| n * 2).sum();\n    println!(\"The sum is: {}\", sum); // output: The sum is: 110\n}\n```\n\nIn the above example, `vec![1,2,3,4,5,6,7,8,9,10]` is a vector containing ten elements. We then use `par_iter()` to convert the vector into a parallel iterator, and `map()` to multiply each item of the parallel iterator by two. Finally, we use the `.sum()` method to collect the results, which results in the sum of all of the doubled elements being 110.\n\n## Conclusion\n\nRayon is an amazing library that provides simple, safe, and efficient parallel computation. By using Rayon, we can extract parallelism from our code without having to worry about the underlying details that may cause bugs or performance issues. I hope this brief introduction to Rayon has been helpful to you, and that you consider it the next time you are working on a computationally intensive or high-performance application.\n\nTags: Rust, Parallelism, Rayon"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

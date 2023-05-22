@@ -1,0 +1,61 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog off of the contents of the following resume:\n+++\ntitle = \"Resume\"\ndescription = \"Derek Cuevas's Resume\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Your previous 10 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a interesting topic for and advanced level audience that is not related to a previous post and then output a post following the rules defined above."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the article formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7IWgEqafXDd7u5OlSumrj8AIeqRuy",
+  "object": "chat.completion",
+  "created": 1684649882,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 559,
+   "completion_tokens": 320,
+   "total_tokens": 879
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: How to Optimize React Native Performance \n\nReact Native is a popular open-source mobile development framework. It enables developers to create native mobile applications for iOS and Android platforms using JavaScript and React. When it comes to developing mobile applications, performance is always a key factor. Inadequate performance can make the app slow and unresponsive, which can impede user engagement. In this article, we'll explore some tips and tricks to optimize React Native performance.\n\n## Use Animated API for Animations\nAnimations can make your React Native app more interactive and engaging. However, it's essential to use the Animated API for all animations. Using Animated API leverages native graphics processing units (GPUs) to handle animations and can result in smooth and performant animations. \n\n## Implement Lazy Loading for Images\nLoading multiple images at once can impact the performance of your app. Implementing lazy loading allows you to load images only when they are needed. For instance, the `React Native Fast Image` module is a highly recommended module for loading images with a low performance overhead.\n\n## Employ Performance Testing\nPerformance testing is an essential component of optimizing React Native performance. There are various tools for testing and profiling React Native apps. One popular tool is the `React Native Performance Monitor.” It provides useful metrics such as frame rate and CPU usage. Once your app has been tested, you can analyze the results to identify bottlenecks and optimize accordingly.\n\nBy implementing these measures, you can significantly improve React Native's performance and deliver a smooth and responsive app to the end-users.\n\nTags: React Native, Mobile Development, Performance Optimization"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

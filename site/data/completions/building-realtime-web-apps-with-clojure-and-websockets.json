@@ -1,0 +1,61 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog off of the contents of the following resume:\n+++\ntitle = \"Resume\"\ndescription = \"Derek Cuevas's Resume\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Your previous 10 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a interesting topic for and advanced level audience that is not related to a previous post and then output a post following the rules defined above."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the article formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7IWiE4pSY697xYw2jEDXwXNheSPsk",
+  "object": "chat.completion",
+  "created": 1684650006,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 568,
+   "completion_tokens": 1000,
+   "total_tokens": 1568
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Building Realtime Web Apps with Clojure and WebSockets\n\nClojure is one of the most popular functional programming languages for the JVM. It is known for its expressiveness and simplicity, making it an excellent choice for building large-scale, high-performance web applications. And while there are many frameworks and libraries available for building these types of applications, Clojure's support for WebSockets makes it an ideal choice for building real-time web applications.\n\nIn this post, we will explore the basics of building real-time web applications with Clojure and WebSockets. We will cover the basics of setting up a WebSockets server, handling incoming messages, and broadcasting messages to all connected clients. By the end of this tutorial, you will have a basic understanding of how to build real-time web applications with Clojure and WebSockets.\n\n## Prerequisites\n\nTo follow along with this tutorial, you will need basic knowledge of Clojure, the Clojure command line tools, and Leiningen.\n\n## Setting up a WebSockets server\n\nBefore we can start building our real-time web application, we need to set up a WebSockets server. In this tutorial, we will be using the `http-kit` library to create our server. `http-kit` is a lightweight, high-performance HTTP server and client library for Clojure, and it also includes support for WebSockets.\n\nFirst, we need to add the `http-kit` dependency to our `project.clj` file:\n\n```\n[org.httpkit/http-kit \"2.4.1\"]\n```\n\nOnce we've added the dependency, we can create our server using the following code:\n\n```clojure\n(require '[org.httpkit.server :as server])\n\n(defn websocket-handler\n  [{:keys [socket channel]}]\n  (channel\n   (fn [message]\n     (doseq [client (vals @channels)]\n       (if-not (= client channel)\n         (server/write-str client message))))))\n\n(defn start-server []\n  (let [handler (server/websocket-handler websocket-handler)]\n    (server/run-server handler {:port 8080})))\n```\n\nThis code sets up a handler function, `websocket-handler`, that will be called whenever a new WebSocket connection is established. The `channel` parameter is a reference to the WebSocket channel, which we can subscribe to and publish messages to.\n\n## Handling incoming messages\n\nNow that we have our WebSockets server set up, we can start handling incoming messages from clients. In our `websocket-handler` function, we can define a callback function that will be called whenever a new message is received:\n\n```clojure\n(defn websocket-handler\n  [{:keys [socket channel]}]\n  (channel\n   (fn [message]\n     ;; handle message here\n     )\n   (fn []\n     ;; handle client disconnect here\n     )))\n```\n\nThe `message` parameter is a vector of bytes that contains the incoming message. We can convert this message to a string using the `bytes-to-str` function:\n\n```clojure\n(defn websocket-handler\n  [{:keys [socket channel]}]\n  (channel\n   (fn [message]\n     (let [message-str (bytes-to-str message)]\n       (println \"Received message: \" message-str)))\n   (fn []\n     ;; handle client disconnect here\n     )))\n```\n\nThis code simply prints out the incoming message to the console.\n\n## Broadcasting messages to all connected clients\n\nFinally, we need to be able to broadcast messages to all connected clients. We can do this by storing a reference to all connected WebSocket channels in an atom. Whenever a new message is received, we can iterate over all the connected channels and write the message to each one. Here's the updated `websocket-handler` function:\n\n```clojure\n(def channels (atom #{}))\n\n(defn websocket-handler\n  [{:keys [socket channel]}]\n  (swap! channels conj channel)\n  (channel\n   (fn [message]\n     (doseq [client (vals @channels)]\n       (if-not (= client channel)\n         (server/write-str client message))))\n   (fn []\n     (swap! channels disj channel))))\n```\n\nThis code adds and removes channels from the `channels` atom whenever a new WebSocket connection is established or closed. Whenever a new message is received, it iterates over all the channels and writes the message to each one, excluding the original sender.\n\n## Conclusion\n\nIn this tutorial, we learned how to build real-time web applications with Clojure and WebSockets. We covered the basics of setting up a WebSockets server, handling incoming messages, and broadcasting messages to all connected clients. This is just a small taste of what's possible with Clojure and WebSockets, but it gives you a foundation to build more complex real-time web applications.\n\nTags: Clojure, WebSockets, Real-time web applications"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

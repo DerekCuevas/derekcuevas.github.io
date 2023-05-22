@@ -1,0 +1,61 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog off of the contents of the following resume:\n+++\ntitle = \"Resume\"\ndescription = \"Derek Cuevas's Resume\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Your previous 10 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a interesting topic for and advanced level audience that is not related to a previous post and then output a post following the rules defined above."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the article formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7Ic67nTpsa6wOEhaPevIjpsqbl5s5",
+  "object": "chat.completion",
+  "created": 1684670707,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 582,
+   "completion_tokens": 575,
+   "total_tokens": 1157
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: How to Use Clojure to Build a High-Performance, Distributed System\n\nClojure is a powerful programming language that is highly applicable for building distributed systems. The combination of a functional paradigm and support for concurrency and parallelism makes Clojure a great choice for building high-performance, scalable systems. In this post, we will dive into how to use Clojure to build a highly available, distributed system.\n\n## Building a Distributed System with Clojure\n\nClojure is a dialect of Lisp, and like other Lisps, it is designed specifically for building software that can evolve over time. Its syntax is minimal, but its macros and strong emphasis on immutability make it ideal for building systems with complex business logic. Clojure also has excellent support for concurrency and parallelism, making it perfect for building distributed systems that can scale.\n\nTo get started with building a distributed system in Clojure, you need to be familiar with Clojure's concurrency and parallelism primitives. These include:\n\n- **Atoms** - A type of reference type that is used to hold a single value that can be changed in a thread-safe manner.\n- **Agents** - Agents are another reference type that can be used to hold a value that can be updated asynchronously.\n- **Futures** - Futures are similar to atoms, but they represent a value that may not have been realized yet.\n\nWith these primitives, you can build a distributed system that is capable of handling a large number of concurrent requests.\n\n## Using Clojure to Build High-Performance Systems\n\nClojure's emphasis on immutability and functional programming makes it ideal for building high-performance systems. By minimizing the need for mutable state, you can greatly reduce the amount of synchronization overhead that is required to handle concurrent requests.\n\nTo illustrate this, let's consider a simple example of building a distributed cache with Clojure.\n\n```clojure\n(def cache (atom {}))\n\n(defn cache-put! [key value]\n  (swap! cache assoc key value))\n\n(defn cache-get [key]\n  (get @cache key))\n```\n\nIn this example, we are using an atom to hold our cache. The `cache-put!` function puts a new value in the cache, while the `cache-get` function retrieves a value from the cache. Because the atom is being used as a reference type, it is thread-safe and can be safely accessed by multiple threads concurrently.\n\n## Conclusion\n\nIn conclusion, Clojure is an excellent choice for building high-performance, distributed systems. Its support for concurrency and parallelism, combined with its emphasis on immutability and functional programming, make it a powerful language for building systems that can scale. By leveraging Clojure's primitives, you can build distributed systems that are capable of handling a large number of concurrent requests while maintaining high availability.\n\nTags: Clojure, Distributed Systems, High Performance"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

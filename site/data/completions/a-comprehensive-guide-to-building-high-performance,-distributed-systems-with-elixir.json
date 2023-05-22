@@ -1,0 +1,69 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog post off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\", \"How to Use Clojure to Build a High-Performance, Distributed System\", \"Building a High-Performance Streaming System with Rust\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an interesting topic for an advanced level reader that is not related to a previous post and output a post following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the post formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  },
+  {
+   "role": "user",
+   "content": "The post should have multiple sections and should be long in length."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7Ihi8wX2KICqCozILtJfnFt3lLq9u",
+  "object": "chat.completion",
+  "created": 1684692284,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 652,
+   "completion_tokens": 629,
+   "total_tokens": 1281
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: A Comprehensive Guide to Building High-Performance, Distributed Systems with Elixir\n\nHave you ever wanted to build a highly scalable, fault-tolerant distributed system? Elixir, a functional programming language built on top of the Erlang Virtual Machine, is the perfect choice. Elixir allows for concurrent processing and has built-in support for distributed systems, making it an excellent candidate for building distributed applications.\n\nIn this post, we will guide you through building a high-performance distributed system with Elixir. We'll start by discussing the fundamental concepts behind distributed systems and then move on to explore important Elixir libraries and features like OTP and GenServer, which are essential for building fault-tolerant distributed systems.\n\n## Understanding Distributed Systems\n\nA distributed system is a group of independent computers that collectively work together to achieve a common goal. Each computer, also called a node, works independently and is connected using a network. A distributed system design allows for better scalability, reliability, and fault tolerance. A distributed system architecture distributes the workload over multiple machines to maximize performance and minimize the risk of failure.\n\nElixir makes it easy to write distributed systems using its built-in libraries. Let's now dive into some of the features and libraries that Elixir offers to build distributed systems.\n\n## OTP and GenServer\n\nOTP stands for “Open Telecom Platform,” and it is a programming library used to build fault-tolerant and distributed applications. Elixir offers a robust implementation of OTP. This library provides a set of abstractions on top of Erlang that help you write concurrent and fail-safe systems.\n\nGenServer is a behavior provided by OTP that enables the creation of a server process. GenServer can handle requests from other processes, manipulate state, and send messages to other GenServers processes.\n\n## Building Our Distributed System\n\nTo build our distributed system, we will need three components: a service discovery mechanism, a load balancing mechanism, and a fault tolerance mechanism.\n\nFor service Discovery, we will use the HashRing library. This library enables us to define a virtual ring where each node has an associated range. This ring can be used for load balancing, sharding, and service discovery.\n\nFor load balancing, we will use the RoundRobin library. This library gives us a mechanism to balance the load between different nodes in our distributed system and avoid an overload of requests on a single node.\n\nFor fault tolerance, we will use the Supervisor library. This library is essential for building highly fault-tolerant systems, as it can monitor child processes and restart them if they crash.\n\n## Conclusion\n\nBuilding a high-performance distributed system can be challenging, but Elixir offers all the necessary tools to accomplish this task easily. By using Elixir's built-in OTP and GenServer libraries, together with community-supported libraries like HashRing, RoundRobin, and Supervisor, we can build fault-tolerant distributed systems that can scale to meet our needs.\n\nWith Elixir, building a distributed system does not have to be a daunting task. Give it a try and see how easy it is to build a highly available and scalable distributed system.\n\nTags: Elixir, Distributed Systems, Fault Tolerance"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

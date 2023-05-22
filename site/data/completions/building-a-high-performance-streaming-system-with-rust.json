@@ -1,0 +1,69 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog post off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\", \"How to Use Clojure to Build a High-Performance, Distributed System\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an interesting topic for an advanced level reader that is not related to a previous post and output a post following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the post formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  },
+  {
+   "role": "user",
+   "content": "The post should have multiple sections and should be long in length."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7IgWe43AwEbK2VyslPIZjz0kfUv2b",
+  "object": "chat.completion",
+  "created": 1684687728,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 641,
+   "completion_tokens": 1686,
+   "total_tokens": 2327
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Building a High-Performance Streaming System with Rust\n\nRust, which is a low-level systems programming language, was designed to support building blazingly fast, high-performance systems that consume minimal resources. This makes it an ideal choice for building streaming systems that can ingest, process, and output large data volumes in real-time. In this tutorial, we'll explore how to build a high-performance streaming system with Rust that can handle large volumes of data while remaining efficient and fast.\n\n## Prerequisites\n\nTo follow along with this tutorial, you will need to have the following prerequisites:\n\n- A basic understanding of Rust programming language.\n- Knowledge of asynchronous programming.\n- Familiarity with networking protocols.\n\n## Building a High-Performance Data Ingestion System\n\nThe first step in building a high-performance streaming system is creating an efficient data ingestion process that can handle large volumes of data. For this, we'll use the Rust programming language along with the Tokio library, which is designed to support asynchronous programming and is particularly suited for high-performance network applications.\n\nLet's start by installing the required Rust dependencies:\n\n```bash\ncargo new --bin data-ingestion\ncd data-ingestion\n```\n\nNext, we'll add the following dependencies to the `Cargo.toml` file:\n\n```bash\n[dependencies]\ntokio = { version = \"1.10\", features = [\"full\"] }\nfutures = \"0.3\"\n```\n\nThe `futures` crate is a dependency of the Tokio library, which provides a set of low-level primitives for building asynchronous APIs in Rust.\n\nIn this sample system, we'll use Rust's threads to read data from a file, transform it, and insert it into a PostgreSQL database. We'll then use a futures channel to notify the processing system that new data is available.\n\n```rust\nuse tokio::sync::{mpsc, oneshot};\n\n// Define message type to get notified of available data\nenum Message {\n    Data(Vec<String>),\n    Terminate(oneshot::Sender<()>),\n}\n\n// Start the data ingestion system\n#[tokio::main]\nasync fn main() {\n    // Create a channel to send data to the processing system\n    let (tx, mut rx) = mpsc::channel::<Message>(1_000);\n\n    // Start a new thread to read data from a file\n    let data_thread = std::thread::spawn(move || {\n        let data = read_file(\"data.csv\");\n        let chunks = chunk_data(data, 1_000);\n\n        // Send the data to processing system\n        for chunk in chunks {\n            let _ = tx.blocking_send(Message::Data(chunk));\n        }\n\n        // Notify processing system that we're done\n        let _ = tx.blocking_send(Message::Terminate(oneshot::channel().0));\n    });\n\n    // Start the processing system\n    let mut processed_count: usize = 0;\n    loop {\n        match rx.recv().await.unwrap() {\n            Message::Data(mut raw_data) => {\n                // Process the data chunk\n                let processed_data = process_data(&mut raw_data);\n\n                // Insert the processed data into PostgreSQL\n                insert_data_into_pg(&processed_data);\n\n                // Increment processed count\n                processed_count += raw_data.len();\n            }\n            Message::Terminate(terminate_tx) => {\n                // Notify the thread that data has been consumed\n                let _ = terminate_tx.send(());\n                break;\n            }\n        }\n    }\n\n    // Wait for the thread to complete\n    let _ = data_thread.join();\n}\n\n// Read data from file\nfn read_file(file: &str) -> Vec<String> {\n    // omitted for brevity\n}\n\n// Chunk data for processing\nfn chunk_data(mut data: Vec<String>, chunk_size: usize) -> Vec<Vec<String>> {\n    // omitted for brevity\n}\n\n// Process data\nfn process_data(raw_data: &mut Vec<String>) -> Vec<ProcessedData> {\n    // omitted for brevity\n}\n\n// Insert data into PostgreSQL\nfn insert_data_into_pg(processed_data: &Vec<ProcessedData>) {\n    // omitted for brevity\n}\n```\n\nIn the above code, we're using the Tokio `mpsc` channel to send data from the data ingestion system to the processing system. We're also using the `oneshot` channel to notify the data ingestion system that the processing system has finished and new data is available.\n\n## Building a High-Performance Data Processing System\n\nThe next step in building a high-performance streaming system is creating a fast and efficient data processing system. In this section, we'll explore how to use Rust and the Actix Web framework to create a high-performance data processing system that can handle a large volume of data.\n\nFirst, let's install the required dependencies.\n\n```bash\ncargo new --bin data-processing\ncd data-processing\n```\n\nNext, add the following dependencies to the `Cargo.toml` file:\n\n```toml\n[dependencies]\nactix-web = \"4.0\"\ntokio = { version = \"1.10\", features = [\"full\"] }\nserde = { version = \"1.0\", features = [\"derive\"] }\nserde_json = \"1.0\"\n```\n\nActix Web is a high-performance web framework that runs on Rust. It provides a set of tools to design and build a fast and scalable HTTP server.\n\nOur sample system will use an Actix Web server that listens on a Unix domain socket. For each incoming request, we'll spawn a new thread to process the data and respond back to the client.\n\n```rust\nuse actix_web::{web, App, HttpRequest, HttpResponse, HttpServer, Responder};\nuse serde::{Deserialize, Serialize};\n\n// POSIX Unix socket path to listen to\nconst SOCKET_PATH: &str = \"/tmp/data-processing.sock\";\n\n// Model for processed data\n#[derive(Debug, Deserialize, Serialize)]\nstruct ProcessedData {\n    id: String,\n    name: String,\n    value: f64,\n}\n\n// Define handler for incoming request\nasync fn process_data(req: HttpRequest, payload: String) -> impl Responder {\n    let data: Vec<String> = serde_json::from_str(&payload).unwrap();\n\n    // Process the data\n    let processed_data = process_data(&mut data.clone());\n\n    // Return processed data\n    HttpResponse::Ok().json(processed_data)\n}\n\n// Start the data processing system\n#[actix_rt::main]\nasync fn main() -> std::io::Result<()> {\n    // Create the Actix Web Server\n    let server = HttpServer::new(|| {\n        App::new()\n            .route(\"/\", web::post().to(process_data))\n    });\n\n    // Listen on the specified Unix domain socket\n    let _ = server.listen_uds(SOCKET_PATH)?;\n\n    // Wait for connections to be made and process data\n    server.await?;\n\n    Ok(())\n}\n\n// Process the data\nfn process_data(raw_data: &mut Vec<String>) -> Vec<ProcessedData> {\n    // omitted for brevity\n}\n```\n\nIn the code above, we first define a `ProcessedData` struct to model the processed data. We then define a handler function called `process_data`, which takes in an HTTP request containing a JSON payload of raw data. This handler function processes the data and returns the processed data to the client.\n\nFinally, we define a main function that creates an Actix Web server and listens on a Unix domain socket. For each incoming request, we process the data and send the processed data back to the client.\n\n## Conclusion\n\nIn this tutorial, we explored how to use Rust programming language to build a high-performance streaming system that can handle large volumes of data. We first explored how to build a high-performance data ingestion system using Rust threads, the Tokio library, and a futures channel. We then explored how to build a high-performance data processing system using Rust and the Actix Web framework.\n\nWith these two simple systems, you can build an end-to-end streaming system that can ingest, process, and output large volumes of data in real-time. Rust's performance capabilities, combined with its low resource utilization, make it an ideal choice for building such systems.\n\nTags: Rust, Streaming Systems, Actix Web"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

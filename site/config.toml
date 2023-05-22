@@ -1,0 +1,46 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'FYGT'
+theme = 'archie'
+copyright = "© Derek Cuevas"
+pygmentsstyle = "github-dark"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+enableGitInfo = true
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+
+[params]
+mode = "toggle"
+useCDN=false
+subtitle = "My experimental software engineering blog ([source](https://github.com/derekcuevas/fygt))"
+schedule = 21900000
+customcss = ["css/overrides.css"]
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/derekcuevas"
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 1
+
+[[menu.main]]
+name = "Résumé"
+url = "/resume"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "All Articles"
+url = "/posts"
+weight = 4

@@ -1,0 +1,69 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog post off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\", \"How to Use Clojure to Build a High-Performance, Distributed System\", \"Building a High-Performance Streaming System with Rust\", \"A Comprehensive Guide to Building High-Performance, Distributed Systems with Elixir\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an interesting topic for an advanced level reader that is not related to a previous post and output a post following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the post formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  },
+  {
+   "role": "user",
+   "content": "The post should have multiple sections and should be long in length."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7InW4SielXR8Xp5A2sj8UHUfQZTEb",
+  "object": "chat.completion",
+  "created": 1684714600,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 668,
+   "completion_tokens": 1834,
+   "total_tokens": 2502
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Building a High-Performance Real-Time Analytics Dashboard with Rust and PostgreSQL\n\nAre you looking for a way to build a fast, real-time analytics dashboard? In this post, we'll explore how to build a dashboard using Rust and PostgreSQL. We'll start by looking at why Rust and PostgreSQL are such a great combination, and then we'll dive into how to use them together to build a high-performance real-time analytics dashboard.\n\n## Why Rust and PostgreSQL?\n\nRust is a language that is known for its focus on performance and safety. It's a great choice for building high-performance systems that require low-level control. PostgreSQL is a powerful open-source database that is loved by developers for its scalability and reliability. Together, Rust and PostgreSQL can be used to build applications that are both fast and safe.\n\n## Setting up the Project\n\nBefore we get started building our dashboard, we need to set up our project. We'll be using Rust's Actix web framework and the Postgres crate to communicate with our PostgreSQL database. Let's start by creating a new Rust project and adding these dependencies to our `Cargo.toml` file:\n\n```toml\n[dependencies]\nactix-web = \"3.3.2\"\ntokio = { version = \"1.13\", features = [\"full\"] }\npostgres = \"0.22.1\"\nchrono = \"0.4.19\"\nserde = { version = \"1.0\", features = [\"derive\"] }\n```\n\nOur dependencies include the Actix web framework, the Postgres crate, and some additional libraries we'll use later on.\n\nNext, let's create a new PostgreSQL database and table to store our data. We'll be storing user metrics, so let's create a table to store that information:\n\n```sql\nCREATE TABLE user_metrics (\n    id serial PRIMARY KEY,\n    user_id INTEGER NOT NULL,\n    page_views INTEGER NOT NULL,\n    duration INTEGER NOT NULL,\n    created_at TIMESTAMP WITH TIME ZONE NOT NULL\n);\n```\n\nWith our database and table set up, we can start building our dashboard.\n\n## Building the Dashboard\n\nOur dashboard will have two main components: a backend that will receive data from clients and store it in our PostgreSQL database, and a frontend that will display real-time analytics for our users. Let's start by building our backend.\n\n### Backend\n\nWe'll start by setting up our Actix web server. Here's the code to get us started:\n\n```rust\nuse actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};\nuse chrono::{DateTime, Utc};\nuse tokio::sync::mpsc::{channel, Receiver, Sender};\nuse std::sync::{Arc, Mutex};\nuse tokio::time::{sleep, Duration};\nuse futures::StreamExt;\n\nasync fn index() -> impl Responder {\n    HttpResponse::Ok().body(\"Hello, world!\")\n}\n\n#[actix_web::main]\nasync fn main() -> std::io::Result<()> {\n    HttpServer::new(|| {\n        App::new()\n            .service(index)\n    })\n    .bind(\"127.0.0.1:8080\")?\n    .run()\n    .await\n}\n```\n\nThis sets up a basic Actix web server that responds to requests with \"Hello, world!\".\n\nNext, let's add a route to accept incoming metrics data:\n\n```rust\n#[post(\"/metrics\")]\nasync fn metrics(data: web::Json<MetricData>) -> impl Responder {\n    // TODO: store data in PostgreSQL\n    HttpResponse::Ok()\n}\n```\n\nThis route will accept metrics data from clients and store it in our PostgreSQL database.\n\nBefore we store the data in our database, let's aggregate the data into 10 second intervals. We'll also use a channel to update our frontend with the latest real-time data. Here's the code to set up our channels:\n\n```rust\nstruct Aggregator {\n    interval: Duration,\n    sender: Sender<String>,\n}\n\nimpl Aggregator {\n    fn new(interval: Duration, sender: Sender<String>) -> Self {\n        Aggregator {\n            interval,\n            sender,\n        }\n    }\n\n    async fn run(&self, receiver: &Arc<Mutex<Receiver<MetricData>>>) {\n        loop {\n            sleep(self.interval).await;\n            let start = Utc::now();\n            let duration = chrono::Duration::seconds(self.interval.as_secs() as i64);\n            let end = start + duration;\n            \n            let mut page_views = 0;\n            let mut duration_total = 0;\n            \n            let mut receiver = receiver.lock().unwrap();\n\n            while let Some(data) = receiver.recv().await {\n                page_views += data.page_views;\n                duration_total += data.duration;\n            }\n\n            let avg_duration = duration_total / page_views;\n            let result = format!(\"{{ \\\"page_views\\\": {}, \\\"avg_duration\\\": {} }}\", page_views, avg_duration);\n            \n            if let Err(e) = self.sender.send(result).await {\n                println!(\"Error sending real-time data to frontend: {}\", e);\n            }\n        }\n    }\n}\n```\n\nThis code sets up a new Aggregator struct that will group our data into 10 second intervals and send real-time data to our frontend using the channel we set up earlier.\n\nFinally, let's modify our `metrics` route to store the data in our PostgreSQL database and send it to our Aggregator:\n\n```rust\n#[post(\"/metrics\")]\nasync fn metrics(\n    data: web::Json<MetricData>,\n    db: web::Data<Pool>,\n    aggregator: web::Data<Arc<Aggregator>>,\n) -> impl Responder {\n    let pool = db.get_ref();\n    let result = pool\n        .query(\n            \"INSERT INTO user_metrics (user_id, page_views, duration, created_at) VALUES ($1, $2, $3, $4)\",\n            &[&data.user_id, &data.page_views, &data.duration, &Utc::now()],\n        )\n        .await\n        .map_err(|e| HttpResponse::InternalServerError().body(format!(\"Failed to store metrics: {:?}\", e)))?;\n\n    if let Err(e) = aggregator.sender.clone().send(result.to_string()).await {\n        println!(\"Error sending real-time data to aggregator: {}\", e);\n    }\n    HttpResponse::Ok()\n}\n```\n\nThis code uses the Postgres crate to store our data in our PostgreSQL database and uses our Aggregator to group our data into 10 second intervals and send real-time data to our frontend.\n\n### Frontend\n\nNow that our backend is set up to receive and aggregate our metrics data, we can start building our frontend. We'll be using React and Chart.js to display our real-time analytics.\n\nHere's some basic code to get our React app set up:\n\n```jsx\nimport React, { useEffect, useState } from 'react';\nimport Chart from 'chart.js';\n\nconst Dashboard = () => {\n  const [realtimeData, setRealtimeData] = useState([]);\n\n  useEffect(() => {\n    const ws = new WebSocket('ws://localhost:8080/ws');\n\n    ws.onmessage = function (event) {\n      const parsedData = JSON.parse(event.data);\n      setRealtimeData(data => [...data, parsedData]);\n    };\n\n    return () => {\n      ws.close();\n    };\n  }, []);\n\n  useEffect(() => {\n    const ctx = document.getElementById('chart');\n\n    new Chart(ctx, {\n      type: 'line',\n      data: {\n        labels: realtimeData.map(data => new Date(data.time).toLocaleTimeString()),\n        datasets: [\n          {\n            label: 'Page views',\n            data: realtimeData.map(data => data.page_views),\n            borderColor: 'rgba(0, 0, 255, 1)',\n            tension: 0.1,\n          },\n          {\n            label: 'Average duration',\n            data: realtimeData.map(data => data.avg_duration),\n            borderColor: 'rgba(255, 0, 0, 1)',\n            tension: 0.1,\n          },\n        ],\n      },\n      options: {\n        responsive: true,\n        maintainAspectRatio: false,\n        scales: {\n          xAxes: [\n            {\n              ticks: {\n                autoSkip: true,\n                maxTicksLimit: 20\n              }\n            }\n          ]\n        }\n      },\n    });\n  }, [realtimeData]);\n\n  return (\n    <div>\n      <canvas id=\"chart\" />\n    </div>\n  );\n};\n```\n\nThis code sets up a new WebSocket connection to our server and uses Chart.js to display our real-time data in a line graph.\n\n## Conclusion\n\nAnd there you have it! We've explored how to build a real-time analytics dashboard using Rust and PostgreSQL. By combining Rust's focus on performance and safety with PostgreSQL's scalability and reliability, we've built an application that's both fast and safe.\n\nIf you have any questions or suggestions, feel free to leave a comment below!\n\nTags: Rust, PostgreSQL, Real-time"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
