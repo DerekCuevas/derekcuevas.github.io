@@ -123,7 +123,16 @@
         "macro rules"
       ],
       "createdAt": "2023-05-22T04:50:33.974Z"
+    },
+    {
+      "title": "Efficient Pattern Matching with Rust",
+      "tags": [
+        "rust",
+        "optimization",
+        "pattern matching"
+      ],
+      "createdAt": "2023-05-22T06:02:18.260Z"
     }
   ],
-  "updatedAt": "2023-05-22T04:50:33.974Z"
+  "updatedAt": "2023-05-22T06:02:18.260Z"
 }
