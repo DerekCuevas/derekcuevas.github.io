@@ -123,7 +123,16 @@
         "macro rules"
       ],
       "createdAt": "2023-05-22T04:50:33.974Z"
+    },
+    {
+      "title": "Building a Real-Time OCR System with React, Tesseract.js, and WebSockets",
+      "tags": [
+        "react",
+        "ocr",
+        "websockets"
+      ],
+      "createdAt": "2023-05-22T04:59:46.412Z"
     }
   ],
-  "updatedAt": "2023-05-22T04:50:33.974Z"
+  "updatedAt": "2023-05-22T04:59:46.412Z"
 }
