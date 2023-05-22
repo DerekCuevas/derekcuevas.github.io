@@ -111,7 +111,19 @@
         "real-time"
       ],
       "createdAt": "2023-05-22T00:17:05.801Z"
+    },
+    {
+      "title": "Writing Rust Macros: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "macros",
+        "procedural macros",
+        "declarative macros",
+        "programming macros",
+        "macro rules"
+      ],
+      "createdAt": "2023-05-22T04:50:33.974Z"
     }
   ],
-  "updatedAt": "2023-05-22T00:17:05.801Z"
+  "updatedAt": "2023-05-22T04:50:33.974Z"
 }

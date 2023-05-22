@@ -1,4 +1,5 @@
 # FYGT
 
 ## TODO
-- rewrite readme (doc the technical design), publish as about page
+- setup GA
+- rewrite readme, link to about page
