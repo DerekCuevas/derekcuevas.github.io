@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://derekcuevas.github.io/'
 languageCode = 'en-us'
 title = 'FYGT'
 theme = 'archie'
@@ -6,8 +6,8 @@ copyright = "© Derek Cuevas"
 pygmentsstyle = "github-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
 enableGitInfo = true
+googleAnalytics = "G-F2E1LBE19M"
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
