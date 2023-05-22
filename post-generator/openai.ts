@@ -31,12 +31,7 @@ export class OpenAI implements MockOpenAIClient {
     this.openai = new OpenAIInner(config.OPENAI_API_KEY);
   }
 
-  async chatCompletion(
-    messages: {
-      role: string;
-      content: string;
-    }[]
-  ): Promise<ChatCompletion> {
+  async chatCompletion(messages: Message[]): Promise<ChatCompletion> {
     return await this.openai.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages,
