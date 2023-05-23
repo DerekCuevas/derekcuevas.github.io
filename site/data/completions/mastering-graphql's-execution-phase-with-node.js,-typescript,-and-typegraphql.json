@@ -1,0 +1,69 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog post off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\", \"How to Use Clojure to Build a High-Performance, Distributed System\", \"Building a High-Performance Streaming System with Rust\", \"A Comprehensive Guide to Building High-Performance, Distributed Systems with Elixir\", \"Building a High-Performance Real-Time Analytics Dashboard with Rust and PostgreSQL\", \"Writing Rust Macros: A Comprehensive Guide\", \"Efficient Pattern Matching with Rust\", \"Securely Storing Secrets in Rust\", \"How to Write High Performance Elm Code with the Help of Web Workers\", \"The Ultimate Guide to Building and Optimizing GraphQL APIs with Node.js\", \"Building High-Performance Reactive Applications with Rust and Tokio\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an interesting topic for an advanced level reader that is not related to a previous post and output a post following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the post formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  },
+  {
+   "role": "user",
+   "content": "The post should have multiple sections and should be long in length."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7JL0W0PxcbD0TOUwiRJE4r7FpgNZX",
+  "object": "chat.completion",
+  "created": 1684843340,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 752,
+   "completion_tokens": 824,
+   "total_tokens": 1576
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Mastering GraphQL's Execution Phase with Node.js, TypeScript, and TypeGraphQL\n\nGraphQL is a powerful and flexible query language that is increasingly being adopted by developers across all types of applications. But to truly take advantage of GraphQL, it's essential to understand its execution phase, which is where the magic happens.\n\nIn this post, we'll explore how to master GraphQL's execution phase with Node.js, TypeScript, and TypeGraphQL. We'll cover the basics of GraphQL, dive into the nuances of the execution phase, and explore how to leverage TypeGraphQL to make querying your GraphQL API a breeze.\n\n## What is GraphQL?\n\nGraphQL is a query language that allows you to define and structure your data, then use that structure to request and receive specific subsets of that data. It effectively acts as a middleman between your front-end and back-end, allowing you to query data in a more efficient and streamlined manner.\n\nGraphQL schemas are defined in terms of types, which define the shape of the data that can be queried. Queries are written in a similar fashion to the data being queried, so you can easily visualize what data will be returned. Here's a simple example of a GraphQL query:\n\n```\n{\n  user(id: \"123\") {\n    name\n    email\n  }\n}\n```\n\nThis query requests the `name` and `email` fields for a user with an ID of `123`.\n\n## The Execution Phase\n\nThe execution phase is where GraphQL takes the requested query and turns it into a result. It does this by walking through your schema and resolving each field that was requested. The result is then supplied to the client as a JSON object.\n\nThere are a few key steps in the execution phase:\n\n1. Parsing - The incoming query is parsed into an abstract syntax tree.\n2. Validation - The incoming query is validated against your schema to ensure that it is both syntactically and semantically correct.\n3. Execution - Your resolver functions are invoked as each field in the query is resolved.\n\n## Leveraging TypeGraphQL\n\nTypeGraphQL is a fantastic library that makes working with GraphQL in Node.js a breeze. It provides a set of decorators that allow you to define your GraphQL schema in a type-safe and intuitive manner.\n\nHere's an example of a simple GraphQL schema definition using TypeGraphQL:\n\n```typescript\n@ObjectType()\nclass User {\n  @Field(() => ID)\n  id: string;\n\n  @Field()\n  name: string;\n\n  @Field()\n  email: string;\n\n  @Field(() => [Post])\n  posts: Post[];\n}\n\n@ObjectType()\nclass Post {\n  @Field(() => ID)\n  id: string;\n\n  @Field()\n  title: string;\n\n  @Field()\n  body: string;\n}\n\n@Resolver()\nclass UserResolver {\n  @Query(() => User)\n  async user(@Arg(\"id\") id: string): Promise<User> {\n    // find and return user by id\n  }\n\n  @ResolveField(() => [Post])\n  async posts(@Root() user: User): Promise<Post[]> {\n    // find and return posts for user\n  }\n\n  @Mutation(() => User)\n  async updateUser(@Arg(\"id\") id: string, @Arg(\"name\") name: string): Promise<User> {\n    // update user in database and return updated user\n  }\n}\n```\n\nThis schema defines a single object type, `User`, along with a couple of fields and a resolver. The `Post` type is also defined, along with a resolver that retrieves a user's posts.\n\nBy using the `@Field`, `@Resolver`, `@Query`, and `@Mutation` decorators, we can rapidly define our GraphQL schema in a way that is both easy to read and type-safe.\n\n## Conclusion\n\nBy understanding the nuances of GraphQL's execution phase and leveraging libraries like TypeGraphQL, you can create powerful GraphQL APIs with minimal effort. With its ability to define complex queries with ease, GraphQL is quickly becoming the go-to choice for developers looking to streamline their back-end data requests. \n\nTags: GraphQL, Node.js, TypeScript"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

@@ -159,7 +159,16 @@
         "reactive programming"
       ],
       "createdAt": "2023-05-23T06:02:08.724Z"
+    },
+    {
+      "title": "Mastering GraphQL's Execution Phase with Node.js, TypeScript, and TypeGraphQL",
+      "tags": [
+        "graphql",
+        "nodejs",
+        "typescript"
+      ],
+      "createdAt": "2023-05-23T12:02:44.743Z"
     }
   ],
-  "updatedAt": "2023-05-23T06:02:08.724Z"
+  "updatedAt": "2023-05-23T12:02:44.743Z"
 }
