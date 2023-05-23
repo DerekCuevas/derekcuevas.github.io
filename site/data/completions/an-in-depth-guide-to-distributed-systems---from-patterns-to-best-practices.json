@@ -1,0 +1,69 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog post off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\", \"How to Use Clojure to Build a High-Performance, Distributed System\", \"Building a High-Performance Streaming System with Rust\", \"A Comprehensive Guide to Building High-Performance, Distributed Systems with Elixir\", \"Building a High-Performance Real-Time Analytics Dashboard with Rust and PostgreSQL\", \"Writing Rust Macros: A Comprehensive Guide\", \"Efficient Pattern Matching with Rust\", \"Securely Storing Secrets in Rust\", \"How to Write High Performance Elm Code with the Help of Web Workers\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an interesting topic for an advanced level reader that is not related to a previous post and output a post following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the post formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  },
+  {
+   "role": "user",
+   "content": "The post should have multiple sections and should be long in length."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7JCUBIAI7G5RuGsMCaayoGevEVmo5",
+  "object": "chat.completion",
+  "created": 1684810583,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 724,
+   "completion_tokens": 850,
+   "total_tokens": 1574
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: An In-Depth Guide to Distributed Systems - From Patterns to Best Practices\n\nHave you ever wanted to build a complex, high throughput, and highly available application? A distributed system might just be what you are looking for. In today's world, where companies are expected to deliver their software applications to thousands of users spread across different geographies, it is no longer an option to have a single machine running the entire application. This post will provide an in-depth guide to distributed systems, covering everything from patterns to best practices.\n\n## Introduction\n\nA distributed system is composed of multiple autonomous components that collaborate together to provide a unified service or application. One of the essential features of a distributed system is the ability to run in parallel across a cluster of machines. The primary goal of a distributed system is to provide fault tolerance, load balancing, and scalability.\n\n## Distributed System Patterns\n\n### Master-Slave Pattern\n\nIn this pattern, a single master node distributes workloads to a collection of worker nodes. The master is responsible for assigning and tracking workloads, while the worker nodes are responsible for executing the assigned work. The advantages of this pattern are that it is simple to implement with low overhead, and the workloads can be distributed across a cluster of machines, allowing for the parallel execution of tasks.\n\n![Master-Slave Pattern](https://raw.githubusercontent.com/PacktPublishing/Mastering-distributed-Tracing/master/Chapter05/master-slave-pattern.png)\n\n### Peer-to-Peer Pattern\n\nIn this pattern, the nodes are both producers and consumers of data. Each node is equally responsible for processing data and forwarding it to other nodes in the network. The main advantage of this pattern is that it has no central point of failure, making it highly resilient.\n\n![Peer-to-Peer Pattern](https://miro.medium.com/max/638/1*0kVfh89yVR0aEtic76r-tg.png)\n\n### Publish-Subscribe Pattern\n\nThe Publish-Subscribe pattern is a simple and flexible way of distributing notifications across a group of subscribers. In this pattern, publishers send messages to a broker, which then forwards those messages to subscribed consumers. A significant advantage of this pattern is that it allows for decoupling between the publisher and subscribers, making it easy to scale the system.\n\n![Publish-Subscribe Pattern](https://severalnines.com/sites/default/files/styles/large/public/resources/images/stacks_application/SubscribersProducer.png?itok=B6V_Ie9G)\n\n## Distributed System Best Practices\n\n### Use a Service Mesh\n\nAs the complexity of your application grows, the management of networking between components becomes increasingly difficult. A service mesh is a dedicated infrastructure layer is designed to handle the communication logic between distributed application infrastructure services. It provides functionalities such as traffic routing, service discovery, load balancing, observability, security, and a host of other features. It simplifies communication among services and frees up application code to focus on business logic.\n\n### Use Async Communication\n\nAsynchronous communication is essential in distributed systems because it enables nodes to continue operating even when one or more other nodes are down or experiencing delays. With asynchronous communication, requests are sent and received without waiting for a response. The requestor then continues processing while the response arrives at a later time.\n\n### Use Eventual Consistency\n\nWhen working with distributed systems, it is essential to have the notion of eventual consistency, meaning that the system will eventually reach a consistent state, even if individual nodes may have different data views at any point in time. Implementing eventual consistency requires careful design, and trade-offs must be made between data availability, data integrity, and system performance.\n\n## Conclusion\n\nIn this post, we have explored key patterns and best practices for building distributed systems. Distributed systems can be challenging, but they are also incredibly powerful. When designed and implemented correctly, they can provide exceptional scalability, fault-tolerance, and availability. By following best practices and patterns such as master-slave, peer-to-peer, publish-subscribe, using a service mesh, Async communication, Eventual Consistency, you can build systems that can handle large amounts of data, traffic, and users.\n\nTags: Distributed Systems, Fault Tolerance, Best Practices"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
