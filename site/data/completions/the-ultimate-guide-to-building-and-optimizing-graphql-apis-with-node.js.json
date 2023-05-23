@@ -1,0 +1,69 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog post off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\", \"How to Use Clojure to Build a High-Performance, Distributed System\", \"Building a High-Performance Streaming System with Rust\", \"A Comprehensive Guide to Building High-Performance, Distributed Systems with Elixir\", \"Building a High-Performance Real-Time Analytics Dashboard with Rust and PostgreSQL\", \"Writing Rust Macros: A Comprehensive Guide\", \"Efficient Pattern Matching with Rust\", \"Securely Storing Secrets in Rust\", \"How to Write High Performance Elm Code with the Help of Web Workers\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an interesting topic for an advanced level reader that is not related to a previous post and output a post following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the post formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  },
+  {
+   "role": "user",
+   "content": "The post should have multiple sections and should be long in length."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7JDhNhqnvQNHnWODFNwtTPvOXVWnb",
+  "object": "chat.completion",
+  "created": 1684815245,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 724,
+   "completion_tokens": 1052,
+   "total_tokens": 1776
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: The Ultimate Guide to Building and Optimizing GraphQL APIs with Node.js\n\nGraphQL has quickly gained popularity in recent years as an alternative to traditional REST APIs. With GraphQL, clients can query only the necessary data and avoid overfetching, reducing the network overhead and improving performance. In this post, we'll dive into the basics of GraphQL and show you how to build optimized and secure GraphQL APIs using Node.js.\n\n### What is GraphQL?\n\nGraphQL is a query language for APIs created by Facebook. It allows clients to define precisely the data they need, and the server returns only the requested data in a structured JSON format. As a result, clients can avoid retrieving excessive data that's not required, and the size of the response is typically smaller.\n\n### Building a Simple GraphQL API with Node.js\n\nTo create a GraphQL API, we need to define a schema that describes the API's data model. The schema is defined using the GraphQL schema language, which defines the types of queries we can make and the properties of those queries. Here's an example of a simple schema that defines a list of users:\n\n```graphql\ntype User {\n  id: ID!\n  name: String!\n  email: String!\n}\n\ntype Query {\n  getUser(id: ID!): User!\n  listUsers: [User]!\n}\n```\n\nThis schema defines two types: `User` and `Query`. The `User` type specifies the properties of a user, including `id`, `name`, and `email`. The `Query` type specifies the operations we can perform, including getting a single user by ID and retrieving a list of all users.\n\nNext, we need to define the resolver functions that execute the logic of the queries defined in the schema. Here's an example of a simple resolver function that retrieves a single user by ID:\n\n```javascript\nconst users = [\n  { id: '1', name: 'Alice', email: 'alice@example.com' },\n  { id: '2', name: 'Bob', email: 'bob@example.com' },\n];\n\nconst resolvers = {\n  Query: {\n    getUser: (parent, args) => users.find(user => user.id === args.id),\n    listUsers: () => users,\n  },\n};\n```\n\nThis code defines a `users` array that holds two user objects. The `resolvers` object maps the `getUser` and `listUsers` queries in the schema to their respective functions. `getUser` searches for a user object in the `users` array with a matching ID, and `listUsers` returns the entire `users` array.\n\nFinally, we need to create a GraphQL server that handles incoming queries and executes the resolver functions. Here's an example using the `apollo-server-express` package:\n\n```javascript\nconst express = require('express');\nconst { ApolloServer } = require('apollo-server-express');\n\nconst app = express();\n\nconst typeDefs = /* GraphQL schema definition */;\nconst resolvers = /* GraphQL resolver object */;\nconst server = new ApolloServer({ typeDefs, resolvers });\n\nserver.applyMiddleware({ app });\n\napp.listen({ port: 4000 }, () => {\n  console.log('Server started on http://localhost:4000/graphql');\n});\n```\n\nThis code creates an Express.js app that listens on port 4000. We pass the `typeDefs` and `resolvers` objects to the `ApolloServer` constructor, and then apply the middleware to our Express app. Finally, we start the server and log a message to the console.\n\n### Securing a GraphQL API\n\nLike any API, a GraphQL API can be vulnerable to various attacks, including injection attacks and malicious queries. To secure a GraphQL API, follow these best practices:\n\n- **Use HTTPS**: Use SSL/TLS to encrypt data in transit and prevent man-in-the-middle attacks.\n- **Validate user input**: Validate user input using libraries like `joi` or `validator` to prevent injection attacks.\n- **Limit query complexity**: Limit the complexity and depth of queries to prevent malicious or unintentionally expensive queries. You can use the `graphql-depth-limit` and `graphql-query-complexity` packages for this.\n- **Hide sensitive information**: Hide sensitive information, such as passwords or API tokens, from query results.\n\n### Optimizing a GraphQL API\n\nGraphQL query performance can often be an issue, especially if the queries are large or nested. Here are some tips for optimizing GraphQL API performance:\n\n- **Batch requests**: Batch multiple queries together into a single request using the `graphql-batch` package to reduce network overhead.\n- **Cache results**: Use caching tools, such as Redis or Memcached, to cache frequently requested data to reduce database load and improve response times.\n- **Use DataLoader**: Use the `dataloader` library to minimize the number of calls to the database by batching together similar queries.\n- **Combine and flatten queries**: Combine nested queries into a single query using `alias` to reduce the number of round trips.\n\n### Conclusion\n\nGraphQL is an excellent alternative to REST APIs for creating fast and efficient data-driven applications. By following best practices and optimizing your queries, you can create a GraphQL API that's scalable, secure, and fast."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
