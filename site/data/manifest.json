@@ -168,7 +168,12 @@
         "typescript"
       ],
       "createdAt": "2023-05-23T12:02:44.743Z"
+    },
+    {
+      "title": "Building High-Performance Web Apps with Rust and WebGPU",
+      "tags": [],
+      "createdAt": "2023-05-23T18:02:00.343Z"
     }
   ],
-  "updatedAt": "2023-05-23T12:02:44.743Z"
+  "updatedAt": "2023-05-23T18:02:00.343Z"
 }
