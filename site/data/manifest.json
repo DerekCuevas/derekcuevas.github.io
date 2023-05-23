@@ -145,16 +145,7 @@
         "web workers"
       ],
       "createdAt": "2023-05-22T18:02:08.528Z"
-    },
-    {
-      "title": "An In-Depth Guide to Distributed Systems - From Patterns to Best Practices",
-      "tags": [
-        "distributed systems",
-        "fault tolerance",
-        "best practices"
-      ],
-      "createdAt": "2023-05-23T02:56:57.611Z"
     }
   ],
-  "updatedAt": "2023-05-23T02:56:57.611Z"
+  "updatedAt": "2023-05-22T18:02:08.528Z"
 }
