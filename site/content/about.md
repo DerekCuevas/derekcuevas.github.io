@@ -43,6 +43,7 @@ I've seen a lot of fascinating and diverse posts, but their quality and accuracy
 Some of my favorite posts so far include:
 
 - [Writing Rust Macros: A Comprehensive Guide](/posts/writing-rust-macros-a-comprehensive-guide/)
+- [A Comprehensive Guide to Asynchronous Programming in Swift with Combine](https://derekcuevas.github.io/posts/a-comprehensive-guide-to-asynchronous-programming-in-swift-with-combine/)
 
 And some others which are not so great (including some made-up facts and information) include:
 
