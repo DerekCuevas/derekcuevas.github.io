@@ -187,7 +187,16 @@
       "title": "Building Reliable Distributed Systems with Rust and Raft Consensus Protocol",
       "tags": [],
       "createdAt": "2023-05-24T06:02:32.006Z"
+    },
+    {
+      "title": "Building a High-Performance, Real-time Stock Trading System with Rust, Actix, and Redis",
+      "tags": [
+        "rust",
+        "actix",
+        "redis"
+      ],
+      "createdAt": "2023-05-24T12:03:13.277Z"
     }
   ],
-  "updatedAt": "2023-05-24T06:02:32.006Z"
+  "updatedAt": "2023-05-24T12:03:13.277Z"
 }
