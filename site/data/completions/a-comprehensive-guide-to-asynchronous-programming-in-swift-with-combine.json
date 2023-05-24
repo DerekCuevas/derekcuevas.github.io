@@ -1,0 +1,69 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "Base topics for the blog post off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\", \"How to Use Clojure to Build a High-Performance, Distributed System\", \"Building a High-Performance Streaming System with Rust\", \"A Comprehensive Guide to Building High-Performance, Distributed Systems with Elixir\", \"Building a High-Performance Real-Time Analytics Dashboard with Rust and PostgreSQL\", \"Writing Rust Macros: A Comprehensive Guide\", \"Efficient Pattern Matching with Rust\", \"Securely Storing Secrets in Rust\", \"How to Write High Performance Elm Code with the Help of Web Workers\", \"The Ultimate Guide to Building and Optimizing GraphQL APIs with Node.js\", \"Building High-Performance Reactive Applications with Rust and Tokio\", \"Mastering GraphQL's Execution Phase with Node.js, TypeScript, and TypeGraphQL\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "system",
+   "content": "Use computer code snippets to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an interesting topic for an advanced level reader that is not related to a previous post and output a post following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line in plain text."
+  },
+  {
+   "role": "user",
+   "content": "Include a list of 1 to 3 tags on the last line of the post formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>"
+  },
+  {
+   "role": "user",
+   "content": "The post should have multiple sections and should be long in length."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7JWHnIaMmpxnGmywsb3pRGvKAeIp2",
+  "object": "chat.completion",
+  "created": 1684886695,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 769,
+   "completion_tokens": 1790,
+   "total_tokens": 2559
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: A Comprehensive Guide to Asynchronous Programming in Swift with Combine\n\nIn today’s fast-paced computing world, asynchronous programming has become an essential concept for every software developer. In Swift programming, Combine is one of the most powerful frameworks for handling asynchronous operations. In this guide, we will dive deep into asynchronous programming using Combine, where we will cover:\n\n1. Introduction to Combine\n2. The Publisher/Subscriber Pattern\n3. The Combine Operators\n4. Completion and Errors\n5. Asynchronous operations with URLSession\n6. Asynchronous operations with Core Data\n7. Concurrency\n\nLet’s get started.\n\n## Introduction to Combine\n\nCombine is a framework that provides a declarative way of processing values over time. It is based on the principles of Reactive Programming and can be related to other frameworks such as RxSwift, ReactiveCocoa, and more.\n\nIn Combine, we have publishers that can emit values over time, and we can subscribe to these publishers to execute some code when they emit a new value. Publishers can be anything that emits values, such as user inputs, network updates, or even timer updates.\n\n## The Publisher/Subscriber Pattern\n\nCombine relies heavily on the Publisher/Subscriber pattern. Publishers are responsible for emitting values and subscribers are responsible for receiving and reacting to values emitted by the publishers. Publishers can emit multiple values over time and subscribers can receive one or more values.\n\n```swift\nlet myPublisher = Just(\"Hello, Combine!\")\n\nlet mySubscriber = Subscribers.Sink<String, Error>(\n  receiveCompletion: { completion in\n    print(\"Received completion: \\(completion)\")\n  },\n  receiveValue: { value in\n    print(\"Received value: \\(value)\")\n  }\n)\n\nmyPublisher.subscribe(mySubscriber)\n```\n\nIn this example, we created a publisher `myPublisher` that emits a single value \"Hello, Combine!\" and a subscriber `mySubscriber` that prints the received value to the console. We subscribed `mySubscriber` to `myPublisher` to receive the emitted value.\n\n## The Combine Operators\n\nCombine provides several operators to manipulate the flow of data emitted by the publishers and the values received by the subscribers. Here are some of the most commonly used operators:\n\n- `map`: Transforms the emitted value by a publisher to a new value.\n- `filter`: Filters the emitted value by a publisher based on some condition.\n- `flatMap`: Transforms the emitted value by a publisher to a new publisher.\n- `merge`: Merges multiple publishers into a single publisher.\n\n```swift\nlet myPublisher = PassthroughSubject<Int, Error>()\n\nlet mySubscription = myPublisher\n  .map { $0 * 2 }\n  .filter { $0 < 10 }\n  .sink(receiveCompletion: { completion in print(\"Completed with: \\(completion).\") },\n        receiveValue: { value in print(\"Received value: \\(value).\")})\n\nmyPublisher.send(1) // Received value: 2.\nmyPublisher.send(5) // Received value: 10.\nmyPublisher.send(6) // Completed with: finished.\n```\n\nIn this example, we created a publisher `myPublisher` that emits integer values, and a subscription `mySubscription` that listens for those integer values. We used the `map` operator to transform the values into multiples of 2 and the `filter` operator to only emit values less than 10. Finally, we defined a `sink` closure to receive and print the transformed values. \n\nWe then sent some values to `myPublisher` and observed the output in the console.\n\n## Completion and Errors\n\nIn Combine, publishers can emit two types of events: a completion event or a value event. A completion event can be either a successful completion or a failure with an associated error.\n\n```swift\nenum MyError: Error {\n  case notFound\n}\n\nlet myPublisher = PassthroughSubject<String, MyError>()\n\nlet mySubscriber = Subscribers.Sink<String, MyError>(\n  receiveCompletion: { completion in\n    switch completion {\n    case .finished:\n      print(\"Completed successfully.\")\n    case .failure(let error):\n      print(\"Error: \\(error).\")\n    }\n  },\n  receiveValue: { value in\n    print(\"Received value: \\(value).\")\n  }\n)\n\nmyPublisher.subscribe(mySubscriber)\n\nmyPublisher.send(\"Hello Combine!\") // Received value: Hello Combine!.\nmyPublisher.send(completion: .failure(.notFound)) // Error: notFound.\nmyPublisher.send(completion: .finished) // Completed successfully.\n```\n\nIn this example, we created a new publisher `myPublisher` that emits values of type `String`. We defined a subscription that listens for values and completion events and prints them to the console. We then subscribed our subscription to `myPublisher`, which sent a value, emitted an error, and finally completed successfully.\n\n## Asynchronous operations with URLSession\n\nCombine can be used to handle asynchronous network requests in Swift. `URLSession` is an asynchronous API that can be used to make network requests, and Combine can be used to handle the results of these requests.\n\n```swift\nimport Combine\n\nstruct User: Decodable {\n  let id: Int\n  let name: String\n  let username: String\n  let email: String\n  let phone: String\n}\n\nlet url = URL(string: \"https://jsonplaceholder.typicode.com/users/1\")!\n\nURLSession.shared.dataTaskPublisher(for: url)\n  .tryMap { data, _ -> Data in\n    return data\n  }\n  .decode(type: User.self, decoder: JSONDecoder())\n  .receive(on: DispatchQueue.main)\n  .sink(receiveCompletion: { print($0) },\n        receiveValue: { print($0) })\n  .store(in: &cancellables)\n```\n\nIn this example, we use `URLSession` to send an asynchronous network request to receive user information from a JSON API. We then use Combine operators to transform the data received from the API, decode it to a `User` struct, and receive the result on the main queue. The result is then printed to the console.\n\n## Asynchronous operations with Core Data\n\nCombine can also be used to handle asynchronous operations with Core Data, Apple's persistence framework for iOS and macOS app development.\n\n```swift\nimport Combine\nimport CoreData\n\nfinal class CoreDataService {\n  static let shared = CoreDataService()\n  \n  private init() {}\n  \n  lazy var persistentContainer: NSPersistentContainer = {\n    let container = NSPersistentContainer(name: \"MyApp\")\n    container.loadPersistentStores { _, error in\n      if let error = error {\n        fatalError(\"Failed to load persistent store: \\(error)\")\n      }\n    }\n    return container\n  }()\n  \n  func save() -> AnyPublisher<Void, Error> {\n    let context = persistentContainer.viewContext\n    \n    return context\n      .performPublisher { context in\n        do {\n          try context.save()\n        } catch {\n          throw error\n        }\n      }\n      .eraseToAnyPublisher()\n  }\n}\n```\n\nIn this example, we define a singleton `CoreDataService` that provides access to the Core Data persistence framework. We use Combine operators to send a asynchronous save operation to Core Data, and receive the result of the save operation using Combine's `AnyPublisher` type.\n\n## Concurrency\n\nConcurrency is a key component of asynchronous programming. In Swift, we can handle concurrency using `DispatchQueue` and Combine's `subscribe(on:)` and `receive(on:)` operators.\n\n```swift\nlet backgroundQueue = DispatchQueue(label: \"com.myapp.backgroundQueue\", qos: .background)\n\nlet mySubscription = myPublisher\n  .subscribe(on: backgroundQueue)\n  .filter { $0 > 10 }\n  .map { $0 * 2 }\n  .receive(on: DispatchQueue.main)\n  .sink(receiveCompletion: { print($0) },\n        receiveValue: { print($0) })\n```\n\nIn this example, we define a background queue using `DispatchQueue` and subscribe to our `myPublisher` publisher on it. We then use the `filter` and `map` operators to manipulate the values emitted by the publisher. Finally, we use the `receive(on:)` operator to receive the manipulated values on the main queue, which is the UI thread.\n\n## Conclusion\n\nIn this guide, we learned how to use Combine, Apple's framework for asynchronous programming in Swift. We covered the basics of the Publisher/Subscriber pattern, Combine operators for manipulating data streams and handling errors, and applying concurrency to asynchronous operations. We also covered executing asynchronous operations with network requests using URLSession and persisted data storage with Core Data. Now that you have learned about Combine, experiment with using it in your next iOS or macOS project.\n\nTags: Swift, Combine, Asynchronous Programming"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
