@@ -232,7 +232,18 @@
         "distributed systems"
       ],
       "createdAt": "2023-05-25T05:42:09.152Z"
+    },
+    {
+      "title": "Writing High-Performance Networked Applications in Elixir with Erlang Term Storage",
+      "tags": [
+        "elixir",
+        "erlang term storage",
+        "realtime systems",
+        "distributed systems",
+        "networking"
+      ],
+      "createdAt": "2023-05-25T06:01:58.016Z"
     }
   ],
-  "updatedAt": "2023-05-25T05:42:09.152Z"
+  "updatedAt": "2023-05-25T06:01:58.016Z"
 }
