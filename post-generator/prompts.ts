@@ -58,6 +58,10 @@ export const getChatPrompt = (
   },
   {
     role: "user",
+    content: "Do not include images in the post.",
+  },
+  {
+    role: "user",
     content:
       "Ensure the post is many sections in length and comes to an complete finish without leaving out any section.",
   },
