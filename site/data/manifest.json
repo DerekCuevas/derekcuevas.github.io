@@ -251,7 +251,16 @@
         "distributed systems"
       ],
       "createdAt": "2023-05-25T12:02:49.867Z"
+    },
+    {
+      "title": "Secret Management in Multi-Cloud Kubernetes Environments: A Comprehensive Guide",
+      "tags": [
+        "kubernetes",
+        "security",
+        "cloud"
+      ],
+      "createdAt": "2023-05-25T18:02:24.237Z"
     }
   ],
-  "updatedAt": "2023-05-25T12:02:49.867Z"
+  "updatedAt": "2023-05-25T18:02:24.237Z"
 }
