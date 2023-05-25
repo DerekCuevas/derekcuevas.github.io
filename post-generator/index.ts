@@ -24,7 +24,7 @@ export class PostGenerator {
   }
 
   parseCompletion(text: string): Post {
-    const [first, ...body] = text.split("\n");
+    const [first, second, ...rest] = text.split("\n");
 
     const title = first
       .replace("Title: ", "")
@@ -32,17 +32,20 @@ export class PostGenerator {
       .replaceAll('"', "")
       .trim();
 
-    const [tagsString] = body.splice(body.length - 1);
-    const matchResult = tagsString
+    const slug = title.replaceAll(" ", "-").replaceAll("/", "-").toLowerCase();
+
+    const tags = second
       .toLowerCase()
-      .replaceAll(".", "")
-      .match(/tags: (.+)/);
-    const tags = matchResult ? matchResult[1].split(", ") : [];
+      .replace("tags: ", "")
+      .split(",")
+      .map((t) => t.trim());
+
+    const body = rest.join("\n");
 
     return {
       title,
-      slug: title.replaceAll(" ", "-").replaceAll("/", "-").toLowerCase(),
-      body: body.join("\n"),
+      slug,
+      body,
       tags,
       createdAt: new Date(),
     };

@@ -15,7 +15,7 @@ export const getChatPrompt = (
   },
   {
     role: "system",
-    content: `Base topics for the blog post off of the technical skills, experience, and interests presented in the resume.`,
+    content: `New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume.`,
   },
   {
     role: "system",
@@ -30,14 +30,18 @@ export const getChatPrompt = (
       "Your writing style is concise, informative, and focused on detailed technical information.",
   },
   {
-    role: "system",
+    role: "user",
     content:
-      "Use computer code snippets to illustrate the information presented.",
+      "Come up with an advanced topic for an expert level reader. Ensure that the topic is not related to a previous post. Write a post about the topic following the rules defined.",
   },
   {
     role: "user",
     content:
-      "Come up with an interesting topic for an advanced level reader that is not related to a previous post and output a post following the rules defined.",
+      "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented.",
+  },
+  {
+    role: "user",
+    content: "Explain information and details in the post step by step.",
   },
   {
     role: "user",
@@ -45,16 +49,16 @@ export const getChatPrompt = (
   },
   {
     role: "user",
-    content: "Include the title of the post on the first line in plain text.",
+    content: "Include the title of the post on the first line.",
   },
   {
     role: "user",
     content:
-      "Include a list of 1 to 3 tags on the last line of the post formatted in plain text as a comma separated list, like:\nTags: <tag1>, <tag2>",
+      "Include one to three tags for the post on the second line formatted as a comma separated list.",
   },
   {
     role: "user",
     content:
-      "The post should have multiple sections and should be long in length.",
+      "Ensure the post is many sections in length and comes to an complete finish without leaving out any section.",
   },
 ];
