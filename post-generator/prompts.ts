@@ -63,6 +63,6 @@ export const getChatPrompt = (
   {
     role: "user",
     content:
-      "Ensure the post is many sections in length and comes to an complete finish without leaving out any section.",
+      "The post should be multiple sections in length and come to a complete finish.",
   },
 ];
