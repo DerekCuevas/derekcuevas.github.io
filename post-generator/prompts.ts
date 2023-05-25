@@ -54,7 +54,7 @@ export const getChatPrompt = (
   {
     role: "user",
     content:
-      "Include one to three tags for the post on the second line formatted as a comma separated list.",
+      'Include one to three tags for the post on the second line formatted as a comma separated list, for example: "Tags: <tag1>, <tag2>".',
   },
   {
     role: "user",
