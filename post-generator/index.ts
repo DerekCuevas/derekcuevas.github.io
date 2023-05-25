@@ -24,21 +24,32 @@ export class PostGenerator {
   }
 
   parseCompletion(text: string): Post {
-    const [first, second, ...rest] = text.split("\n");
+    let [first, ...rest] = text.split("\n");
+
+    rest = rest.filter((s) => s !== "---");
+
+    const tagsLineIndex = rest.findIndex((s) =>
+      s.toLowerCase().includes("tags:")
+    );
+
+    let tags: string[] = [];
+    if (tagsLineIndex !== -1) {
+      tags = rest
+        .splice(tagsLineIndex, 1)[0]
+        .toLowerCase()
+        .replace("tags: ", "")
+        .split(",")
+        .map((t) => t.trim());
+    }
 
     const title = first
       .replace("Title: ", "")
       .replaceAll("#", "")
+      .replaceAll("*", "")
       .replaceAll('"', "")
       .trim();
 
     const slug = title.replaceAll(" ", "-").replaceAll("/", "-").toLowerCase();
-
-    const tags = second
-      .toLowerCase()
-      .replace("tags: ", "")
-      .split(",")
-      .map((t) => t.trim());
 
     const body = rest.join("\n");
 
