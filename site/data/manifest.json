@@ -260,7 +260,16 @@
         "cloud"
       ],
       "createdAt": "2023-05-25T18:02:24.237Z"
+    },
+    {
+      "title": "Building High-Performance IoT Applications with Rust",
+      "tags": [
+        "rust",
+        "iot",
+        "embedded systems"
+      ],
+      "createdAt": "2023-05-26T00:05:29.840Z"
     }
   ],
-  "updatedAt": "2023-05-25T18:02:24.237Z"
+  "updatedAt": "2023-05-26T00:05:29.840Z"
 }
