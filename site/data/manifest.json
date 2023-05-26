@@ -269,7 +269,16 @@
         "embedded systems"
       ],
       "createdAt": "2023-05-26T00:05:29.840Z"
+    },
+    {
+      "title": "Advanced TypeScript types: Generics with constraints",
+      "tags": [
+        "typescript",
+        "generics",
+        "type constraints"
+      ],
+      "createdAt": "2023-05-26T06:02:17.871Z"
     }
   ],
-  "updatedAt": "2023-05-26T00:05:29.840Z"
+  "updatedAt": "2023-05-26T06:02:17.871Z"
 }
