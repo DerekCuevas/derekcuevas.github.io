@@ -16,7 +16,7 @@ const Manifest = z.object({
 
 type Manifest = z.infer<typeof Manifest>;
 
-export class BlogManager {
+export class SiteManager {
   postsDirectory: string;
   manifestFile: string;
 
