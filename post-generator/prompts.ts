@@ -1,5 +1,7 @@
 import { Message } from "./openai.ts";
 
+const PREVIOUS_POST_COUNT = 20;
+
 export const getChatPrompt = (
   resume: string,
   previousPosts: string[]
@@ -19,8 +21,9 @@ export const getChatPrompt = (
   },
   {
     role: "system",
-    content: `Your previous 20 posts include: ${previousPosts
-      .slice(0, 20)
+    content: `Your previous ${PREVIOUS_POST_COUNT} posts include: ${previousPosts
+      .slice(-PREVIOUS_POST_COUNT)
+      .reverse()
       .map((title) => `\"${title}\"`)
       .join(", ")}`,
   },
