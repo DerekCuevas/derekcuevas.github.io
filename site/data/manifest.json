@@ -309,7 +309,16 @@
         "scalability"
       ],
       "createdAt": "2023-05-27T00:05:26.375Z"
+    },
+    {
+      "title": "Writing Efficient and Safe Elixir Code: A Beginner's Guide to OTP Behaviours",
+      "tags": [
+        "elixir",
+        "otp",
+        "behaviours"
+      ],
+      "createdAt": "2023-05-27T02:26:56.370Z"
     }
   ],
-  "updatedAt": "2023-05-27T00:05:26.375Z"
+  "updatedAt": "2023-05-27T02:26:56.370Z"
 }
