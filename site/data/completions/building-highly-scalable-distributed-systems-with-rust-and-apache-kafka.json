@@ -1,0 +1,77 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Build a Real-time Chat Application: A Comprehensive Tutorial with Node.js, WebSocket, and Redis\", \"How to Use Redis for Fast and Scalable Caching in Node.js\", \"RESTful API Design Best Practices: A Comprehensive Guide to Creating Robust and Scalable APIs\", \"A Beginner's Guide to Functional Programming in JavaScript\", \"A Deep Dive into Rust's Unsafe Operations\", \"Building High-Performance Parallel Applications with Rust's Rayon Library\", \"Exploring React Native Animations: An Advanced Guide\", \"How to Optimize React Native Performance\", \"Building Realtime Web Apps with Clojure and WebSockets\", \"How to Use Clojure to Build a High-Performance, Distributed System\", \"Building a High-Performance Streaming System with Rust\", \"A Comprehensive Guide to Building High-Performance, Distributed Systems with Elixir\", \"Building a High-Performance Real-Time Analytics Dashboard with Rust and PostgreSQL\", \"Writing Rust Macros: A Comprehensive Guide\", \"Efficient Pattern Matching with Rust\", \"Securely Storing Secrets in Rust\", \"How to Write High Performance Elm Code with the Help of Web Workers\", \"The Ultimate Guide to Building and Optimizing GraphQL APIs with Node.js\", \"Building High-Performance Reactive Applications with Rust and Tokio\", \"Mastering GraphQL's Execution Phase with Node.js, TypeScript, and TypeGraphQL\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader. Ensure that the topic is not related to a previous post. Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Explain information and details in the post step by step."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7Kmuw55zGwqFXi4AYtoXs4oMQQyOd",
+  "object": "chat.completion",
+  "created": 1685188954,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 810,
+   "completion_tokens": 1029,
+   "total_tokens": 1839
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Building Highly Scalable Distributed Systems with Rust and Apache Kafka\n\nTags: Rust, Kafka, Distributed Systems\n\nBuilding distributed systems that can handle massive workloads and data loads requires the proper tools and technologies. Apache Kafka is one of the most popular distributed streaming platforms for handling these requirements, with the ability to scale horizontally and process millions of events per second. In this post, we will explore how to build highly scalable distributed systems using Rust and Apache Kafka.\n\n## Introduction\n\nRust is a highly performant and memory-safe language that is great for building systems-level programs. Rust has become increasingly popular for building high-concurrency and low-latency network applications. Apache Kafka is a popular distributed streaming platform that is built for scalability, fault-tolerance, and high-throughput data processing. Together, Rust and Kafka provide a powerful combination for building massively-scalable distributed systems.\n\n## Prerequisites\n\nBefore proceeding with this tutorial, you should have:\n\n- A working knowledge of Rust programming language.\n- A basic understanding of Apache Kafka.\n\n## Setting Up a Rust Project with Kafka\n\nThe first step to building a Kafka producer in Rust is to add the `rdrkafka` and `serde` crates to your project's `Cargo.toml` file:\n\n```toml\n[dependencies]\nrdkafka = \"0.21.0\"\nserde = { version = \"1.0\", features = [\"derive\"] }\nserde_json = \"1.0.64\"\n```\n\nThe `rdkafka` crate provides Rust bindings for the Kafka client library, and the `serde` and `serde_json` crates will be used to serialize and deserialize data that we send through Kafka.\n\n## Creating a Kafka Producer\n\nNext, we'll create a new Rust module for our Kafka producer:\n\n```rust\nuse rdkafka::config::ClientConfig;\nuse rdkafka::producer::{FutureProducer, FutureRecord};\nuse serde::{Serialize, Deserialize};\n\n#[derive(Serialize, Deserialize)]\nstruct Message {\n    topic: String,\n    value: String,\n}\n\npub async fn produce(message: Message) {\n    let broker = \"localhost:9092\";\n    let producer: &FutureProducer = &ClientConfig::new()\n        .set(\"bootstrap.servers\", broker)\n        .set(\"max.in.flight\", \"1\")\n        .create().unwrap();\n\n    let record = FutureRecord::to(&message.topic)\n        .key(\"\")\n        .payload(&message.value);\n\n    match producer.send(record, 10000).await {\n        Ok(_) => println!(\"message sent\"),\n        Err(e) => println!(\"error sending message: {:?}\", e)\n    };\n}\n```\n\nIn this code, we're defining a `Message` struct that encapsulates a Kafka topic and message payload. We're also creating an `async` function called `produce` that takes in a `Message` as an argument. Inside this function, we create a new Kafka producer and then use it to send the provided message to Kafka.\n\n## Creating a Kafka Consumer\n\nNext, we'll create a Rust module for our Kafka consumer:\n\n```rust\nuse itertools::Itertools;\nuse rdkafka::config::ClientConfig;\nuse rdkafka::consumer::{Consumer, StreamConsumer, ConsumerConfig};\nuse rdkafka::message::Message as KafkaMessage;\nuse tokio::stream::StreamExt;\n\npub fn consume(topic: &str) {\n    let broker = \"localhost:9092\";\n    let consumer: StreamConsumer =\n        ClientConfig::new()\n            .set(\"bootstrap.servers\", broker)\n            .set(\"group.id\", \"example-group\")\n            .set(\"session.timeout.ms\", \"6000\")\n            .set(\"enable.auto.commit\", \"false\")\n            .create()\n            .unwrap();\n\n    consumer.subscribe(&[topic]).unwrap();\n\n    let stream = consumer.stream();\n\n    let future = stream.for_each(|result| {\n        match result {\n            Ok(kafka_message) => {\n                println!(\n                    \"received message: {:?}\",\n                    kafka_message.payload().iter().map(|&x| x as char).collect::<String>()\n                )\n            },\n            Err(e) => println!(\"error receiving message: {:?}\", e),\n        }\n        Ok(())\n    });\n\n    tokio::runtime::Runtime::new()\n        .unwrap()\n        .block_on(future)\n        .unwrap();\n}\n```\n\nIn this code, we're defining a `consume` function that takes in a Kafka topic as an argument. We're creating a Kafka consumer and subscribing it to the provided topic. We're then using Tokio to create a stream of Kafka messages that we will consume. For each message, we're deserializing the payload and printing it to the console.\n\n## Conclusion\n\nIn this post, we explored how to build highly scalable distributed systems with Rust and Apache Kafka. We went through the steps to create a producer and consumer for Kafka messages in Rust, allowing us to connect Rust applications to a Kafka cluster. Building distributed systems with Rust and Kafka can lead to highly performant and fault-tolerant architectures that are capable of processing massive workloads."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
