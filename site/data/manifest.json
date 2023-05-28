@@ -347,7 +347,15 @@
         "optimization"
       ],
       "createdAt": "2023-05-27T18:02:13.498Z"
+    },
+    {
+      "title": "How to Build a Type-Safe GraphQL Server in Rust",
+      "tags": [
+        "rust",
+        "graphql"
+      ],
+      "createdAt": "2023-05-28T00:05:38.143Z"
     }
   ],
-  "updatedAt": "2023-05-27T18:02:13.498Z"
+  "updatedAt": "2023-05-28T00:05:38.143Z"
 }
