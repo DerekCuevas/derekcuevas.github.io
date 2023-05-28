@@ -364,7 +364,16 @@
         "video streaming"
       ],
       "createdAt": "2023-05-28T06:02:47.817Z"
+    },
+    {
+      "title": "Mastering the Art of Asynchronous Programming with Rust Futures",
+      "tags": [
+        "rust",
+        "futures",
+        "asynchronous programming"
+      ],
+      "createdAt": "2023-05-28T12:03:02.902Z"
     }
   ],
-  "updatedAt": "2023-05-28T06:02:47.817Z"
+  "updatedAt": "2023-05-28T12:03:02.902Z"
 }

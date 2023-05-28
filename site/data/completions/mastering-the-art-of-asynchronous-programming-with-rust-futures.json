@@ -1,0 +1,77 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Building a High-Performance and Cost-Effective Video Streaming Platform with Rust and AWS Elemental MediaStore\", \"How to Build a Type-Safe GraphQL Server in Rust\", \"Building High-Performance Web Applications with Rust and WebAssembly\", \"Building Highly Scalable Distributed Systems with Rust and Apache Kafka\", \"Building High-Performance, Real-time Video Streaming Systems with Rust, Tokio, and WebSockets\", \"Writing Efficient and Safe Elixir Code: A Beginner's Guide to OTP Behaviours\", \"Building a Fast and Scalable HTTP Server with Rust's Actix-Web Library\", \"Building Real-Time, High-Performance Applications with Rust and WebSockets\", \"How to Build a Distributed System with Rust and Apache Pulsar\", \"Advanced TypeScript types: Generics with constraints\", \"Building High-Performance IoT Applications with Rust\", \"Secret Management in Multi-Cloud Kubernetes Environments: A Comprehensive Guide\", \"Building a Fault-Tolerant Distributed System with Rust\", \"Writing High-Performance Networked Applications in Elixir with Erlang Term Storage\", \"Building a High-Performance Real-time Video Streaming System with Rust and WebRTC\", \"Deep Dive into Rust's Ownership and Borrowing System\", \"Mastering the Art of Reactive Programming with Elm and RxJS\", \"Exploring Performance Optimization Techniques for Rust Applications\", \"Building a High-Performance, Real-time Stock Trading System with Rust, Actix, and Redis\", \"Building Reliable Distributed Systems with Rust and Raft Consensus Protocol\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader. Ensure that the topic is not related to a previous post. Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Explain information and details in the post step by step."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7L9NpYBDbp5AdRdP3ReFMZuWwreHj",
+  "object": "chat.completion",
+  "created": 1685275313,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 839,
+   "completion_tokens": 1273,
+   "total_tokens": 2112
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Mastering the Art of Asynchronous Programming with Rust Futures\n\nTags: Rust, Futures, Asynchronous Programming\n\nAsynchronous programming is an essential skill for Rust developers. It allows us to write efficient code that can handle I/O-bound tasks efficiently. Rust's `std` library provides the `Future` trait, which makes it easy to write asynchronous code in a structured way. But, mastering asynchronous programming can be challenging, especially when dealing with multiple futures and complex computations. In this post, we'll dive deep into Rust Futures and explore some advanced techniques for writing asynchronous code.\n\n## Overview\n\nBefore we dive into the details, let's first take a quick overview of the Rust Futures API. A `Future` is a trait that represents a computation that will eventually produce a value. Futures allow us to write asynchronous code using a familiar imperative style, while the Rust runtime manages the scheduling of tasks. Futures are composable, meaning that we can build more complex futures by chaining primitive futures together.\n\nFutures provide two key methods, `poll` and `map`. The `poll` method is where the future's computation takes place. It returns a `Poll` value, which represents the current state of the future. The `map` method allows us to transform the value produced by a future into a different type.\n\nRust also provides a number of combinators for working with futures, such as `and_then`, `join`, and `select`. These combinators allow us to create new futures from existing ones, and to execute multiple futures concurrently.\n\n## Chaining Futures with and_then\n\nOne of the key strengths of Rust Futures is the ability to chain futures together using the `and_then` combinator. This allows us to create complex asynchronous workflows by chaining multiple computations together. Let's take a look at an example:\n\n```rust\nuse futures::future::Future;\n\nfn download_and_process(url: &str) -> impl Future<Item = String, Error = String> {\n    download(url).and_then(|data| {\n        process_data(data).and_then(|result| {\n            save_result(result).and_then(|_| {\n                Ok(result)\n            })\n        })\n    })\n}\n```\n\nIn this example, we define a function called `download_and_process` that takes a URL as an argument. It then creates a future to download the data from that URL, and calls the `and_then` combinator to chain a series of computation futures together.\n\nEach time we call `and_then`, we are creating a new future that performs some computation and returns a value. The final result is a future that produces a string value, which is the result of the `process_data` computation.\n\n## Running Multiple Futures Concurrently with join\n\nSometimes, we need to run multiple futures concurrently and combine their results into a single future. Rust provides the `join` combinator for this purpose. The `join` combinator takes two futures as arguments, and returns a new future that waits for both of them to complete. Let's look at an example:\n\n```rust\nuse futures::future::{Future, join};\n\nfn execute_multiple_operations() -> impl Future<Item = (String, String), Error = String> {\n    let download1 = download(\"https://example.com/data1\");\n    let download2 = download(\"https://example.com/data2\");\n\n    join(download1, download2).and_then(|(data1, data2)| {\n        let result1 = process_data(data1);\n        let result2 = process_data(data2);\n\n        join(result1, result2).and_then(|(result1, result2)| {\n            save_result(result1).and_then(|_| {\n                save_result(result2).and_then(|_| {\n                    Ok((result1, result2))\n                })\n            })\n        })\n    })\n}\n```\n\nIn this example, we define a function called `execute_multiple_operations` that creates two futures to download data from two different URLs. We then use the `join` combinator to create a new future that waits for both download futures to complete. Once both downloads are complete, we chain the result futures together and create a single future that returns the combined results.\n\n## Creating Custom Futures with FutureFrom\n\nSometimes, we might want to create our own custom futures that don't fit into the standard Rust Futures API. Rust provides the `FutureFrom` trait for this purpose. The `FutureFrom` trait allows us to define a custom future that can be used with the rest of the Rust Futures API.\n\nHere's an example of creating a custom future:\n\n```rust\nuse futures::{Future, Poll, future::{ok, FutureFrom}};\n\nstruct MyCustomFuture {\n    counter: i32,\n}\n\nimpl FutureFrom<(), String> for MyCustomFuture {\n    fn future_from(_: ()) -> Self {\n        MyCustomFuture {\n            counter: 0,\n        }\n    }\n}\n\nimpl Future for MyCustomFuture {\n    type Item = i32;\n    type Error = String;\n\n    fn poll(&mut self) -> Poll<Self::Item, Self::Error> {\n        if self.counter < 10 {\n            self.counter += 1;\n            Ok(Poll::Pending)\n        } else {\n            Ok(Poll::Ready(self.counter))\n        }\n    }\n}\n```\n\nIn this example, we define a custom future called `MyCustomFuture`. This future counts from 0 to 9, and then produces the final result. We implement the `Future` trait for this struct, defining the `Item` and `Error` types, and the `poll` method.\n\nWe also implement the `FutureFrom` trait, which allows us to create an instance of our custom future using the `future_from` method. In this case, our custom future takes no arguments, so we simply return a new `MyCustomFuture` instance.\n\n## Conclusion\n\nAsynchronous programming with Rust Futures is a powerful tool for building efficient, concurrent applications. By mastering the techniques presented in this post, you'll be able to write complex asynchronous workflows with ease. If you're new to Rust Futures, start with the basics and work your way up to these more advanced techniques. With practice, you'll soon be able to write high-quality asynchronous programs that take full advantage of Rust's powerful concurrency model."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
