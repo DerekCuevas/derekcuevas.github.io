@@ -330,7 +330,16 @@
         "scenic"
       ],
       "createdAt": "2023-05-29T06:02:28.506Z"
+    },
+    {
+      "title": "Advanced Swift: Using Protocol Composition to Achieve Type-Safe, Modular Code",
+      "tags": [
+        "swift",
+        "protocol composition",
+        "modularity"
+      ],
+      "createdAt": "2023-05-29T12:02:31.274Z"
     }
   ],
-  "updatedAt": "2023-05-29T06:02:28.506Z"
+  "updatedAt": "2023-05-29T12:02:31.274Z"
 }

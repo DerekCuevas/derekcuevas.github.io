@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Advanced Elixir: Scenic, a Great UI Library\", \"Building Robust Applications with Function Composition in Clojure\", \"Weird Rust Features\", \"Understanding Closure in JavaScript\", \"Advanced TypeScript types: Conditional Types\", \"To Mutable or Immutable: Exploring Rust's Memory Ownership Model\", \"The Power of Functional Programming in Swift\", \"Understanding the Difference Between Structs and Enums in Rust\", \"Building Ultra-Fast Web Applications with Rust's Actix-Web Library\", \"Mastering the Art of Asynchronous Programming with Rust Futures\", \"Building a High-Performance and Cost-Effective Video Streaming Platform with Rust and AWS Elemental MediaStore\", \"How to Build a Type-Safe GraphQL Server in Rust\", \"Building High-Performance Web Applications with Rust and WebAssembly\", \"Building Highly Scalable Distributed Systems with Rust and Apache Kafka\", \"Building High-Performance, Real-time Video Streaming Systems with Rust, Tokio, and WebSockets\", \"Writing Efficient and Safe Elixir Code: A Beginner's Guide to OTP Behaviours\", \"Building a Fast and Scalable HTTP Server with Rust's Actix-Web Library\", \"Building Real-Time, High-Performance Applications with Rust and WebSockets\", \"How to Build a Distributed System with Rust and Apache Pulsar\", \"Advanced TypeScript types: Generics with constraints\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7LVrM0MPG6Ju3AMhtDcwf8xDl1sn2",
+  "object": "chat.completion",
+  "created": 1685361712,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 830,
+   "completion_tokens": 909,
+   "total_tokens": 1739
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Advanced Swift: Using Protocol Composition to Achieve Type-Safe, Modular Code\n\nTags: Swift, Protocol Composition, Modularity\n\nSwift is a great language for building large-scale, modular applications. One of the key mechanisms that enables this modularity is protocol composition. By combining multiple protocols, you can create a new protocol that encapsulates the behavior of all its components. In this post, we will explore how you can use protocol composition in Swift to achieve type-safe, modular code.\n\n## What is Protocol Composition?\n\nProtocol composition is the act of forming a new protocol by combining two or more existing protocols. The resulting protocol defines a set of requirements that are satisfied by types that conform to all the underlying protocols. For example, consider the following two protocols:\n\n```swift\nprotocol Renderable {\n    func render()\n}\n\nprotocol Animatable {\n    func animate()\n}\n```\n\nWe can compose these two protocols into a new protocol, `RenderAndAnimate`:\n\n```swift\nprotocol RenderAndAnimate: Renderable, Animatable {}\n```\n\nAny type that conforms to `RenderAndAnimate` must now implement both `render()` and `animate()`. By using protocol composition, we have created a new, more specific protocol that can be used to define more complex behavior.\n\n## Using Protocol Composition for Modularity\n\nProtocol composition is especially useful for creating modular, reusable code. You can create a single protocol that combines all the requirements of a module of functionality, and then define concrete types that conform to that protocol.\n\nFor example, imagine you are building an app that uses a shared set of networking functionality. You could define a protocol, `NetworkingClient`, that combines all the functionality required to make a network request:\n\n```swift\nprotocol NetworkingClient {\n    func makeRequest(_ request: URLRequest, completion: @escaping (Result<Data, Error>) -> Void)\n    func cancelRequest(_ request: URLRequest)\n}\n```\n\nThen, you could define a concrete implementation of this protocol, `URLSessionClient`, that uses `URLSession` to make network requests:\n\n```swift\nclass URLSessionClient: NetworkingClient {\n    private let session: URLSession\n    // Initializer, etc…\n\n    func makeRequest(_ request: URLRequest, completion: @escaping (Result<Data, Error>) -> Void) {\n        let task = session.dataTask(with: request) { data, response, error in\n            // Handle response, error, etc…\n            completion(result)\n        }\n        task.resume()\n    }\n\n    func cancelRequest(_ request: URLRequest) {\n        // Cancel request\n    }\n}\n```\n\nNow, any component that needs to make a network request can depend on `NetworkingClient` instead of `URLSessionClient`. This makes it easy to switch out the implementation of `NetworkingClient` if necessary, without affecting any dependent components. In other words, the modularity of your code has been improved.\n\n## Type-Safe Abstractions with Protocol Composition\n\nAnother benefit of protocol composition is the ability to create type-safe abstractions. By combining protocols, you can create a new type that encapsulates a specific set of behavior, and ensure that types conforming to the new protocol also conform to the underlying protocols.\n\nFor example, imagine you have several types that can be converted to and from `Data`, but do not have a shared parent type. You could define a protocol, `DataConvertible`, that requires types to implement both `init(data: Data)` and `func toData() -> Data`:\n\n```swift\nprotocol DataConvertible {\n    init(data: Data)\n    func toData() -> Data\n}\n```\n\nThen, you can create a new protocol that combines `DataConvertible` with `Codable`:\n\n```swift\nprotocol CodableAndDataConvertible: DataConvertible, Codable {}\n```\n\nNow, any type that conforms to `CodableAndDataConvertible` must implement both `init(data: Data)` and `func toData() -> Data`, as well as the encoding and decoding methods required by `Codable`. This ensures that you can safely pass any `CodableAndDataConvertible` type to a function that expects a `DataConvertible` type, without having to worry about implementation details.\n\n## Conclusion\n\nProtocol composition is a powerful feature in Swift that enables modularity and type safety. By composing multiple protocols, you can create new, more specific protocols that encapsulate behavior and ensure type safety. This makes it easier to build large-scale, modular applications in Swift, while also making your code more reusable and maintainable."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
