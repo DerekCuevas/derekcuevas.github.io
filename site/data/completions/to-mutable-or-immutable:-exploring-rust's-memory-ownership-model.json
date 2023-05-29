@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"The Power of Functional Programming in Swift\", \"Understanding the Difference Between Structs and Enums in Rust\", \"Building Ultra-Fast Web Applications with Rust's Actix-Web Library\", \"Mastering the Art of Asynchronous Programming with Rust Futures\", \"Building a High-Performance and Cost-Effective Video Streaming Platform with Rust and AWS Elemental MediaStore\", \"How to Build a Type-Safe GraphQL Server in Rust\", \"Building High-Performance Web Applications with Rust and WebAssembly\", \"Building Highly Scalable Distributed Systems with Rust and Apache Kafka\", \"Building High-Performance, Real-time Video Streaming Systems with Rust, Tokio, and WebSockets\", \"Writing Efficient and Safe Elixir Code: A Beginner's Guide to OTP Behaviours\", \"Building a Fast and Scalable HTTP Server with Rust's Actix-Web Library\", \"Building Real-Time, High-Performance Applications with Rust and WebSockets\", \"How to Build a Distributed System with Rust and Apache Pulsar\", \"Advanced TypeScript types: Generics with constraints\", \"Building High-Performance IoT Applications with Rust\", \"Secret Management in Multi-Cloud Kubernetes Environments: A Comprehensive Guide\", \"Building a Fault-Tolerant Distributed System with Rust\", \"Writing High-Performance Networked Applications in Elixir with Erlang Term Storage\", \"Deep Dive into Rust's Ownership and Borrowing System\", \"Exploring Performance Optimization Techniques for Rust Applications\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7LMsbFNh4haEGxjNVTaasVrpcboCl",
+  "object": "chat.completion",
+  "created": 1685327193,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 840,
+   "completion_tokens": 890,
+   "total_tokens": 1730
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "## To Mutable or Immutable: Exploring Rust's Memory Ownership Model\n\nTags: Rust, Memory Management, Ownership\n\nRust is known for its sophisticated memory management model that simplifies the concept of managing memory usage and eliminates common memory-related bugs such as null reference and dangling pointers. Rust ensures memory safety by enforcing ownership rules with a borrow checker.\n\nOne fundamental decision that Rust developers need to make is to choose between mutable or immutable memory allocation. It is common knowledge that immutability provides safer and faster code at the cost of less flexibility, while mutating memory can be more flexible at the cost of safety. In this post, we will explore the memory ownership model in Rust and how choosing to use mutable or immutable memory allocation can affect your code.\n\n### What is Mutability in Rust?\n\nRust has a clear distinction between mutable and immutable variables, and this extends to the variables’ memory ownership in Rust.\n \nIn Rust, every value has its own owner, and memory ownership can be transferred, that is, moved. When a value is created, it is owned by a specific variable and belongs to that variable until it goes out of scope. When the variable goes out of scope, the value is automatically deallocated. In Rust, memory ownership is unique, and there can only ever be one owner of a value at a time.\n\n\nWhen a variable is mutable, that means that the memory associated with that variable can be changed after it has been initialized. Mutable variables are declared using the keyword `mut`, and their name can start with an underscore.\n\nHere's an example:\n```rust\nlet mut x = 42; // This is a mutable variable\nx = x + 1; // Now x is equal to 43\n```\n\nIn contrast, immutable variables cannot be changed after they are initialized. Immutable variables are declared in the usual way, without the `mut` keyword.\n\nHere's an example:\n```rust\nlet x = 42; // This is an immutable variable\nx = x + 1; // Error! Cannot modify an immutable variable\n```\n\n### Advantages of Immutable Variables\n\nImmutable variables have certain advantages over mutable variables. Being immutable guarantees that its contents cannot be modified, which makes it harder for other programmers to introduce bugs into the code by modifying the variable's value. It also makes it easier for the compiler to optimize code that uses them.\n\nFor example, in a multithreaded program where multiple threads access the same variable, making the variable immutable ensures that the variable is thread-safe and cannot be concurrently modified by different threads.\n\nHere's an example where we use an immutable variable to declare the value of π as a f64:\n\n```rust\nconst PI: f64 = 3.14159265358979323846264338327950288;\n```\n\n### Advantages of Mutable Variables\n\nMutable variables allow you to change their value, making programming more flexible. This added flexibility can come at a cost, though. It can be hard to reason about the flow of data in a program that uses mutable variables.\n\nMutability is best used in scenarios where it's necessary, like when updating a cache variable or when iterating through a collection of items, and some of them need to be modified.\n\nHere's an example that uses mutable variables to populate a vector, search it, and modify one of its values with a loop:\n\n```rust\nlet mut vec = vec![1, 2, 3, 4, 5];\n\nfor i in &vec {\n    println!(\"{}\", i);\n}\n\nlet mut found = false;\n\nfor i in &mut vec {\n    if !found && *i == 3 {\n        *i = 42;\n        found = true;\n    }\n}\n\nfor i in &vec {\n    println!(\"{}\", i);\n}\n```\n\n### Which is Better?\n\nIn Rust, choosing between mutable and immutable variables comes down to the specific use case. In general, you should prefer immutability and only use mutability where necessary. Doing so allows for safer, more performant code.\n\nRust's borrow checker can help you identify when to use mutability. For example, if you try to modify an immutable variable, the borrow checker will throw an error. The same checker will catch potential issues with mutable references as well.\n\nBy choosing between these two options, you can ensure your code is more readable, easier to maintain, and less prone to errors."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

@@ -30,21 +30,25 @@ export const getChatPrompt = (
   {
     role: "system",
     content:
-      "Your writing style is concise, informative, and focused on detailed technical information.",
+      "Your writing style is concise, to the point, informative, and focused on detailed technical information.",
   },
   {
     role: "user",
     content:
-      "Come up with an advanced topic for an expert level reader. Ensure that the topic is not related to a previous post. Write a post about the topic following the rules defined.",
+      "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice.",
+  },
+  {
+    role: "user",
+    content: "The topic should not be related to a previous post.",
+  },
+  {
+    role: "user",
+    content: "Write a post about the topic following the rules defined.",
   },
   {
     role: "user",
     content:
       "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented.",
-  },
-  {
-    role: "user",
-    content: "Explain information and details in the post step by step.",
   },
   {
     role: "user",

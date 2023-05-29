@@ -261,14 +261,67 @@
       "createdAt": "2023-05-28T18:02:26.938Z"
     },
     {
-      "title": "Building a High-Performance Elixir Web Application with Phoenix and Ecto",
+      "title": "Understanding the Difference Between Structs and Enums in Rust",
       "tags": [
-        "elixir",
-        "phoenix",
-        "ecto"
+        "rust",
+        "structs",
+        "enums"
       ],
-      "createdAt": "2023-05-29T00:05:30.606Z"
+      "createdAt": "2023-05-29T02:17:21.437Z"
+    },
+    {
+      "title": "The Power of Functional Programming in Swift",
+      "tags": [
+        "swift",
+        "functional programming",
+        "higher-order functions"
+      ],
+      "createdAt": "2023-05-29T02:18:27.671Z"
+    },
+    {
+      "title": "To Mutable or Immutable: Exploring Rust's Memory Ownership Model",
+      "tags": [
+        "rust",
+        "memory management",
+        "ownership"
+      ],
+      "createdAt": "2023-05-29T02:27:19.670Z"
+    },
+    {
+      "title": "Advanced TypeScript types: Conditional Types",
+      "tags": [
+        "typescript",
+        "type system",
+        "advanced types"
+      ],
+      "createdAt": "2023-05-29T02:29:18.022Z"
+    },
+    {
+      "title": "Understanding Closure in JavaScript",
+      "tags": [
+        "javascript",
+        "functional programming"
+      ],
+      "createdAt": "2023-05-29T02:31:29.047Z"
+    },
+    {
+      "title": "Weird Rust Features",
+      "tags": [
+        "rust",
+        "programming",
+        "advanced"
+      ],
+      "createdAt": "2023-05-29T02:36:26.708Z"
+    },
+    {
+      "title": "Building Robust Applications with Function Composition in Clojure",
+      "tags": [
+        "clojure",
+        "functional programming",
+        "function composition"
+      ],
+      "createdAt": "2023-05-29T02:40:22.698Z"
     }
   ],
-  "updatedAt": "2023-05-29T00:05:30.606Z"
+  "updatedAt": "2023-05-29T02:40:22.698Z"
 }
