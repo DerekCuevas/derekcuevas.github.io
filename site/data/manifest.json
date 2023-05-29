@@ -321,7 +321,16 @@
         "function composition"
       ],
       "createdAt": "2023-05-29T02:40:22.698Z"
+    },
+    {
+      "title": "Advanced Elixir: Scenic, a Great UI Library",
+      "tags": [
+        "elixir",
+        "ui",
+        "scenic"
+      ],
+      "createdAt": "2023-05-29T06:02:28.506Z"
     }
   ],
-  "updatedAt": "2023-05-29T02:40:22.698Z"
+  "updatedAt": "2023-05-29T06:02:28.506Z"
 }
