@@ -365,7 +365,16 @@
         "data validation"
       ],
       "createdAt": "2023-05-30T06:02:34.239Z"
+    },
+    {
+      "title": "The Art of Error Handling in Node.js",
+      "tags": [
+        "node.js",
+        "error handling",
+        "exceptions"
+      ],
+      "createdAt": "2023-05-30T12:03:19.259Z"
     }
   ],
-  "updatedAt": "2023-05-30T06:02:34.239Z"
+  "updatedAt": "2023-05-30T12:03:19.259Z"
 }
