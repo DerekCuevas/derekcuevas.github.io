@@ -410,7 +410,16 @@
         "websockets"
       ],
       "createdAt": "2023-05-31T12:03:45.563Z"
+    },
+    {
+      "title": "Building Scalable REST APIs with Node.js and PostgreSQL",
+      "tags": [
+        "node.js",
+        "postgresql",
+        "rest apis"
+      ],
+      "createdAt": "2023-05-31T18:02:53.149Z"
     }
   ],
-  "updatedAt": "2023-05-31T12:03:45.563Z"
+  "updatedAt": "2023-05-31T18:02:53.149Z"
 }
