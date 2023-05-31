@@ -392,7 +392,16 @@
         "scalability"
       ],
       "createdAt": "2023-05-31T00:05:18.950Z"
+    },
+    {
+      "title": "A Practical Introduction to the Actor Model in Elixir",
+      "tags": [
+        "elixir",
+        "actor model",
+        "concurrency"
+      ],
+      "createdAt": "2023-05-31T06:02:27.796Z"
     }
   ],
-  "updatedAt": "2023-05-31T00:05:18.950Z"
+  "updatedAt": "2023-05-31T06:02:27.796Z"
 }
