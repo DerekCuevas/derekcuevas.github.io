@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Building High-Performance, Real-time Message-Based Applications with Rust and Pulsar\", \"The Art of Error Handling in Node.js\", \"JSON Data Validation with Rust's `serde_json` Library\", \"Exploring the Rust Standard Library's VecDeque\", \"Advanced TypeScript Types: Mapped Types\", \"Advanced Swift: Using Protocol Composition to Achieve Type-Safe, Modular Code\", \"Advanced Elixir: Scenic, a Great UI Library\", \"Building Robust Applications with Function Composition in Clojure\", \"Weird Rust Features\", \"Understanding Closure in JavaScript\", \"Advanced TypeScript types: Conditional Types\", \"To Mutable or Immutable: Exploring Rust's Memory Ownership Model\", \"The Power of Functional Programming in Swift\", \"Understanding the Difference Between Structs and Enums in Rust\", \"Building Ultra-Fast Web Applications with Rust's Actix-Web Library\", \"Mastering the Art of Asynchronous Programming with Rust Futures\", \"Building a High-Performance and Cost-Effective Video Streaming Platform with Rust and AWS Elemental MediaStore\", \"How to Build a Type-Safe GraphQL Server in Rust\", \"Building High-Performance Web Applications with Rust and WebAssembly\", \"Building Highly Scalable Distributed Systems with Rust and Apache Kafka\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7M3caHYW0jK5tz0UVHZTMSgDNeM8Z",
+  "object": "chat.completion",
+  "created": 1685491492,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 809,
+   "completion_tokens": 921,
+   "total_tokens": 1730
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code\n\nTags: JavaScript, Performance, Scalability\n\nJavaScript Arrays are the heart of many web applications, as they provide a simple way of organizing and manipulating collections of data. The `concat()` method is one such functionality that can help you develop high-performance and scalable applications. `concat()` method is used to merge two or more arrays into a single array. The original arrays are not changed.\n\nIn this tutorial, we will explore different ways of using `concat()` method and demonstrate how you could use it to optimize your code for performance and scalability.\n\n## Basic Usage\n\nThe `concat()` function can be called on an array object with one or more arrays as its argument(s). It returns a new array comprising the elements of the original array followed by the elements of the additional arrays.\n\n```javascript\nconst array1 = [\"a\", \"b\", \"c\"];\nconst array2 = [\"d\", \"e\", \"f\"];\nconst concatenatedArray = array1.concat(array2);\nconsole.log(concatenatedArray); // Output: [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\"]\n```\n\n## Concatenating Multiple Arrays\n\nYou can concatenate multiple arrays by passing more than one argument to the `concat()` method. This is useful when you have multiple arrays that you want to merge together into a new array:\n\n```javascript\nconst array1 = [\"a\", \"b\", \"c\"];\nconst array2 = [\"d\", \"e\", \"f\"];\nconst array3 = [\"g\", \"h\", \"i\"];\nconst concatenatedArray = array1.concat(array2, array3);\nconsole.log(concatenatedArray); // Output: [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\"]\n```\n\n## Flattening Nested Arrays\n\nYou can also use `concat()` to \"flatten\" a nested array, or an array of arrays:\n\n```javascript\nconst array1 = [, 1], array2 = [2, 3], array3 = [4, 5, 6];\nconst concatenatedArray = array1.concat(array2, array3);\nconsole.log(concatenatedArray); // Output: [undefined, 1, 2, 3, 4, 5, 6]\n```\n\nIn this example, `array1` contains a `null` value in the first position. By concatenating `array1` with `array2` and `array3`, we get a flattened array, where the `null` value appears as `undefined`. This is because `concat()` simply takes the values from the arrays, without looking at their structure.\n\n## Performance Considerations\n\n`concat()` is a fast method that produces a new, merged array. However, there are performance considerations to take into account when using it at scale.\n\nIn general, we should avoid using `concat()` method repeatedly in a loop, for example, as part of an operation that is going to be executed many times, because it can have a significant impact on performance. This is because creating a new array on each iteration creates unnecessary memory allocation and deallocation overhead that can slow down your code. Instead, you can create a single array and use `push()` method to add elements. \n\n```javascript\nconst array1 = [\"a\", \"b\", \"c\"];\nconst array2 = [\"d\", \"e\", \"f\"];\nconst concatenatedArray = [];\nconcatenatedArray.push(...array1, ...array2);\nconsole.log(concatenatedArray); // Output: [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\"]\n```\n\nIn the above example, we initialize an empty array, `concatenatedArray`. Then we use the spread **`...`** operator to spread the elements of the `array1` and `array2` into `concatenatedArray`. By doing this, we avoid creating unnecessary arrays on each iteration, and we improve performance.\n\n## Conclusion\n\nWe've seen how `concat()` is a useful method for merging arrays, and how it can be used to flatten nested arrays. We can also avoid creating unnecessary arrays on each iteration by using `push()` method. By taking advantage of these optimizations, you can write performant and scalable JavaScript code.\n\nRemember that performance is just one consideration for building great JavaScript applications. Keep in mind other areas of your code such as readability, maintainability and scalability."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
