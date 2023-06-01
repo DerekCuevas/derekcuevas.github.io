@@ -419,7 +419,16 @@
         "rest apis"
       ],
       "createdAt": "2023-05-31T18:02:53.149Z"
+    },
+    {
+      "title": "Using Rust's Pinning API for Safe and Performant Async Programming",
+      "tags": [
+        "rust",
+        "async programming",
+        "pinning api"
+      ],
+      "createdAt": "2023-06-01T00:06:24.520Z"
     }
   ],
-  "updatedAt": "2023-05-31T18:02:53.149Z"
+  "updatedAt": "2023-06-01T00:06:24.520Z"
 }
