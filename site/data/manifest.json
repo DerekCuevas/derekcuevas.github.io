@@ -453,7 +453,15 @@
         "typescript"
       ],
       "createdAt": "2023-06-02T12:03:36.701Z"
+    },
+    {
+      "title": "Exploring Rust's `mem::replace()` Function",
+      "tags": [
+        "rust",
+        "memory management"
+      ],
+      "createdAt": "2023-06-02T18:02:51.328Z"
     }
   ],
-  "updatedAt": "2023-06-02T12:03:36.701Z"
+  "updatedAt": "2023-06-02T18:02:51.328Z"
 }
