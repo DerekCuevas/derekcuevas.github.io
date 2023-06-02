@@ -437,7 +437,16 @@
         "data streams"
       ],
       "createdAt": "2023-06-02T05:25:04.206Z"
+    },
+    {
+      "title": "Mastering Elixir's GenServer Callbacks",
+      "tags": [
+        "elixir",
+        "otp",
+        "genserver"
+      ],
+      "createdAt": "2023-06-02T06:04:09.922Z"
     }
   ],
-  "updatedAt": "2023-06-02T05:25:04.206Z"
+  "updatedAt": "2023-06-02T06:04:09.922Z"
 }
