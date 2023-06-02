@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Mastering Elixir's GenServer Callbacks\", \"The Magic of High-Level Streams\", \"Using Rust's Pinning API for Safe and Performant Async Programming\", \"Building Scalable REST APIs with Node.js and PostgreSQL\", \"How to Build High-Availability WebSocket Services with Rust and Actix-Web\", \"A Practical Introduction to the Actor Model in Elixir\", \"Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code\", \"Building High-Performance, Real-time Message-Based Applications with Rust and Pulsar\", \"The Art of Error Handling in Node.js\", \"JSON Data Validation with Rust's `serde_json` Library\", \"Exploring the Rust Standard Library's VecDeque\", \"Advanced TypeScript Types: Mapped Types\", \"Advanced Swift: Using Protocol Composition to Achieve Type-Safe, Modular Code\", \"Advanced Elixir: Scenic, a Great UI Library\", \"Building Robust Applications with Function Composition in Clojure\", \"Weird Rust Features\", \"Understanding Closure in JavaScript\", \"Advanced TypeScript types: Conditional Types\", \"To Mutable or Immutable: Exploring Rust's Memory Ownership Model\", \"The Power of Functional Programming in Swift\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7MxlcWLlrWlRkGL7V2AqNCvaPg3w7",
+  "object": "chat.completion",
+  "created": 1685707316,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 802,
+   "completion_tokens": 857,
+   "total_tokens": 1659
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Advanced TypeScript: Custom Type Guards\n\nTags: TypeScript\n\nTypeScript is a mature statically-typed language that provides a large range of features that could be used to improve the safety and reliability of your codebase. One of these features is custom Type Guards - functions that can determine whether a specific object is of a certain type by checking it against a condition. In this post, we are going to thoroughly explore and illustrate the behavior of custom Type Guards in TypeScript, and learn how they could help us write safer and more expressive code.\n\n## 1. Introduction\n\nTypeScript's type system is based on the notion of interfaces. Specifically, an interface is a declaration that describes the types and structures of its fields and methods. It can also be used to check if an object has certain properties. Let's create an interface for our example:\n\n```typescript\ninterface Person {\n    name: string;\n    age?: number;\n}\n```\n\nThis interface has two properties, `name` and `age`, with the latter being of optional type. \n\nLet's define two instances of this custom type:\n\n```typescript\nconst person1: Person = { name: 'John', age: 30 };\nconst person2: Person = { name: 'Mary' };\n```\n\nNow let's create a function that can differentiate between each type of person instance. \n\n## 2. Custom Type Guard Definition\n\nIn TypeScript, a Type Guard is a function whose return type is a boolean, and which is used to narrow down the types of a variable's value. Here's a basic template for a Type Guard function:\n\n```typescript\nfunction isX(value: any): value is X {\n    // return true if value is X\n}\n```\n\nOur goal is to write a Type Guard that can differentiate between our person instances. Let's write a first version of it:\n\n```typescript\nfunction isPerson(person: any): person is Person {\n  return person.name && typeof person.name === 'string';\n}\n```\n\nNotice that to type guard `person` to `Person`, we must return `person is Person`. \n\nWe are basically saying that if the `person` object has a `name` field, and it's of `string` type, then it can be considered to be a `Person`. Otherwise, it's not a `Person`. \n\nWe can now use this Type Guard to check whether `person1` and `person2` are `Person`s.\n\n```typescript\nconsole.log(isPerson(person1)); // true\nconsole.log(isPerson(person2)); // true\n```\n\nIt works for `person1` but also for `person2`, which is odd. We can do better than that.\n\n## 3. Improve the Type Guard\n\nThe current implementation could be improved by adding a check for the age field.\n\n```typescript\nfunction isPerson(person: any): person is Person {\n    return person.name && typeof person.name === 'string' && typeof person.age === 'undefined' || typeof person.age === 'number';\n}\n```\n\nWe are basically saying that `person` must have either no `age` field, or an `age` field of type `number`. We can re-check whether `person1` and `person2` are `Person`s using the improved version:\n\n```typescript\nconsole.log(isPerson(person1)); // true\nconsole.log(isPerson(person2)); // true\n```\n\nIt still works for both! That's great, but let's improve our Type Guard even further, to make sure it works correctly for all cases.\n\n```typescript\nfunction isPerson(person: any): person is Person {\n    return typeof person.name === 'string' && (typeof person.age === 'number' || typeof person.age === 'undefined');\n}\n```\n\n## 4. Conclusion\n\nTypeScript's custom Type Guards are functions that we can use to narrow down the types of variables and objects in our codebase. They can help us write safer and more expressive code, especially in cases where we need to handle multiple types of objects in our code. We demonstrated how to define custom Type Guards and how to check them with different objects. In the future, working with custom Type Guards can make your code less prone to runtime errors."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

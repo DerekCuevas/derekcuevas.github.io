@@ -446,7 +446,14 @@
         "genserver"
       ],
       "createdAt": "2023-06-02T06:04:09.922Z"
+    },
+    {
+      "title": "Advanced TypeScript: Custom Type Guards",
+      "tags": [
+        "typescript"
+      ],
+      "createdAt": "2023-06-02T12:03:36.701Z"
     }
   ],
-  "updatedAt": "2023-06-02T06:04:09.922Z"
+  "updatedAt": "2023-06-02T12:03:36.701Z"
 }
