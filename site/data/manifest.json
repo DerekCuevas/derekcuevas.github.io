@@ -461,7 +461,16 @@
         "memory management"
       ],
       "createdAt": "2023-06-02T18:02:51.328Z"
+    },
+    {
+      "title": "Building Composable, Scalable, and Reusable Redux Reducers",
+      "tags": [
+        "redux",
+        "react",
+        "javascript"
+      ],
+      "createdAt": "2023-06-03T00:05:35.393Z"
     }
   ],
-  "updatedAt": "2023-06-02T18:02:51.328Z"
+  "updatedAt": "2023-06-03T00:05:35.393Z"
 }
