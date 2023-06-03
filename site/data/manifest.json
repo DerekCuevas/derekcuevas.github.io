@@ -487,7 +487,16 @@
         "web development"
       ],
       "createdAt": "2023-06-03T12:03:29.537Z"
+    },
+    {
+      "title": "Projecting Elixir's Enum Module into Batches",
+      "tags": [
+        "elixir",
+        "enum",
+        "batches"
+      ],
+      "createdAt": "2023-06-03T18:03:23.423Z"
     }
   ],
-  "updatedAt": "2023-06-03T12:03:29.537Z"
+  "updatedAt": "2023-06-03T18:03:23.423Z"
 }
