@@ -479,7 +479,15 @@
         "cli"
       ],
       "createdAt": "2023-06-03T06:03:05.981Z"
+    },
+    {
+      "title": "Mastering Browser Storage in TypeScript",
+      "tags": [
+        "typescript",
+        "web development"
+      ],
+      "createdAt": "2023-06-03T12:03:29.537Z"
     }
   ],
-  "updatedAt": "2023-06-03T06:03:05.981Z"
+  "updatedAt": "2023-06-03T12:03:29.537Z"
 }

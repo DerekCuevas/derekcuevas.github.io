@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Mastering Rust's `std::env::args_os()`\", \"Building Composable, Scalable, and Reusable Redux Reducers\", \"Exploring Rust's `mem::replace()` Function\", \"Advanced TypeScript: Custom Type Guards\", \"Mastering Elixir's GenServer Callbacks\", \"The Magic of High-Level Streams\", \"Using Rust's Pinning API for Safe and Performant Async Programming\", \"Building Scalable REST APIs with Node.js and PostgreSQL\", \"How to Build High-Availability WebSocket Services with Rust and Actix-Web\", \"A Practical Introduction to the Actor Model in Elixir\", \"Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code\", \"Building High-Performance, Real-time Message-Based Applications with Rust and Pulsar\", \"The Art of Error Handling in Node.js\", \"JSON Data Validation with Rust's `serde_json` Library\", \"Exploring the Rust Standard Library's VecDeque\", \"Advanced TypeScript Types: Mapped Types\", \"Advanced Swift: Using Protocol Composition to Achieve Type-Safe, Modular Code\", \"Advanced Elixir: Scenic, a Great UI Library\", \"Building Robust Applications with Function Composition in Clojure\", \"Weird Rust Features\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7NKFKnb4LM5eOsjRf63oBdJfmlotO",
+  "object": "chat.completion",
+  "created": 1685793726,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 815,
+   "completion_tokens": 1034,
+   "total_tokens": 1849
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Mastering Browser Storage in TypeScript\n\nTags: TypeScript, Web Development\n\nThe web storage API provides a simple way to store data on the browser for a certain amount of time. Web storage comes in two types of objects, the `localStorage` and the `sessionStorage`. In this post, we are going to dive deep into these storage APIs and explore some best practices and optimization methods for manipulating them with TypeScript.\n\n### The localStorage and sessionStorage Objects\n\nBoth localStorage and sessionStorage implement the same set of methods for manipulating data:\n\n- `setItem(key, value)` - Add or update an entry in storage for a particular key.\n- `getItem(key)` - Retrieve the value for a given key from storage.\n- `removeItem(key)` - Delete a key/value pair from storage.\n- `clear()` - Remove all key/value pairs from storage.\n\nThe main difference between localStorage and sessionStorage is their life cycle. In short, localStorage entires persist even after your browser is closed down, while sessionStorage entries dissolve as soon as the user closes the tab or browser.\n\n### Using the localStorage Object\n\nYou can access the localStorage object through the global `window` object. Here's how you would store and retrieve a simple string in localStorage:\n\n```typescript\n// Set a value in localStorage\nlocalStorage.setItem('name', 'John Doe');\n\n// Get a value from localStorage\nconst name = localStorage.getItem('name');\nconsole.log(name);\n```\n\nThis code will output `John Doe` to the console.\n\nTo maintain type safety and avoid runtime errors, we can define our own typed wrapper class for localStorage:\n\n```typescript\nclass LocalStorageWrapper {\n  getItem<T>(key: string): T | undefined {\n    try {\n      const item = localStorage.getItem(key);\n      if (item) return JSON.parse(item) as T;\n      return undefined;\n    } catch (error) {\n      console.log(error);\n      return undefined;\n    }\n  }\n\n  setItem<T>(key: string, value: T): void {\n    try {\n      localStorage.setItem(key, JSON.stringify(value));\n    } catch (error) {\n      console.log(error);\n    }\n  }\n\n  removeItem(key: string): void {\n    try {\n      localStorage.removeItem(key);\n    } catch (error) {\n      console.log(error);\n    }\n  }\n\n  clear(): void {\n    try {\n      localStorage.clear();\n    } catch (error) {\n      console.log(error);\n    }\n  }\n}\n\nconst localStorageWrapper = new LocalStorageWrapper();\n\n// Usage\nlocalStorageWrapper.setItem('name', 'John Doe');\nconst name = localStorageWrapper.getItem<string>('name');\nconsole.log(name);\n```\n\n### Using the sessionStorage Object\n\nUsing sessionStorage is almost identical to localStorage. Here's an example:\n\n```typescript\n// Set a value in sessionStorage\nsessionStorage.setItem('name', 'John Doe');\n\n// Retrieve a value from sessionStorage\nconst name = sessionStorage.getItem('name');\nconsole.log(name);\n```\n\nAgain, this code will output `John Doe` to the console.\n\nSimilar to localStorage, we can also create a typed wrapper class for sessionStorage:\n\n```typescript\nclass SessionStorageWrapper {\n  getItem<T>(key: string): T | undefined {\n    try {\n      const item = sessionStorage.getItem(key);\n      if (item) return JSON.parse(item) as T;\n      return undefined;\n    } catch (error) {\n      console.log(error);\n      return undefined;\n    }\n  }\n\n  setItem<T>(key: string, value: T): void {\n    try {\n      sessionStorage.setItem(key, JSON.stringify(value));\n    } catch (error) {\n      console.log(error);\n    }\n  }\n\n  removeItem(key: string): void {\n    try {\n      sessionStorage.removeItem(key);\n    } catch (error) {\n      console.log(error);\n    }\n  }\n\n  clear(): void {\n    try {\n      sessionStorage.clear();\n    } catch (error) {\n      console.log(error);\n    }\n  }\n}\n\nconst sessionStorageWrapper = new SessionStorageWrapper();\n\n// Usage\nsessionStorageWrapper.setItem('name', 'John Doe');\nconst name = sessionStorageWrapper.getItem<string>('name');\nconsole.log(name);\n```\n\n### Best Practices for Browser Storage\n\n- Avoid storing sensitive information in localStorage or sessionStorage, as they are both vulnerable to XSS attacks.\n- Use typed wrapper classes like we did here, as this way you can avoid casting issues and reduce the chance of runtime errors.\n- Don't use browser storage as a replacement for a server-side database. Browser storage is a limited resource with a size limit of around 5-10MB per domain. The storage quota limit varies depending on the browser and device, but it's safe to assume that the available storage is limited.\n- Remove items from storage if they are not needed anymore. Don't waste a user's precious browser storage.\n\nBrowser storage APIs offer powerful tools to store and retrieve data in the browser, but it's important to use them wisely and safely. TypeScript provides us with powerful type safety features that we used to create typed wrapper classes for both localStorage and sessionStorage. Hopefully, you can use these techniques to write safer and more efficient code next time you use browser storage in your TypeScript projects."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
