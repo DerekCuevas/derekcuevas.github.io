@@ -515,7 +515,18 @@
         "error handling"
       ],
       "createdAt": "2023-06-04T06:03:08.437Z"
+    },
+    {
+      "title": "Mastering Clojure's Reducers",
+      "tags": [
+        "clojure",
+        "functional programming",
+        "parallelism",
+        "concurrency",
+        "reducers"
+      ],
+      "createdAt": "2023-06-04T12:03:25.503Z"
     }
   ],
-  "updatedAt": "2023-06-04T06:03:08.437Z"
+  "updatedAt": "2023-06-04T12:03:25.503Z"
 }
