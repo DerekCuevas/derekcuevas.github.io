@@ -526,7 +526,16 @@
         "reducers"
       ],
       "createdAt": "2023-06-04T12:03:25.503Z"
+    },
+    {
+      "title": "Building real-time collaborative web apps with Operational Transformation",
+      "tags": [
+        "web development",
+        "operational transformation",
+        "collaborative applications"
+      ],
+      "createdAt": "2023-06-04T18:02:11.617Z"
     }
   ],
-  "updatedAt": "2023-06-04T12:03:25.503Z"
+  "updatedAt": "2023-06-04T18:02:11.617Z"
 }
