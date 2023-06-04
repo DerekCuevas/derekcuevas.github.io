@@ -496,7 +496,18 @@
         "batches"
       ],
       "createdAt": "2023-06-03T18:03:23.423Z"
+    },
+    {
+      "title": "Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs",
+      "tags": [
+        "rust",
+        "ownership",
+        "borrowing",
+        "type-safety",
+        "performance"
+      ],
+      "createdAt": "2023-06-04T00:06:32.119Z"
     }
   ],
-  "updatedAt": "2023-06-03T18:03:23.423Z"
+  "updatedAt": "2023-06-04T00:06:32.119Z"
 }

@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Projecting Elixir's Enum Module into Batches\", \"Mastering Browser Storage in TypeScript\", \"Mastering Rust's `std::env::args_os()`\", \"Building Composable, Scalable, and Reusable Redux Reducers\", \"Exploring Rust's `mem::replace()` Function\", \"Advanced TypeScript: Custom Type Guards\", \"Mastering Elixir's GenServer Callbacks\", \"The Magic of High-Level Streams\", \"Using Rust's Pinning API for Safe and Performant Async Programming\", \"Building Scalable REST APIs with Node.js and PostgreSQL\", \"How to Build High-Availability WebSocket Services with Rust and Actix-Web\", \"A Practical Introduction to the Actor Model in Elixir\", \"Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code\", \"Building High-Performance, Real-time Message-Based Applications with Rust and Pulsar\", \"The Art of Error Handling in Node.js\", \"JSON Data Validation with Rust's `serde_json` Library\", \"Exploring the Rust Standard Library's VecDeque\", \"Advanced TypeScript Types: Mapped Types\", \"Advanced Swift: Using Protocol Composition to Achieve Type-Safe, Modular Code\", \"Advanced Elixir: Scenic, a Great UI Library\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7NVXL2131omdFybECdfLDI8RLm841",
+  "object": "chat.completion",
+  "created": 1685837127,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 817,
+   "completion_tokens": 917,
+   "total_tokens": 1734
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\n\nTags: Rust, ownership, borrowing, type-safety, performance\n\nAs a systems programming language, Rust is designed to ensure both memory safety and performance. It achieves this by enforcing ownership and borrowing rules, which govern how values in memory are owned, borrowed, and used.\n\nOwnership and borrowing rules are at the core of Rust's design and are what make Rust so powerful yet safe and efficient. In this post, we will delve into these rules and learn how to use them to write type-safe and performant programs in Rust.\n\n## Ownership Rules\n\nIn Rust, ownership rules dictate that each value has exactly one owner at any given time, and that owner is responsible for deallocating the value when it goes out of scope. This way, Rust ensures that there are no dangling pointers or memory leaks, and all values are properly managed by the program.\n\nLet's take a look at an example to understand the ownership rules in Rust:\n\n```rust\nfn main() {\n    let s = String::from(\"hello\");\n    let s2 = s;\n    println!(\"{}\", s);\n}\n```\n\nHere, we create a new `String` and bind it to the variable `s`. Then, we bind the value of `s` to a new variable `s2`. Finally, we try to print `s`. However, the Rust compiler will fail to compile this program with an error:\n\n```\nerror[E0382]: borrow of moved value: `s`\n --> src/main.rs:4:20\n  |\n2 |     let s = String::from(\"hello\");\n  |         - move occurs because `s` has type `std::string::String`, which does not implement the `Copy` trait\n3 |     let s2 = s;\n  |              - value moved here\n4 |     println!(\"{}\", s);\n  |                    ^ value borrowed here after move\n```\n\nThe error message tells us that we're trying to use a moved value `s`, which is no longer valid after it has been moved to `s2`. So, we cannot use `s` after it has been moved to another variable.\n\nIn Rust, move semantics is used to transfer ownership from one variable to another. When a value is moved to another variable, the original variable becomes invalid and cannot be used until it's assigned a new value.\n\n## Borrowing Rules\n\nIn Rust, borrowing rules dictate how references can be borrowed from values. References are a way to access the values without transferring ownership. By using references, Rust ensures that values remain valid while borrowed, and prevents data races and memory errors.\n\nLet's take a look at an example to understand the borrowing rules in Rust:\n\n```rust\nfn main() {\n    let s = String::from(\"hello\");\n    let len = calculate_length(&s);\n    println!(\"The length of '{}' is {}.\", s, len);\n}\n\nfn calculate_length(s: &String) -> usize {\n    s.len()\n}\n```\n\nHere, we define a function `calculate_length` that takes a reference to a string `&String` as an argument. Then, we pass a reference to `s` to `calculate_length`. Finally, we print the length of `s`.\n\nThe key aspect of this example is that we're borrowing a reference to `s` instead of moving it. By borrowing a reference, we're not transferring ownership of `s`, and we're only allowing `calculate_length` to access it.\n\nIn Rust, there are two kinds of references: immutable references `&T` and mutable references `&mut T`. Immutable references allow for read-only access to the value, while mutable references allow for read and write access to the value.\n\nThe borrowing rules in Rust essentially state that you cannot have both mutable references and immutable references to the same value at the same time, and that you must ensure that references are valid for as long as they are used.\n\n## Conclusion\n\nIn this post, we learned about Rust's ownership rules and borrowing rules, which govern how values in memory are owned, borrowed, and used. By following these rules, Rust ensures that programs are type-safe and performant, and that memory errors are prevented.\n\nRust's unique approach to ownership and borrowing may seem daunting at first, but it's what makes Rust so powerful and different from other programming languages. By mastering these rules, you'll be able to write code in Rust that's safe, efficient, and elegant."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
