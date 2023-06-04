@@ -507,7 +507,15 @@
         "performance"
       ],
       "createdAt": "2023-06-04T00:06:32.119Z"
+    },
+    {
+      "title": "How to Use Swift's Result Type for Error Handling",
+      "tags": [
+        "swift",
+        "error handling"
+      ],
+      "createdAt": "2023-06-04T06:03:08.437Z"
     }
   ],
-  "updatedAt": "2023-06-04T00:06:32.119Z"
+  "updatedAt": "2023-06-04T06:03:08.437Z"
 }
