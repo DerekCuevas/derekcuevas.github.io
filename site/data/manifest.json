@@ -535,7 +535,16 @@
         "collaborative applications"
       ],
       "createdAt": "2023-06-04T18:02:11.617Z"
+    },
+    {
+      "title": "Building Robust Elixir Back-End APIs with Phoenix Contexts",
+      "tags": [
+        "elixir",
+        "phoenix",
+        "api design"
+      ],
+      "createdAt": "2023-06-05T00:06:10.622Z"
     }
   ],
-  "updatedAt": "2023-06-04T18:02:11.617Z"
+  "updatedAt": "2023-06-05T00:06:10.622Z"
 }
