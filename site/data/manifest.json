@@ -544,7 +544,16 @@
         "api design"
       ],
       "createdAt": "2023-06-05T00:06:10.622Z"
+    },
+    {
+      "title": "Building a Highly Scalable and Performant GraphQL API with Sangria",
+      "tags": [
+        "graphql",
+        "scala",
+        "sangria"
+      ],
+      "createdAt": "2023-06-05T06:03:49.813Z"
     }
   ],
-  "updatedAt": "2023-06-05T00:06:10.622Z"
+  "updatedAt": "2023-06-05T06:03:49.813Z"
 }

@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\", \"Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\", \"Projecting Elixir's Enum Module into Batches\", \"Mastering Browser Storage in TypeScript\", \"Mastering Rust's `std::env::args_os()`\", \"Building Composable, Scalable, and Reusable Redux Reducers\", \"Exploring Rust's `mem::replace()` Function\", \"Advanced TypeScript: Custom Type Guards\", \"Mastering Elixir's GenServer Callbacks\", \"The Magic of High-Level Streams\", \"Using Rust's Pinning API for Safe and Performant Async Programming\", \"Building Scalable REST APIs with Node.js and PostgreSQL\", \"How to Build High-Availability WebSocket Services with Rust and Actix-Web\", \"A Practical Introduction to the Actor Model in Elixir\", \"Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code\", \"Building High-Performance, Real-time Message-Based Applications with Rust and Pulsar\", \"The Art of Error Handling in Node.js\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7Nxa1KxiikNzr0mkP0kuO56VIOa4P",
+  "object": "chat.completion",
+  "created": 1685944925,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 821,
+   "completion_tokens": 1471,
+   "total_tokens": 2292
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Building a Highly Scalable and Performant GraphQL API with Sangria \n\nTags: GraphQL, Scala, Sangria \n\nGraphQL is a data query and manipulation language that enables clients to request data from the server. GraphQL enables you to request precisely the data you need, nothing more and nothing less, with just one request. In contrast to traditional RESTful APIs, where, every endpoint usually returns a fixed set of data with large, sprawling responses, GraphQL generates a hierarchical tree structure from a query, which contains only the data fields and relations that the client requested, minimizing network traffic and reducing server response time.\n\nSangria is a Scala GraphQL implementation that enables you to build type-safe GraphQL APIs using native Scala classes. It provides a rich set of features like batching, deferred resolution, and caching, which allow you to build high-performance and scalable GraphQL APIs that meet your specific business requirements.\n\nThis post gives an overview of how to build a GraphQL API server with Sangria, using the following components:\n\n- GraphQL schema definition\n- Data fetching and transformation\n- Query execution and response formatting\n\n## GraphQL schema definition\n\nGraphQL APIs are defined by a GraphQL schema, which provides a contract for the incoming requests and outgoing responses. A schema defines the types of data entities in your API and the relationships between them.\n\nIn Sangria, you define the GraphQL schema using pure Scala code. Here is an example of how to define a simple schema with a single `Person` query:\n\n```scala\nimport sangria.schema._\nimport sangria.macros.derive._\nimport scala.concurrent.ExecutionContext.Implicits.global\n\ncase class Person(name: String, age: Int)\n\nval PersonType = deriveObjectType[Unit, Person](\n  ObjectTypeDescription(\"A person\"),\n  DocumentField(\"name\", \"The name of the person\"),\n  DocumentField(\"age\", \"The age of the person\"))\n\nval QueryType = ObjectType(\n  \"Query\",\n  fields[Option[Person], Unit](\n    Field(\"person\",\n      OptionType(PersonType),\n      resolve = _ => Some(Person(\"Gloria\", 28)),\n      description = Some(\"A single person\"))))\n      \nval schema = Schema(QueryType)\n```\n\nIn this code, we use the `sangria.schema._` and `sangria.macros.derive._` imports to define the data entities. In this case, we define a `Person` case class with `name` and `age` fields. We then use the `deriveObjectType` function to derive a `PersonType` GraphQL object type from our `Person` case class.\n\nWe then define the `QueryType` GraphQL object type, which has a single `person` field of type `PersonType`. This field returns an `Option[Person]` type, representing a nullable `Person` object. We set the `resolve` function to return a predefined `Person` object with name \"Gloria\" and age 28. Lastly, we define the GraphQL schema using the `Schema` function, passing the `QueryType` object type.\n\n## Data fetching and transformation\n\nOnce the GraphQL schema is defined, you need to fetch the data from the data source and transform it into the GraphQL schema format. Sangria provides a way to separate data fetching and data transformation into two separate stages, enabling you to optimize data fetching without sacrificing the clarity and simplicity of data transformation.\n\n```scala\nval PersonType = deriveObjectType[Unit, Person](\n  ObjectTypeDescription(\"A person\"),\n  DocumentField(\"name\", \"The name of the person\"),\n  DocumentField(\"age\", \"The age of the person\"),\n  AddFields(\n    Field(\"friends\",\n      ListType(PersonType),\n      resolve = ctx => futureFriends(ctx.value.name),\n      description = Some(\"The friends of the person\"))))\n\nval QueryType = ObjectType(\n  \"Query\",\n  fields[PersonRepo, Unit](\n    Field(\"person\",\n      OptionType(PersonType),\n      arguments = Argument(\"name\", StringType) :: Nil,\n      resolve = ctx => ctx.ctx.getPersonByName(ctx.arg(\"name\")),\n      description = Some(\"A single person\"))))\n      \ndef futureFriends(name: String)(implicit ec: ExecutionContext) =\n  Future {\n    Seq(\n      Person(\"Robert\", 33),\n      Person(\"Jenni\", 56),\n      Person(\"Fiona\", 24)\n    )\n  }\n```\n\nIn this code, we define an additional field on the `PersonType` GraphQL object type, `friends`. This field is a collection of `Person` object types, representing zero or more friends. We use the `AddFields` function to add the new Field to the `PersonType`. We set the `resolve` function to fetch the friends asynchronously using the `futureFriends` function and the `value.name` argument obtained from the current context.\n\nWe also modify the `QueryType` to add an argument `name` to the `person` field. We use the `ctx` parameter to obtain the `PersonRepo` object, which is responsible for fetching the data from the data source.\n\nIn this example, we define a simple `PersonRepo` trait with a `getPersonByName` function, which takes a `name` argument and returns a `Person` object. The `PersonRepo` can be any data source, such as a database, web service, or in-memory cache.\n\n\n## Query execution and response formatting\n\nThe final stage of building a GraphQL API is executing GraphQL queries and formatting the responses. Sangria provides a way to execute GraphQL queries and format the response in an easy and concise way.\n\n```scala\nimport sangria.execution._\nimport sangria.execution.deferred._\n\nval Query =\n  graphql\"\"\"\n    query PersonQuery($$name: String!) {\n      person(name: $$name) {\n        name\n        age\n        friends {\n          name\n          age\n        }\n      }\n    }\n  \"\"\"\n\nval result: Future[ExecutionResult[Unit, JsValue]] =\n  Executor.execute(schema, Query,\n    userContext = new PersonRepo,\n    deferredResolver = DeferredResolver.fetchers(SimpleFetcher.deferredFetcher))\n    \nprintln(result)\n```\nIn this code, we define a GraphQL query, `PersonQuery`, which asks for a person by name and returns their name, age, and friends, in plain JSON format.\n\nWe then execute the query using the `Executor.execute` function, passing the `schema`, `Query`, `PersonRepo` as the user context, and the `DeferredResolver` configuration to fetch data asynchronously.\n\nThe `DeferredResolver` configuration ensures that the execution engine handles batched requests efficiently and resolves circular dependencies correctly. We then print the `result` object to the console.\n\n## Conclusion\n\nGraphQL is a powerful data retrieval and manipulation language, and Sangria is an excellent option for building high-performance and scalable GraphQL APIs in Scala. By building a GraphQL API with Sangria, you can leverage the full range of Scala features while seamlessly integrating with any data source that you use.\n\nWith Sangria, the process of building a GraphQL API becomes a joy. By keeping our data source separate from the GraphQL schema, we achieved a clean, modular code structure that is easy to maintain and extend. The result is a highly scalable and performant GraphQL API that meets the most stringent business requirements."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
