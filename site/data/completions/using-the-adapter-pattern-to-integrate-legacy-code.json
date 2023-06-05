@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\", \"Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\", \"Projecting Elixir's Enum Module into Batches\", \"Mastering Browser Storage in TypeScript\", \"Mastering Rust's `std::env::args_os()`\", \"Building Composable, Scalable, and Reusable Redux Reducers\", \"Exploring Rust's `mem::replace()` Function\", \"Advanced TypeScript: Custom Type Guards\", \"Mastering Elixir's GenServer Callbacks\", \"The Magic of High-Level Streams\", \"Using Rust's Pinning API for Safe and Performant Async Programming\", \"Building Scalable REST APIs with Node.js and PostgreSQL\", \"How to Build High-Availability WebSocket Services with Rust and Actix-Web\", \"A Practical Introduction to the Actor Model in Elixir\", \"Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code\", \"Building High-Performance, Real-time Message-Based Applications with Rust and Pulsar\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7O3CX4P2Gx8opqz6qiOpoHNT1FM2w",
+  "object": "chat.completion",
+  "created": 1685966533,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 826,
+   "completion_tokens": 846,
+   "total_tokens": 1672
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Using the Adapter Pattern to Integrate Legacy Code\n\nTags: Software Design, Adapter Pattern, Legacy Code Integration\n\n\n## Introduction\n\nIntegrating legacy code into new systems can be an arduous and time-consuming process. A common requirement during systems integration is the need to communicate and exchange data between different systems. This can be challenging when dealing with legacy systems, which were often built with different technologies and design patterns compared to more modern systems. The Adapter Pattern is a popular design pattern that can help mitigate this issue by providing an abstraction layer to mediate between the legacy code and the modern system.\n\n\n## What is the Adapter Pattern?\n\nThe Adapter Pattern is a structural design pattern that allows two incompatible interfaces to work together. It aims to map the interface of one class to another interface that the client expects. This pattern is useful when an object wants to interact with a system component but does not have an interface that is compatible with the system’s API. This pattern can be especially useful when trying to integrate legacy systems with modern applications.\n\nIn the Adapter Pattern, adapters convert the interface of an existing class into another interface. These adapters help legacy code integrate with modern systems more easily by enabling communication between the different systems. The adapter essentially acts as a translator between different sets of interfaces and APIs.\n\n## Example Scenario\n\nNow, imagine that you have been tasked with integrating an old payment processing system into a new e-commerce website. The payment processing system is a legacy system written in Java, and it has a different API than the e-commerce website, which uses REST APIs. As such, you need to implement an adapter to translate the Java API into the REST API.\n\nFirst, you could create an interface that both the payment processing system and the REST API will implement. This interface will define a common set of methods that both systems should support. Then, you could create a Java adapter class that implements this interface and translates the Java API to the common interface. Lastly, you could create a REST adapter class that receives requests formatted according to the common interface and translates them to the corresponding REST API.\n\nHere is an example of how you could create these classes:\n\n### The common interface\n\n```java\npublic interface PaymentProcessor {\n    void chargeCreditCard(String cardNumber, double amount);\n}\n```\n\n### The Java Adapter\n\n```java\npublic class JavaPaymentProcessor implements PaymentProcessor {\n    private final LegacyPaymentSystem paymentSystem = new LegacyPaymentSystem();\n\n    @Override\n    public void chargeCreditCard(String cardNumber, double amount) {\n        paymentSystem.chargeCard(cardNumber, amount);\n    }\n}\n```\n\n### The REST Adapter\n\n```java\npublic class RestPaymentProcessor implements PaymentProcessor {\n    private final String apiUrl;\n\n    public RestPaymentProcessor(String apiUrl) {\n        this.apiUrl = apiUrl;\n    }\n\n    @Override\n    public void chargeCreditCard(String cardNumber, double amount) {\n        // Format the request according to the REST API\n        String request = formatRequest(cardNumber, amount);\n        \n        // Send the request to the REST API\n        sendRequest(request);\n    }\n    \n    private String formatRequest(String cardNumber, double amount) {\n        return \"POST \" + apiUrl + \" HTTP/1.1\\n\" +\n               \"Content-Type: application/json\\n\\n\" +\n               \"{\\\"cardNumber\\\":\\\"\" + cardNumber + \"\\\",\\\"amount\\\":\" + amount + \"}\";\n    }\n    \n    private void sendRequest(String request) {\n        // Implementation for sending the HTTP request goes here\n    }\n}\n```\n\n## Conclusion\n\nSystems integration is a challenging and time-consuming process, especially when dealing with legacy systems. The Adapter Pattern is an effective tool for integrating legacy code into modern systems and can help reduce the amount of time it takes to integrate systems. Additionally, the Adapter Pattern can help simplify the process of communication between different systems and reduce the complexity of the overall system architecture.\n\nIn this article, we explored an example scenario where the Adapter Pattern could be used to integrate a legacy payment processing system into a modern e-commerce website. By creating a common interface and implementing adapter classes for both systems, the payment processing system could be used within the e-commerce website without needing to modify the legacy code itself."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
