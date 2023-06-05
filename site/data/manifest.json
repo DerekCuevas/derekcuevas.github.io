@@ -562,7 +562,16 @@
         "legacy code integration"
       ],
       "createdAt": "2023-06-05T12:03:16.772Z"
+    },
+    {
+      "title": "How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView",
+      "tags": [
+        "elixir",
+        "phoenix liveview",
+        "realtime systems"
+      ],
+      "createdAt": "2023-06-05T18:05:17.330Z"
     }
   ],
-  "updatedAt": "2023-06-05T12:03:16.772Z"
+  "updatedAt": "2023-06-05T18:05:17.330Z"
 }
