@@ -571,7 +571,16 @@
         "realtime systems"
       ],
       "createdAt": "2023-06-05T18:05:17.330Z"
+    },
+    {
+      "title": "Building a High-Availability Microservice Architecture with Modern C++",
+      "tags": [
+        "c++",
+        "microservices",
+        "high-availability"
+      ],
+      "createdAt": "2023-06-06T00:05:49.042Z"
     }
   ],
-  "updatedAt": "2023-06-05T18:05:17.330Z"
+  "updatedAt": "2023-06-06T00:05:49.042Z"
 }
