@@ -588,7 +588,15 @@
         "optimization"
       ],
       "createdAt": "2023-06-06T06:02:48.790Z"
+    },
+    {
+      "title": "The Event Sourcing Design Pattern in TypeScript",
+      "tags": [
+        "typescript",
+        "design patterns"
+      ],
+      "createdAt": "2023-06-06T12:03:30.740Z"
     }
   ],
-  "updatedAt": "2023-06-06T06:02:48.790Z"
+  "updatedAt": "2023-06-06T12:03:30.740Z"
 }
