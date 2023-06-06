@@ -596,7 +596,16 @@
         "design patterns"
       ],
       "createdAt": "2023-06-06T12:03:30.740Z"
+    },
+    {
+      "title": "Implementing a Consistent Hashing Algorithm in TypeScript",
+      "tags": [
+        "typescript",
+        "algorithms",
+        "distributed systems"
+      ],
+      "createdAt": "2023-06-06T18:03:58.380Z"
     }
   ],
-  "updatedAt": "2023-06-06T12:03:30.740Z"
+  "updatedAt": "2023-06-06T18:03:58.380Z"
 }
