@@ -580,7 +580,15 @@
         "high-availability"
       ],
       "createdAt": "2023-06-06T00:05:49.042Z"
+    },
+    {
+      "title": "How to Write Fast Python Code",
+      "tags": [
+        "python",
+        "optimization"
+      ],
+      "createdAt": "2023-06-06T06:02:48.790Z"
     }
   ],
-  "updatedAt": "2023-06-06T00:05:49.042Z"
+  "updatedAt": "2023-06-06T06:02:48.790Z"
 }

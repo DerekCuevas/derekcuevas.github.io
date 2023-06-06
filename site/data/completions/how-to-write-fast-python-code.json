@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\", \"Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\", \"Projecting Elixir's Enum Module into Batches\", \"Mastering Browser Storage in TypeScript\", \"Mastering Rust's `std::env::args_os()`\", \"Building Composable, Scalable, and Reusable Redux Reducers\", \"Exploring Rust's `mem::replace()` Function\", \"Advanced TypeScript: Custom Type Guards\", \"Mastering Elixir's GenServer Callbacks\", \"The Magic of High-Level Streams\", \"Using Rust's Pinning API for Safe and Performant Async Programming\", \"Building Scalable REST APIs with Node.js and PostgreSQL\", \"How to Build High-Availability WebSocket Services with Rust and Actix-Web\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7OK3SZpBSfTHxaT6YhuM7WGjYl4mm",
+  "object": "chat.completion",
+  "created": 1686031318,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 823,
+   "completion_tokens": 643,
+   "total_tokens": 1466
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "How to Write Fast Python Code\nTags: Python, Optimization\n\nPython is known for being a high-level and easy-to-learn programming language. However, it is often considered slow when compared to compiled languages such as C or Go. Fortunately, with the following tips, you can fine-tune your Python code to make it run much faster.\n\n## Use built-in functions and libraries\n\nWhen you first start writing Python code, it is easy to write everything from scratch. However, many built-in functions and libraries are designed for optimal performance in Python. For example, the `map()` function can be used to apply a function to each element of a list in a single call, which is much faster than iterating over it with a `for` loop. In the same way, the built-in `sort()` function is much faster than implementing your own sorting algorithm.\n\n## Turn on compiler optimizations\n\nThe default compiler optimization flags used by CPython are conservative and may not produce the fastest code possible. However, you can enable additional optimization flags by setting the `CFLAGS` environment variable when building Python from source. For example, to enable all available optimizations on Linux:\n\n```\n$ export CFLAGS=\"-Ofast -march=native -flto\"\n$ ./configure --enable-optimizations\n$ make -j\n$ sudo make install\n```\n\n## Use a JIT compiler\n\nPython code can also benefit from just-in-time (JIT) compilation. One popular JIT compiler for Python is [PyPy](https://pypy.org/), which can be used as a drop-in replacement for CPython. PyPy can provide significant speedup for certain types of Python code. For example, PyPy can be up to 10 times faster when running numerical benchmarks compared to CPython.\n\n## Use NumPy for numerical computations\n\nIf you are doing computational work in Python, consider using the NumPy library. NumPy is an optimized numerical computing library for Python, allowing operations on arrays to be performed much faster than using built-in Python functions. For example, using NumPy to calculate a dot product:\n\n```python\nimport numpy as np\n\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\n\nnp.dot(a, b)\n```\n\n## Avoid global variables\n\nGlobal variables in Python can be convenient, but they come at a performance cost. Accessing a global variable requires a look-up in the global namespace, which can be slow. Instead, use local variables or pass variables as arguments to functions as much as possible.\n\n## Use comprehensions and generators\n\nComprehensions and generators are Python constructs that allow you to generate sequences of data in a more efficient manner than using `for` loops. List and dictionary comprehensions can be used to create lists and dictionaries in a single line of code without the need for a `for` loop. Generators are similar to comprehensions but produce results lazily on-demand.\n\n## Conclusion\n\nPython is a great language for quickly prototyping ideas and writing clear, maintainable code. By following these tips, you can improve the performance of your Python code and make it run much faster."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
