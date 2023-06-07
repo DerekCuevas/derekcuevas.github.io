@@ -623,7 +623,16 @@
         "iterators"
       ],
       "createdAt": "2023-06-07T06:03:26.325Z"
+    },
+    {
+      "title": "How to use Elm to build maintainable, efficient, and bug-free front-end applications",
+      "tags": [
+        "elm",
+        "front-end",
+        "best practices"
+      ],
+      "createdAt": "2023-06-07T12:04:39.883Z"
     }
   ],
-  "updatedAt": "2023-06-07T06:03:26.325Z"
+  "updatedAt": "2023-06-07T12:04:39.883Z"
 }
