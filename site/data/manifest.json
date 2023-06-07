@@ -632,7 +632,16 @@
         "best practices"
       ],
       "createdAt": "2023-06-07T12:04:39.883Z"
+    },
+    {
+      "title": "Mastering the Actor Model Concurrency Paradigm in Elixir",
+      "tags": [
+        "elixir",
+        "actor model",
+        "concurrency"
+      ],
+      "createdAt": "2023-06-07T18:03:28.776Z"
     }
   ],
-  "updatedAt": "2023-06-07T12:04:39.883Z"
+  "updatedAt": "2023-06-07T18:03:28.776Z"
 }
