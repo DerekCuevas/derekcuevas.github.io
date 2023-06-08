@@ -650,7 +650,16 @@
         "connection pooling"
       ],
       "createdAt": "2023-06-08T00:05:49.840Z"
+    },
+    {
+      "title": "Writing Efficient SQL Queries: Tips and Tricks",
+      "tags": [
+        "sql",
+        "databases",
+        "best practices"
+      ],
+      "createdAt": "2023-06-08T06:02:59.188Z"
     }
   ],
-  "updatedAt": "2023-06-08T00:05:49.840Z"
+  "updatedAt": "2023-06-08T06:02:59.188Z"
 }
