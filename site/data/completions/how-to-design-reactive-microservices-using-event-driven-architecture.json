@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\", \"Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\", \"Projecting Elixir's Enum Module into Batches\", \"Mastering Browser Storage in TypeScript\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7P8dEXw91DoCuu0wOoro5nI3y55ee",
+  "object": "chat.completion",
+  "created": 1686225736,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 818,
+   "completion_tokens": 979,
+   "total_tokens": 1797
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "How to Design Reactive Microservices Using Event-Driven Architecture\n\nTags: Microservices, Event-Driven Architecture, Reactive Programming\n\nMicroservices are a popular way of building complex software systems, often associated with flexibility, scalability, and speedy development. However, designing microservices that communicate effectively can be challenging. In this post, we will discuss how event-driven architecture (EDA) can provide a powerful framework for designing reactive microservices that can communicate with each other in a flexible manner. We will examine the main concepts associated with EDA and illustrate them using sample code snippets in Node.js.\n\n### What is Event-Driven Architecture?\n\nEDA is an approach to software design in which applications communicate primarily through the exchange of event messages. An event is a change in the state of an application or a notification of significant occurrence, such as the creation of a new user account, the updating of a product's inventory status, or the completion of a payment transaction. Applications that interact through events are considered to be loosely coupled, which means they can evolve independently of each other and be more easily integrated with other services.\n\nEDA is based on a few fundamental concepts:\n\n- Event producers: applications that generate events and send them to other applications.\n- Event consumers: applications that subscribe to events and consume them when they are received.\n- Event broker: a message passing system that handles the routing of events between producers and consumers.\n\n### How Does EDA Work?\n\nIn EDA, events are the central focus. When an event occurs, the producer creates a message containing information about the event and sends it to the broker. The message is then delivered to all subscribed consumers. Consumers can choose to handle or ignore the event according to their needs. In effect, the broker acts as a mediator between producers and consumers, freeing them from having to know about or care about each other's existence.\n\nHere is a simple illustration of EDA in action using Node.js:\n\n```javascript\n//Define an event producer\nconst eventEmitter = require('events');\n\nclass UserRegistrationService extends eventEmitter {\n\n  registerUser(user) {\n    console.log('User registered');\n    this.emit('userRegistered', user);\n  }\n}\n\n//Create an instance of the UserRegistrationService\nconst userRegistrationService = new UserRegistrationService();\n\n//Define an event consumer\nconst orderService = {\n  \n  onUserRegistered: function(user) {\n    console.log('OrderService received UserRegistered event:', user);\n  }\n};\n \n//Subscribe the `orderService` to the UserRegistered event\nuserRegistrationService.on('userRegistered', orderService.onUserRegistered);\n\n//Register a new user\nuserRegistrationService.registerUser({name: 'Alice', email: 'alice@example.com'});\n\n```\n\nIn this example, a UserRegistrationService class defines an event called \"userRegistered\" emitted when users register which have the subscriber \"orderService\". By extending the EventEmitter class, \"registerUser\" is able to trigger the \"userRegistered\" event by invoking `this.emit('userRegistered', user);`.\n\nThe `onUserRegistered` callback-function in the orderService console logs an event message that includes user details passed through the event argument.\n\n### Why EDA is a Good fit for Microservice\n\nEDA is ideal for microservice architecture because of several aspects:\n\n**Scalability**\n\nEvent-based systems can handle millions of events per second, making them ideal for building scalable and responsive microservices. Because events are processed asynchronously, services can continue to function even when connectivity is lost or other services are down.\n\n**Resilience**\n\nIn the event of failure or services downtime, events are stored offline by the broker until the services become available; when they are, the broker forward the stored events to the corresponding subscribers. This ensures that no events are lost and that the system can recover easily from failures.\n\n**Flexibility**\n\nEvent-driven architecture allows for a loosely coupled system composed of independent services, designed to be easily integrated with other applications that work independently without breakages. This promotes good development practice and enables services to be easily switched out or replaced, without affecting other systems.\n\n**Integration**\n\nEDA can be used to integrate third-party services with ease, since they interface with APIs using data sent as event messages. These events are then consumed, processed, and stored as necessary.\n\n### Conclusion\n\nIn this post, we have presented an introduction to event-driven architecture, and how it can be used in microservices architectures. EDA provides a powerful means of building distributed, loosely coupled systems, and when combined with reactive programming, can be used to build highly scalable, responsive, and resilient architectures. Companies like Netflix and Amazon have extensively used this technology to drive complex workflows in their backend. With Node.js and its event-driven model, it is easy to start designing event-driven microservices architecture. Give it a try and build yourself an event-driven system for your microservices architecture!"
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

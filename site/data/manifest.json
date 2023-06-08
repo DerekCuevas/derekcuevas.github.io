@@ -659,7 +659,16 @@
         "best practices"
       ],
       "createdAt": "2023-06-08T06:02:59.188Z"
+    },
+    {
+      "title": "How to Design Reactive Microservices Using Event-Driven Architecture",
+      "tags": [
+        "microservices",
+        "event-driven architecture",
+        "reactive programming"
+      ],
+      "createdAt": "2023-06-08T12:03:42.640Z"
     }
   ],
-  "updatedAt": "2023-06-08T06:02:59.188Z"
+  "updatedAt": "2023-06-08T12:03:42.640Z"
 }
