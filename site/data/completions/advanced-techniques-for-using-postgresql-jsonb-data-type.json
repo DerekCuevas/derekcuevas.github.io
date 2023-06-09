@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7PaiR6l7UpwfxXVDro5EqF440ZB0r",
+  "object": "chat.completion",
+  "created": 1686333691,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 828,
+   "completion_tokens": 877,
+   "total_tokens": 1705
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Advanced Techniques for Using PostgreSQL JSONB Data Type\nTags: PostgreSQL, JSONB, SQL\n\nPostgreSQL is a very powerful, open-source relational database management system. One of its most powerful features is the `JSONB` data type, which allows you to efficiently store and query JSON data. In this post, we will explore some advanced techniques for using `JSONB` data type in PostgreSQL.\n\n## Working with Complex JSON Structures\n\n`JSONB` allows you to store complex JSON structures including arrays, nested objects, and deep nesting levels. In some situations, you may want to query or modify specific fields within these structures without modifying the entire JSON document. PostgreSQL provides a number of functions for querying and manipulating the `JSONB` data type. Here are some examples:\n\n### Querying Nested Fields\n\nTo query a specific field within a nested JSON object, you can use the `->` operator. For example, consider the following JSON data:\n\n```SQL\nCREATE TABLE customers (\n  id SERIAL PRIMARY KEY,\n  customer_info JSONB\n);\nINSERT INTO customers (customer_info) VALUES ('{\"name\": {\"first\": \"John\", \"last\": \"Doe\"}}');\nINSERT INTO customers (customer_info) VALUES ('{\"name\": {\"first\": \"Jane\", \"last\": \"Doe\"}}');\n```\n\nTo retrieve the first name of the second customer, you can use the following query:\n\n```SQL\nSELECT customer_info->'name'->>'first' AS first_name FROM customers WHERE id=2;\n```\n\nThis will return `Jane`, which is the first name of the second customer.\n\n### Updating Nested Fields\n\nTo update a specific field within a nested JSON object, you can use the `#>` operator. For example, consider the following JSON data:\n\n```SQL\nCREATE TABLE inventory (\n  id SERIAL PRIMARY KEY,\n  item_data JSONB\n);\nINSERT INTO inventory (item_data) VALUES ('{\"name\": \"Apple Macbook Pro\", \"stock\": {\"quantity\": 10, \"location\": {\"warehouse\": \"A\", \"aisle\": \"B\"}}}');\n```\n\nTo update the quantity of Macbook Pro in warehouse A, you can use the following SQL statement:\n\n```SQL\nUPDATE inventory SET item_data = item_data #> '{stock,quantity}'::text[] || '{\"changed_at\": \"now()\"}'::JSONB WHERE item_data#>'{name}' = 'Apple Macbook Pro'::JSONB;\n```\n\nThis will update the value of `quantity` to 20 and add a new field `changed_at` to the `stock` object.\n\n### Querying and Indexing Arrays\n\nTo query data within an array, you can use a combination of the `->` and `#>` operators. For example, consider the following JSON data:\n\n```SQL\nCREATE TABLE products (\n  id SERIAL PRIMARY KEY,\n  item_data JSONB\n);\nINSERT INTO products (item_data) VALUES ('{\"name\": \"Apple iPhone 12\", \"prices\": {\"USD\": [1099, 1199, 1299], \"EUR\": [999, 1099, 1199]}}');\n```\n\nTo retrieve the second element of the `USD` prices array, you can use the following SQL statement:\n\n```SQL\nSELECT item_data->'prices'->'USD'->>1 AS price FROM products WHERE item_data#>'{name}' = 'Apple iPhone 12'::JSONB;\n```\n\nThis will return `1199`, which is the second element in the `USD` array.\n\nIn addition, PostgreSQL allows you to index the `JSONB` data type for more efficient querying. You can create an index on a specific field within a `JSONB` column using the `GIN` index type. PostgreSQL provides several index operators for `JSONB`, including `@>`, `<@`, and `.`, that can be used to query and index `JSONB` data.\n\n## Conclusion\n\nIn this post, we explored some advanced techniques for using the `JSONB` data type in PostgreSQL. We looked at how to work with complex JSON structures, query and update nested fields, and index `JSONB` data for more efficient querying. Using these techniques, you can efficiently store and retrieve structured and semi-structured data in your PostgreSQL database."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
