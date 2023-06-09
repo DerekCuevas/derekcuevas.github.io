@@ -677,7 +677,16 @@
         "concurrency"
       ],
       "createdAt": "2023-06-08T18:02:53.586Z"
+    },
+    {
+      "title": "How to Use the Decorator Pattern for Flexible and Extensible Code",
+      "tags": [
+        "design patterns",
+        "decorator pattern",
+        "object-oriented programming"
+      ],
+      "createdAt": "2023-06-09T00:06:02.011Z"
     }
   ],
-  "updatedAt": "2023-06-08T18:02:53.586Z"
+  "updatedAt": "2023-06-09T00:06:02.011Z"
 }

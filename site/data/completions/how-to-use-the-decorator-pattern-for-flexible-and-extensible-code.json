@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\", \"Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7PJuYCxWBCSWkz2Q6hara34RIc442",
+  "object": "chat.completion",
+  "created": 1686269094,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 823,
+   "completion_tokens": 1271,
+   "total_tokens": 2094
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "How to Use the Decorator Pattern for Flexible and Extensible Code\n\nTags: Design Patterns, Decorator Pattern, Object-Oriented Programming\n\nObject-oriented programming has been popular for decades now, and with it, many code design patterns as solutions for common programming challenges. The Decorator pattern is one of such design patterns. Although not as frequently used as other patterns like the Singleton, or the Factory Method, the Decorator pattern does have its place in the programmer's toolbox. In this post, we will explore the Decorator pattern, learn how to use it, and see the benefits it brings to our code's flexibility and extensibility.\n\n## Introduction to the Decorator Pattern\n\nThe Decorator pattern is a design pattern that allows us to add additional behavior to an object dynamically. It is used when we want to extend the functionality of an object without changing its original behavior. \n\nIn other words, the Decorator pattern provides us with a way to add or modify the behavior of an object at runtime, without subclassing it. This makes it particularly useful in situations where subclassing is not feasible, or where a class has many variants and creating a subclass for each variant would be impractical.\n\n## How to Implement the Decorator Pattern\n\nThe Decorator pattern is implemented by creating a decorator class that wraps around the original object and adds the desired behavior. The decorator class implements the same interface that the original object implements, and it maintains a reference to the original object. Whenever a method is called on the decorator object, the decorator's implementation is executed first, and then the implementation of the original object is executed.\n\nLet's see an example in Python code. Suppose we have a Pizza class that represents a basic pizza type, and we want to add toppings to it. We can create a ToppingDecorator class that adds those toppings, like this:\n\n```python\nclass Pizza:\n    def get_description(self) -> str:\n        pass\n    \n    def get_cost(self) -> float:\n        pass\n    \nclass MargheritaPizza(Pizza):\n    def get_description(self) -> str:\n        return \"Margherita\"\n\n    def get_cost(self) -> float:\n        return 8.0\n\nclass ToppingDecorator(Pizza):\n    def __init__(self, pizza: Pizza):\n        self._pizza = pizza\n\n    def get_description(self) -> str:\n        return self._pizza.get_description()\n\n    def get_cost(self) -> float:\n        return self._pizza.get_cost()\n\nclass CheeseTopping(ToppingDecorator):\n    def __init__(self, pizza: Pizza):\n        super().__init__(pizza)\n\n    def get_description(self) -> str:\n        return f\"{self._pizza.get_description()}, Cheese\"\n\n    def get_cost(self) -> float:\n        return self._pizza.get_cost() + 1.0\n\nclass PepperTopping(ToppingDecorator):\n    def __init__(self, pizza: Pizza):\n        super().__init__(pizza)\n\n    def get_description(self) -> str:\n        return f\"{self._pizza.get_description()}, Pepper\"\n\n    def get_cost(self) -> float:\n        return self._pizza.get_cost() + 1.5\n```\nIn this example, we have a Pizza abstract class that defines two methods: `get_description` and `get_cost`, which will be overridden by its concrete classes `MargheritaPizza`, and `ToppingDecorator`.\n\nThe `ToppingDecorator` also implements the same `get_description` and `get_cost` methods and serves as the base class for specific toppings implementations like `CheeseTopping` and `PepperTopping`.\n\nHere we can see that the `get_description` method of the pizza object is accessed first by the `CheeseTopping` object when `get_description` is called on the `CheeseTopping` object. Then `CheeseTopping` adds a new string to the output of the `Pizza` object's implementation to represent the cheese topping, before returning it.\n\nThe same mechanism applies to the `get_cost` method. Here, the `Pizza` object's cost is obtained first before the cheese topping's cost is added to the total sum.\n\nNow that we have implemented our decorator pattern for topping addition, let's see how we can use it.\n\n```python\nbasic_pizza = MargheritaPizza()\nprint(basic_pizza.get_description())  # Margherita\nprint(f\"Cost: {basic_pizza.get_cost()}$\")  # 8.0$\n\ncheese_pizza = CheeseTopping(MargheritaPizza())\nprint(cheese_pizza.get_description())  # Margherita, Cheese\nprint(f\"Cost: {cheese_pizza.get_cost()}$\")  # 9.0$\n\npepper_pizza = PepperTopping(MargheritaPizza())\nprint(pepper_pizza.get_description())  # Margherita, Pepper\nprint(f\"Cost: {pepper_pizza.get_cost()}$\")  # 9.5$\n```\nBy calling the `CheeseTopping` or `PepperTopping` objects with a `MargheritaPizza` object, we can add toppings dynamically while using the same Pizza interface. As we can see from the output of the code, these toppings are reflected in the description and the cost of the pizza.\n\n## Benefits of the Decorator Pattern\n\nUsing the Decorator pattern in our code can provide several benefits. For example, it allows us to add or remove behavior dynamically at runtime, which can make our code more flexible. It also makes our code more extensible since we can add new classes that implement the same interface and decorate the original object with new behavior.\n\nMoreover, the Decorator pattern promotes code reuse since we can create decorator classes that add behavior to different objects, which can save us from creating many subclasses for each of the object variants.\n\n## Conclusion\n\nIn this post, we have learned about the Decorator pattern, seen how to implement it in Python code, and understood its benefits. The Decorator pattern is a powerful tool that provides us with a flexible and extensible way to add or remove behavior to an object at runtime. By employing this pattern, we can make our code more modular, reusable, and easier to maintain."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
