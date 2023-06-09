@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Clojure's Reducers\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7PV6ih8gBQ3Pav2NJr9YPq1Kckf5k",
+  "object": "chat.completion",
+  "created": 1686312132,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 825,
+   "completion_tokens": 784,
+   "total_tokens": 1609
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "## Writing Secure Rust Code: A Deep Dive into Memory Safety\n\nTags: Rust, Memory Safety, Security\n\nIf you're writing Rust code, you're already one step ahead of the game in terms of security. Rust is known for its focus on memory safety, making it a popular choice for systems programming, networking, and other code that needs to be fast and secure. However, writing secure Rust code isn't necessarily automatic, and a few common mistakes can still lead to vulnerabilities.\n\nThis post will dive into some of the common pitfalls in Rust that can lead to memory safety issues, and show you how to avoid them.\n\n### The Rust Ownership Model\n\nRust's ownership model is central to its focus on memory safety. With ownership, you ensure that there's always exactly one owner of a piece of data at any given time. This guarantees that the data is never accessed in a way that could lead to memory safety issues, like dangling pointers or null references.\n\nFor example, consider this code:\n\n```rust\nlet name = String::from(\"Alice\");\nlet name_alias = &name;\n```\n\nHere, `name` owns the `String` data. When we create `name_alias`, it refers to that data, but it doesn't own it. `name` continues to own it until it goes out of scope. This guarantees that `name_alias` can't outlive `name`, and that the data is only used in a safe way.\n\n### Avoiding Use-After-Free Errors\n\nOne of the most common memory safety issues is a use-after-free error. This occurs when a program tries to access memory that has already been freed. In Rust, this can happen when a reference to data outlives the data itself.\n\nFor example:\n\n```rust\nfn main() {\n    let name = String::from(\"Alice\");\n    let name_alias = &name;\n    println!(\"{}\", name); // This will cause an error, because `name` has been dropped\n}\n```\n\nHere, `name` is dropped at the end of the `main()` function, but `name_alias` still has a reference to the data. When we try to use `name` after it's been dropped, we get a runtime error. The Rust compiler doesn't catch this error, because it's technically a safe operation - it just happens to be using memory that has already been freed.\n\nTo avoid use-after-free errors, you need to be careful about the lifetimes of your data. Make sure that any references to data don't outlive the data itself.\n\n### Avoiding Null Pointer Dereferences\n\nAnother common memory safety issue is a null pointer dereference. This occurs when a program tries to access memory through a null pointer.\n\nIn Rust, null pointers don't exist. Instead, we have `Option` types - values that might be `Some(value)` or `None`. This helps eliminate null pointer dereferences, because you have to explicitly handle the case where a value might be missing.\n\nFor example:\n\n```rust\nfn main() {\n    let name: Option<String> = None;\n    println!(\"{}\", name.unwrap()); // This will cause a panic, because `name` is `None`.\n}\n```\n\nHere, we're using `unwrap()` to try to get the value out of `name`. However, because `name` is `None`, this will panic at runtime. In Rust, you should always handle `Option` types explicitly, rather than assuming that a value is always present.\n\n### Conclusion\n\nRust's focus on memory safety makes it an excellent choice for security-critical code. However, you still need to be careful when writing Rust code to avoid common pitfalls that can lead to memory safety issues. By understanding the Rust ownership model, avoiding use-after-free errors, and avoiding null pointer dereferences, you can write Rust code that's fast, efficient, and secure."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
