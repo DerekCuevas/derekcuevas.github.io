@@ -686,7 +686,16 @@
         "object-oriented programming"
       ],
       "createdAt": "2023-06-09T00:06:02.011Z"
+    },
+    {
+      "title": "Fine-tuning BERT for Question Answering - A Step-by-Step Guide",
+      "tags": [
+        "natural language processing",
+        "deep learning",
+        "bert"
+      ],
+      "createdAt": "2023-06-09T06:03:27.484Z"
     }
   ],
-  "updatedAt": "2023-06-09T00:06:02.011Z"
+  "updatedAt": "2023-06-09T06:03:27.484Z"
 }

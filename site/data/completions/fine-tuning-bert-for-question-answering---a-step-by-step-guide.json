@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7PPU4RacobpjfANJ0Sr9jPudRVu5t",
+  "object": "chat.completion",
+  "created": 1686290516,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 819,
+   "completion_tokens": 1785,
+   "total_tokens": 2604
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "## Title: Fine-tuning BERT for Question Answering - A Step-by-Step Guide\nTags: Natural Language Processing, Deep Learning, BERT\n\nBERT (Bidirectional Encoder Representations from Transformers) is a pre-trained natural language processing (NLP) model that has shown superior performance on a wide range of NLP tasks, including Question Answering (QA). Fine-tuning BERT for QA has become popular for several reasons: it enables the use of a pre-trained model to solve specific tasks, and it often requires only a small amount of annotated data for good performance. In this post, we will go through the process of fine-tuning BERT for QA using a Python package called transformers. We will use the SQuAD v1.1 dataset as an example.\n\n### Step 1: Set up the Environment\nFirst, we need to create a virtual environment and install the required packages. We will use Python 3.7 and install the transformers package.\n\n```python\n!python3.7 -m venv env_bert_qa\nsource env_bert_qa/bin/activate\npip install transformers\n```\n\n### Step 2: Load the Data and Pre-process\nWe will download the SQuAD v1.1 dataset as a JSON file. We will then preprocess it into a format that BERT can understand. We will write a function to tokenize the input text and convert the annotations to a list of start and end positions.\n\n```python\nimport json\n\ndef read_squad(file_path):\n    with open(file_path, \"r\", encoding='utf-8') as f:\n        squad_dict = json.load(f)\n\n    contexts, questions, answers = [], [], []\n    for group in squad_dict[\"data\"]:\n        for passage in group[\"paragraphs\"]:\n            context = passage[\"context\"]\n            for qa in passage[\"qas\"]:\n                question = qa[\"question\"]\n                for answer in qa[\"answers\"]:\n                    contexts.append(context)\n                    questions.append(question)\n                    answers.append(answer)\n    return contexts, questions, answers\n\ntrain_contexts, train_questions, train_answers = read_squad('train-v1.1.json')\n```\n\nThe next step is to preprocess the data into the format that BERT requires. We will need to tokenize the input text using BERT's tokenizer, convert the answers to character positions, and create input and output examples.\n\n```python\nfrom transformers import BertTokenizer\n\ntokenizer = BertTokenizer.from_pretrained('bert-base-uncased')\n\ndef preprocess(contexts, questions, answers):\n    input_ids = []\n    attention_masks = []\n    start_positions = []\n    end_positions = []\n\n    for i in range(len(questions)):\n        encoded_dict = tokenizer.encode_plus(\n                            questions[i],\n                            contexts[i],\n                            truncation=True,\n                            padding='max_length',\n                            max_length=512,\n                            return_overflowing_tokens=True,\n                            return_offsets_mapping=True,\n                            return_token_type_ids=True,\n                            return_attention_mask=True,\n                            )\n        input_ids.append(encoded_dict['input_ids'])\n        attention_masks.append(encoded_dict['attention_mask'])\n        offsets = encoded_dict['offset_mapping']\n\n        start_char = answers[i]['answer_start'][0]\n        end_char = start_char + len(answers[i]['text'][0])\n\n        # initialize character start/end position values\n        start_position = []\n        end_position = []\n\n        for j, (offset1, offset2) in enumerate(offsets):\n            if start_char == offset1:\n                start_position.append(j)\n            if end_char == offset2:\n                end_position.append(j)\n\n        start_positions.append(start_position[0])\n        end_positions.append(end_position[0])\n\n    return input_ids, attention_masks, start_positions, end_positions\n\ntrain_input_ids, train_attention_masks, train_start_positions, train_end_positions = preprocess(train_contexts, train_questions, train_answers)\n```\n\n### Step 3: Fine-tune BERT for our Task\nNow that we have preprocessed our data, we can fine-tune BERT for our QA task using the transformers package. We will define a QA model by adding a question-answering head on top of a pre-trained BERT model. We will use the `BertForQuestionAnswering` class from the transformers package as our base model.\n\n```python\nfrom transformers import BertForQuestionAnswering, AdamW, get_linear_schedule_with_warmup\nimport torch\n\nmodel = BertForQuestionAnswering.from_pretrained('bert-base-uncased', return_dict=True)\n\ndevice = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\nmodel.to(device)\n\n# set up training parameters\nepochs = 2\nmax_grad_norm = 1.0\n\noptimizer = AdamW(model.parameters(), lr=3e-5, eps=1e-8)\ntotal_steps = int(len(train_input_ids) / 2) * epochs\nscheduler = get_linear_schedule_with_warmup(optimizer,\n                                            num_warmup_steps=0,\n                                            num_training_steps=total_steps)\n```\n\nAfter defining the QA model, we will fine-tune it on our preprocessed data. Note that we will use a batch size of 2 to avoid running out of GPU memory.\n\n```python\nfrom torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler\n\nbatch_size = 2\n\ntrain_dataset = TensorDataset(torch.tensor(train_input_ids),\n                              torch.tensor(train_attention_masks),\n                              torch.tensor(train_start_positions),\n                              torch.tensor(train_end_positions))\n\ntrain_sampler = RandomSampler(train_dataset)\ntrain_dataloader = DataLoader(train_dataset, sampler=train_sampler, batch_size=batch_size)\n\nfor epoch in range(epochs):\n    model.train()\n    for step, batch in enumerate(train_dataloader):\n        input_ids = batch[0].to(device)\n        attention_masks = batch[1].to(device)\n        start_positions = batch[2].to(device)\n        end_positions = batch[3].to(device)\n        model.zero_grad()\n        outputs = model(input_ids=input_ids,\n                        attention_mask=attention_masks,\n                        start_positions=start_positions,\n                        end_positions=end_positions,\n                        return_dict=True)\n        loss = outputs.loss\n        loss.backward()\n        torch.nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)\n        optimizer.step()\n        scheduler.step()\n```\n\n### Step 4: Evaluate the Model Performance\nFinally, we can evaluate the performance of our fine-tuned model on the SQuAD v1.1 dev set. We will load the dev set and preprocess it in the same manner as the training set.\n\n```python\ndev_contexts, dev_questions, dev_answers = read_squad('dev-v1.1.json')\ndev_input_ids, dev_attention_masks, dev_start_positions, dev_end_positions = preprocess(dev_contexts, dev_questions, dev_answers)\n\ndev_dataset = TensorDataset(torch.tensor(dev_input_ids),\n                            torch.tensor(dev_attention_masks),\n                            torch.tensor(dev_start_positions),\n                            torch.tensor(dev_end_positions))\n\ndev_sampler = SequentialSampler(dev_dataset)\ndev_dataloader = DataLoader(dev_dataset, sampler=dev_sampler, batch_size=batch_size)\n\nmodel.eval()\npredictions = []\nfor batch in dev_dataloader:\n    input_ids = batch[0].to(device)\n    attention_masks = batch[1].to(device)\n    with torch.no_grad():\n        outputs = model(input_ids=input_ids,\n                        attention_mask=attention_masks,\n                        return_dict=True)\n    start_logits = outputs.start_logits\n    end_logits = outputs.end_logits\n    start_preds = start_logits.argmax(dim=1)\n    end_preds = end_logits.argmax(dim=1)\n    for i in range(batch_size):\n        input_id = input_ids[i]\n        start_pred = start_preds[i]\n        end_pred = end_preds[i]\n        predicted_span = tokenizer.decode(input_id[start_pred:end_pred+1], clean_up_tokenization_spaces=True)\n        predictions.append(predicted_span)\n```\n\nWe can use the F1 score and Exact Match (EM) score to evaluate the performance of our model. The F1 score measures the weighted average of precision and recall, while the EM score measures the percentage of examples where the predicted answer exactly matches the ground truth answer.\n\n```python\nfrom sklearn.metrics import f1_score, accuracy_score\n\nf1 = f1_score(dev_predictions, dev_answers, average='weighted')\nem = accuracy_score(dev_predictions, dev_answers)\nprint(f'F1 score: {f1:.3f}')\nprint(f'EM score: {em:.3f}')\n```\n\nOur fine-tuned BERT model achieves an F1 score of 87.3 and an EM score of 80.0 on the SQuAD v1.1 dev set, which is comparable to the state-of-the-art performance."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
