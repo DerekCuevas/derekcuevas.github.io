@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-05-20\"\nor = \"Derek Cuevas\"\n+++\n\nHi, my name is [Derek Cuevas](https://github.com/derekcuevas), I'm a Senior Software Engineer with 8 years of professional experience, currently working at [Second Spectrum](https://www.secondspectrum.com/) where I lead a systems software engineering team building low latency and realtime Emmy award winning products for live TV broadcasters leveraging the [Rust](https://www.rust-lang.org/) programming language.\n\nIn the past, I've built and worked on full stack web and mobile applications, leveraging technologies such as `TypeScript`, `Node.js`, `React`, and `Swift`, as well as worked on performance critical and highly available backend systems and services. \n\n\n---\n\n# Programming Languages\n\n- `Proficient:` Rust, TypeScript (& JavaScript) \n- `Experienced:` Clojure, Elm, Swift, Elixir, SQL\n\n# Technologies, Skills, and Interests\n\n- `Rust:` Tokio, Futures, Hyper, Actix, Warp \n- `Platforms and Services:` AWS, Docker, PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Node.js, Deno, HTML & CSS\n- `Tooling:` Git, Vim, Bash\n- `Frameworks:` React, React Native, Redux, RxJs, SwiftUI\n- `Protocols:` HTTP, GraphQL, WebSockets, ØMQ, JSON, MessagePack, Protobuf, FlatBuffers\n- `Paradigms:` Functional Programming, Realtime Systems\n\n---\n\n# Professional Experience\n\n## Senior Software Engineer II (Lead), Second Spectrum\n(*January 2021 - Current*)\n\nAcquired by Genius Sports [https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Realtime Augmentation Engine\" project's system team. The project is developed for live TV broadcasters of sporting events and combines a unique machine understanding of the game (through live player tracking data, computer vision, and automated eventing algorithms) with a 3D graphics engine to provide low-latency and realtime virtual-reality like experiences to broadcasters.\n- The project is a multiple times winner at the `Sports Emmys` awards. Most notably the winner of the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) in partnership with CBS for `\"RomoVision\"` at the 43rd awards. Also helped to secure Amazon's Emmy for [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the 44th annual awards for `TNF \"PrimeVision\"`.\n- Other notable executions powered by this project include [Marvel Arena of Heros](https://www.marvel.com/articles/culture-lifestyle/marvel-arena-of-heroes-golden-state-warriors-new-orleans-pelicans), [Clippers CourtVision](https://www.clipperscourtvision.com/), and [Premier League Data Zone](https://worldsoccertalk.com/peacock-adds-premier-league-data-zone-as-new-feature-20230406-WST-427164.html).\n- TODO: (be more specific with tech involved, provide real metrics) As the technical lead, I oversaw development and integrations for the core systems as well as the automated operational management and monitoring systems, release management, and led efforts to profile and optimize the system for the lowest possible latency. Video and data ingestion. Developed framework for algorithms integration.\n\n## Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed an application that allowed for searching for and visualizing discrepancies between different player tracking datasets. The application proved vital in proving the accuracy of our player tracking system to leagues and sporting teams by highlighting how use of different tracking anchor points (such as a player's \"center of mass\" projected to the ground vs a players feet location) could effect derived metrics such as a player's speed or total distance traveled.\n- Led a team of three engineers developed the companies first GraphQL server \n- Successfully mentored several interns and fellow engineers. Cultivated environment for team growth, collaboration, and knowledge sharing. Led pair programming sessions, code reviews, and learning groups discussions (FP, Rust, GraphQL).\n- TODO: Data Graph, Players Only, Output Page \n\n## Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the companies optical player tracking system.\n- Developed an automated QA task selection system, conducted A/B tests, and improved overall operator efficiency by 100%.\n- Gained experience building applications that displayed large amounts of frequently updated real-time data. Leveraged React, Redux, and Phoenix (Elixir) as the primary frameworks in addition to heavy use of Web Sockets.\n- TODO: Redstone, Clippers CourtVision, CourtVision Mobile, Silverware, Falcon\n\n## Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website. Deployed onto `AWS` and built using `Node.js`, `Jquery`, and `Bootstrap`.\n\n---\n\n# Education\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- Computer Science GPA: `3.81`\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n# Personal Projects\n\nFor fun, I like solving programming problems and puzzles and have completed many of the [Advent of Code](https://adventofcode.com/) problems (and similar problem sets) by exploring `functional` approaches in the [Clojure](https://clojure.org/) programming language. Some of my solutions can be found on GitHub: \n\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022)\n- [Advent of Code 2015](https://github.com/DerekCuevas/advent-of-code-2015)\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj)\n\nSome of my other past personal projects include:\n\n- [\"Friend List\" Programming Challenge](https://github.com/DerekCuevas/friend-list): A non-trivial example programming challenge that explores the modeling of asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A Redux higher order reducer to help simplify the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for JavaScript.\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Build a Scalable, Maintainable, and Performant Full-Text Search System for Your Application with Elasticsearch\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\", \"Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\", \"Projecting Elixir's Enum Module into Batches\", \"Mastering Browser Storage in TypeScript\", \"Mastering Rust's `std::env::args_os()`\", \"Building Composable, Scalable, and Reusable Redux Reducers\", \"Exploring Rust's `mem::replace()` Function\", \"Advanced TypeScript: Custom Type Guards\", \"Mastering Elixir's GenServer Callbacks\", \"The Magic of High-Level Streams\", \"Using Rust's Pinning API for Safe and Performant Async Programming\", \"Building Scalable REST APIs with Node.js and PostgreSQL\", \"How to Build High-Availability WebSocket Services with Rust and Actix-Web\", \"A Practical Introduction to the Actor Model in Elixir\", \"Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code\", \"Building High-Performance, Real-time Message-Based Applications with Rust and Pulsar\", \"The Art of Error Handling in Node.js\", \"JSON Data Validation with Rust's `serde_json` Library\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7NlQD55HBJ90RWIDwCwC2JHcIHsTH",
+  "object": "chat.completion",
+  "created": 1685898189,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 2053,
+   "completion_tokens": 1140,
+   "total_tokens": 3193
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Mastering Rust's Standard Library Function `mem::forget()`\n\nTags: Rust, Memory Management\n\nWhen writing low-level systems programming in Rust, you'll often find yourself working with raw pointers, and as such, managing memory yourself. Rust's ownership and borrowing model does an excellent job at preventing common issues like null references or dangling pointers, but there are times when you need to circumvent the system and borrow or manage memory in unsafe ways.\n\nIn this post, we'll talk about one such dangerous function in Rust's standard library called `mem::forget()`. We'll discuss what it does, when you should use it, and most importantly, when you shouldn't.\n\n## What is `mem::forget()`?\n\nRust's `mem::forget()` function is a way to “forget” about a value without actually dropping it. By calling `mem::forget()` on a value, you're telling Rust to ignore its lifetime, prevent it from being dropped, and stop tracking it. This function is unsafe because it can cause a memory leak or undefined behavior if used incorrectly.\n\nHere's an example to illustrate `mem::forget()`:\n\n```rust\nuse std::mem;\n\nfn main() {\n    let value = Box::new(\"Hello, world!\");\n    let ptr = Box::into_raw(value);\n\n    // ptr is now a raw pointer containing the memory address of \"Hello, world!\"\n    // Do something with ptr...\n\n    unsafe {\n        // We're done with ptr, so we'll call forget to prevent the box from being dropped.\n        mem::forget(ptr);\n    }\n}\n```\n\nAs you can see, `mem::forget()` is called with the raw pointer `ptr`. The `Box::into_raw()` function converts the box value into a raw pointer, transferring ownership to the raw pointer. Once `mem::forget()` is called on the raw pointer, Rust will not try to deallocate the memory on the heap when `ptr` goes out of scope.\n\n## When should you use `mem::forget()`?\n\nIn general, you should be very cautious when using `mem::forget()`. The function's purpose is to tell Rust to stop tracking a value and not deallocate its memory when it goes out of scope. If you're not careful, calling `mem::forget()` can create memory leaks, use-after-free errors, and other undefined behavior.\n\nThat being said, there are some specific situations where `mem::forget()` can be useful:\n\n- When working with FFI or external libraries that require raw pointers.\n- When implementing a data structure with custom deallocating behavior.\n- When using an object pool or other data structure that manages its memory manually.\n\nFor instance, suppose you're writing an FFI call to a C library that returns a string pointer, like so:\n\n```rust\nfn c_func() -> *mut c_char {\n    let c_string = CString::new(\"Hello, world!\").unwrap();\n    c_string.into_raw()\n}\n```\n\nThis function returns a raw pointer to the string data allocated on the heap. If you call `mem::forget()` on the pointer, Rust will not drop the value automatically, and the memory behind the pointer will be left untouched. In this case, the C library or another function that uses the pointer could be responsible for deallocating the memory when it's no longer needed.\n\n## When should you not use `mem::forget()`?\n\n`mem::forget()` is a very dangerous function that can cause a wide range of unexpected issues. It should only be used as a last resort and with extreme care.\n\nHere are some situations where you should avoid using `mem::forget()`:\n\n- When you're not working with raw pointer APIs or external libraries that require them.\n- When there are safe alternatives available that you can use instead.\n- When you're dealing with a value that needs to run its destructor.\n\nIn most cases, you should let Rust's ownership and lifetime system handle deallocating memory automatically. Rust provides a powerful set of tools (such as `Box`, `Arc`, and `Rc`) for managing memory in a safe manner. If you can use these tools, you should avoid using `mem::forget()` altogether.\n\nHere's an example of when using `mem::forget()` is a terrible idea:\n\n```rust\nfn main() {\n    let s = \"Hello, world!\".to_string();\n\n    let ptr = s.as_ptr();\n    let len = s.len();\n\n    // Oops, we forgot to call drop() on s!\n\n    unsafe {\n        // We'll call forget to prevent the string from being dropped.\n        mem::forget(s);\n    }\n\n    // This code continues to use the pointer 'ptr'\n    // and the length 'len' to read from the memory that s occupied\n    // expect some undefined behavior here \n}\n```\n\nIn this example, we've used `mem::forget()` to ignore the lifetime of `s`, effectively preventing Rust from calling the `String`'s destructor and freeing its memory. This code is very dangerous because it is undefined behavior to continue using the pointer and length of a string after it has been dropped. Don't use `mem::forget()` in situations like this.\n\n## Conclusion\n\n`mem::forget()` is a function that can be very powerful or very dangerous, depending on how you use it. While it's true that there are situations where `mem::forget()` can come in handy, you should always be wary of its potential pitfalls. As always, make sure you understand what you're doing and test your code comprehensively to ensure that you're not shooting yourself in the foot."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
