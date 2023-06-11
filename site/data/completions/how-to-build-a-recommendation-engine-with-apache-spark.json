@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 20 posts include: \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7Q2s0WcPizeGZuednbNnSNyGaMftY",
+  "object": "chat.completion",
+  "created": 1686441916,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 825,
+   "completion_tokens": 1169,
+   "total_tokens": 1994
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "How to Build a Recommendation Engine with Apache Spark\n\nTags: Apache Spark, Machine Learning, Recommendation Engines\n\nHave you ever wondered how Netflix or Amazon recommends the right content to you? Or how other websites suggest new products that you might like based on your browsing history? The answer lies in recommendation engines.\n\nA recommendation engine is an intelligent system that learns from a user’s preferences, activity history, and interactions with items or products and then predicts what the user might enjoy next. In this post, we’ll explore how to build a recommendation engine using Apache Spark, a popular open-source engine for big data processing and machine learning.\n\n## Introduction to Collaborative Filtering\n\nCollaborative filtering is a popular technique used in recommendation systems to make personalized recommendations to users. It works by identifying users with similar interests and suggesting items that they have enjoyed or ranked highly. Collaborative filtering can be used with both explicit and implicit feedback data. In explicit feedback, users explicitly provide ratings and feedback on items. In implicit feedback, user interaction data, such as clicks, views, and purchases, is used to infer their preferences.\n\nIn Spark, the ALS (Alternating Least Squares) algorithm is commonly used to build a recommendation engine based on collaborative filtering. ALS is an iterative optimization algorithm that minimizes the difference between predicted and actual ratings.\n\n## Preparing the Data\n\nBefore building a recommendation engine, we need to prepare the data. For this example, we’ll be using the Movielens dataset, a commonly used dataset for building recommendation engines. The dataset contains ratings from 1 to 5 for various movies as well as demographic data about the users who rated the movies. In this example, we will only use the movie ratings data.\n\nFirst, we need to load the data into a Spark DataFrame:\n\n```scala\nimport org.apache.spark.sql.SparkSession\n\nval spark = SparkSession.builder()\n  .appName(\"RecommendationEngine\")\n  .config(\"spark.master\", \"local\")\n  .getOrCreate()\n\nval ratings = spark.read.option(\"header\", true)\n  .option(\"inferSchema\", true)\n  .csv(\"path/to/ratings.csv\")\n\nratings.show(5)\n```\n\nThis will load the ratings data from a CSV file and display the first five rows. The output should look something like this:\n\n```\n+------+-------+------+\n|userId|movieId|rating|\n+------+-------+------+\n|     1|   1193|     5|\n|     1|    661|     3|\n|     1|    914|     3|\n|     1|   3408|     4|\n|     1|   2355|     5|\n+------+-------+------+\n```\n\nNext, we need to split the data into training and testing sets:\n\n```scala\nimport org.apache.spark.ml.recommendation.ALS\nimport org.apache.spark.ml.evaluation.RegressionEvaluator\n\nval Array(training, testing) = ratings.randomSplit(Array(0.8, 0.2))\n\n```\n\nThe ALS algorithm requires the data to be in a specific format: a DataFrame with three columns, “userId”, “movieId”, and “rating”. We can create this DataFrame by using the `.select()` method:\n\n```scala\nval alsTraining = training.select(\"userId\", \"movieId\", \"rating\")\n```\n\n## Building the Model\n\nNow that we have prepared the data, we can build the recommendation model using the ALS algorithm. We can set the various hyperparameters for the algorithm, such as the rank, number of iterations, and regularization parameter, using the `.set*()` methods:\n\n```scala\nval als = new ALS()\n  .setMaxIter(10)\n  .setRegParam(0.1)\n  .setRank(10)\n  .setUserCol(\"userId\")\n  .setItemCol(\"movieId\")\n  .setRatingCol(\"rating\")\n```\n\nWe can now fit the model on the training data:\n\n```scala\nval alsModel = als.fit(alsTraining)\n```\n\n## Evaluating the Model\n\nFinally, we can evaluate the model on the testing data using a regression evaluator:\n\n```scala\nval alsTesting = testing.select(\"userId\", \"movieId\", \"rating\")\n\nval predictions = alsModel.transform(alsTesting)\n\nval evaluator = new RegressionEvaluator()\n  .setMetricName(\"rmse\")\n  .setLabelCol(\"rating\")\n  .setPredictionCol(\"prediction\")\n\nval rmse = evaluator.evaluate(predictions)\n\nprintln(s\"Root Mean Squared Error = $rmse\")\n```\n\nThe output should show the root mean squared error, a common metric used to evaluate recommendation engines. The lower the RMSE, the better the model.\n\n## Making Recommendations\n\nNow that we have trained the model and evaluated its performance, we can use it to make recommendations to users. For example, we can recommend the top 10 movies for a given user:\n\n```scala\nval userId = 1\n\nval movies = ratings.select(\"movieId\").distinct()\n  .withColumn(\"userId\", lit(userId))\n\nval recommendations = alsModel.transform(movies)\n  .na.drop()\n  .orderBy(desc(\"prediction\"))\n  .select(\"movieId\", \"prediction\")\n  .limit(10)\n\nrecommendations.show()\n```\n\nThis will recommend the top 10 movies for user 1 based on their ratings history.\n\n## Conclusion\n\nIn this post, we’ve explored how to build a recommendation engine using Apache Spark and the ALS algorithm. We’ve seen how to prepare the data, build the model, evaluate its performance, and make personalized recommendations to users. Recommendation engines are a powerful tool for businesses to improve customer satisfaction and drive revenue, and with Spark, building them has never been easier."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
