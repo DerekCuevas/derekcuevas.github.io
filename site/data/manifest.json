@@ -759,7 +759,16 @@
         "recommendation engines"
       ],
       "createdAt": "2023-06-11T00:05:54.134Z"
+    },
+    {
+      "title": "How to Use AWS Fargate for Highly Scalable and Serverless Containers",
+      "tags": [
+        "aws",
+        "fargate",
+        "containers"
+      ],
+      "createdAt": "2023-06-11T06:02:37.905Z"
     }
   ],
-  "updatedAt": "2023-06-11T00:05:54.134Z"
+  "updatedAt": "2023-06-11T06:02:37.905Z"
 }
