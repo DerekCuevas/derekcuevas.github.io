@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas's Résumé\"\ndate = \"2023-05-20\"\nauthor = \"Derek Cuevas\"\n+++\n\nSenior Software Engineering Tech Lead with 8 years of professional experience building full stack applications and highly available, performance critical, realtime systems and services.\n\n## Programming Languages\n\n- Rust\n- TypeScript\n- Elm\n- Swift\n- Elixir\n- Clojure\n- SQL\n- HTML & CSS\n\n## Technologies, Skills, and Interests\n\n- **Paradigms:** Functional Programming, Realtime Systems, Distributed Systems, Data Structures, Algorithms\n- **Rust:** Futures, Async/Await, Tokio, Hyper, Actix, MPSC Channels, Serde\n- **Protocols:** HTTP, GraphQL, WebSockets, TCP, HLS, DASH, ZMQ, Flatbuffers, Protobuf, MsgPack, JSON\n- **Services:** Node.js, AWS (S3, EC2, SQS, ect.), PostgreSQL, Redis, Pulsar, RabbitMQ\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI\n- **Tooling:** Git, Vim, Docker, Bash\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 40 posts include: \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\", \"Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\", \"Projecting Elixir's Enum Module into Batches\", \"Mastering Browser Storage in TypeScript\", \"Mastering Rust's `std::env::args_os()`\", \"Building Composable, Scalable, and Reusable Redux Reducers\", \"Exploring Rust's `mem::replace()` Function\", \"Advanced TypeScript: Custom Type Guards\", \"Mastering Elixir's GenServer Callbacks\", \"The Magic of High-Level Streams\", \"Using Rust's Pinning API for Safe and Performant Async Programming\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include or link to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7QJfhaeO1OSM303n8EVyQxOfH7TiH",
+  "object": "chat.completion",
+  "created": 1686506501,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 1086,
+   "completion_tokens": 1321,
+   "total_tokens": 2407
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Rust's Pinning API: A Comprehensive Guide\n\nTags: Rust, Memory Safety, Pinning\n\nRust is a strongly typed systems programming language known for its memory safety and low-level control features. Rust's ownership rules and borrowing system provide type safety for pointer safety and memory access, which reduces bugs and crashes caused by memory handling issues, making Rust code safe and easy-to-maintain in the long run. Besides ownership rules and borrowing, Rust provides another low-level feature that allows programmers to pin a memory location, which means that the location marked as pinned will not be moved during computation. \n\nPinning is essential for implementing asynchronous programming and futures, which is Rust's way of doing async/await without the need for external libraries or frameworks. In this post, we will explore Rust's Pinning API, how to use it safely and effectively, and how to write efficient Rust code that takes advantage of it.\n\n### What is Pinning in Rust?\n\nPinning is a concept that refers to holding a value at a specific location in memory regardless of its ownership status. Rust's ownership rules ensure that the ownership of a variable must be unambiguous and clearly identifiable at compile-time, and it may change during runtime. When a variable gets moved, the compiler updates all the references to the variable in the program to point to the new location. In contrast, when pinning a value, Rust guarantees that the value will not be moved during runtime, regardless of its ownership status. Pinned values can be a heap-allocated object, a slice, a trait object, or a boxed value.\n\nThe Pinning API is used to pin an arbitrary type in Rust. The Pin type is a smart pointer that allows pinning a value of any type, making it impossible to move or remove the value from its pinned location. Pinning is useful in async programming because it guarantees that the memory location of a pinned object does not change during execution, which ensures that the async tasks and futures that depend on the pinned object are safe and can complete efficiently.\n\n### How to Pin Values in Rust\n\nPinning values in Rust involves using the Pin type to wrap or encapsulate the value that needs to be pinned. The Pin type can be used with the Box, Vec, and other smart pointer types in Rust's standard library.\n\nHere is an example of how to pin a heap-allocated object using the Pin type:\n\n```rust\nuse std::pin::Pin;\n\nstruct MyStruct {\n   data: Vec<u8>\n}\n\nlet my_obj = Box::new(MyStruct { data: vec![0, 1, 2, 3] });\n\n// Pin the object, preventing it from being moved\nlet pinned_obj: Pin<Box<MyStruct>> = Pin::new(my_obj);\n```\n\nIn this code snippet, we first define a struct `MyStruct` that contains a vector of u8. We then allocate an object of type `MyStruct` on the heap using `Box::new()`. Finally, we create a pinned object `pinned_obj` by wrapping `my_obj` in a `Pin` smart pointer.\n\n### How to Unpin Values in Rust\n\nIn Rust, some types can be moved or dropped without causing memory leaks or safety issues. These types are called `Unpin`, and they do not need to be pinned. When a value is unpin, Rust can relocate it in memory without breaking any correctness guarantees. In contrast, values that are pinned must remain in their memory location, preventing Rust from relocating them. \n\nHere is how to create an unpinned object in Rust:\n\n```rust\nstruct MyUnpinStruct {\n    data: u8,\n}\n\nimpl Unpin for MyUnpinStruct {}\n\nfn create_object() -> MyUnpinStruct {\n    MyUnpinStruct { data: 42 }\n}\n```\n\nWe create an object of type `MyUnpinStruct` that contains a u8 field. We then mark this object as `Unpin` by implementing the `Unpin` trait for this struct. Finally, we define a function that returns an instance of the `MyUnpinStruct` struct.\n\n### How to Move Pinned Values Safely\n\nWhen working with pinned objects, it is essential to move them properly to avoid causing safety risks and undefined behavior in the program. Rust provides the `mem::replace()` function for safely moving pinned values in memory. The `mem::replace()` function creates a temporary copy of the pinned value and then moves the original value by copying the temporary copy to the new location. This operation maintains the pinning guarantee for the original value and returns a mutable reference to the new location.\n\nHere is an example of how to use the `mem::replace()` function with a pinned struct:\n\n```rust\nuse std::mem;\n\nstruct MyPinnedStruct {\n    data: Vec<u8>\n}\n\nlet my_obj = Box::new(MyPinnedStruct {\n    data: vec![0, 1, 2, 3]\n});\n\nlet mut pinned_obj: Pin<Box<MyPinnedStruct>> = Pin::new(my_obj);\n\nlet new_obj = MyPinnedStruct { data: vec![4, 5, 6, 7] };\n\nlet pinned_reference = unsafe { pinned_obj.as_mut().get_unchecked_mut() };\n\npinned_reference = mem::replace(pinned_reference, new_obj);\n```\n\nIn this example, we create a heap-allocated `MyPinnedStruct` object using a `Box` pointer type. We then wrap the `Box` in a `Pin` smart pointer and assign it to the `pinned_obj` variable. Next, we create a new `MyPinnedStruct` object with different data values and pin it with a mutable reference using the `pinned_reference` variable. Finally, we safely move the pinned value using the `mem::replace()` function and assigning the result to `pinned_reference`.\n\n### Conclusion\n\nIn this post, we have explored Rust's Pinning API, a low-level feature of Rust that allows us to pin the memory location of an object and hold it there for as long as it is needed. Pinning is essential for writing efficient and safe Rust code, especially in async programming and futures scenarios. We have looked at how to pin and unpin objects in Rust and how to safely move pinned objects using the `mem::replace()` function. By using Rust's Pinning API, you can write efficient and safe Rust code that will make your program less prone to run-time errors and bugs."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

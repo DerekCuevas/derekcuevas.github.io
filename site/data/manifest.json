@@ -778,7 +778,16 @@
         "networking"
       ],
       "createdAt": "2023-06-11T12:02:51.017Z"
+    },
+    {
+      "title": "Rust's Pinning API: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "memory safety",
+        "pinning"
+      ],
+      "createdAt": "2023-06-11T18:02:22.958Z"
     }
   ],
-  "updatedAt": "2023-06-11T12:02:51.017Z"
+  "updatedAt": "2023-06-11T18:02:22.958Z"
 }
