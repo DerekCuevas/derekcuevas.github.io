@@ -15,7 +15,7 @@ Senior Software Engineer | [GitHub](https://github.com/derekcuevas) (contact ema
 
 Senior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.
 
-Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/). Experienced in leading teams and delivering award-winning projects. Passionate about functional programming and building high performance real-time systems.
+Experienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).
 
 ---
 
@@ -33,7 +33,7 @@ Skilled in a variety of programming languages and technologies with expertise in
 - **Tooling:** Git, Vim, Bash
 - **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix
 - **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers
-- **Paradigms:** Functional Programming, Realtime Systems
+- **Paradigms:** Functional Programming, Real-time Systems
 
 ---
 
@@ -44,10 +44,10 @@ Skilled in a variety of programming languages and technologies with expertise in
 
 [https://geniussports.com/](https://geniussports.com/)
 
-- Technical lead for the "Realtime Augmentation Engine" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.
+- Technical lead for the "Real-time Augmentation Engine" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.
 - Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.
 - Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.
-- Optimized the overall pipeline for 60fps realtime rendering over high definition broadcast feeds.
+- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.
 - Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.
 
 ### Senior Software Engineer I (Lead), Second Spectrum
@@ -65,7 +65,7 @@ Skilled in a variety of programming languages and technologies with expertise in
 
 [https://www.secondspectrum.com/](https://www.secondspectrum.com/)
 
-- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near realtime.
+- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.
 - Improved operator efficiency by 100% through the implementation of an automated task selection system.
 - Led the development of the LA Clipper's live streaming web and mobile application "Clippers CourtVision". Stack included `Elm` for the web front-end and `React Native` for the mobile app.
 
