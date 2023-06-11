@@ -43,11 +43,14 @@ I've seen a lot of fascinating and diverse posts, but their quality and accuracy
 Some of my favorite posts so far include:
 
 - [Writing Rust Macros: A Comprehensive Guide](/posts/writing-rust-macros-a-comprehensive-guide/)
+- [Advanced Swift: Using Protocol Composition to Achieve Type-Safe, Modular Code](/posts/advanced-swift-using-protocol-composition-to-achieve-type-safe-modular-code/)
+- [Weird Rust Features](/posts/weird-rust-features/)
 - [A Comprehensive Guide to Asynchronous Programming in Swift with Combine](https://derekcuevas.github.io/posts/a-comprehensive-guide-to-asynchronous-programming-in-swift-with-combine/)
 
-And some others which are not so great (including some made-up facts and information) include:
+And some others which are not so great (including some made up information or are just odd in general) include:
 
-- [How to Write High Performance Elm Code with the Help of Web Workers](/posts/how-to-write-high-performance-elm-code-with-the-help-of-web-workers/)
+- [Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code](/posts/mastering-javascripts-array.concat-method-for-high-performance-and-scalable-code/)
+- [Using Rust's Pinning API for Safe and Performant Async Programming](/posts/using-rusts-pinning-api-for-safe-and-performant-async-programming/)
 
 Overall, I've enjoyed looking forward to the blog's posts. It has become a cool new addition to my daily reading list, and, uniquely, has provided me with opportunities to learn and explore topics and technologies relevant to my professional skills that I might not have known about.
 
