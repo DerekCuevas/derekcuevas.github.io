@@ -1,6 +1,6 @@
 import { Message } from "./openai.ts";
 
-const PREVIOUS_POST_COUNT = 20;
+const PREVIOUS_POST_COUNT = 40;
 
 export const getChatPrompt = (
   resume: string,
@@ -35,7 +35,7 @@ export const getChatPrompt = (
   {
     role: "user",
     content:
-      "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, practical example, or best practice.",
+      "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice.",
   },
   {
     role: "user",
@@ -65,7 +65,7 @@ export const getChatPrompt = (
   },
   {
     role: "user",
-    content: "Do not include images in the post.",
+    content: "Do not include or link to images in the post.",
   },
   {
     role: "user",
