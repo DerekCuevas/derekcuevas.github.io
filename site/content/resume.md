@@ -15,14 +15,14 @@ Senior Software Engineer | [GitHub](https://github.com/derekcuevas) (contact ema
 
 Senior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.
 
-Skilled in a variety of programming languages and technologies, with expertise in [Rust](https://www.rust-lang.org/), and [TypeScript](https://www.typescriptlang.org/). Experienced in leading teams and delivering award-winning projects. Passionate about functional programming and building high performance real-time systems.
+Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/). Experienced in leading teams and delivering award-winning projects. Passionate about functional programming and building high performance real-time systems.
 
 ---
 
 ## Programming Languages
 
-- **Proficient:** Rust, TypeScript (& JavaScript)
-- **Experienced:** Clojure, Elm, Swift, Elixir, SQL
+- **Proficient:** Rust, TypeScript (& JavaScript), Elm, Clojure
+- **Experienced:** Elixir, Swift, Objective-C, SQL
 
 ---
 
@@ -48,14 +48,14 @@ Skilled in a variety of programming languages and technologies, with expertise i
 - Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.
 - Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.
 - Optimized the overall pipeline for 60fps realtime rendering over high definition broadcast feeds.
-- Key contributor to projects recognized with multiple awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.
+- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.
 
 ### Senior Software Engineer I (Lead), Second Spectrum
 (*January 2019 - January 2021*)
 
 [https://www.secondspectrum.com/](https://www.secondspectrum.com/)
 
-- Led a team in designing and developing the company's first `GraphQL` service, serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL` and `Redis` for caching and pub/sub.
+- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.
 - Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.
 - Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.
 - Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.
@@ -94,4 +94,3 @@ Skilled in a variety of programming languages and technologies, with expertise i
 - [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.
 - [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.
 - [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.
-
