@@ -822,7 +822,16 @@
         "memory allocation"
       ],
       "createdAt": "2023-06-12T00:14:48.016Z"
+    },
+    {
+      "title": "Implementing the Factory Method Design Pattern in Dart",
+      "tags": [
+        "dart",
+        "design patterns",
+        "factory method"
+      ],
+      "createdAt": "2023-06-12T06:02:54.801Z"
     }
   ],
-  "updatedAt": "2023-06-12T00:14:48.016Z"
+  "updatedAt": "2023-06-12T06:02:54.801Z"
 }
