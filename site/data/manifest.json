@@ -831,7 +831,16 @@
         "factory method"
       ],
       "createdAt": "2023-06-12T06:02:54.801Z"
+    },
+    {
+      "title": "Securely Managing Secrets in Production Applications",
+      "tags": [
+        "security",
+        "devops",
+        "programming"
+      ],
+      "createdAt": "2023-06-12T12:02:58.361Z"
     }
   ],
-  "updatedAt": "2023-06-12T06:02:54.801Z"
+  "updatedAt": "2023-06-12T12:02:58.361Z"
 }
