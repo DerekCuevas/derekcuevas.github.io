@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\nSenior Software Engineer | [GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Elm, Clojure\n- **Experienced:** Elixir, Swift, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 40 posts include: \"Rust's Pinning API: A Comprehensive Guide\", \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\", \"Mastering Rust's Standard Library Function `mem::forget()`\", \"Build a Scalable, Maintainable, and Performant Full-Text Search System for Your Application with Elasticsearch\", \"Mastering Clojure's Reducers\", \"How to Use Swift's Result Type for Error Handling\", \"Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs\", \"Projecting Elixir's Enum Module into Batches\", \"Mastering Browser Storage in TypeScript\", \"Mastering Rust's `std::env::args_os()`\", \"Building Composable, Scalable, and Reusable Redux Reducers\", \"Exploring Rust's `mem::replace()` Function\", \"Advanced TypeScript: Custom Type Guards\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include or link to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7QPL6iR2HqAMjZ2QykMTfOu8KNQQl",
+  "object": "chat.completion",
+  "created": 1686528288,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 2069,
+   "completion_tokens": 1197,
+   "total_tokens": 3266
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Building Real-Time Audio Applications with WebRTC and Rust\n\nTags: Rust, WebRTC, Real-Time\n\nWebRTC (Web Real-Time Communications) is an open-source project that enables real-time communication between web browsers and mobile applications using voice, video, and data. In this post, we will explore how to use Rust to build real-time audio applications on top of WebRTC. We will walk through the steps required to build a simple web application that communicates audio in real-time between two clients using Rust, WebSockets, and WebRTC.\n\n## WebRTC Internals\n\nWebRTC is a collection of APIs and communication protocols that allow real-time communication between browsers, mobile devices, and desktop applications. The WebRTC APIs enable the following features for real-time communication:\n\n- Voice over Internet Protocol (VoIP)\n- Mobile-call applications\n- Videoconferencing\n- Audio and video mixing\n- Screen sharing\n- File transfer\n\nThe WebRTC APIs expose a number of individual components and modules that developers can use to customize their applications. These components and modules include:\n\n- RTCPeerConnection (used to establish and manage communication sessions)\n- RTCDataChannel (used for arbitrary data transfer)\n- MediaStream (used for managing audio and video streams)\n- RTCIceCandidate (used for handling network connectivity issues)\n- RTCSessionDescription (used for handling media session descriptions)\n\nIn this post, we will be focusing on the `MediaStream` component as the basis for real-time audio communication.\n\n## Setting up the Client\n\nThe first step in building our real-time audio application is to set up the client-side application. We will be using the `webrtc-echoes` crate to provide the WebRTC communication functionality for our Rust web application. We will use `websocket`, a parallel crate in Rust for implementing real-time browser-to-browser communication. We will also require the `wasm-pack` tool, which will compile our Rust code to WebAssembly.\n\nIn Terminal, run:\n\n```bash\ncargo install cargo-generate\ncargo generate --git https://github.com/Placenio/webrtc_echoes\ncd webrtc_echoes\ncargo install wasm-pack\n```\n\nNext, change your directory to `client/` and run:\n\n```bash\nwasm-pack build --out-name wasm --target web\n```\n\nThis will build a new Rust library with our client-side code, which can be consumed in a web browser.\n\n## Building the Server\n\nThe second step in building our real-time audio application is to set up the server. The server will communicate between the clients, handling WebSockets communication and relaying audio via the `webrtc-echoes` crate.\n\nIn Terminal, run:\n\n```bash\ncargo init server\ncd server\n```\n\nAdd the following dependencies to the `Cargo.toml` file:\n\n```toml\n[dependencies]\nwebrtc-echoes = \"0.3.2\"\ntokio = { version = \"1\", features = [\"full\"] }\nserde = { version = \"1\", features = [\"derive\"] }\nserde_json = \"1.0.64\"\nasync-tungstenite = \"0.13.0\"\n```\n\nWe will use the Tokio runtime to manage all the async tasks. Next, create a new file `main.rs` and add the following code:\n\n```rust\nuse async_tungstenite::{tokio::TokioAdapter, WebSocketStream};\nuse futures::{sink::SinkExt, StreamExt};\nuse serde::{Deserialize, Serialize};\nuse tokio::io::{AsyncRead, AsyncWrite};\nuse webrtc_echoes::{message::SignalingMessage, rtc::AudioService};\n\nasync fn handle_connection(ws: WebSocketStream<TokioAdapter<impl AsyncRead + Unpin + Send>, impl AsyncWrite + Unpin + Send>, audio_service: AudioService) {\n    let (mut ws_sender, mut ws_receiver) = ws.split();\n\n    while let Some(msg) = ws_receiver.next().await {\n        let msg = msg.unwrap().into_text().unwrap();\n        let signaling_message: SignalingMessage =\n          serde_json::from_str(&msg).unwrap();\n        audio_service.handle_signaling_message(signaling_message)\n            .await.map_err(|e| println!(\"Error handling signaling message: {}\", e))\n            .unwrap();\n        let message = audio_service.get_signaling_message();\n        let message =\n            serde_json::to_string(&message.unwrap()).unwrap();\n\n        ws_sender.send(message.into()).await.unwrap();\n    }\n}\n\nasync fn run_server() {\n    let audio_service = AudioService::new();\n    let mut listener = tokio::net::TcpListener::bind(\"127.0.0.1:8080\").await.unwrap();\n\n    let mut incoming = listener.incoming();\n    while let Some(stream) = incoming.next().await {\n        match stream {\n            Ok(stream) => {\n                println!(\"New WebSocket connection: {:?}\", stream);\n                let ws_stream = TokioAdapter::new(stream);\n                tokio::spawn(handle_connection(ws_stream, audio_service.clone()));\n            }\n            Err(e) => {\n                println!(\"Error accepting WebSocket connection: {}\", e);\n            }\n        }\n    }\n}\n\n#[tokio::main]\nasync fn main() {\n    run_server().await;\n}\n```\n\nThis server code example sets up a WebSocket listener on port 8080. The `handle_connection` function establishes a connection with `webrtc-echoes` and passes audio data between the clients.\n\n## Conclusion\n\nIn this post, we have covered the basics of building real-time audio applications using Rust, WebSockets, and WebRTC. We explored how to set up the client-side and server-side of our application and leveraged Rust's performance benefits to provide fast and reliable communication between clients. With the ever-growing demand for real-time communication functionality, the WebRTC API has become a valuable tool for developers to create new and innovative applications."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
