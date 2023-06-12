@@ -813,7 +813,16 @@
         "real-time"
       ],
       "createdAt": "2023-06-12T00:05:23.446Z"
+    },
+    {
+      "title": "Boosting Rust Performance with Allocator Selection",
+      "tags": [
+        "rust",
+        "performance",
+        "memory allocation"
+      ],
+      "createdAt": "2023-06-12T00:14:48.016Z"
     }
   ],
-  "updatedAt": "2023-06-12T00:05:23.446Z"
+  "updatedAt": "2023-06-12T00:14:48.016Z"
 }
