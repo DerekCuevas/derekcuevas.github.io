@@ -858,7 +858,15 @@
         "performance"
       ],
       "createdAt": "2023-06-13T00:05:53.251Z"
+    },
+    {
+      "title": "Using Array Partitions in Python for Improved Performance",
+      "tags": [
+        "python",
+        "performance"
+      ],
+      "createdAt": "2023-06-13T06:02:25.461Z"
     }
   ],
-  "updatedAt": "2023-06-13T00:05:53.251Z"
+  "updatedAt": "2023-06-13T06:02:25.461Z"
 }
