@@ -883,7 +883,16 @@
         "observer design pattern"
       ],
       "createdAt": "2023-06-13T18:02:58.514Z"
+    },
+    {
+      "title": "Gaining Insights from Large Datasets Using Delta Lake",
+      "tags": [
+        "big data",
+        "data science",
+        "data engineering"
+      ],
+      "createdAt": "2023-06-14T00:05:19.709Z"
     }
   ],
-  "updatedAt": "2023-06-13T18:02:58.514Z"
+  "updatedAt": "2023-06-14T00:05:19.709Z"
 }
