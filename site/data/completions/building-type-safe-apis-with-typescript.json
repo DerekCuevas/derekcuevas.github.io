@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\nSenior Software Engineer | [GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Elm, Clojure\n- **Experienced:** Elixir, Swift, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 40 posts include: \"Implementing the Flyweight Design Pattern in C\", \"Gaining Insights from Large Datasets Using Delta Lake\", \"Using the Observer Design Pattern in Scala\", \"The Builder Design Pattern in TypeScript\", \"Using Array Partitions in Python for Improved Performance\", \"Advanced Techniques for Debugging Rust Programs\", \"Writing a Domain-Specific Language (DSL) in Haskell\", \"Securely Managing Secrets in Production Applications\", \"Implementing the Factory Method Design Pattern in Dart\", \"Boosting Rust Performance with Allocator Selection\", \"Building Real-Time Audio Applications with WebRTC and Rust\", \"Rust's Pinning API: A Comprehensive Guide\", \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\", \"Using the Adapter Pattern to Integrate Legacy Code\", \"Building a Highly Scalable and Performant GraphQL API with Sangria\", \"Building Robust Elixir Back-End APIs with Phoenix Contexts\", \"Building real-time collaborative web apps with Operational Transformation\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include or link to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7RJUNAUJaii6XugTfPZLEU5h4F482",
+  "object": "chat.completion",
+  "created": 1686744127,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 2035,
+   "completion_tokens": 1051,
+   "total_tokens": 3086
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "Title: Building Type-Safe APIs with TypeScript\n\nTags: TypeScript, API Development, Type-Safety\n\nAs static type-checking gains popularity as a way to catch programming errors early and more efficiently, TypeScript has been gaining traction within the developer community. With TypeScript, it is now feasible to specify types for your APIs, which can prevent runtime errors during API consumption, improve documentation, and allow for the safe refactoring of application code. In this post, we will discuss how to build a type-safe API using TypeScript.\n\n## Setting up the project\n\nTo get started, create a new TypeScript project using the `tsc` command:\n\n```bash\nmkdir ts-api\ncd ts-api\nnpm init -y\nnpm install typescript\nnpx tsc --init\n```\n\nThis will set up the TypeScript project with the default settings. \n\nNext, create a new `index.ts` file in the `src` directory and a `dist` directory for the compiled output:\n\n```bash\nmkdir src\ntouch src/index.ts\nmkdir dist\n```\n\nFor the purpose of this post, we will be using the Express framework to set up the API. We will also use the `body-parser` and `cors` middleware. Install them by running the following command:\n\n```bash\nnpm install express body-parser cors\n```\n\nWith that set up, we can start building our API.\n\n## Type-Safe Request and Response Objects\n\nWhen building APIs, having strongly-typed request and response objects can prevent errors on both the server and client side. TypeScript provides the `interface` construct to define contracts between different parts of a system. We can use interfaces to define the shape of the request and response objects.\n\n```typescript\ninterface User {\n  name: string;\n  email: string;\n  password: string;\n}\n\ninterface UserRequest {\n  body: User;\n}\n\ninterface UserResponse {\n  id: number;\n  createdAt: Date;\n}\n```\n\nHere, we define a `User` object that the `UserRequest` interface will expect to receive in the API's body. The `UserResponse` interface is the response that will be sent back with a user's `id` and `createdAt` timestamp. With these interfaces defined, we can now use them with the Express framework.\n\n```typescript\nimport express, { Request, Response } from 'express';\nimport bodyParser from 'body-parser';\nimport cors from 'cors';\n\nconst app = express();\napp.use(bodyParser.json());\napp.use(cors());\n\napp.post('/users', (req: UserRequest, res: Response<UserResponse>) => {\n  const { name, email, password } = req.body;\n\n  // ... Create the user here and save to the database ...\n\n  res.status(201).json({\n    id: 1, // replace with actual user ID generated by the database\n    createdAt: new Date(),\n  });\n});\n\napp.listen(3000, () => {\n  console.log('App is running on port 3000');\n});\n```\n\nHere, we provide the types for the `req` and `res` objects. By doing so, TypeScript is able to catch errors when the wrong type of object is provided or returned from the API. \n\n## Error Handling\n\nEffective error handling is crucial in any API development project. Unhandled runtime errors can result in unexpected behavior and cause serious issues in production environments. To avoid these issues, we can use TypeScript to define and catch errors before runtime. \n\n```typescript\nclass HttpException extends Error {\n  status: number;\n\n  constructor(message: string, status: number) {\n    super(message);\n    this.status = status;\n  }\n}\n\nclass UserNotFoundException extends HttpException {\n  constructor(id: number) {\n    super(`User with ID ${id} not found`, 404);\n  }\n}\n```\n\nHere, we define two classes for HTTP exceptions: The `HttpException` class provides a `status` property that every child class must define, while the `UserNotFoundException` class extends `HttpException` for the specific case when a user could not be found, returning a `404` status code. We can now use these exceptions in our Express route handlers.\n\n```typescript\napp.get('/users/:id', (req: Request, res: Response<string>) => {\n  const userId = parseInt(req.params.id, 10);\n\n  // we can use `if (!userId)` to check if userId is undefined or null\n\n  if (isNaN(userId)) {\n    throw new HttpException('Invalid user ID', 400);\n  }\n\n  const user = /* ... find user from the database by ID ... */\n\n  if (!user) {\n    throw new UserNotFoundException(userId);\n  }\n\n  res.json(user);\n});\n```\n\nBy using these custom exceptions, we can reduce the number of runtime errors and ensure that the API client is receiving detailed error messages that provide valuable feedback in case of a failure.\n\n## Conclusion\n\nIn this post, we have explored how to leverage TypeScript to create type-safe request and response objects, customize error handling, and prevent common programming errors. Using TypeScript in API development can make your code base more maintainable and readable, catch errors in development, and ensure a more robust application."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}

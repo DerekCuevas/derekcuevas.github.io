@@ -900,7 +900,16 @@
         "design patterns"
       ],
       "createdAt": "2023-06-14T06:02:32.945Z"
+    },
+    {
+      "title": "Building Type-Safe APIs with TypeScript",
+      "tags": [
+        "typescript",
+        "api development",
+        "type-safety"
+      ],
+      "createdAt": "2023-06-14T12:03:00.905Z"
     }
   ],
-  "updatedAt": "2023-06-14T06:02:32.945Z"
+  "updatedAt": "2023-06-14T12:03:00.905Z"
 }
