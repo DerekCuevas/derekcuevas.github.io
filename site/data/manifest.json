@@ -892,7 +892,15 @@
         "data engineering"
       ],
       "createdAt": "2023-06-14T00:05:19.709Z"
+    },
+    {
+      "title": "Implementing the Flyweight Design Pattern in C",
+      "tags": [
+        "c#",
+        "design patterns"
+      ],
+      "createdAt": "2023-06-14T06:02:32.945Z"
     }
   ],
-  "updatedAt": "2023-06-14T00:05:19.709Z"
+  "updatedAt": "2023-06-14T06:02:32.945Z"
 }
