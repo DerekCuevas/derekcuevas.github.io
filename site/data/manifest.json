@@ -909,7 +909,16 @@
         "type-safety"
       ],
       "createdAt": "2023-06-14T12:03:00.905Z"
+    },
+    {
+      "title": "Building a Highly Scalable Kafka Consumer in Go",
+      "tags": [
+        "go",
+        "kafka",
+        "distributed systems"
+      ],
+      "createdAt": "2023-06-14T18:02:59.602Z"
     }
   ],
-  "updatedAt": "2023-06-14T12:03:00.905Z"
+  "updatedAt": "2023-06-14T18:02:59.602Z"
 }
