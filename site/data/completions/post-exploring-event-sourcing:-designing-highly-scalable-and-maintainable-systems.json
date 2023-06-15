@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\nSenior Software Engineer | [GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Elm, Clojure\n- **Experienced:** Elixir, Swift, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 40 posts include: \"Post Advanced Techniques for Code Optimization in Rust\", \"Post Exploring the Power of Generative Adversarial Networks (GANs) in Computer Vision\", \"Post Exploring the Power of WebAssembly for High-Performance Computing\", \"Post Exploring the Reactive Manifesto - Building Resilient and Responsive Systems\", \"Building a High-Performance Event Store with Apache Kafka\", \"Building a Highly Scalable Kafka Consumer in Go\", \"Building Type-Safe APIs with TypeScript\", \"Implementing the Flyweight Design Pattern in C\", \"Gaining Insights from Large Datasets Using Delta Lake\", \"Using the Observer Design Pattern in Scala\", \"The Builder Design Pattern in TypeScript\", \"Using Array Partitions in Python for Improved Performance\", \"Advanced Techniques for Debugging Rust Programs\", \"Writing a Domain-Specific Language (DSL) in Haskell\", \"Securely Managing Secrets in Production Applications\", \"Implementing the Factory Method Design Pattern in Dart\", \"Boosting Rust Performance with Allocator Selection\", \"Building Real-Time Audio Applications with WebRTC and Rust\", \"Rust's Pinning API: A Comprehensive Guide\", \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include or link to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7RfxvYFQoOodwszJQeaPD9NaK3LCn",
+  "object": "chat.completion",
+  "created": 1686830527,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "# Post Title: Exploring Event Sourcing: Designing Highly Scalable and Maintainable Systems\n\nTags: Event Sourcing, Distributed Systems, Scalability\n\n---\n\nEvent sourcing is a powerful architectural pattern that offers many benefits when designing highly scalable and maintainable systems. In this post, we will explore the key concepts and principles behind event sourcing and discuss how it can be utilized to build robust, fault-tolerant applications.\n\n## Understanding Event Sourcing\n\nAt its core, event sourcing treats the state of an application as a series of immutable events. These events capture every change made to the system over time, forming a complete log or history of all actions taken within the application. Unlike traditional data modeling, where the current state is stored and updated directly, event sourcing retains a chronological record of events that can be replayed to recreate any state at any point in time.\n\n## Benefits of Event Sourcing\n\n### Auditability and Compliance\n\nBy storing events as an immutable log, event sourcing provides a reliable and auditable trail of all historical data changes. This is particularly valuable in regulated domains such as finance or healthcare where maintaining a detailed audit log is crucial.\n\n### Scalability and Fault Tolerance\n\nSince the state of the application can be reconstructed by replaying events, event sourcing enables horizontal scalability and fault tolerance. By distributing the events across multiple nodes, the system can handle high traffic and recover gracefully from failures.\n\n### Temporal Queries and Time Travel\n\nWith event sourcing, it becomes possible to query the state of the application at any specific point in time. This feature is invaluable for tasks such as debugging, analyzing historical data, or recreating past scenarios.\n\n## Designing Event-sourced Systems\n\nWhen designing event-sourced systems, it is essential to follow certain best practices to ensure scalability, maintainability, and performance. Here are some key considerations:\n\n### Domain-driven Design (DDD)\n\nEvent sourcing and domain-driven design go hand in hand. By modeling the application's behavior using aggregates, entities, and value objects, developers can create a rich, expressive domain model that is easier to reason about. \n\n### Event Store\n\nAn event store is a crucial component of an event-sourced system. It is responsible for persisting events, providing event querying capabilities, and enabling event replay. Depending on the scale and requirements of the system, different implementations such as Apache Kafka, Apache Pulsar, or custom databases can be used as event stores.\n\n### Command-Query Responsibility Segregation (CQRS)\n\nCQRS is a pattern often used in conjunction with event sourcing. It separates the read and write operations into separate components, allowing them to scale independently and handle different data access patterns. The write side handles command processing and event sourcing, while the read side is responsible for materializing views of the data for querying.\n\n### Versioning and Compatibility\n\nAs the system evolves, it is essential to consider versioning and compatibility of events. Adding new fields or modifying existing ones may require careful handling to ensure backward compatibility and smooth migrations.\n\n## Code Example: Implementing Event Sourcing in Rust\n\nLet's take a look at a simple example of implementing event sourcing in Rust using the Actix framework and Apache Kafka as the event store.\n\n```rust\n#[derive(Debug, Serialize, Deserialize)]\nenum Event {\n    // Define events here\n    // Examples: UserCreated, OrderPlaced, PaymentProcessed\n}\n\nstruct Aggregate {\n    id: String,\n    // Define aggregate state fields here\n    // Example: username: String, totalAmount: i64\n    events: Vec<Event>,\n}\n\nimpl Aggregate {\n    fn handle_event(&mut self, event: Event) {\n        // Update the aggregate state based on the event\n    }\n\n    fn apply_events(&mut self, events: Vec<Event>) {\n        for event in events {\n            self.handle_event(event);\n        }\n    }\n}\n\n// Event sourcing service\nasync fn event_sourcing_service() {\n    let consumer = KafkaConsumer::new(\"event-topic\");\n\n    while let Ok(events) = consumer.consume().await {\n        let mut aggregate = Aggregate::new();\n\n        // Apply events to the aggregate\n        aggregate.apply_events(events);\n\n        // Perform any necessary actions based on the updated state\n        // ...\n\n        // Store the aggregate and its changes\n        // ...\n    }\n}\n\n// Main function\n#[actix_web::main]\nasync fn main() -> std::io::Result<()> {\n    // Start the event sourcing service\n    event_sourcing_service().await;\n\n    // Run Actix web server or other application components\n    // ...\n}\n```\n\nIn this example, we define an `Event` enum representing different types of events and an `Aggregate` struct that holds the current state and a list of applied events. The `event_sourcing_service` function consumes events from the Kafka topic, applies them to the aggregate, and stores the updated state.\n\n## Conclusion\n\nEvent sourcing is a powerful pattern for creating highly scalable and maintainable systems. By capturing every change as an immutable event, event sourcing offers benefits like auditability, scalability, and temporal queries. When combined with domain-driven design, CQRS, and a well-designed event store, event sourcing opens up new possibilities for building robust, fault-tolerant applications.\n\nIf you're interested in building systems that can handle tremendous scale and evolve over time while maintaining data consistency, event sourcing is definitely a pattern worth exploring."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2022,
+   "completion_tokens": 1087,
+   "total_tokens": 3109
+  }
+ }
+}

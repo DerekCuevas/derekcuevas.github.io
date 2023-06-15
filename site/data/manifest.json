@@ -963,7 +963,16 @@
         "optimization"
       ],
       "createdAt": "2023-06-15T06:02:25.433Z"
+    },
+    {
+      "title": "Post Exploring Event Sourcing: Designing Highly Scalable and Maintainable Systems",
+      "tags": [
+        "event sourcing",
+        "distributed systems",
+        "scalability"
+      ],
+      "createdAt": "2023-06-15T12:02:34.396Z"
     }
   ],
-  "updatedAt": "2023-06-15T06:02:25.433Z"
+  "updatedAt": "2023-06-15T12:02:34.396Z"
 }
