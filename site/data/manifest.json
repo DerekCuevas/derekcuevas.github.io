@@ -927,7 +927,16 @@
         "distributed systems"
       ],
       "createdAt": "2023-06-15T00:06:14.644Z"
+    },
+    {
+      "title": "Post Exploring the Reactive Manifesto - Building Resilient and Responsive Systems",
+      "tags": [
+        "reactive programming",
+        "resilience",
+        "scalability"
+      ],
+      "createdAt": "2023-06-15T04:41:42.388Z"
     }
   ],
-  "updatedAt": "2023-06-15T00:06:14.644Z"
+  "updatedAt": "2023-06-15T04:41:42.388Z"
 }
