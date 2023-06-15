@@ -945,7 +945,16 @@
         "computing"
       ],
       "createdAt": "2023-06-15T04:44:07.141Z"
+    },
+    {
+      "title": "Post Exploring the Power of Generative Adversarial Networks (GANs) in Computer Vision",
+      "tags": [
+        "machine learning",
+        "computer vision",
+        "gans"
+      ],
+      "createdAt": "2023-06-15T04:46:46.171Z"
     }
   ],
-  "updatedAt": "2023-06-15T04:44:07.141Z"
+  "updatedAt": "2023-06-15T04:46:46.171Z"
 }

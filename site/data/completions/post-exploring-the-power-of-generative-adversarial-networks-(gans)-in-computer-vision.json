@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\nSenior Software Engineer | [GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Elm, Clojure\n- **Experienced:** Elixir, Swift, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 40 posts include: \"Post Exploring the Power of WebAssembly for High-Performance Computing\", \"Post Exploring the Reactive Manifesto - Building Resilient and Responsive Systems\", \"Building a High-Performance Event Store with Apache Kafka\", \"Building a Highly Scalable Kafka Consumer in Go\", \"Building Type-Safe APIs with TypeScript\", \"Implementing the Flyweight Design Pattern in C\", \"Gaining Insights from Large Datasets Using Delta Lake\", \"Using the Observer Design Pattern in Scala\", \"The Builder Design Pattern in TypeScript\", \"Using Array Partitions in Python for Improved Performance\", \"Advanced Techniques for Debugging Rust Programs\", \"Writing a Domain-Specific Language (DSL) in Haskell\", \"Securely Managing Secrets in Production Applications\", \"Implementing the Factory Method Design Pattern in Dart\", \"Boosting Rust Performance with Allocator Selection\", \"Building Real-Time Audio Applications with WebRTC and Rust\", \"Rust's Pinning API: A Comprehensive Guide\", \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include or link to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7RZAM4zWFDbog4wn90QyNvTgApbjN",
+  "object": "chat.completion",
+  "created": 1686804390,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "# Post Title: Exploring the Power of Generative Adversarial Networks (GANs) in Computer Vision\nTags: Machine Learning, Computer Vision, GANs\n\n---\n\nGenerative Adversarial Networks (GANs) have emerged as a powerful technique in the field of computer vision, allowing us to generate high-quality, realistic images from random noise. In this post, we will dive deep into the world of GANs and explore how they work, their applications in computer vision, and the best practices for training and utilizing GAN models.\n\n## Introduction to GANs\n\nGANs consist of two main components: a generator and a discriminator. The generator takes random samples from a noise distribution and attempts to generate realistic data, such as images. The discriminator, on the other hand, is trained to differentiate between real and fake samples. The two components play a cat-and-mouse game, where the generator aims to fool the discriminator, while the discriminator aims to accurately classify the samples.\n\n## GAN Architectures\n\nThere are several popular architectures used for GANs in computer vision applications. One notable example is the Deep Convolutional GAN (DCGAN), which leverages deep convolutional neural networks to generate realistic images. DCGANs have shown impressive results in image synthesis tasks and have become the de facto standard for GAN architectures in computer vision.\n\n```python\nimport torch\nimport torch.nn as nn\n\nclass Generator(nn.Module):\n    def __init__(self):\n        super(Generator, self).__init__()\n        # Generator architecture implementation\n\n    def forward(self, x):\n        # Forward pass implementation\n\nclass Discriminator(nn.Module):\n    def __init__(self):\n        super(Discriminator, self).__init__()\n        # Discriminator architecture implementation\n\n    def forward(self, x):\n        # Forward pass implementation\n```\n\nIn the code snippet above, we define the basic structure of a GAN model using PyTorch. The Generator and Discriminator classes represent the generator and discriminator networks, respectively. These architectures can be customized based on the specific requirements of the task.\n\n## Training GANs\n\nTraining GANs can be challenging due to the inherent instability of the learning process. However, several best practices can help enhance the training stability and improve the quality of generated samples. These include:\n\n1. Using mini-batch discrimination: By including additional information about the entire mini-batch in the discriminator, such as the mean or standard deviation, we can improve the diversity of generated samples.\n\n2. Adding noise to the label inputs: Introducing random noise to the inputs of the discriminator can prevent it from overfitting and makes the training more robust.\n\n3. Employing regularization techniques: Regularization methods like L1 or L2 regularization can prevent GANs from overfitting to the training data and improve generalization.\n\n## Applications of GANs in Computer Vision\n\nGANs have found numerous applications in computer vision beyond image generation. They can be used for tasks such as:\n\n- Image-to-Image Translation: GANs can be trained to convert images from one domain to another. For example, converting images from daytime to nighttime or translating images from a sketch to a realistic photo.\n\n- Super-Resolution: GANs can generate high-resolution images from low-resolution inputs, improving the visual quality and level of detail.\n\n- Data Augmentation: GANs can be used to generate synthetic data for augmenting training sets, which can help to improve the performance of computer vision models.\n\n- Image Inpainting and Restoration: GANs can fill in missing or corrupted parts of images, making them useful for image restoration tasks.\n\n## Conclusion\n\nGenerative Adversarial Networks have opened up exciting opportunities in computer vision by enabling us to generate realistic images from noise and perform a wide range of image-related tasks. From image synthesis to data augmentation and restoration, GANs have proven to be a powerful tool for enhancing computer vision applications. Understanding the basic workings of GANs and employing best practices in their training can greatly contribute to the success of computer vision projects.\n\nThis post only scratches the surface of the vast capabilities and potential of GANs. By further exploring the latest research and experimenting with GAN architectures, computer vision practitioners can push the boundaries of what is possible in image generation and manipulation.\n\nI hope this post sparked your interest in the fascinating world of Generative Adversarial Networks. Feel free to delve deeper into GANs and discover the unique possibilities they offer in the realm of computer vision."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2014,
+   "completion_tokens": 914,
+   "total_tokens": 2928
+  }
+ }
+}
