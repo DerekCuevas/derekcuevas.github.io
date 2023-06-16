@@ -7,7 +7,7 @@ or = "Derek Cuevas"
 
 # Derek Cuevas
 
-Senior Software Engineer | [GitHub](https://github.com/derekcuevas) (contact email in bio) 
+[GitHub](https://github.com/derekcuevas) (contact email in bio) 
 
 ---
 
