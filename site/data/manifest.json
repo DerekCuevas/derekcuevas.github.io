@@ -981,7 +981,16 @@
         "frp"
       ],
       "createdAt": "2023-06-15T18:02:01.051Z"
+    },
+    {
+      "title": "Post: Exploring the Power of Rust's Async/Await Syntax",
+      "tags": [
+        "rust",
+        "asynchronous programming",
+        "concurrency"
+      ],
+      "createdAt": "2023-06-16T00:04:55.177Z"
     }
   ],
-  "updatedAt": "2023-06-15T18:02:01.051Z"
+  "updatedAt": "2023-06-16T00:04:55.177Z"
 }
