@@ -21,8 +21,8 @@ Experienced in leading teams and delivering Emmy award-winning projects. Passion
 
 ## Programming Languages
 
-- **Proficient:** Rust, TypeScript (& JavaScript), Elm, Clojure
-- **Experienced:** Elixir, Swift, Objective-C, SQL
+- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm
+- **Experienced:** Swift, Elixir, Objective-C, SQL
 
 ---
 
