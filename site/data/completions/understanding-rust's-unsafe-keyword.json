@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 40 posts include: \"How to use Access Control in Go\", \"Building a High-Performance Event Store with Apache Kafka\", \"Building a Highly Scalable Kafka Consumer in Go\", \"Building Type-Safe APIs with TypeScript\", \"Implementing the Flyweight Design Pattern in C\", \"Gaining Insights from Large Datasets Using Delta Lake\", \"Using the Observer Design Pattern in Scala\", \"The Builder Design Pattern in TypeScript\", \"Using Array Partitions in Python for Improved Performance\", \"Advanced Techniques for Debugging Rust Programs\", \"Writing a Domain-Specific Language (DSL) in Haskell\", \"Securely Managing Secrets in Production Applications\", \"Implementing the Factory Method Design Pattern in Dart\", \"Boosting Rust Performance with Allocator Selection\", \"Building Real-Time Audio Applications with WebRTC and Rust\", \"Rust's Pinning API: A Comprehensive Guide\", \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\", \"Building High Performance Distributed Data Pipelines with Apache Flink\", \"Implementing a Consistent Hashing Algorithm in TypeScript\", \"The Event Sourcing Design Pattern in TypeScript\", \"How to Write Fast Python Code\", \"Building a High-Availability Microservice Architecture with Modern C++\", \"How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include or link to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7S83WqcQz6uh4OOs2i0rp04GYvFoz",
+  "object": "chat.completion",
+  "created": 1686938506,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+   "prompt_tokens": 2020,
+   "completion_tokens": 1268,
+   "total_tokens": 3288
+  },
+  "choices": [
+   {
+    "message": {
+     "role": "assistant",
+     "content": "# Understanding Rust's Unsafe Keyword\n\nTags: Rust\n\n---\n\nRust is a powerful systems programming language that provides developers with the ability to write safe and efficient code. However, in some cases, Rust's default type and ownership system can be too restrictive, which is where the `unsafe` keyword comes in. In this article, we'll explore what the `unsafe` keyword is and how to use it safely.\n\n## What is `unsafe` in Rust?\n\nThe `unsafe` keyword in Rust is used to indicate that a block of code requires access to memory in a way that is not safe for the Rust compiler to check for many safety guarantees. This means that code within an `unsafe` block can violate the safety guarantees of Rust, such as avoiding null pointers, data races, and undefined behavior.\n\nUsing `unsafe` allows Rust developers to write low-level code that interacts with system-level features, such as direct memory access, operating system APIs, and hardware. The `unsafe` keyword not only provides a way to write such code but also creates a boundary between safe and unsafe code, allowing the Rust compiler to perform important safety checks on safe code.\n\nTo demonstrate the use of `unsafe` in Rust, let's take a look at an example. Consider the following code snippet:\n\n```rust\nfn main() {\n    let raw_pointer = 0x1234 as *mut u32;\n    let value = unsafe{*raw_pointer += 1};\n    println!(\"Value is: {}\", value);\n}\n```\n\nIn this example, we create a raw pointer with the value `0x1234` and cast it to a mutable pointer to an unsigned 32-bit integer (`*mut u32`). We then increment the value of the pointed-to integer and assign it to a variable named `value`. Finally, we print the value of `value`.\n\nThe `unsafe` keyword is required in order to dereference the raw pointer and change the value of the pointed-to integer. Without the `unsafe` keyword, Rust would prevent us from performing this operation since it can lead to undefined behavior.\n\n## Using `unsafe` Safely\n\nAlthough the use of `unsafe` is required in some cases, it also comes with some risks. Improper use of `unsafe` can lead to undefined behavior or security vulnerabilities. To use `unsafe` safely, we need to carefully follow Rust's unsafe guidelines.\n\nHere are some guidelines to follow when using the `unsafe` keyword in Rust:\n\n1. Keep `unsafe` blocks as small as possible: Only include the minimum amount of code within an `unsafe` block that requires it.\n2. Document `unsafe` code: Explain why the code requires `unsafe` and how it should be used.\n3. Prefer safe abstractions: Use safe abstractions instead of creating unsafe ones from scratch.\n4. Test `unsafe` code thoroughly: Test `unsafe` code as rigorously as possible to ensure its correctness.\n\nIt's important to keep these guidelines in mind when writing Rust code that uses `unsafe`. By following them, we can reduce the chances of causing undefined behavior, data races, or other issues that could compromise security.\n\n## Unsafe Rust Library Examples\n\nSome Rust libraries make extensive use of the `unsafe` keyword to achieve top-notch performance and provide some advanced functionality. Below are some examples of popular Rust crates that use `unsafe`.\n\n### `libc`\n\nThe `libc` crate provides Rust bindings to the C standard library, which is used extensively in Unix environments. It exposes many unsafe features, such as raw pointers, direct memory access, and system APIs. Here's an example of using the `libc` crate to call the `gethostname` function from the C standard library:\n\n```rust\nuse libc::{c_char, gethostname};\n\nconst HOSTNAME_LEN: usize = 128;\n\nfn main() {\n    let mut buffer = [0 as c_char; HOSTNAME_LEN];\n    unsafe {\n        let result = gethostname(buffer.as_mut_ptr(), HOSTNAME_LEN);\n        if result < 0 {\n            panic!(\"Could not retrieve hostname\");\n        }\n    }\n\n    let hostname = String::from_utf8_lossy(\n        &buffer[..buffer.iter().position(|b| *b == 0).unwrap_or(HOSTNAME_LEN)],\n    );\n    println!(\"Hostname is: {}\", hostname);\n}\n```\n\nIn this example, we first create a buffer for storing the hostname string, then pass a mutable pointer to the buffer to the `gethostname` function via Rust's `libc` bindings. The `unsafe` keyword is used to call `gethostname` since it involves making a system call.\n\n### `serde`\n\nThe `serde` crate provides a framework for serializing and deserializing Rust data structures. It makes extensive use of `unsafe` and Rust's type system to provide efficient serialization and deserialization. Here's an example of using the `serde_json` module to serialize and deserialize a struct:\n\n```rust\nuse serde::{Serialize, Deserialize};\n\n#[derive(Serialize, Deserialize)]\nstruct Person {\n    name: String,\n    age: u32,\n}\n\nfn main() {\n    let person = Person {\n        name: \"Alice\".to_owned(),\n        age: 30,\n    };\n\n    let serialized = serde_json::to_string(&person).unwrap();\n    println!(\"Serialized: {}\", serialized);\n\n    let deserialized: Person = serde_json::from_str(&serialized).unwrap();\n    println!(\"Deserialized: {:?}\", deserialized);\n}\n```\n\nIn this example, we define a `Person` struct and use the `serde` crate's `Serialize` and `Deserialize` traits to enable serialization and deserialization. The `unsafe` keyword is used under the hood for string manipulation and type casting to achieve efficiency.\n\n## Conclusion\n\nIn conclusion, the `unsafe` keyword in Rust provides developers with the ability to write low-level code that interacts with system-level features, such as direct memory access, operating system APIs, and hardware. Although the use of `unsafe` is required in some cases, it also comes with some risks. To use `unsafe` safely, we need to carefully follow Rust's unsafe guidelines. By following these guidelines, we can reduce the chances of causing undefined behavior, data races, or other issues that could compromise security."
+    },
+    "finish_reason": "stop",
+    "index": 0
+   }
+  ]
+ }
+}
