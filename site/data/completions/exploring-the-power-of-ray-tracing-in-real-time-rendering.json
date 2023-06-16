@@ -1,0 +1,81 @@
+{
+ "prompt": [
+  {
+   "role": "system",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "system",
+   "content": "Write as though you are the author of this resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\nSenior Software Engineer | [GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Elm, Clojure\n- **Experienced:** Elixir, Swift, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "system",
+   "content": "New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume."
+  },
+  {
+   "role": "system",
+   "content": "Your previous 40 posts include: \"Post: Exploring the Power of Rust's Async/Await Syntax\", \"Post Exploring the Benefits of Functional Reactive Programming\", \"Post Exploring Event Sourcing: Designing Highly Scalable and Maintainable Systems\", \"Post Advanced Techniques for Code Optimization in Rust\", \"Post Exploring the Power of Generative Adversarial Networks (GANs) in Computer Vision\", \"Post Exploring the Power of WebAssembly for High-Performance Computing\", \"Post Exploring the Reactive Manifesto - Building Resilient and Responsive Systems\", \"Building a High-Performance Event Store with Apache Kafka\", \"Building a Highly Scalable Kafka Consumer in Go\", \"Building Type-Safe APIs with TypeScript\", \"Implementing the Flyweight Design Pattern in C\", \"Gaining Insights from Large Datasets Using Delta Lake\", \"Using the Observer Design Pattern in Scala\", \"The Builder Design Pattern in TypeScript\", \"Using Array Partitions in Python for Improved Performance\", \"Advanced Techniques for Debugging Rust Programs\", \"Writing a Domain-Specific Language (DSL) in Haskell\", \"Securely Managing Secrets in Production Applications\", \"Implementing the Factory Method Design Pattern in Dart\", \"Boosting Rust Performance with Allocator Selection\", \"Building Real-Time Audio Applications with WebRTC and Rust\", \"Rust's Pinning API: A Comprehensive Guide\", \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\", \"Mastering Connection Pooling in Django\", \"Mastering the Actor Model Concurrency Paradigm in Elixir\", \"How to use Elm to build maintainable, efficient, and bug-free front-end applications\", \"How to Use Generators to Create Infinite Sequences in Python\""
+  },
+  {
+   "role": "system",
+   "content": "Your writing style is concise, to the point, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the topic following the rules defined."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Include the title of the post on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "Do not include or link to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length and come to a complete finish."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7RwomvYD301hC8MfEtBUGUv8CvYFa",
+  "object": "chat.completion",
+  "created": 1686895308,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: Exploring the Power of Ray Tracing in Real-Time Rendering\nTags: Ray Tracing, Real-Time Rendering, Graphics Programming\n\n---\n\nRay tracing, an advanced rendering technique, has revolutionized the field of computer graphics with its ability to produce stunning, realistic images. Traditionally used in offline rendering, ray tracing has recently made significant strides in real-time rendering, opening up exciting opportunities for game developers, visual effects artists, and interactive graphics applications.\n\nIn this post, we will dive into the power of ray tracing in real-time rendering. We will explore the fundamental concepts, techniques, and tools used to implement real-time ray tracing applications. By the end of this post, you'll have a solid understanding of ray tracing's capabilities and how it can be leveraged to achieve impressive graphical effects.\n\n## What is Ray Tracing?\n\nRay tracing is a rendering algorithm that simulates the behavior of light in a virtual environment. It traces the path of light rays as they interact with objects in the scene, projecting them through the virtual camera to create a realistic image. By accurately simulating light interactions such as reflection, refraction, and shadows, ray tracing produces visually stunning results.\n\n## Real-Time Ray Tracing Techniques\n\nReal-time ray tracing requires efficient algorithms and data structures to handle the complex calculations involved in tracing rays through the scene. Here are a few key techniques commonly used in real-time ray tracing:\n\n### Acceleration Structures\n\nAcceleration structures such as bounding volume hierarchies (BVH) and kd-trees are used to optimize ray-object intersection tests. These data structures organize the scene geometry spatially, allowing for fast intersection queries and reducing the number of ray-object intersection tests.\n\n```cpp\n// Example code illustrating BVH construction\nBVH buildBVH(const std::vector<Object>& objects) {\n    BVH bvh;\n    \n    // Perform a top-down construction of the BVH\n    bvh.root = recursiveBuild(objects, 0, objects.size() - 1);\n    \n    return bvh;\n}\n```\n\n### Denoising\n\nReal-time ray tracing often suffers from noise due to the limited number of samples used per pixel. Denoising techniques, such as spatio-temporal filtering and machine learning-based approaches, can be employed to remove noise from the rendered image and improve visual quality.\n\n```python\n# Example code illustrating a spatio-temporal denoising filter\ndef denoise(image_sequence):\n    denoised_images = []\n    \n    for i in range(len(image_sequence)):\n        img = image_sequence[i]\n        \n        # Apply spatio-temporal filtering to remove noise\n        denoised_image = spatio_temporal_filter(img, image_sequence[i-1], image_sequence[i+1])\n        \n        denoised_images.append(denoised_image)\n    \n    return denoised_images\n```\n\n### Global Illumination\n\nGlobal illumination techniques, such as path tracing and photon mapping, simulate indirect lighting effects in the scene. By considering the interactions of light with various surfaces, these techniques enhance the realism of real-time ray-traced images by accounting for indirect lighting, soft shadows, and color bleeding.\n\n```java\n// Example code illustrating Monte Carlo path tracing\nColor tracePath(Ray ray) {\n    if (depth > maxDepth) {\n        return Color(0, 0, 0);\n    }\n    \n    Intersection hit = scene.intersect(ray);\n    \n    if (hit) {\n        // Apply material shading and calculate indirect illumination\n        Color directIllumination = calculateDirectIllumination(hit);\n        Color indirectIllumination = tracePath(constructSecondaryRay(hit));\n        \n        return directIllumination + indirectIllumination;\n    }\n    \n    return Color(0, 0, 0);\n}\n```\n\n## Real-Time Ray Tracing Frameworks and APIs\n\nDeveloping a real-time ray tracing application from scratch can be a complex endeavor. Thankfully, there are frameworks and APIs available that provide high-level abstractions and optimized implementations of ray tracing algorithms.\n\nSome popular real-time ray tracing frameworks and APIs include:\n\n- **NVIDIA RTX**: A suite of tools and libraries that leverage the power of NVIDIA RTX GPUs to enable real-time ray tracing in games and graphics applications.\n- **Embree**: Intel's open-source ray tracing kernel library, designed for high-performance ray tracing on CPUs.\n- **OptiX**: NVIDIA's programmable ray tracing framework, which allows developers to build custom ray tracing pipelines using CUDA.\n\nThese frameworks provide ready-to-use solutions for real-time ray tracing, enabling developers to focus on creating stunning visuals without getting lost in the intricacies of low-level implementation details.\n\n## Conclusion\n\nReal-time ray tracing is a game-changer in the field of computer graphics, pushing the boundaries of visual fidelity in interactive applications. By leveraging acceleration structures, denoising techniques, and global illumination, real-time ray tracing achieves stunning, photorealistic results on modern GPUs and CPUs.\n\nIn this post, we explored the fundamental concepts of ray tracing, delved into real-time ray tracing techniques, and introduced popular frameworks and APIs. Armed with this knowledge, you can start exploring the exciting world of real-time ray tracing and create visually captivating experiences in your projects.\n\nHappy ray tracing!"
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2031,
+   "completion_tokens": 1059,
+   "total_tokens": 3090
+  }
+ }
+}

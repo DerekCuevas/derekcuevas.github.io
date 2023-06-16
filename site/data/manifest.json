@@ -990,7 +990,16 @@
         "concurrency"
       ],
       "createdAt": "2023-06-16T00:04:55.177Z"
+    },
+    {
+      "title": "Exploring the Power of Ray Tracing in Real-Time Rendering",
+      "tags": [
+        "ray tracing",
+        "real-time rendering",
+        "graphics programming"
+      ],
+      "createdAt": "2023-06-16T06:02:14.175Z"
     }
   ],
-  "updatedAt": "2023-06-16T00:04:55.177Z"
+  "updatedAt": "2023-06-16T06:02:14.175Z"
 }
