@@ -33,7 +33,7 @@ export class OpenAI implements MockOpenAIClient {
 
   async chatCompletion(messages: Message[]): Promise<ChatCompletion> {
     return await this.openai.createChatCompletion({
-      model: "gpt-3.5-turbo-0613",
+      model: "gpt-3.5-turbo-0301",
       messages,
     });
   }
