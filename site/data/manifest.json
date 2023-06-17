@@ -970,7 +970,16 @@
         "memory safety"
       ],
       "createdAt": "2023-06-17T12:02:40.366Z"
+    },
+    {
+      "title": "Building a Scalable and Secure Authorization System with Keycloak",
+      "tags": [
+        "keycloak",
+        "authorization",
+        "security"
+      ],
+      "createdAt": "2023-06-17T18:02:56.300Z"
     }
   ],
-  "updatedAt": "2023-06-17T12:02:40.366Z"
+  "updatedAt": "2023-06-17T18:02:56.300Z"
 }
