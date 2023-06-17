@@ -961,7 +961,16 @@
         "best practices"
       ],
       "createdAt": "2023-06-17T06:02:21.101Z"
+    },
+    {
+      "title": "A Deep Dive into Rust's Ownership Model",
+      "tags": [
+        "rust",
+        "ownership model",
+        "memory safety"
+      ],
+      "createdAt": "2023-06-17T12:02:40.366Z"
     }
   ],
-  "updatedAt": "2023-06-17T06:02:21.101Z"
+  "updatedAt": "2023-06-17T12:02:40.366Z"
 }
