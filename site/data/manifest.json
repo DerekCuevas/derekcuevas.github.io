@@ -943,7 +943,16 @@
         "rust"
       ],
       "createdAt": "2023-06-16T18:02:36.566Z"
+    },
+    {
+      "title": "Generating Synthetic Data with Python's Faker Library",
+      "tags": [
+        "python",
+        "data generation",
+        "faker"
+      ],
+      "createdAt": "2023-06-17T00:05:41.198Z"
     }
   ],
-  "updatedAt": "2023-06-16T18:02:36.566Z"
+  "updatedAt": "2023-06-17T00:05:41.198Z"
 }
