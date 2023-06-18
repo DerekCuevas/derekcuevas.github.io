@@ -996,7 +996,17 @@
         "async programming"
       ],
       "createdAt": "2023-06-18T04:14:15.923Z"
+    },
+    {
+      "title": "Exploring the Power of Actors in Concurrent Systems",
+      "tags": [
+        "actor model",
+        "concurrency",
+        "scalability",
+        "distributed systems"
+      ],
+      "createdAt": "2023-06-18T04:18:11.736Z"
     }
   ],
-  "updatedAt": "2023-06-18T04:14:15.923Z"
+  "updatedAt": "2023-06-18T04:18:11.736Z"
 }
