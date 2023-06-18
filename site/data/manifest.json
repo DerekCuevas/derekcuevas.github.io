@@ -1015,7 +1015,16 @@
         "high availability"
       ],
       "createdAt": "2023-06-18T06:02:22.578Z"
+    },
+    {
+      "title": "Exploring the Power of React Hooks for State Management",
+      "tags": [
+        "react",
+        "javascript",
+        "state management"
+      ],
+      "createdAt": "2023-06-18T12:02:29.723Z"
     }
   ],
-  "updatedAt": "2023-06-18T06:02:22.578Z"
+  "updatedAt": "2023-06-18T12:02:29.723Z"
 }
