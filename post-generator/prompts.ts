@@ -1,6 +1,6 @@
 import { Message } from "./openai.ts";
 
-const PREVIOUS_POST_COUNT = 40;
+const PREVIOUS_POST_COUNT = 60;
 
 export const getChatPrompt = (
   resume: string,
@@ -13,11 +13,7 @@ export const getChatPrompt = (
   },
   {
     role: "system",
-    content: `Write as though you are the author of this resume:\n${resume}`,
-  },
-  {
-    role: "system",
-    content: `New topics for the blog should be based off of the technical skills, experience, and interests presented in the resume.`,
+    content: `New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n${resume}`,
   },
   {
     role: "system",
@@ -28,22 +24,23 @@ export const getChatPrompt = (
       .join(", ")}`,
   },
   {
-    role: "system",
-    content:
-      "Your writing style is concise, to the point, informative, and focused on detailed technical information.",
-  },
-  {
     role: "user",
     content:
       "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice.",
   },
   {
     role: "user",
-    content: "The topic should not be related to a previous post.",
+    content:
+      "Write a post about the chosen topic following the instructions given below:",
   },
   {
     role: "user",
-    content: "Write a post about the topic following the rules defined.",
+    content:
+      "Your writing style is academic, informative, and focused on detailed technical information.",
+  },
+  {
+    role: "user",
+    content: "The topic should not be related to a previous post.",
   },
   {
     role: "user",
@@ -56,7 +53,8 @@ export const getChatPrompt = (
   },
   {
     role: "user",
-    content: "Include the title of the post on the first line.",
+    content:
+      "Come up with a title for the post and include it on the first line.",
   },
   {
     role: "user",
@@ -65,11 +63,18 @@ export const getChatPrompt = (
   },
   {
     role: "user",
-    content: "Do not include or link to images in the post.",
+    content: "The post should be multiple sections in length.",
   },
   {
     role: "user",
-    content:
-      "The post should be multiple sections in length and come to a complete finish.",
+    content: "Do not include links to images in the post.",
+  },
+  {
+    role: "user",
+    content: "Do not include contact information in the post.",
+  },
+  {
+    role: "user",
+    content: "Do not add extra whitespace around lists.",
   },
 ];
