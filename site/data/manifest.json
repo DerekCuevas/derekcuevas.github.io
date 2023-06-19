@@ -1063,7 +1063,18 @@
         "concurrency"
       ],
       "createdAt": "2023-06-19T12:02:40.175Z"
+    },
+    {
+      "title": "Exploring the Power of Rust's Actix-Web Framework for Building High-Performance Web Applications",
+      "tags": [
+        "rust",
+        "actix-web",
+        "web development",
+        "high performance",
+        "framework"
+      ],
+      "createdAt": "2023-06-19T18:02:32.159Z"
     }
   ],
-  "updatedAt": "2023-06-19T12:02:40.175Z"
+  "updatedAt": "2023-06-19T18:02:32.159Z"
 }
