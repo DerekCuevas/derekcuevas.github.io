@@ -1105,7 +1105,17 @@
         "asynchronous programming"
       ],
       "createdAt": "2023-06-20T12:02:44.160Z"
+    },
+    {
+      "title": "Exploring the Performance Benefits of Rust's Actix Web Framework for Building High-Performance Web Applications",
+      "tags": [
+        "rust",
+        "actix",
+        "web framework",
+        "performance optimization"
+      ],
+      "createdAt": "2023-06-20T18:01:46.671Z"
     }
   ],
-  "updatedAt": "2023-06-20T12:02:44.160Z"
+  "updatedAt": "2023-06-20T18:01:46.671Z"
 }
