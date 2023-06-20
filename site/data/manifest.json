@@ -1074,7 +1074,18 @@
         "framework"
       ],
       "createdAt": "2023-06-19T18:02:32.159Z"
+    },
+    {
+      "title": "Understanding the Power of Rust's Actix actors for Concurrency and Scalability",
+      "tags": [
+        "rust",
+        "actix",
+        "concurrency",
+        "scalability",
+        "actors"
+      ],
+      "createdAt": "2023-06-20T00:04:28.081Z"
     }
   ],
-  "updatedAt": "2023-06-19T18:02:32.159Z"
+  "updatedAt": "2023-06-20T00:04:28.081Z"
 }
