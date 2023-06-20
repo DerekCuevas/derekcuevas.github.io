@@ -1085,7 +1085,18 @@
         "actors"
       ],
       "createdAt": "2023-06-20T00:04:28.081Z"
+    },
+    {
+      "title": "Exploring the Power of Rust's Actix Web Framework for Building High-Performance Web Applications",
+      "tags": [
+        "rust",
+        "actix",
+        "web development",
+        "high performance",
+        "frameworks"
+      ],
+      "createdAt": "2023-06-20T06:02:44.133Z"
     }
   ],
-  "updatedAt": "2023-06-20T00:04:28.081Z"
+  "updatedAt": "2023-06-20T06:02:44.133Z"
 }
