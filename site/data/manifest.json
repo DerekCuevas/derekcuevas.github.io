@@ -1134,7 +1134,16 @@
         "typescript"
       ],
       "createdAt": "2023-06-21T06:02:37.643Z"
+    },
+    {
+      "title": "Exploring the Power of Functional Reactive Programming in Elm",
+      "tags": [
+        "elm",
+        "functional programming",
+        "reactive programming"
+      ],
+      "createdAt": "2023-06-21T12:03:12.952Z"
     }
   ],
-  "updatedAt": "2023-06-21T06:02:37.643Z"
+  "updatedAt": "2023-06-21T12:03:12.952Z"
 }
