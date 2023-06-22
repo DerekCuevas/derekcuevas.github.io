@@ -1161,7 +1161,16 @@
         "performance optimization"
       ],
       "createdAt": "2023-06-22T00:05:29.564Z"
+    },
+    {
+      "title": "Exploring the Performance Benefits of Kafka Streams for Real-Time Data Processing",
+      "tags": [
+        "kafka streams",
+        "real-time processing",
+        "stream processing"
+      ],
+      "createdAt": "2023-06-22T06:02:21.054Z"
     }
   ],
-  "updatedAt": "2023-06-22T00:05:29.564Z"
+  "updatedAt": "2023-06-22T06:02:21.054Z"
 }
