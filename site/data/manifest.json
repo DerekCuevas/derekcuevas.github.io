@@ -1248,7 +1248,17 @@
         "distributed systems"
       ],
       "createdAt": "2023-06-24T06:02:14.076Z"
+    },
+    {
+      "title": "---",
+      "tags": [
+        "rust",
+        "actix",
+        "web framework",
+        "apis"
+      ],
+      "createdAt": "2023-06-24T12:02:53.387Z"
     }
   ],
-  "updatedAt": "2023-06-24T06:02:14.076Z"
+  "updatedAt": "2023-06-24T12:02:53.387Z"
 }
