@@ -997,7 +997,15 @@
         "parallelism"
       ],
       "createdAt": "2023-06-25T00:28:33.627Z"
+    },
+    {
+      "title": "Mastering the Decorator Pattern in Java",
+      "tags": [
+        "java",
+        "design patterns"
+      ],
+      "createdAt": "2023-06-25T00:30:42.082Z"
     }
   ],
-  "updatedAt": "2023-06-25T00:28:33.627Z"
+  "updatedAt": "2023-06-25T00:30:42.082Z"
 }
