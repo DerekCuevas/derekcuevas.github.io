@@ -1030,7 +1030,16 @@
         "state file"
       ],
       "createdAt": "2023-06-25T12:02:41.465Z"
+    },
+    {
+      "title": "Understanding Scala's Implicits: A Comprehensive Guide",
+      "tags": [
+        "scala",
+        "implicits",
+        "programming paradigms"
+      ],
+      "createdAt": "2023-06-25T18:02:15.583Z"
     }
   ],
-  "updatedAt": "2023-06-25T12:02:41.465Z"
+  "updatedAt": "2023-06-25T18:02:15.583Z"
 }
