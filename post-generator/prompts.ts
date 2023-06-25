@@ -7,16 +7,16 @@ export const getChatPrompt = (
   previousPosts: string[]
 ): Message[] => [
   {
-    role: "system",
+    role: "user",
     content:
       "You are the author of a personal technical blog about software engineering and computer science subjects.",
   },
   {
-    role: "system",
+    role: "user",
     content: `New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n${resume}`,
   },
   {
-    role: "system",
+    role: "user",
     content: `Your previous ${PREVIOUS_POST_COUNT} posts include: ${previousPosts
       .slice(-PREVIOUS_POST_COUNT)
       .reverse()
