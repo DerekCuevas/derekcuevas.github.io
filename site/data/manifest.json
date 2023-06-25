@@ -1005,7 +1005,16 @@
         "design patterns"
       ],
       "createdAt": "2023-06-25T00:30:42.082Z"
+    },
+    {
+      "title": "Mastering the Decorator Design Pattern in TypeScript",
+      "tags": [
+        "typescript",
+        "design patterns",
+        "decorator pattern"
+      ],
+      "createdAt": "2023-06-25T00:43:59.973Z"
     }
   ],
-  "updatedAt": "2023-06-25T00:30:42.082Z"
+  "updatedAt": "2023-06-25T00:43:59.973Z"
 }
