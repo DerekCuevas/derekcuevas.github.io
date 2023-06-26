@@ -1039,7 +1039,16 @@
         "programming paradigms"
       ],
       "createdAt": "2023-06-25T18:02:15.583Z"
+    },
+    {
+      "title": "Mastering the Observer Design Pattern in Rust",
+      "tags": [
+        "rust",
+        "design patterns",
+        "observer"
+      ],
+      "createdAt": "2023-06-26T00:06:06.580Z"
     }
   ],
-  "updatedAt": "2023-06-25T18:02:15.583Z"
+  "updatedAt": "2023-06-26T00:06:06.580Z"
 }
