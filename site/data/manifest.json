@@ -1084,7 +1084,16 @@
         "functional programming"
       ],
       "createdAt": "2023-06-27T00:06:18.168Z"
+    },
+    {
+      "title": "Mastering Rust's Pattern Matching",
+      "tags": [
+        "rust",
+        "pattern matching",
+        "programming"
+      ],
+      "createdAt": "2023-06-27T06:02:26.041Z"
     }
   ],
-  "updatedAt": "2023-06-27T00:06:18.168Z"
+  "updatedAt": "2023-06-27T06:02:26.041Z"
 }
