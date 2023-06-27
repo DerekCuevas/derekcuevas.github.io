@@ -1102,7 +1102,16 @@
         "option"
       ],
       "createdAt": "2023-06-27T12:02:59.661Z"
+    },
+    {
+      "title": "Writing Correct Web3 Smart Contracts with Solidity's Concerned Oxide (SCOCO) Conventions",
+      "tags": [
+        "blockchain",
+        "smart contracts",
+        "solidity"
+      ],
+      "createdAt": "2023-06-27T18:02:22.280Z"
     }
   ],
-  "updatedAt": "2023-06-27T12:02:59.661Z"
+  "updatedAt": "2023-06-27T18:02:22.280Z"
 }
