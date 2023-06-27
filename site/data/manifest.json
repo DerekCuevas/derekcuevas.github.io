@@ -1075,7 +1075,16 @@
         "programming"
       ],
       "createdAt": "2023-06-26T18:02:23.578Z"
+    },
+    {
+      "title": "The Power of Streams in Java",
+      "tags": [
+        "java",
+        "stream api",
+        "functional programming"
+      ],
+      "createdAt": "2023-06-27T00:06:18.168Z"
     }
   ],
-  "updatedAt": "2023-06-26T18:02:23.578Z"
+  "updatedAt": "2023-06-27T00:06:18.168Z"
 }
