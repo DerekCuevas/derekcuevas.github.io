@@ -1138,7 +1138,16 @@
         "facade pattern"
       ],
       "createdAt": "2023-06-28T12:02:18.523Z"
+    },
+    {
+      "title": "Advanced Techniques for Scaling Node.js Applications",
+      "tags": [
+        "node.js",
+        "microservices",
+        "scalability"
+      ],
+      "createdAt": "2023-06-28T18:02:27.172Z"
     }
   ],
-  "updatedAt": "2023-06-28T12:02:18.523Z"
+  "updatedAt": "2023-06-28T18:02:27.172Z"
 }
