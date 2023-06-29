@@ -1174,7 +1174,16 @@
         "concurrency"
       ],
       "createdAt": "2023-06-29T05:49:14.856Z"
+    },
+    {
+      "title": "Understanding Java Memory Model: A Comprehensive Guide",
+      "tags": [
+        "java",
+        "memory management",
+        "multithreading"
+      ],
+      "createdAt": "2023-06-29T06:02:21.367Z"
     }
   ],
-  "updatedAt": "2023-06-29T05:49:14.856Z"
+  "updatedAt": "2023-06-29T06:02:21.367Z"
 }
