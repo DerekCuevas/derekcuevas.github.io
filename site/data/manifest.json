@@ -1183,7 +1183,16 @@
         "multithreading"
       ],
       "createdAt": "2023-06-29T06:02:21.367Z"
+    },
+    {
+      "title": "Deep Dive into Functional Reactive Programming with RxJS",
+      "tags": [
+        "rxjs",
+        "functional programming",
+        "reactive programming"
+      ],
+      "createdAt": "2023-06-29T12:02:54.930Z"
     }
   ],
-  "updatedAt": "2023-06-29T06:02:21.367Z"
+  "updatedAt": "2023-06-29T12:02:54.930Z"
 }
