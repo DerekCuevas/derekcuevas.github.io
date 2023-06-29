@@ -68,7 +68,7 @@ export class PostGenerator {
   ): Promise<GenerateResult> {
     const prompt = getChatPrompt(resume, previousPosts);
     const completion = await this.openai.chatCompletion(prompt);
-    const text = completion.choices[0].message.content;
+    const text = completion.choices[0].message.content!;
     const post = this.parseCompletion(text);
     return { prompt, completion, post };
   }
