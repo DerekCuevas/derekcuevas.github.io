@@ -1192,7 +1192,16 @@
         "reactive programming"
       ],
       "createdAt": "2023-06-29T12:02:54.930Z"
+    },
+    {
+      "title": "Best Practices for Integrating React and TypeScript",
+      "tags": [
+        "typescript",
+        "react",
+        "front-end development"
+      ],
+      "createdAt": "2023-06-29T16:21:00.218Z"
     }
   ],
-  "updatedAt": "2023-06-29T12:02:54.930Z"
+  "updatedAt": "2023-06-29T16:21:00.218Z"
 }
