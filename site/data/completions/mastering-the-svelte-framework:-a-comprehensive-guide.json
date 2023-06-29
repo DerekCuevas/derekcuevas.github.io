@@ -1,0 +1,85 @@
+{
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Best Practices for Integrating React and TypeScript\", \"Deep Dive into Functional Reactive Programming with RxJS\", \"Understanding Java Memory Model: A Comprehensive Guide\", \"Understanding the Fundamentals of Distributed Systems Programming in Go\", \"Effective Techniques for Building Blazing-Fast Mobile Apps with React Native\", \"Understanding the SOLID Principles of Object-Oriented Design\", \"Advanced Techniques for Scaling Node.js Applications\", \"Implementing the Facade Design Pattern in Swift\", \"Building Efficient Mobile Apps with React Native Flexbox\", \"The Power of the Copy-on-Write Methodology\", \"Writing Correct Web3 Smart Contracts with Solidity's Concerned Oxide (SCOCO) Conventions\", \"Demystifying Rust's 'unwrap()' Method\", \"Mastering Rust's Pattern Matching\", \"The Power of Streams in Java\", \"Mastering C++17 Template Argument Deduction\", \"Mastering the Composite Design Pattern in C\", \"Implementing the Command Design Pattern in Kotlin\", \"Mastering the Observer Design Pattern in Rust\", \"Understanding Scala's Implicits: A Comprehensive Guide\", \"Mastering Terraform's State File\", \"Title:\", \"Mastering the Decorator Design Pattern in TypeScript\", \"Mastering the Decorator Pattern in Java\", \"The Fundamentals of Concurrency in Elixir\", \"Mastering the Singleton Design Pattern in Java\", \"Building a Scalable and Secure Authorization System with Keycloak\", \"A Deep Dive into Rust's Ownership Model\", \"Best Practices for Building a High-Performance Web Application with Node.js\", \"Generating Synthetic Data with Python's Faker Library\", \"Understanding Rust's Unsafe Keyword\", \"How to use Access Control in Go\", \"Building a High-Performance Event Store with Apache Kafka\", \"Building a Highly Scalable Kafka Consumer in Go\", \"Building Type-Safe APIs with TypeScript\", \"Implementing the Flyweight Design Pattern in C\", \"Gaining Insights from Large Datasets Using Delta Lake\", \"Using the Observer Design Pattern in Scala\", \"The Builder Design Pattern in TypeScript\", \"Using Array Partitions in Python for Improved Performance\", \"Advanced Techniques for Debugging Rust Programs\", \"Writing a Domain-Specific Language (DSL) in Haskell\", \"Securely Managing Secrets in Production Applications\", \"Implementing the Factory Method Design Pattern in Dart\", \"Boosting Rust Performance with Allocator Selection\", \"Building Real-Time Audio Applications with WebRTC and Rust\", \"Rust's Pinning API: A Comprehensive Guide\", \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\", \"How to Use the Decorator Pattern for Flexible and Extensible Code\", \"A Deep Dive into Multithreading with Clojure\", \"How to Design Reactive Microservices Using Event-Driven Architecture\", \"Writing Efficient SQL Queries: Tips and Tricks\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7WqO3q9eKtwrN5VbWX6fEBa0wPeg7",
+  "object": "chat.completion",
+  "created": 1688062227,
+  "model": "gpt-3.5-turbo-0301",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: Mastering the Svelte Framework: A Comprehensive Guide\n\nTags: JavaScript, Framework, Svelte\n\n# Mastering the Svelte Framework: A Comprehensive Guide\n\nSvelte is a modern component-based JavaScript framework used for building interactive web applications. It is a lightweight, reactive, and easy-to-learn framework that has gained a lot of popularity in recent years. Unlike other popular frameworks, such as React and Vue, Svelte compiles your code at build time, which results in smaller bundle size and faster performance.\n\nIn this comprehensive guide, we will explore the core concepts of Svelte and demonstrate how to build a simple web application using this framework.\n\n## Prerequisites\n\nBefore diving into Svelte, it is recommended that you have a solid understanding of HTML, CSS, and JavaScript, as well as experience working with modern web development tools such as Node.js and npm.\n\nTo get started, create a new project directory and initialize it as a Node.js project by running:\n\n```bash\nmkdir my-svelte-project\ncd my-svelte-project\nnpm init -y\n```\n\nThen, install the necessary dependencies for your Svelte project by running:\n\n```bash\nnpm install --save-dev svelte rollup rollup-plugin-livereload rollup-plugin-svelte\n```\n\n## The Svelte Component Model\n\nAt the core of Svelte is the concept of components. A component is a modular piece of code that encapsulates HTML, CSS, and JavaScript into a single reusable unit. In Svelte, you define a component by creating a `.svelte` file that contains the markup, styles, and logic for that component.\n\nLet's start with a simple example. Create a new file called `App.svelte` and add the following code:\n\n```html\n<script>\n  let name = 'world';\n</script>\n\n<h1>Hello {name}!</h1>\n```\n\nIn this example, we have defined a component called `App`. The component has a single state variable called `name`, which is initialized to the string `'world'`. The component also contains a simple HTML header element that displays the value of `name`.\n\nTo use this component in our application, we need to import it into our main JavaScript file. Create a new file called `main.js` and add the following code:\n\n```javascript\nimport App from './App.svelte';\n\nconst app = new App({\n  target: document.body,\n});\n```\n\nIn this file, we are importing our `App` component and creating an instance of it with the `new` keyword. We are also passing an options object to the constructor, which specifies that the component should be rendered to the `document.body` element.\n\nNow, if you run your project with `npm run dev`, you should see your `Hello world!` message displayed in the browser.\n\n## Data Binding and Event Handling\n\nSvelte provides a powerful data binding system that allows you to bind your component's state variables to your HTML elements using the `bind:` directive. This allows you to easily update your UI in response to changes in your component's state.\n\nLet's modify our `App` component to include a simple input element that updates the value of the `name` variable when the user types into it:\n\n```html\n<script>\n  let name = 'world';\n</script>\n\n<h1>Hello {name}!</h1>\n\n<label>\n  Your name:\n  <input type=\"text\" bind:value={name}/>\n</label>\n```\n\nIn this example, we have added an input element that is bound to the `name` variable using the `bind:value` directive. This means that whenever the user types into the input field, the value of `name` will be updated accordingly.\n\nSvelte also provides a simple event handling system that allows you to add event listeners to your HTML elements using the `on:` directive. For example, let's modify our `App` component to include a button that displays a message when clicked:\n\n```html\n<script>\n  let name = 'world';\n  let message = '';\n  \n  function handleClick() {\n    message = `Hello, ${name}!`;\n  }\n</script>\n\n<h1>Hello {name}!</h1>\n\n<label>\n  Your name:\n  <input type=\"text\" bind:value={name}/>\n</label>\n\n<button on:click={handleClick}>\n  Say Hello\n</button>\n\n{#if message}\n  <p>{message}</p>\n{/if}\n```\n\nIn this example, we have added a button element that has an event listener attached to it using the `on:click` directive. When the button is clicked, the `handleClick` function is called, which sets the value of the `message` variable based on the current value of `name`.\n\nWe are also using Svelte's built-in `{#if}` block to conditionally display the `message` paragraph element only when the `message` variable is not empty.\n\n## Conclusion\n\nIn this comprehensive guide, we have explored the core concepts of the Svelte framework, including the component model, data binding, and event handling. We have demonstrated how to build a simple web application using Svelte and shown how this framework can help you create fast, reactive, and easy-to-maintain web applications.\n\nSvelte is a powerful and easy-to-learn framework that is quickly gaining popularity in the JavaScript community. If you are looking for a lightweight and performant alternative to other popular frameworks, such as React and Vue, Svelte may be the perfect choice for your next project."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2221,
+   "completion_tokens": 1124,
+   "total_tokens": 3345
+  }
+ }
+}

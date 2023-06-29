@@ -1201,7 +1201,16 @@
         "front-end development"
       ],
       "createdAt": "2023-06-29T16:21:00.218Z"
+    },
+    {
+      "title": "Mastering the Svelte Framework: A Comprehensive Guide",
+      "tags": [
+        "javascript",
+        "framework",
+        "svelte"
+      ],
+      "createdAt": "2023-06-29T18:10:49.421Z"
     }
   ],
-  "updatedAt": "2023-06-29T16:21:00.218Z"
+  "updatedAt": "2023-06-29T18:10:49.421Z"
 }
