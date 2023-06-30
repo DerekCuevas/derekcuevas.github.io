@@ -1219,7 +1219,16 @@
         "parallelism"
       ],
       "createdAt": "2023-06-30T00:05:21.312Z"
+    },
+    {
+      "title": "Mastering the Decorator Pattern in Rust",
+      "tags": [
+        "rust",
+        "object-oriented design",
+        "decorator pattern"
+      ],
+      "createdAt": "2023-06-30T06:02:11.294Z"
     }
   ],
-  "updatedAt": "2023-06-30T00:05:21.312Z"
+  "updatedAt": "2023-06-30T06:02:11.294Z"
 }
