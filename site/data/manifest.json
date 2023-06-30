@@ -1228,7 +1228,16 @@
         "decorator pattern"
       ],
       "createdAt": "2023-06-30T06:02:11.294Z"
+    },
+    {
+      "title": "Mastering Rust's Async/Await Syntax",
+      "tags": [
+        "rust",
+        "async",
+        "await"
+      ],
+      "createdAt": "2023-06-30T12:02:44.826Z"
     }
   ],
-  "updatedAt": "2023-06-30T06:02:11.294Z"
+  "updatedAt": "2023-06-30T12:02:44.826Z"
 }
