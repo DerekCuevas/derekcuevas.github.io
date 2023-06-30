@@ -1,0 +1,85 @@
+{
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Mastering Rust's Async/Await Syntax\", \"Mastering the Decorator Pattern in Rust\", \"The Power of Rust's Multithreading Library: A Comprehensive Guide\", \"Mastering the Svelte Framework: A Comprehensive Guide\", \"Best Practices for Integrating React and TypeScript\", \"Deep Dive into Functional Reactive Programming with RxJS\", \"Understanding Java Memory Model: A Comprehensive Guide\", \"Understanding the Fundamentals of Distributed Systems Programming in Go\", \"Effective Techniques for Building Blazing-Fast Mobile Apps with React Native\", \"Understanding the SOLID Principles of Object-Oriented Design\", \"Advanced Techniques for Scaling Node.js Applications\", \"Implementing the Facade Design Pattern in Swift\", \"Building Efficient Mobile Apps with React Native Flexbox\", \"The Power of the Copy-on-Write Methodology\", \"Writing Correct Web3 Smart Contracts with Solidity's Concerned Oxide (SCOCO) Conventions\", \"Demystifying Rust's 'unwrap()' Method\", \"Mastering Rust's Pattern Matching\", \"The Power of Streams in Java\", \"Mastering C++17 Template Argument Deduction\", \"Mastering the Composite Design Pattern in C\", \"Implementing the Command Design Pattern in Kotlin\", \"Mastering the Observer Design Pattern in Rust\", \"Understanding Scala's Implicits: A Comprehensive Guide\", \"Mastering Terraform's State File\", \"Title:\", \"Mastering the Decorator Design Pattern in TypeScript\", \"Mastering the Decorator Pattern in Java\", \"The Fundamentals of Concurrency in Elixir\", \"Mastering the Singleton Design Pattern in Java\", \"Building a Scalable and Secure Authorization System with Keycloak\", \"A Deep Dive into Rust's Ownership Model\", \"Best Practices for Building a High-Performance Web Application with Node.js\", \"Generating Synthetic Data with Python's Faker Library\", \"Understanding Rust's Unsafe Keyword\", \"How to use Access Control in Go\", \"Building a High-Performance Event Store with Apache Kafka\", \"Building a Highly Scalable Kafka Consumer in Go\", \"Building Type-Safe APIs with TypeScript\", \"Implementing the Flyweight Design Pattern in C\", \"Gaining Insights from Large Datasets Using Delta Lake\", \"Using the Observer Design Pattern in Scala\", \"The Builder Design Pattern in TypeScript\", \"Using Array Partitions in Python for Improved Performance\", \"Advanced Techniques for Debugging Rust Programs\", \"Writing a Domain-Specific Language (DSL) in Haskell\", \"Securely Managing Secrets in Production Applications\", \"Implementing the Factory Method Design Pattern in Dart\", \"Boosting Rust Performance with Allocator Selection\", \"Building Real-Time Audio Applications with WebRTC and Rust\", \"Rust's Pinning API: A Comprehensive Guide\", \"Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust\", \"How to Use AWS Fargate for Highly Scalable and Serverless Containers\", \"How to Build a Recommendation Engine with Apache Spark\", \"Building a Distributed Key-Value Store on Top of Apache Kafka\", \"Building a GraphQL API with Actix-Web and Diesel\", \"Building a High-Performance HTTP Proxy with Nginx\", \"How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems\", \"Advanced Techniques for Using PostgreSQL JSONB Data Type\", \"Writing Secure Rust Code: A Deep Dive into Memory Safety\", \"Fine-tuning BERT for Question Answering - A Step-by-Step Guide\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7XCj09SzRhdRzvj31cxy3O6mX3Lam",
+  "object": "chat.completion",
+  "created": 1688148094,
+  "model": "gpt-3.5-turbo-0301",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: Mastering TypeScript's Record Type\n\nTags: TypeScript, Programming\n\n---\n\nTypeScript is a powerful superset of JavaScript that provides additional features including strong typing. With its enhanced type system, TypeScript offers data structures that have no direct counterparts in JavaScript. One of these features is the `Record` type, which allows you to create an object with key-value pairs where you know the keys in advance.\n\nIn this post, we will dive into TypeScript's `Record` type and see how it can be used in your projects.\n\n## The `Record` Type\n\nThe `Record` type is a built-in utility type in TypeScript that makes it easy to create an object type with key-value pairs where you know the keys in advance. It is defined in the TypeScript standard library as:\n\n```typescript\ntype Record<K extends keyof any, T> = {\n  [P in K]: T;\n};\n```\n\nThis type takes two type parameters:\n\n1. `K`: the union of keys for the resulting object type\n2. `T`: the type of the values associated with each key\n\nHere's an example that shows how to use the `Record` type to create an object type with key-value pairs:\n\n```typescript\ntype Point = { x: number, y: number };\ntype PointsMap = Record<string, Point>;\n\nconst points: PointsMap = {\n  'A': { x: 0, y: 0 },\n  'B': { x: 1, y: 1 },\n  'C': { x: 2, y: 0 },\n};\n```\n\nIn this example, we create a type `Point` that represents an `{ x, y }`-pair and a `PointsMap` type that maps strings to `Point`s. We then use `Record<string, Point>` to create an object type with key-value pairs where the keys are strings and the values are of type `Point`.\n\n## Type Safety with `Record`\n\nOne of the benefits of using the `Record` type is that it provides type safety for key-value pairs. Consider this example:\n\n```typescript\ntype PointsMap = Record<string, Point>;\n\nconst points: PointsMap = {\n  'A': { x: 0, y: 0 },\n  'B': { x: 1, y: 1 },\n  'C': { x: '2', y: 0 },\n};\n```\n\nIn this example, we create a `PointsMap` object where the `x` value for the `C` key is a string instead of a number. If we try to compile this code, TypeScript will give us an error:\n\n```\nType 'string' is not assignable to type 'number'.\n```\n\nThis error highlights the benefit of using the `Record` type: you get type safety for all the key-value pairs in the object.\n\n## Mapped Types\n\nThe `Record` type is just one example of a mapped type in TypeScript. Mapped types are a way to transform an existing type into another type. The transformation is defined by a mapping function that applies to each property in the original type.\n\nHere's an example of a simple mapped type that adds the `readonly` modifier to each property in an existing object type:\n\n```typescript\ntype Readonly<T> = {\n  readonly [P in keyof T]: T[P];\n};\n```\n\nIn this example, `keyof T` is the union of keys for the original object type `T`. The `in` keyword creates a mapped type by iterating through each key in `keyof T` and applying the mapping function.\n\nHere's an example of how to use the `Readonly` type to create a readonly version of an existing object type:\n\n```typescript\ntype Person = {\n  name: string;\n  age: number;\n};\ntype ReadonlyPerson = Readonly<Person>;\n\nconst person: ReadonlyPerson = {\n  name: 'Alice',\n  age: 30,\n};\nperson.name = 'Bob'; // Error: Cannot assign to 'name' because it is a read-only property.\n```\n\nIn this example, we create a `Person` type that has `name` and `age` properties. We then use the `Readonly` type to create a readonly version of `Person` called `ReadonlyPerson`. When we try to modify the `name` property of an object with type `ReadonlyPerson`, TypeScript flags an error indicating that the property is readonly.\n\n## Conclusion\n\nThe `Record` type is a powerful feature in TypeScript that allows you to easily define object types with key-value pairs where you know the keys in advance. It provides type safety for key-value pairs, which can help prevent bugs in your code. Additionally, the `Record` type is just one example of a mapped type in TypeScript that can be used to transform existing types."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2218,
+   "completion_tokens": 981,
+   "total_tokens": 3199
+  }
+ }
+}

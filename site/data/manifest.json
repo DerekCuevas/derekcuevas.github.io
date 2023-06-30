@@ -1237,7 +1237,15 @@
         "await"
       ],
       "createdAt": "2023-06-30T12:02:44.826Z"
+    },
+    {
+      "title": "Mastering TypeScript's Record Type",
+      "tags": [
+        "typescript",
+        "programming"
+      ],
+      "createdAt": "2023-06-30T18:02:17.192Z"
     }
   ],
-  "updatedAt": "2023-06-30T12:02:44.826Z"
+  "updatedAt": "2023-06-30T18:02:17.192Z"
 }
