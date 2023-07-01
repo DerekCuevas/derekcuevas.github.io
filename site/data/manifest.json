@@ -1272,7 +1272,16 @@
         "sql"
       ],
       "createdAt": "2023-07-01T12:02:36.366Z"
+    },
+    {
+      "title": "Building High-Performance Machine Learning Pipelines with Rust",
+      "tags": [
+        "rust",
+        "machine learning",
+        "performance"
+      ],
+      "createdAt": "2023-07-01T18:02:06.287Z"
     }
   ],
-  "updatedAt": "2023-07-01T12:02:36.366Z"
+  "updatedAt": "2023-07-01T18:02:06.287Z"
 }
