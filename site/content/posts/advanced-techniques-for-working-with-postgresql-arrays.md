@@ -1,7 +1,6 @@
 ---
 title: "Advanced Techniques for Working with PostgreSQL Arrays"
 date: 2023-07-01T12:02:36.370Z
-authors: ["gpt-3.5-turbo-0301"]
 tags: ["postgresql","arrays","sql"]
 ---
 
