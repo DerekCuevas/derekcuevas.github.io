@@ -1263,7 +1263,16 @@
         "accessibility"
       ],
       "createdAt": "2023-07-01T06:01:56.232Z"
+    },
+    {
+      "title": "Advanced Techniques for Working with PostgreSQL Arrays",
+      "tags": [
+        "postgresql",
+        "arrays",
+        "sql"
+      ],
+      "createdAt": "2023-07-01T12:02:36.366Z"
     }
   ],
-  "updatedAt": "2023-07-01T06:01:56.232Z"
+  "updatedAt": "2023-07-01T12:02:36.366Z"
 }
