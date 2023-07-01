@@ -4,7 +4,7 @@ const PREVIOUS_POST_COUNT = 60;
 
 export const getChatPrompt = (
   resume: string,
-  previousPosts: string[]
+  previousPosts: string[],
 ): Message[] => [
   {
     role: "user",
@@ -13,15 +13,18 @@ export const getChatPrompt = (
   },
   {
     role: "user",
-    content: `New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n${resume}`,
+    content:
+      `New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n${resume}`,
   },
   {
     role: "user",
-    content: `Your previous ${PREVIOUS_POST_COUNT} posts include: ${previousPosts
-      .slice(-PREVIOUS_POST_COUNT)
-      .reverse()
-      .map((title) => `\"${title}\"`)
-      .join(", ")}`,
+    content: `Your previous ${PREVIOUS_POST_COUNT} posts include: ${
+      previousPosts
+        .slice(-PREVIOUS_POST_COUNT)
+        .reverse()
+        .map((title) => `\"${title}\"`)
+        .join(", ")
+    }`,
   },
   {
     role: "user",

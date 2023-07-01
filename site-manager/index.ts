@@ -4,6 +4,7 @@ import { Post } from "../post-generator/index.ts";
 const PostManifest = z.object({
   title: z.string(),
   tags: z.array(z.string()),
+  authors: z.optional(z.array(z.string())),
   createdAt: z.coerce.date(),
 });
 
@@ -33,16 +34,23 @@ export class SiteManager {
   async writeManifest(manifest: Manifest): Promise<void> {
     await Deno.writeTextFile(
       this.manifestFile,
-      JSON.stringify(manifest, null, 2)
+      JSON.stringify(manifest, null, 2),
     );
   }
 
+  async getPreviousPosts(): Promise<string[]> {
+    const manifest = await this.readManifest();
+    return manifest.posts.map((p) => p.title);
+  }
+
   async writePost(post: Post): Promise<void> {
-    const header = `---\ntitle: "${
-      post.title
-    }"\ndate: ${new Date().toISOString()}\ntags: ${JSON.stringify(
-      post.tags
-    )}\n---`;
+    const header = `---\ntitle: "${post.title}"\ndate: ${
+      new Date().toISOString()
+    }\ntags: ${
+      JSON.stringify(
+        post.tags,
+      )
+    }\nauthors: ${JSON.stringify(post.authors)}\n---`;
 
     const filename = `${this.postsDirectory}/${post.slug}.md`;
     const contents = `${header}\n${post.body}`;
@@ -56,6 +64,7 @@ export class SiteManager {
     const postManifest: PostManifest = {
       title: post.title,
       tags: post.tags,
+      authors: post.authors,
       createdAt: post.createdAt,
     };
 

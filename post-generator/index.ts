@@ -1,16 +1,19 @@
 import { ChatCompletion } from "https://deno.land/x/openai/mod.ts";
-import { OpenAIClient, MockOpenAIClient, OpenAI, Message } from "./openai.ts";
+import { Message, MockOpenAIClient, OpenAI, OpenAIClient } from "./openai.ts";
 import { getChatPrompt } from "./prompts.ts";
+import { config } from "../config.ts";
 
 export interface Post {
   title: string;
   slug: string;
   body: string;
   tags: string[];
+  authors: string[];
   createdAt: Date;
 }
 
 export interface GenerateResult {
+  model: string;
   prompt: Message[];
   completion: ChatCompletion;
   post: Post;
@@ -23,7 +26,7 @@ export class PostGenerator {
     this.openai = mock ? new MockOpenAIClient() : new OpenAI();
   }
 
-  parseCompletion(text: string): Post {
+  parseCompletion(text: string, model: string): Post {
     let [first, ...rest] = text.split("\n");
 
     rest = rest.filter((s) => s !== "---");
@@ -58,18 +61,20 @@ export class PostGenerator {
       slug,
       body,
       tags,
+      authors: [model],
       createdAt: new Date(),
     };
   }
 
   async generatePost(
     resume: string,
-    previousPosts: string[]
+    previousPosts: string[],
   ): Promise<GenerateResult> {
+    const model = config.OPENAI_MODEL;
     const prompt = getChatPrompt(resume, previousPosts);
-    const completion = await this.openai.chatCompletion(prompt);
+    const completion = await this.openai.chatCompletion(model, prompt);
     const text = completion.choices[0].message.content!;
-    const post = this.parseCompletion(text);
-    return { prompt, completion, post };
+    const post = this.parseCompletion(text, model);
+    return { prompt, completion, post, model };
   }
 }
