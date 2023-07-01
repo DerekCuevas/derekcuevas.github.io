@@ -13,6 +13,10 @@ googleAnalytics = "G-F2E1LBE19M"
 date = ["date", "publishDate", "lastmod"]
 lastmod = ["lastmod", ":git", "date", "publishDate"]
 
+[taxonomies]
+author = "authors"
+tag = "tags"
+
 [params]
 mode = "toggle"
 useCDN=false
