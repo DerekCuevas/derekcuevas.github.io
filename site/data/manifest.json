@@ -1317,7 +1317,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-02T06:02:16.443Z"
+    },
+    {
+      "title": "Mastering Protocol Buffers in Rust",
+      "tags": [
+        "rust",
+        "protocol buffers",
+        "systems programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-02T12:02:46.480Z"
     }
   ],
-  "updatedAt": "2023-07-02T06:02:16.443Z"
+  "updatedAt": "2023-07-02T12:02:46.480Z"
 }
