@@ -1305,7 +1305,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-02T00:06:21.600Z"
+    },
+    {
+      "title": "Mastering Rust's Memory Allocation System",
+      "tags": [
+        "rust",
+        "memory allocation",
+        "performance"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-02T06:02:16.443Z"
     }
   ],
-  "updatedAt": "2023-07-02T00:06:21.600Z"
+  "updatedAt": "2023-07-02T06:02:16.443Z"
 }
