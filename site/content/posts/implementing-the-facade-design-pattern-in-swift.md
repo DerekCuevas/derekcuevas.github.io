@@ -2,6 +2,7 @@
 title: "Implementing the Facade Design Pattern in Swift"
 date: 2023-06-28T12:02:18.528Z
 tags: ["swift","design patterns","facade pattern"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

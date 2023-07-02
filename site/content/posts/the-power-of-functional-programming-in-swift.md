@@ -2,6 +2,7 @@
 title: "The Power of Functional Programming in Swift"
 date: 2023-05-29T02:18:27.679Z
 tags: ["swift","functional programming","higher-order functions"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

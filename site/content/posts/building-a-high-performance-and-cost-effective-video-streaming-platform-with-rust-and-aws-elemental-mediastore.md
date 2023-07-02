@@ -2,6 +2,7 @@
 title: "Building a High-Performance and Cost-Effective Video Streaming Platform with Rust and AWS Elemental MediaStore"
 date: 2023-05-28T06:02:47.821Z
 tags: ["rust","aws elemental mediastore","video streaming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

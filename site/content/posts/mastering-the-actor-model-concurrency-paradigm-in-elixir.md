@@ -2,6 +2,7 @@
 title: "Mastering the Actor Model Concurrency Paradigm in Elixir"
 date: 2023-06-07T18:03:28.780Z
 tags: ["elixir","actor model","concurrency"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

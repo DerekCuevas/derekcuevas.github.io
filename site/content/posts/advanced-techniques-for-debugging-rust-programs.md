@@ -2,6 +2,7 @@
 title: "Advanced Techniques for Debugging Rust Programs"
 date: 2023-06-13T00:05:53.255Z
 tags: ["rust","debugging","performance"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Debugging is the process of identifying and resolving issues in software code. Finding and fixing bugs in Rust can be a challenging task because of the language's unique features and performance-focused design. This post explores advanced techniques for debugging Rust programs, including profiling, tracing, and code instrumentation, to help you find and fix bugs quickly and efficiently.

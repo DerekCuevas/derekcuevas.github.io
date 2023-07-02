@@ -2,6 +2,7 @@
 title: "Writing Correct Web3 Smart Contracts with Solidity's Concerned Oxide (SCOCO) Conventions"
 date: 2023-06-27T18:02:22.284Z
 tags: ["blockchain","smart contracts","solidity"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

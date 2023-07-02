@@ -2,6 +2,7 @@
 title: "Demystifying Rust's 'unwrap()' Method"
 date: 2023-06-27T12:02:59.664Z
 tags: ["rust","error handling","option"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

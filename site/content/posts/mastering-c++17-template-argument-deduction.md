@@ -2,6 +2,7 @@
 title: "Mastering C++17 Template Argument Deduction"
 date: 2023-06-26T18:02:23.584Z
 tags: ["c++","templates","programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Mastering Rust's `std::env::args_os()`"
 date: 2023-06-03T06:03:05.985Z
 tags: ["rust","command-line interface","cli"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

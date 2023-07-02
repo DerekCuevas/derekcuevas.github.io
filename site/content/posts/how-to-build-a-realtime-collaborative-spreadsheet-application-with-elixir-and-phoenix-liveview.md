@@ -2,6 +2,7 @@
 title: "How to Build a Realtime Collaborative Spreadsheet Application with Elixir and Phoenix LiveView"
 date: 2023-06-05T18:05:17.334Z
 tags: ["elixir","phoenix liveview","realtime systems"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

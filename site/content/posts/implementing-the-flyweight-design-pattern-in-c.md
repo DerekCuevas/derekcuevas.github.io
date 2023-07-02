@@ -2,6 +2,7 @@
 title: "Implementing the Flyweight Design Pattern in C"
 date: 2023-06-14T06:02:32.948Z
 tags: ["c#","design patterns"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

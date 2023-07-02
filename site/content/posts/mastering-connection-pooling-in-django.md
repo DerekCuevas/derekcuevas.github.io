@@ -2,6 +2,7 @@
 title: "Mastering Connection Pooling in Django"
 date: 2023-06-08T00:05:49.844Z
 tags: ["django","database management","connection pooling"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

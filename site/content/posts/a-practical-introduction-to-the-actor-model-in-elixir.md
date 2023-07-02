@@ -2,6 +2,7 @@
 title: "A Practical Introduction to the Actor Model in Elixir"
 date: 2023-05-31T06:02:27.800Z
 tags: ["elixir","actor model","concurrency"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

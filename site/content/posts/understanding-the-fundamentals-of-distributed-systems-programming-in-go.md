@@ -2,6 +2,7 @@
 title: "Understanding the Fundamentals of Distributed Systems Programming in Go"
 date: 2023-06-29T05:49:14.860Z
 tags: ["go","distributed systems","concurrency"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

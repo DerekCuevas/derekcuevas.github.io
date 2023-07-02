@@ -2,6 +2,7 @@
 title: "Secret Management in Multi-Cloud Kubernetes Environments: A Comprehensive Guide"
 date: 2023-05-25T18:02:24.241Z
 tags: ["kubernetes","security","cloud"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

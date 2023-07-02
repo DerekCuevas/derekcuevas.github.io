@@ -2,6 +2,7 @@
 title: "JSON Data Validation with Rust's `serde_json` Library"
 date: 2023-05-30T06:02:34.244Z
 tags: ["rust","json","data validation"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

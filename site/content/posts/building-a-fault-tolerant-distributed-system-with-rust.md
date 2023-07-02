@@ -2,6 +2,7 @@
 title: "Building a Fault-Tolerant Distributed System with Rust"
 date: 2023-05-25T12:02:49.870Z
 tags: ["rust","distributed systems"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Rust's Pinning API: A Comprehensive Guide"
 date: 2023-06-11T18:02:22.963Z
 tags: ["rust","memory safety","pinning"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Writing High-Performance Networked Applications in Elixir with Erlang Term Storage"
 date: 2023-05-25T06:01:58.019Z
 tags: ["elixir","erlang term storage","realtime systems","distributed systems","networking"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

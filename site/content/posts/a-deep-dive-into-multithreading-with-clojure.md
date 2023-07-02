@@ -2,6 +2,7 @@
 title: "A Deep Dive into Multithreading with Clojure"
 date: 2023-06-08T18:02:53.589Z
 tags: ["clojure","multithreading","concurrency"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

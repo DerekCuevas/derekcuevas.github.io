@@ -2,6 +2,7 @@
 title: "How to Use Clojure to Build a High-Performance, Distributed System"
 date: 2023-05-21T12:05:30.494Z
 tags: ["clojure","distributed systems","high performance"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Clojure is a powerful programming language that is highly applicable for building distributed systems. The combination of a functional paradigm and support for concurrency and parallelism makes Clojure a great choice for building high-performance, scalable systems. In this post, we will dive into how to use Clojure to build a highly available, distributed system.

@@ -2,6 +2,7 @@
 title: "Build a Scalable, Maintainable, and Performant Full-Text Search System for Your Application with Elasticsearch"
 date: 2023-06-04T17:02:23.978Z
 tags: ["elasticsearch","full-text search","distributed system"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

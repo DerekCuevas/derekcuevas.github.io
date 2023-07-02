@@ -2,6 +2,7 @@
 title: "Generating Synthetic Data with Python's Faker Library"
 date: 2023-06-17T00:05:41.201Z
 tags: ["python","data generation","faker"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

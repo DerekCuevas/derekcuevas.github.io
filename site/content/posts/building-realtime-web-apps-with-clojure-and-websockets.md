@@ -2,6 +2,7 @@
 title: "Building Realtime Web Apps with Clojure and WebSockets"
 date: 2023-05-21T06:20:42.337Z
 tags: ["clojure","websockets","real-time web applications"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Clojure is one of the most popular functional programming languages for the JVM. It is known for its expressiveness and simplicity, making it an excellent choice for building large-scale, high-performance web applications. And while there are many frameworks and libraries available for building these types of applications, Clojure's support for WebSockets makes it an ideal choice for building real-time web applications.

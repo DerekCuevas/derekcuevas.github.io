@@ -2,6 +2,7 @@
 title: "Advanced TypeScript types: Generics with constraints"
 date: 2023-05-26T06:02:17.875Z
 tags: ["typescript","generics","type constraints"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

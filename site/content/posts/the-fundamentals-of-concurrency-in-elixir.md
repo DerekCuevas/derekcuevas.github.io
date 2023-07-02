@@ -2,6 +2,7 @@
 title: "The Fundamentals of Concurrency in Elixir"
 date: 2023-06-25T00:28:33.645Z
 tags: ["elixir","concurrency","parallelism"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Mastering JavaScript's Array.concat() Method for High-Performance and Scalable Code"
 date: 2023-05-31T00:05:18.953Z
 tags: ["javascript","performance","scalability"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

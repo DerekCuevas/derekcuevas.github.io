@@ -2,6 +2,7 @@
 title: "Mastering Rust's Async/Await Syntax"
 date: 2023-06-30T12:02:44.830Z
 tags: ["rust","async","await"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

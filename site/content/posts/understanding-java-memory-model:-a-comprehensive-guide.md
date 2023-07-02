@@ -2,6 +2,7 @@
 title: "Understanding Java Memory Model: A Comprehensive Guide"
 date: 2023-06-29T06:02:21.371Z
 tags: ["java","memory management","multithreading"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

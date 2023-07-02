@@ -2,6 +2,7 @@
 title: "Gaining Insights from Large Datasets Using Delta Lake"
 date: 2023-06-14T00:05:19.713Z
 tags: ["big data","data science","data engineering"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

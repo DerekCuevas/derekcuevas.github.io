@@ -2,6 +2,7 @@
 title: "How to use Elm to build maintainable, efficient, and bug-free front-end applications"
 date: 2023-06-07T12:04:39.888Z
 tags: ["elm","front-end","best practices"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

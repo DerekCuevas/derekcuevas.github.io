@@ -2,6 +2,7 @@
 title: "Mastering Terraform's State File"
 date: 2023-06-25T12:02:41.469Z
 tags: ["terraform","infrastructure as code","state file"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

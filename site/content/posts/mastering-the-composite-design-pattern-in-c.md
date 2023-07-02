@@ -2,6 +2,7 @@
 title: "Mastering the Composite Design Pattern in C"
 date: 2023-06-26T12:03:07.482Z
 tags: ["c#","design patterns","composite design pattern"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

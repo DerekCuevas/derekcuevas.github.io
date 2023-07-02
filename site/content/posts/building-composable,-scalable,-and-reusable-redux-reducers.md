@@ -2,6 +2,7 @@
 title: "Building Composable, Scalable, and Reusable Redux Reducers"
 date: 2023-06-03T00:05:35.396Z
 tags: ["redux","react","javascript"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

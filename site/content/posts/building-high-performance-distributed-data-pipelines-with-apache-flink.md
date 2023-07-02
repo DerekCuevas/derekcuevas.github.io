@@ -2,6 +2,7 @@
 title: "Building High Performance Distributed Data Pipelines with Apache Flink"
 date: 2023-06-07T00:05:36.513Z
 tags: ["apache flink","data pipelines","distributed computing"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

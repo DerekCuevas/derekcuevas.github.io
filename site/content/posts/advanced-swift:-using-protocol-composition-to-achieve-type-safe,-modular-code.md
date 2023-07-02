@@ -2,6 +2,7 @@
 title: "Advanced Swift: Using Protocol Composition to Achieve Type-Safe, Modular Code"
 date: 2023-05-29T12:02:31.277Z
 tags: ["swift","protocol composition","modularity"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Implementing the Factory Method Design Pattern in Dart"
 date: 2023-06-12T06:02:54.804Z
 tags: ["dart","design patterns","factory method"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

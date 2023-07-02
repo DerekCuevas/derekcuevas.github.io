@@ -2,6 +2,7 @@
 title: "Building Type-Safe APIs with TypeScript"
 date: 2023-06-14T12:03:00.908Z
 tags: ["typescript","api development","type-safety"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

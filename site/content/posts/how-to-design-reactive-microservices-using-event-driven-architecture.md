@@ -2,6 +2,7 @@
 title: "How to Design Reactive Microservices Using Event-Driven Architecture"
 date: 2023-06-08T12:03:42.644Z
 tags: ["microservices","event-driven architecture","reactive programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

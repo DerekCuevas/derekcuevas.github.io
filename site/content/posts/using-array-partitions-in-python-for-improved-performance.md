@@ -2,6 +2,7 @@
 title: "Using Array Partitions in Python for Improved Performance"
 date: 2023-06-13T06:02:25.463Z
 tags: ["python","performance"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

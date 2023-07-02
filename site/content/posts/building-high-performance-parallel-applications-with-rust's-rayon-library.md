@@ -2,6 +2,7 @@
 title: "Building High-Performance Parallel Applications with Rust's Rayon Library"
 date: 2023-05-21T02:56:51.475Z
 tags: ["rust","parallelism","rayon"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Are you looking for a way to speed up your application's performance with parallel processing? Rust's Rayon library is an excellent solution. In this post, we will dive into the Rayon library and demonstrate how it can accelerate your program's computations with very little effort.

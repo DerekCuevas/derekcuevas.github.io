@@ -2,6 +2,7 @@
 title: "Fine-tuning BERT for Question Answering - A Step-by-Step Guide"
 date: 2023-06-09T06:03:27.488Z
 tags: ["natural language processing","deep learning","bert"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained natural language processing (NLP) model that has shown superior performance on a wide range of NLP tasks, including Question Answering (QA). Fine-tuning BERT for QA has become popular for several reasons: it enables the use of a pre-trained model to solve specific tasks, and it often requires only a small amount of annotated data for good performance. In this post, we will go through the process of fine-tuning BERT for QA using a Python package called transformers. We will use the SQuAD v1.1 dataset as an example.

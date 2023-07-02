@@ -2,6 +2,7 @@
 title: "Building Scalable REST APIs with Node.js and PostgreSQL"
 date: 2023-05-31T18:02:53.154Z
 tags: ["node.js","postgresql","rest apis"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

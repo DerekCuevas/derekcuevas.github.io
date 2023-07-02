@@ -2,6 +2,7 @@
 title: "Building Real-Time, High-Performance Applications with Rust and WebSockets"
 date: 2023-05-26T18:19:07.846Z
 tags: ["rust","websockets","real-time","performance"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

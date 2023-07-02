@@ -2,6 +2,7 @@
 title: "Building a High-Availability Microservice Architecture with Modern C++"
 date: 2023-06-06T00:05:49.045Z
 tags: ["c++","microservices","high-availability"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

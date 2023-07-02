@@ -2,6 +2,7 @@
 title: "How to Build High-Availability WebSocket Services with Rust and Actix-Web"
 date: 2023-05-31T12:03:45.566Z
 tags: ["rust","actix-web","websockets"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

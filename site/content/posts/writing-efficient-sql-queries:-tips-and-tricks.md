@@ -2,6 +2,7 @@
 title: "Writing Efficient SQL Queries: Tips and Tricks"
 date: 2023-06-08T06:02:59.191Z
 tags: ["sql","databases","best practices"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Optimizing SQL queries is essential to maintain a high-performing database infrastructure. In this post, I will provide tips and tricks that you can use to build efficient SQL queries. I will cover how to write efficient and optimized queries to retrieve, update and delete data quickly.

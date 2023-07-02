@@ -2,6 +2,7 @@
 title: "Deep Dive into Functional Reactive Programming with RxJS"
 date: 2023-06-29T12:02:54.934Z
 tags: ["rxjs","functional programming","reactive programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

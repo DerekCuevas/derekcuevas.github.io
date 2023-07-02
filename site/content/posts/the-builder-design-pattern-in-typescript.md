@@ -2,6 +2,7 @@
 title: "The Builder Design Pattern in TypeScript"
 date: 2023-06-13T12:02:49.405Z
 tags: ["typescript","design patterns"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "How to use Access Control in Go"
 date: 2023-06-16T17:42:15.619Z
 tags: ["golang","security","authorization"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

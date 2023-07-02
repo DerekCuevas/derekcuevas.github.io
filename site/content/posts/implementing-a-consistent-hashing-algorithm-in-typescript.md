@@ -2,6 +2,7 @@
 title: "Implementing a Consistent Hashing Algorithm in TypeScript"
 date: 2023-06-06T18:03:58.384Z
 tags: ["typescript","algorithms","distributed systems"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Exploring Rust's `mem::replace()` Function"
 date: 2023-06-02T18:02:51.331Z
 tags: ["rust","memory management"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

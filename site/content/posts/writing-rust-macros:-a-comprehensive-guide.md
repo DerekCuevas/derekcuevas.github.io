@@ -2,6 +2,7 @@
 title: "Writing Rust Macros: A Comprehensive Guide"
 date: 2023-05-22T04:50:33.997Z
 tags: ["rust","macros","procedural macros","declarative macros","programming macros","macro rules"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Are you finding that your Rust code is cluttered and repetitive? Do you want to reduce boilerplate and remove errors from your code? If so, you should start writing Rust macros!

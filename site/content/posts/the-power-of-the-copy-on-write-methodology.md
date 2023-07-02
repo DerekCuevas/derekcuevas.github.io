@@ -2,6 +2,7 @@
 title: "The Power of the Copy-on-Write Methodology"
 date: 2023-06-28T00:05:57.211Z
 tags: ["cow","memory management","performance"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

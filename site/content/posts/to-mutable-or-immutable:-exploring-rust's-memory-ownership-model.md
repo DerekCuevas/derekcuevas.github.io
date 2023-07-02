@@ -2,6 +2,7 @@
 title: "To Mutable or Immutable: Exploring Rust's Memory Ownership Model"
 date: 2023-05-29T02:27:19.680Z
 tags: ["rust","memory management","ownership"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

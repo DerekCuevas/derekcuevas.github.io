@@ -2,6 +2,7 @@
 title: "Mastering Rust's Standard Library Function `mem::forget()`"
 date: 2023-06-04T17:04:32.151Z
 tags: ["rust","memory management"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Exploring the Rust Standard Library's VecDeque"
 date: 2023-05-30T00:05:11.376Z
 tags: ["rust","data structures"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Rust offers a standard library that includes many helpful collections and data structures to aid developers in building performant and efficient applications. One such data structure is the `VecDeque`, which offers a way to store a sequence of items in a double-ended queue. The `VecDeque` data structure is implemented using a dynamically sized array that can grow or shrink in size to accommodate the items placed within it. In this post, we will explore the features of the `VecDeque` and learn how to use it in our Rust applications.

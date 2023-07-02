@@ -2,6 +2,7 @@
 title: "Building High-Performance Machine Learning Pipelines with Rust"
 date: 2023-07-01T18:02:06.291Z
 tags: ["rust","machine learning","performance"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

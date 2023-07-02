@@ -2,6 +2,7 @@
 title: "Exploring Performance Optimization Techniques for Rust Applications"
 date: 2023-05-24T18:02:26.087Z
 tags: ["rust","performance","optimization"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Rust is a high-performance system programming language with a great focus on safety, memory management, and concurrency. With its unique features and capabilities, Rust is a popular choice for building high-performance applications. However, writing high-performance Rust code requires in-depth knowledge of the language's features, capabilities, and best practices. In this post, we'll be exploring some performance optimization techniques that every Rust developer should know.

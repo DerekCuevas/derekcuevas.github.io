@@ -2,6 +2,7 @@
 title: "Mastering Rust's Pattern Matching"
 date: 2023-06-27T06:02:26.045Z
 tags: ["rust","pattern matching","programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

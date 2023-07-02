@@ -2,6 +2,7 @@
 title: "Building real-time collaborative web apps with Operational Transformation"
 date: 2023-06-04T18:02:11.620Z
 tags: ["web development","operational transformation","collaborative applications"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

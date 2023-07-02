@@ -2,6 +2,7 @@
 title: "Mastering the Decorator Pattern in Rust"
 date: 2023-06-30T06:02:11.298Z
 tags: ["rust","object-oriented design","decorator pattern"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

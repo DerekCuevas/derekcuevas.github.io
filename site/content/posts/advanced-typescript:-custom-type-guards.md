@@ -2,6 +2,7 @@
 title: "Advanced TypeScript: Custom Type Guards"
 date: 2023-06-02T12:03:36.705Z
 tags: ["typescript"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

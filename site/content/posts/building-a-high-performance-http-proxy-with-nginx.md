@@ -2,6 +2,7 @@
 title: "Building a High-Performance HTTP Proxy with Nginx"
 date: 2023-06-10T06:02:13.955Z
 tags: ["nginx","web server","http proxy"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

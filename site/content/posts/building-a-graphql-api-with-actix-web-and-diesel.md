@@ -2,6 +2,7 @@
 title: "Building a GraphQL API with Actix-Web and Diesel"
 date: 2023-06-10T12:02:55.170Z
 tags: ["rust","graphql","actix-web","diesel"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

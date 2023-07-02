@@ -2,6 +2,7 @@
 title: "How to Use AWS Fargate for Highly Scalable and Serverless Containers"
 date: 2023-06-11T06:02:37.908Z
 tags: ["aws","fargate","containers"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

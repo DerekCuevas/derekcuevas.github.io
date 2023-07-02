@@ -2,6 +2,7 @@
 title: "The Power of Streams in Java"
 date: 2023-06-27T00:06:18.171Z
 tags: ["java","stream api","functional programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "How to Build a Recommendation Engine with Apache Spark"
 date: 2023-06-11T00:05:54.138Z
 tags: ["apache spark","machine learning","recommendation engines"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

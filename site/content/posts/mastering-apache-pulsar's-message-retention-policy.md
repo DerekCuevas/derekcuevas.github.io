@@ -2,6 +2,7 @@
 title: "Mastering Apache Pulsar's Message Retention Policy"
 date: 2023-07-01T00:06:06.025Z
 tags: ["apache pulsar","real-time systems","messaging"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "How to Write High Performance Elm Code with the Help of Web Workers"
 date: 2023-05-22T18:02:08.530Z
 tags: ["elm","web workers"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Elm is a functional, strongly typed programming language that compiles to JavaScript. Elm is known for being easy to learn, with helpful error messages and an intuitive syntax. However, it is not always known for being performant. In this article, we'll explore how to use web workers to write high performance Elm code.

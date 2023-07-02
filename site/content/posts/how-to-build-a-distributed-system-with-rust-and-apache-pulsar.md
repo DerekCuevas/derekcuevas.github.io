@@ -2,6 +2,7 @@
 title: "How to Build a Distributed System with Rust and Apache Pulsar"
 date: 2023-05-26T12:02:36.847Z
 tags: ["rust","distributed systems","apache pulsar"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

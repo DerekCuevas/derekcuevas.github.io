@@ -2,6 +2,7 @@
 title: "Best Practices for Integrating React and TypeScript"
 date: 2023-06-29T16:21:00.222Z
 tags: ["typescript","react","front-end development"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

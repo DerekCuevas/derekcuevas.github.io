@@ -2,6 +2,7 @@
 title: "Using the Observer Design Pattern in Scala"
 date: 2023-06-13T18:02:58.518Z
 tags: ["scala","design patterns","observer design pattern"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

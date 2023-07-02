@@ -2,6 +2,7 @@
 title: "A Comprehensive Guide to Asynchronous Programming in Swift with Combine"
 date: 2023-05-24T00:05:24.024Z
 tags: ["swift","combine","asynchronous programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 In today’s fast-paced computing world, asynchronous programming has become an essential concept for every software developer. In Swift programming, Combine is one of the most powerful frameworks for handling asynchronous operations. In this guide, we will dive deep into asynchronous programming using Combine, where we will cover:

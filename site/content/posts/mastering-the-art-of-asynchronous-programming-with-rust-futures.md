@@ -2,6 +2,7 @@
 title: "Mastering the Art of Asynchronous Programming with Rust Futures"
 date: 2023-05-28T12:03:02.905Z
 tags: ["rust","futures","asynchronous programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

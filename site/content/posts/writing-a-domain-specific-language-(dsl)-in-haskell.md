@@ -2,6 +2,7 @@
 title: "Writing a Domain-Specific Language (DSL) in Haskell"
 date: 2023-06-12T18:02:34.048Z
 tags: ["haskell","domain-specific language","dsl"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

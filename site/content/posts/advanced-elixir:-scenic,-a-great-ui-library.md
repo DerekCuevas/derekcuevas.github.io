@@ -2,6 +2,7 @@
 title: "Advanced Elixir: Scenic, a Great UI Library"
 date: 2023-05-29T06:02:28.509Z
 tags: ["elixir","ui","scenic"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

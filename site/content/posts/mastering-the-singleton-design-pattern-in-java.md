@@ -2,6 +2,7 @@
 title: "Mastering the Singleton Design Pattern in Java"
 date: 2023-06-25T00:25:31.291Z
 tags: ["java","design patterns","singleton"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

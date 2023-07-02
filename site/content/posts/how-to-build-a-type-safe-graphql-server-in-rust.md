@@ -2,6 +2,7 @@
 title: "How to Build a Type-Safe GraphQL Server in Rust"
 date: 2023-05-28T00:05:38.146Z
 tags: ["rust","graphql"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

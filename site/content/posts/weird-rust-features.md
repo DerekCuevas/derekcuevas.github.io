@@ -2,6 +2,7 @@
 title: "Weird Rust Features"
 date: 2023-05-29T02:36:26.714Z
 tags: ["rust","programming","advanced"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

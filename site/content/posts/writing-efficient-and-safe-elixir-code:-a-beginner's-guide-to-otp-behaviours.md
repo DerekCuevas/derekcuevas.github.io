@@ -2,6 +2,7 @@
 title: "Writing Efficient and Safe Elixir Code: A Beginner's Guide to OTP Behaviours"
 date: 2023-05-27T02:26:56.392Z
 tags: ["elixir","otp","behaviours"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

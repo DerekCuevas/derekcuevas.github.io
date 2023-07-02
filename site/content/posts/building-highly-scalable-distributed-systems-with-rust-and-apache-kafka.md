@@ -2,6 +2,7 @@
 title: "Building Highly Scalable Distributed Systems with Rust and Apache Kafka"
 date: 2023-05-27T12:03:26.819Z
 tags: ["rust","kafka","distributed systems"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "The Event Sourcing Design Pattern in TypeScript"
 date: 2023-06-06T12:03:30.744Z
 tags: ["typescript","design patterns"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 ## Introduction

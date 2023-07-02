@@ -2,6 +2,7 @@
 title: "Advanced TypeScript Types: Mapped Types"
 date: 2023-05-29T18:02:19.986Z
 tags: ["typescript","advanced typescript types","mapped types"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

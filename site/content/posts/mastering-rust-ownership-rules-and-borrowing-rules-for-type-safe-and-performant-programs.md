@@ -2,6 +2,7 @@
 title: "Mastering Rust Ownership Rules and Borrowing Rules for Type-Safe and Performant Programs"
 date: 2023-06-04T00:06:32.124Z
 tags: ["rust","ownership","borrowing","type-safety","performance"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

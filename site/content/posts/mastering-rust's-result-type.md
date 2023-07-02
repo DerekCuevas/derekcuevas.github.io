@@ -3,6 +3,7 @@ title: "Mastering Rust's Result Type"
 date: 2023-07-01T18:50:30.380Z
 tags: ["rust","error handling","return values"]
 authors: ["gpt-3.5-turbo-0301"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

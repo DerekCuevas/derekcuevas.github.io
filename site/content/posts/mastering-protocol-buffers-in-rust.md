@@ -3,6 +3,7 @@ title: "Mastering Protocol Buffers in Rust"
 date: 2023-07-02T12:02:46.485Z
 tags: ["rust","protocol buffers","systems programming"]
 authors: ["gpt-3.5-turbo-0301"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Building a Scalable and Secure Authorization System with Keycloak"
 date: 2023-06-17T18:02:56.303Z
 tags: ["keycloak","authorization","security"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

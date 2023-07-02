@@ -2,6 +2,7 @@
 title: "How to Use Kafka to Build Scalable and Fault-Tolerant Distributed Systems"
 date: 2023-06-10T00:05:05.900Z
 tags: ["apache kafka","distributed systems","scalability"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

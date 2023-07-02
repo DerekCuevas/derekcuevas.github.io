@@ -2,6 +2,7 @@
 title: "How to Use Generators to Create Infinite Sequences in Python"
 date: 2023-06-07T06:03:26.329Z
 tags: ["python","generators","iterators"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Understanding Scala's Implicits: A Comprehensive Guide"
 date: 2023-06-25T18:02:15.587Z
 tags: ["scala","implicits","programming paradigms"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

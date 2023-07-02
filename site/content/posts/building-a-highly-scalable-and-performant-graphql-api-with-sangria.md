@@ -2,6 +2,7 @@
 title: "Building a Highly Scalable and Performant GraphQL API with Sangria"
 date: 2023-06-05T06:03:49.816Z
 tags: ["graphql","scala","sangria"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

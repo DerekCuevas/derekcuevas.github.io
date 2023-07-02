@@ -2,6 +2,7 @@
 title: "Boosting Rust Performance with Allocator Selection"
 date: 2023-06-12T00:14:48.020Z
 tags: ["rust","performance","memory allocation"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

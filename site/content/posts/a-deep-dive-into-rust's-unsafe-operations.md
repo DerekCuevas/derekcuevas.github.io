@@ -2,6 +2,7 @@
 title: "A Deep Dive into Rust's Unsafe Operations"
 date: 2023-05-21T02:51:42.985Z
 tags: ["rust","programming","unsafe operations"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Rust is a programming language that emphasizes safety and correctness while still offering high performance out of the box. However, sometimes it is necessary to use unsafe operations in Rust code in order to achieve the best possible performance and functionality. In this article, we'll explore Rust's unsafe operations and examine how they work and how they can be used effectively.

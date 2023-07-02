@@ -2,6 +2,7 @@
 title: "Using Rust's Pinning API for Safe and Performant Async Programming"
 date: 2023-06-01T00:06:24.524Z
 tags: ["rust","async programming","pinning api"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Asynchronous programming, while an incredibly powerful tool, comes with its own set of challenges and pitfalls. Among these challenges is the need to ensure the safety of data across async boundaries. Failure to do so can result in data races, which are notoriously difficult to debug. Rust's `Pin` API is a powerful tool for ensuring that data is safely handled across async boundaries while also being performant. In this article, we'll cover how to use Rust's `Pin` API to safely handle data across async boundaries.

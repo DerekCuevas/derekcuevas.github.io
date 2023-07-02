@@ -2,6 +2,7 @@
 title: "Building High-Performance Web Applications with Rust and WebAssembly"
 date: 2023-05-27T18:02:13.502Z
 tags: ["rust","webassembly","web applications","performance","optimization"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

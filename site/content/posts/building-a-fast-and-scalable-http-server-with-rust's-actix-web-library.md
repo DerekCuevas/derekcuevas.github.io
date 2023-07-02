@@ -2,6 +2,7 @@
 title: "Building a Fast and Scalable HTTP Server with Rust's Actix-Web Library"
 date: 2023-05-27T00:05:26.377Z
 tags: ["rust","actix-web","http","server","performance","scalability"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

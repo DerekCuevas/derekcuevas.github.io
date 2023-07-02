@@ -2,6 +2,7 @@
 title: "Building Efficient Mobile Apps with React Native Flexbox"
 date: 2023-06-28T06:02:08.751Z
 tags: ["react native","mobile development","layout"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

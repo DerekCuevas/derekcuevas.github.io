@@ -2,6 +2,7 @@
 title: "Writing Secure Rust Code: A Deep Dive into Memory Safety"
 date: 2023-06-09T12:02:51.104Z
 tags: ["rust","memory safety","security"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

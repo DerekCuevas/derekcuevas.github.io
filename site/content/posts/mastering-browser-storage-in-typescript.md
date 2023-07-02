@@ -2,6 +2,7 @@
 title: "Mastering Browser Storage in TypeScript"
 date: 2023-06-03T12:03:29.544Z
 tags: ["typescript","web development"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

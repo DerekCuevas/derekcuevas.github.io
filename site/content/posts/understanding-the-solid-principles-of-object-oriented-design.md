@@ -2,6 +2,7 @@
 title: "Understanding the SOLID Principles of Object-Oriented Design"
 date: 2023-06-29T00:06:08.703Z
 tags: ["object-oriented programming","software engineering","solid principles"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

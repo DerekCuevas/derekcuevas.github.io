@@ -2,6 +2,7 @@
 title: "Advanced TypeScript types: Conditional Types"
 date: 2023-05-29T02:29:18.029Z
 tags: ["typescript","type system","advanced types"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

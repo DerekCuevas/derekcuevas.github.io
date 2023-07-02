@@ -2,6 +2,7 @@
 title: "Mastering the Svelte Framework: A Comprehensive Guide"
 date: 2023-06-29T18:10:49.424Z
 tags: ["javascript","framework","svelte"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

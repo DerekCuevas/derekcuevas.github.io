@@ -2,6 +2,7 @@
 title: "Building High-Performance, Real-time Message-Based Applications with Rust and Pulsar"
 date: 2023-05-30T18:03:13.906Z
 tags: ["rust","pulsar","distributed systems"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Securely Managing Secrets in Production Applications"
 date: 2023-06-12T12:02:58.364Z
 tags: ["security","devops","programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Implementing the Command Design Pattern in Kotlin"
 date: 2023-06-26T06:02:29.714Z
 tags: ["kotlin","design patterns","command"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

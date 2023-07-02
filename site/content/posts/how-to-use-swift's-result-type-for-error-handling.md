@@ -2,6 +2,7 @@
 title: "How to Use Swift's Result Type for Error Handling"
 date: 2023-06-04T06:03:08.441Z
 tags: ["swift","error handling"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

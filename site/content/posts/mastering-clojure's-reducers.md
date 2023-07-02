@@ -2,6 +2,7 @@
 title: "Mastering Clojure's Reducers"
 date: 2023-06-04T12:03:25.506Z
 tags: ["clojure","functional programming","parallelism","concurrency","reducers"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

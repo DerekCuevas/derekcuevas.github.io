@@ -2,6 +2,7 @@
 title: "Mastering the Decorator Design Pattern in TypeScript"
 date: 2023-06-25T00:43:59.976Z
 tags: ["typescript","design patterns","decorator pattern"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

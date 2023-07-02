@@ -2,6 +2,7 @@
 title: "Effective Techniques for Building Blazing-Fast Mobile Apps with React Native"
 date: 2023-06-29T05:23:37.265Z
 tags: ["react native","mobile apps","performance"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

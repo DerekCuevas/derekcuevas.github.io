@@ -2,6 +2,7 @@
 title: "Building a High-Performance Event Store with Apache Kafka"
 date: 2023-06-15T00:06:14.647Z
 tags: ["apache kafka","event-driven architecture","distributed systems"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

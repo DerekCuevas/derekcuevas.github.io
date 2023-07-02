@@ -2,6 +2,7 @@
 title: "Mastering Elixir's GenServer Callbacks"
 date: 2023-06-02T06:04:09.926Z
 tags: ["elixir","otp","genserver"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

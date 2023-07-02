@@ -2,6 +2,7 @@
 title: "Building Ultra-Fast Web Applications with Rust's Actix-Web Library"
 date: 2023-05-28T18:02:26.942Z
 tags: ["rust","web applications","actix-web"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Building a High-Performance Streaming System with Rust"
 date: 2023-05-21T16:49:36.721Z
 tags: ["rust","streaming systems","actix web"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Rust, which is a low-level systems programming language, was designed to support building blazingly fast, high-performance systems that consume minimal resources. This makes it an ideal choice for building streaming systems that can ingest, process, and output large data volumes in real-time. In this tutorial, we'll explore how to build a high-performance streaming system with Rust that can handle large volumes of data while remaining efficient and fast.

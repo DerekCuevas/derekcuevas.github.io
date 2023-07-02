@@ -2,6 +2,7 @@
 title: "Advanced Techniques for Scaling Node.js Applications"
 date: 2023-06-28T18:02:27.177Z
 tags: ["node.js","microservices","scalability"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Projecting Elixir's Enum Module into Batches"
 date: 2023-06-03T18:03:23.427Z
 tags: ["elixir","enum","batches"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

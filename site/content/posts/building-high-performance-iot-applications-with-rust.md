@@ -2,6 +2,7 @@
 title: "Building High-Performance IoT Applications with Rust"
 date: 2023-05-26T00:05:29.843Z
 tags: ["rust","iot","embedded systems"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

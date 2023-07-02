@@ -2,6 +2,7 @@
 title: "Understanding the Difference Between Structs and Enums in Rust"
 date: 2023-05-29T02:17:21.444Z
 tags: ["rust","structs","enums"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Rust is a powerful programming language that is quickly becoming a popular choice for building high-performance applications. Among its many features, Rust has a unique way of handling data structures, which can be difficult to understand for newcomers to the language. Specifically, the differences between structs and enums can be confusing at first. In this post, we'll take a deep dive into these two data structures and explore their strengths and weaknesses.

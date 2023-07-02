@@ -2,6 +2,7 @@
 title: "Building a Highly Scalable Kafka Consumer in Go"
 date: 2023-06-14T18:02:59.606Z
 tags: ["go","kafka","distributed systems"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

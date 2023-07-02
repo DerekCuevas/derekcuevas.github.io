@@ -2,6 +2,7 @@
 title: "The Art of Error Handling in Node.js"
 date: 2023-05-30T12:03:19.262Z
 tags: ["node.js","error handling","exceptions"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

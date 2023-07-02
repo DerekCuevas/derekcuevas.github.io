@@ -2,6 +2,7 @@
 title: "How to Write Fast Python Code"
 date: 2023-06-06T06:02:48.793Z
 tags: ["python","optimization"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 Python is known for being a high-level and easy-to-learn programming language. However, it is often considered slow when compared to compiled languages such as C or Go. Fortunately, with the following tips, you can fine-tune your Python code to make it run much faster.

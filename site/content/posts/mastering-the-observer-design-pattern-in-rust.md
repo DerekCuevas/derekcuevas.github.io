@@ -2,6 +2,7 @@
 title: "Mastering the Observer Design Pattern in Rust"
 date: 2023-06-26T00:06:06.583Z
 tags: ["rust","design patterns","observer"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 # Introduction

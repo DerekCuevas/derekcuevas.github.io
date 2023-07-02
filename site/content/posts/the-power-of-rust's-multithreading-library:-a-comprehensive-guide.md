@@ -2,6 +2,7 @@
 title: "The Power of Rust's Multithreading Library: A Comprehensive Guide"
 date: 2023-06-30T00:05:21.317Z
 tags: ["rust","multithreading","parallelism"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

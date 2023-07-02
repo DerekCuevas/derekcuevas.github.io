@@ -2,6 +2,7 @@
 title: "How to Use the Decorator Pattern for Flexible and Extensible Code"
 date: 2023-06-09T00:06:02.015Z
 tags: ["design patterns","decorator pattern","object-oriented programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

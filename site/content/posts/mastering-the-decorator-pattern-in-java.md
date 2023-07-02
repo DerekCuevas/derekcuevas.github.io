@@ -2,6 +2,7 @@
 title: "Mastering the Decorator Pattern in Java"
 date: 2023-06-25T00:30:42.086Z
 tags: ["java","design patterns"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

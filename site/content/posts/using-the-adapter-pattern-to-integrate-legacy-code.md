@@ -2,6 +2,7 @@
 title: "Using the Adapter Pattern to Integrate Legacy Code"
 date: 2023-06-05T12:03:16.775Z
 tags: ["software design","adapter pattern","legacy code integration"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

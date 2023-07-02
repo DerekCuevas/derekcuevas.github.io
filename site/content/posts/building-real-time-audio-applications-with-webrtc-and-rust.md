@@ -2,6 +2,7 @@
 title: "Building Real-Time Audio Applications with WebRTC and Rust"
 date: 2023-06-12T00:05:23.449Z
 tags: ["rust","webrtc","real-time"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

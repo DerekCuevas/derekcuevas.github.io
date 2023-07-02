@@ -2,6 +2,7 @@
 title: "Deep Dive into Rust's Ownership and Borrowing System"
 date: 2023-05-25T05:08:26.807Z
 tags: ["rust","ownership","borrowing"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

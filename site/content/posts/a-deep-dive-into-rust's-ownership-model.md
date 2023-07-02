@@ -2,6 +2,7 @@
 title: "A Deep Dive into Rust's Ownership Model"
 date: 2023-06-17T12:02:40.368Z
 tags: ["rust","ownership model","memory safety"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

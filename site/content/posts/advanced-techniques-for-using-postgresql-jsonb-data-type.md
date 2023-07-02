@@ -2,6 +2,7 @@
 title: "Advanced Techniques for Using PostgreSQL JSONB Data Type"
 date: 2023-06-09T18:02:13.852Z
 tags: ["postgresql","jsonb","sql"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 PostgreSQL is a very powerful, open-source relational database management system. One of its most powerful features is the `JSONB` data type, which allows you to efficiently store and query JSON data. In this post, we will explore some advanced techniques for using `JSONB` data type in PostgreSQL.

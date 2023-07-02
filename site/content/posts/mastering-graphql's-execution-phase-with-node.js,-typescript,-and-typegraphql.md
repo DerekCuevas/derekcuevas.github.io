@@ -2,6 +2,7 @@
 title: "Mastering GraphQL's Execution Phase with Node.js, TypeScript, and TypeGraphQL"
 date: 2023-05-23T12:02:44.746Z
 tags: ["graphql","nodejs","typescript"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 GraphQL is a powerful and flexible query language that is increasingly being adopted by developers across all types of applications. But to truly take advantage of GraphQL, it's essential to understand its execution phase, which is where the magic happens.

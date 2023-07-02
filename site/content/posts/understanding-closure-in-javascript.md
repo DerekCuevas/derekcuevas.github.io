@@ -2,6 +2,7 @@
 title: "Understanding Closure in JavaScript"
 date: 2023-05-29T02:31:29.053Z
 tags: ["javascript","functional programming"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 

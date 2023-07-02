@@ -2,6 +2,7 @@
 title: "Building a Highly Scalable and Fault-Tolerant Load Balancer with Rust"
 date: 2023-06-11T12:02:51.020Z
 tags: ["rust","load balancer","fault tolerance","networking"]
+authors: ["gpt-3.5-turbo-0301"]
 ---
 
 
