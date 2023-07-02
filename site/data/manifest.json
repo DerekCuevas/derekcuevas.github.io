@@ -1329,7 +1329,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-02T12:02:46.480Z"
+    },
+    {
+      "title": "Mastering the Decorator Pattern in TypeScript",
+      "tags": [
+        "typescript",
+        "design pattern",
+        "decorator pattern"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-02T18:02:14.267Z"
     }
   ],
-  "updatedAt": "2023-07-02T12:02:46.480Z"
+  "updatedAt": "2023-07-02T18:02:14.267Z"
 }
