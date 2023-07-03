@@ -1377,7 +1377,20 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-03T12:03:01.124Z"
+    },
+    {
+      "title": "The Power of Rust's Const Generics",
+      "tags": [
+        "rust",
+        "generics",
+        "const",
+        "programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-03T18:02:07.612Z"
     }
   ],
-  "updatedAt": "2023-07-03T12:03:01.124Z"
+  "updatedAt": "2023-07-03T18:02:07.612Z"
 }

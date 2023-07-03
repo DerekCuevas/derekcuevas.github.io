@@ -1,0 +1,86 @@
+{
+ "model": "gpt-3.5-turbo-0301",
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Mastering Rust's Parallel Iterator: A Comprehensive Guide\", \"Exploring Advanced Types in TypeScript: Mapped & Conditional Types\", \"Exploring the Rust Standard Library's `io` Module\", \"Mastering the Decorator Pattern in TypeScript\", \"Mastering Protocol Buffers in Rust\", \"Mastering Rust's Memory Allocation System\", \"Modern Web Development with SwiftNIO\", \"Mastering Rust's Result Type\", \"Building High-Performance Machine Learning Pipelines with Rust\", \"Advanced Techniques for Working with PostgreSQL Arrays\", \"Mastering HTML and CSS Accessibility: A Comprehensive Guide\", \"Mastering Apache Pulsar's Message Retention Policy\", \"Mastering TypeScript's Record Type\", \"Mastering Rust's Async/Await Syntax\", \"Mastering the Decorator Pattern in Rust\", \"The Power of Rust's Multithreading Library: A Comprehensive Guide\", \"Mastering the Svelte Framework: A Comprehensive Guide\", \"Best Practices for Integrating React and TypeScript\", \"Deep Dive into Functional Reactive Programming with RxJS\", \"Understanding Java Memory Model: A Comprehensive Guide\", \"Understanding the Fundamentals of Distributed Systems Programming in Go\", \"Effective Techniques for Building Blazing-Fast Mobile Apps with React Native\", \"Understanding the SOLID Principles of Object-Oriented Design\", \"Advanced Techniques for Scaling Node.js Applications\", \"Implementing the Facade Design Pattern in Swift\", \"Building Efficient Mobile Apps with React Native Flexbox\", \"The Power of the Copy-on-Write Methodology\", \"Writing Correct Web3 Smart Contracts with Solidity's Concerned Oxide (SCOCO) Conventions\", \"Demystifying Rust's 'unwrap()' Method\", \"Mastering Rust's Pattern Matching\", \"The Power of Streams in Java\", \"Mastering C++17 Template Argument Deduction\", \"Mastering the Composite Design Pattern in C\", \"Implementing the Command Design Pattern in Kotlin\", \"Mastering the Observer Design Pattern in Rust\", \"Understanding Scala's Implicits: A Comprehensive Guide\", \"Mastering Terraform's State File\", \"Title:\", \"Mastering the Decorator Design Pattern in TypeScript\", \"Mastering the Decorator Pattern in Java\", \"The Fundamentals of Concurrency in Elixir\", \"Mastering the Singleton Design Pattern in Java\", \"Building a Scalable and Secure Authorization System with Keycloak\", \"A Deep Dive into Rust's Ownership Model\", \"Best Practices for Building a High-Performance Web Application with Node.js\", \"Generating Synthetic Data with Python's Faker Library\", \"Understanding Rust's Unsafe Keyword\", \"How to use Access Control in Go\", \"Building a High-Performance Event Store with Apache Kafka\", \"Building a Highly Scalable Kafka Consumer in Go\", \"Building Type-Safe APIs with TypeScript\", \"Implementing the Flyweight Design Pattern in C\", \"Gaining Insights from Large Datasets Using Delta Lake\", \"Using the Observer Design Pattern in Scala\", \"The Builder Design Pattern in TypeScript\", \"Using Array Partitions in Python for Improved Performance\", \"Advanced Techniques for Debugging Rust Programs\", \"Writing a Domain-Specific Language (DSL) in Haskell\", \"Securely Managing Secrets in Production Applications\", \"Implementing the Factory Method Design Pattern in Dart\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7YI9gqiUlL2Tvc2fHladvWP5dlQns",
+  "object": "chat.completion",
+  "created": 1688407296,
+  "model": "gpt-3.5-turbo-0301",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: The Power of Rust's Const Generics\n\nTags: Rust, Generics, Const, Programming\n\nRust's latest version has introduced a new feature named Const Generics, which comes with a wide range of possibilities for writing type-safe code. With this feature, Rust can calculate type parameters at compile-time using constants, which can help eliminate unnecessary runtime computations.\n\nIn this post, we will cover Rust's Const Generics, detailing why it matters and how to use it. \n\n## What are Const Generics?\n\nGenerics allow abstracting over types where data can be of any type parameter. However, the current Rust release was not able to apply generics to apply on constants given that Rust’s type systems heavily rely on a constant's value. Then came the concept of const generics as an extension, which aims to apply generics over a constant's values. \n\nUsing generics, functions and structures can work with different data types, but with const generics, this abstraction can be extended further to types based on constant values. For instance, an array size can be made generic, allowing the programmer to write a function that works with arrays having any valid size. \n\n```rust\nfn array_print <T: std::fmt::Display, const N: usize> (arr: [T; N]) {\n    for i in 0..N {\n        println! (\"arr[{}] = {}\", i, arr[i]);\n    }\n}\n\nfn main() {\n    let arr1: [i32; 4] = [1,2,3,4];\n    let arr2: [i64; 3] = [5,6,7];\n    array_print (arr1);\n    array_print (arr2);\n}\n```\n\nIn this code, we have a function 'array_print', which takes a generic array reference. Our implementation will work with arrays of any size, but as you can see, we are specifying the array size via the 'const N' parameter. This parameter will be resolved at compile time once we pass the array to the 'array_print' function and replace the value of the constant.\n\n## Benefits of Using Const Generics\n\nConst Generics help achieve a variety of benefits when programming in Rust. Some of the most significant advantages include:\n\n### 1. Improved Efficiency\n\nAs const-generic code eliminates the redundant runtime computations, Rust's new feature provides a substantial performance boost to any program that uses it. For example, in Rust's standard library, const generics have reduced the number of generic implementations. \n\n### 2. Strong Type-Safety \n\nIn Rust, data type errors are notoriously difficult to manage, and they're often the cause of the most challenging bugs. Using Const Generics helps avoid data type errors by enforcing constraints at the time of compilation.\n\n### 3. Easier Debugging\n\nDebugging is arguably one of the most significant challenges faced by developers. Const generics provide all the values at compile-time, which makes it easier to diagnose and fix issues. \n\n### 4. Improved Code Clarity\n\nConst generics lead to cleaner code, making it easier to read and understand. As a programmer, you can be more confident about your code's correctness and have greater ease of mind while refactoring or modifying things.\n\n## Using Const Generics\n\nThough const generics follow the same syntax as Rust's standard generics and are used as type parameters, their syntax varies slightly. You must specify its 'const' modifier before the parameter identifier. They can be used to define data structures like arrays, vectors, and many more.\n\nAs an example, let's look at a simple program that takes an array and performs generic programming with const type parameters.\n\n```rust\nstruct Square<const N: usize> {\n    values:[i32; N],\n}\n\nimpl<const N: usize> Square<N> {\n    fn new (value:i32) -> Square<N>{\n        Square{\n            values: [value; N]\n        }\n    }\n    fn calculate_square (&self) -> Square<N> {\n        let mut new_values = [0; N];\n        for i in 0..N {\n            new_values[i] = self.values[i] * self.values[i];\n        }\n        Square {\n            values:new_values\n        }\n    }\n}\n\nfn main() {\n    let square_original = Square::<3>::new(10);\n    let square_calculated = square_original.calculate_square();\n    println!(\"Original array with {}, Squares are: [{},{},{}]\",\n        &square_original.values[0],\n        &square_calculated.values[0],\n        &square_calculated.values[1],\n        &square_calculated.values[2]);\n}\n```\n\nIn the code snippet above, the user-defined struct Square is a container for an array with an N length, where N is specified as a const generic type parameter. We have defined a new method that constructs the object with the initial value fill of size N. \n\nThen, we have the calculate_square function that iterates over all the elements in the array and squares them. \n\nWith our test example, we can see that Rust is successfully calculating the square operation on every element of the array of size N. \n\n## Conclusion\n\nConst Generics in Rust is a significant improvement over traditional generics in Rust, providing several benefits that improve both developer productivity and program efficiency. While it may take time to master the syntax and concept, Rust developers can start using Const Generics and gain more exposure and benefits over time. \n\nIn conclusion, Const Generics in Rust provide a level of safety and expressiveness in code that used to be impossible before. With the improvement in the Rust programming language, there has never been a better time to explore this feature in-depth and start implementing type-safe programs based on constant values."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2179,
+   "completion_tokens": 1163,
+   "total_tokens": 3342
+  }
+ }
+}
