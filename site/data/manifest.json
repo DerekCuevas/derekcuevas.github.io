@@ -1426,7 +1426,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-04T12:03:02.872Z"
+    },
+    {
+      "title": "Advanced Techniques for Implementing the Decorator Design Pattern in Rust",
+      "tags": [
+        "rust",
+        "design patterns",
+        "decorator pattern"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-04T18:02:00.605Z"
     }
   ],
-  "updatedAt": "2023-07-04T12:03:02.872Z"
+  "updatedAt": "2023-07-04T18:02:00.605Z"
 }
