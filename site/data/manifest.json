@@ -1390,7 +1390,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-03T18:02:07.612Z"
+    },
+    {
+      "title": "Understanding the Principles of Reactive Programming in Java",
+      "tags": [
+        "java",
+        "reactive programming",
+        "functional programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-04T00:06:13.461Z"
     }
   ],
-  "updatedAt": "2023-07-03T18:02:07.612Z"
+  "updatedAt": "2023-07-04T00:06:13.461Z"
 }
