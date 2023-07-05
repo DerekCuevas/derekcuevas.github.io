@@ -1473,7 +1473,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-05T12:03:06.704Z"
+    },
+    {
+      "title": "Advanced Error Handling with Rust's Result Type",
+      "tags": [
+        "rust",
+        "error handling",
+        "result type"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-05T18:02:21.169Z"
     }
   ],
-  "updatedAt": "2023-07-05T12:03:06.704Z"
+  "updatedAt": "2023-07-05T18:02:21.169Z"
 }
