@@ -1450,7 +1450,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-05T00:06:00.958Z"
+    },
+    {
+      "title": "Writing Type-Safe Code with TypeScript's unknown Type",
+      "tags": [
+        "typescript",
+        "type safety",
+        "error handling"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-05T06:02:20.447Z"
     }
   ],
-  "updatedAt": "2023-07-05T00:06:00.958Z"
+  "updatedAt": "2023-07-05T06:02:20.447Z"
 }
