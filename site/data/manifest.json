@@ -1462,7 +1462,18 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-05T06:02:20.447Z"
+    },
+    {
+      "title": "Building Custom Data Types with Rust's derive Macro",
+      "tags": [
+        "rust",
+        "programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-05T12:03:06.704Z"
     }
   ],
-  "updatedAt": "2023-07-05T06:02:20.447Z"
+  "updatedAt": "2023-07-05T12:03:06.704Z"
 }
