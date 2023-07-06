@@ -1509,7 +1509,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-06T06:02:28.105Z"
+    },
+    {
+      "title": "Mastering the Asynchronous Programming in Clojure",
+      "tags": [
+        "clojure",
+        "asynchronous programming",
+        "functional programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-06T12:02:45.082Z"
     }
   ],
-  "updatedAt": "2023-07-06T06:02:28.105Z"
+  "updatedAt": "2023-07-06T12:02:45.082Z"
 }
