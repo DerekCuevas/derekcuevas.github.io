@@ -1485,7 +1485,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-05T18:02:21.169Z"
+    },
+    {
+      "title": "Understanding Rust's String Types",
+      "tags": [
+        "rust",
+        "strings",
+        "programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-06T00:06:01.179Z"
     }
   ],
-  "updatedAt": "2023-07-05T18:02:21.169Z"
+  "updatedAt": "2023-07-06T00:06:01.179Z"
 }
