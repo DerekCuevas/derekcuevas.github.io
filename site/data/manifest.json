@@ -1521,7 +1521,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-06T12:02:45.082Z"
+    },
+    {
+      "title": "Understanding TypeScript's Union Types",
+      "tags": [
+        "typescript",
+        "programming",
+        "types"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-06T18:02:02.839Z"
     }
   ],
-  "updatedAt": "2023-07-06T12:02:45.082Z"
+  "updatedAt": "2023-07-06T18:02:02.839Z"
 }
