@@ -1533,7 +1533,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-06T18:02:02.839Z"
+    },
+    {
+      "title": "The Power of Clojure's Transducers: A Comprehensive Guide",
+      "tags": [
+        "clojure",
+        "functional programming",
+        "transducers"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-07T00:05:49.552Z"
     }
   ],
-  "updatedAt": "2023-07-06T18:02:02.839Z"
+  "updatedAt": "2023-07-07T00:05:49.552Z"
 }
