@@ -1569,7 +1569,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-07T12:02:21.647Z"
+    },
+    {
+      "title": "Understanding the Power of Rust's `Option` Type",
+      "tags": [
+        "rust",
+        "error-handling",
+        "option"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-07T18:01:58.460Z"
     }
   ],
-  "updatedAt": "2023-07-07T12:02:21.647Z"
+  "updatedAt": "2023-07-07T18:01:58.460Z"
 }
