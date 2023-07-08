@@ -1605,7 +1605,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-08T06:01:51.245Z"
+    },
+    {
+      "title": "Mastering Advanced TypeScript Patterns",
+      "tags": [
+        "typescript",
+        "design patterns",
+        "advanced techniques"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-08T12:02:36.881Z"
     }
   ],
-  "updatedAt": "2023-07-08T06:01:51.245Z"
+  "updatedAt": "2023-07-08T12:02:36.881Z"
 }
