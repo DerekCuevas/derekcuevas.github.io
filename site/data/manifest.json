@@ -1581,7 +1581,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-07T18:01:58.460Z"
+    },
+    {
+      "title": "The Power of Rust's const_fn Feature",
+      "tags": [
+        "rust",
+        "systems programming",
+        "function optimization"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-08T00:05:39.980Z"
     }
   ],
-  "updatedAt": "2023-07-07T18:01:58.460Z"
+  "updatedAt": "2023-07-08T00:05:39.980Z"
 }
