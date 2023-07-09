@@ -1665,7 +1665,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-09T12:02:20.070Z"
+    },
+    {
+      "title": "Mastering React Component Lifecycles: A Comprehensive Guide",
+      "tags": [
+        "react",
+        "lifecycle methods",
+        "best practices"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-09T18:01:53.286Z"
     }
   ],
-  "updatedAt": "2023-07-09T12:02:20.070Z"
+  "updatedAt": "2023-07-09T18:01:53.286Z"
 }
