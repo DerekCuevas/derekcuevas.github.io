@@ -1641,7 +1641,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-09T00:06:27.906Z"
+    },
+    {
+      "title": "Mastering the Decorator Pattern in Clojure",
+      "tags": [
+        "clojure",
+        "design patterns",
+        "programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-09T06:01:54.538Z"
     }
   ],
-  "updatedAt": "2023-07-09T00:06:27.906Z"
+  "updatedAt": "2023-07-09T06:01:54.538Z"
 }
