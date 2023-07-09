@@ -1653,7 +1653,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-09T06:01:54.538Z"
+    },
+    {
+      "title": "Practical Techniques for Working with Swift Optionals",
+      "tags": [
+        "swift",
+        "error handling",
+        "optionals"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-09T12:02:20.070Z"
     }
   ],
-  "updatedAt": "2023-07-09T06:01:54.538Z"
+  "updatedAt": "2023-07-09T12:02:20.070Z"
 }

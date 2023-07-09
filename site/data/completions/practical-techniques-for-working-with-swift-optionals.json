@@ -1,0 +1,86 @@
+{
+ "model": "gpt-3.5-turbo-0301",
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Mastering the Decorator Pattern in Clojure\", \"Understanding the Rust Standard Library's `time` Module\", \"The Power of Deno's Built-in Web Server\", \"Mastering Advanced TypeScript Patterns\", \"The Power of Kotlin's Inline Functions\", \"The Power of Rust's const_fn Feature\", \"Understanding the Power of Rust's `Option` Type\", \"Understanding the Principles of Event-Driven Architecture\", \"Mastering the Observer Pattern with Objective-C\", \"The Power of Clojure's Transducers: A Comprehensive Guide\", \"Understanding TypeScript's Union Types\", \"Mastering the Asynchronous Programming in Clojure\", \"Advanced Techniques for Scaling Distributed Systems with Apache Flink\", \"Understanding Rust's String Types\", \"Advanced Error Handling with Rust's Result Type\", \"Building Custom Data Types with Rust's derive Macro\", \"Writing Type-Safe Code with TypeScript's unknown Type\", \"Building High-Performance Websites with Deno\", \"Advanced Techniques for Implementing the Decorator Design Pattern in Rust\", \"Building Robust and Secure GraphQL Servers with Rust\", \"Advanced Techniques for Working with WebSockets in Rust\", \"Understanding the Principles of Reactive Programming in Java\", \"The Power of Rust's Const Generics\", \"Mastering Rust's Parallel Iterator: A Comprehensive Guide\", \"Exploring Advanced Types in TypeScript: Mapped & Conditional Types\", \"Exploring the Rust Standard Library's `io` Module\", \"Mastering the Decorator Pattern in TypeScript\", \"Mastering Protocol Buffers in Rust\", \"Mastering Rust's Memory Allocation System\", \"Modern Web Development with SwiftNIO\", \"Mastering Rust's Result Type\", \"Building High-Performance Machine Learning Pipelines with Rust\", \"Advanced Techniques for Working with PostgreSQL Arrays\", \"Mastering HTML and CSS Accessibility: A Comprehensive Guide\", \"Mastering Apache Pulsar's Message Retention Policy\", \"Mastering TypeScript's Record Type\", \"Mastering Rust's Async/Await Syntax\", \"Mastering the Decorator Pattern in Rust\", \"The Power of Rust's Multithreading Library: A Comprehensive Guide\", \"Mastering the Svelte Framework: A Comprehensive Guide\", \"Best Practices for Integrating React and TypeScript\", \"Deep Dive into Functional Reactive Programming with RxJS\", \"Understanding Java Memory Model: A Comprehensive Guide\", \"Understanding the Fundamentals of Distributed Systems Programming in Go\", \"Effective Techniques for Building Blazing-Fast Mobile Apps with React Native\", \"Understanding the SOLID Principles of Object-Oriented Design\", \"Advanced Techniques for Scaling Node.js Applications\", \"Implementing the Facade Design Pattern in Swift\", \"Building Efficient Mobile Apps with React Native Flexbox\", \"The Power of the Copy-on-Write Methodology\", \"Writing Correct Web3 Smart Contracts with Solidity's Concerned Oxide (SCOCO) Conventions\", \"Demystifying Rust's 'unwrap()' Method\", \"Mastering Rust's Pattern Matching\", \"The Power of Streams in Java\", \"Mastering C++17 Template Argument Deduction\", \"Mastering the Composite Design Pattern in C\", \"Implementing the Command Design Pattern in Kotlin\", \"Mastering the Observer Design Pattern in Rust\", \"Understanding Scala's Implicits: A Comprehensive Guide\", \"Mastering Terraform's State File\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7aNP7cz7QS8i1U4ixfsOFRB78AFVq",
+  "object": "chat.completion",
+  "created": 1688904129,
+  "model": "gpt-3.5-turbo-0301",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: Practical Techniques for Working with Swift Optionals\n\nTags: Swift, Error Handling, Optionals\n\nSwift is a strongly typed language that relies on Optionals for error handling. When working with Optionals, there are many techniques available that can make your code more robust and help you avoid common pitfalls. In this article, we will explore some of these techniques and provide practical examples for their use.\n\n## Understanding Swift Optionals\n\nOptionals are Swift’s solution for handling values that might not be present. They are an important feature of the language and are used extensively throughout the standard library and third-party frameworks.\n\nAn Optional in Swift can be either nil or have a value. When working with Optionals, it is important to use optional binding to check if a value exists before attempting to use it. This can be accomplished with the `if let` syntax:\n\n```swift\nif let name = person.name {\n    // use the name property\n} else {\n    // handle the nil case\n}\n```\n\nUnwrapping Optionals can also be accomplished using the `guard` statement. This allows you to exit early from a function or method if a value is nil:\n\n```swift\nguard let name = person.name else {\n    return\n}\n\n// use the name property\n```\n\n## The Optional Chaining Operator\n\nSwift provides an Optional Chaining operator (`?`) for accessing properties and calling methods on Optional values. This allows you to avoid the need for nested optional bindings and simplify your code.\n\nFor example, imagine you have a `Person` struct with an optional `address` property that itself has an optional `zipCode` property:\n\n```swift\nstruct Address {\n    var zipCode: String?\n}\n\nstruct Person {\n    var address: Address?\n}\n```\n\nYou can access the `zipCode` property using the Optional Chaining operator like this:\n\n```swift\nlet person = Person(address: Address(zipCode: \"90210\"))\nlet zipCode = person.address?.zipCode\n```\n\nUsing the Optional Chaining operator like this will return `nil` if either the `address` or `zipCode` property is nil.\n\n## Forced Unwrapping and Implicitly Unwrapped Optionals\n\nAlthough forced unwrapping of an Optional with the `!` operator is generally discouraged, there are rare cases when its use is justified. When you are certain that a value exists and just need to unwrap it, it can be a good solution.\n\nImplicitly Unwrapped Optionals (IUOs) are a variation of Optionals that are guaranteed to always have a value. They are defined using an exclamation mark (`!`) instead of a question mark (`?`).\n\nAn IUO is useful when you know that a value will always be set by the time you use it. This can help you avoid writing a lot of optional binding code.\n\nFor example, you might use an IUO for a delegate property that is set during initialization:\n\n```swift\nprotocol SomeDelegate {\n    // ...\n}\n\nclass SomeView {\n    var delegate: SomeDelegate!\n}\n\nlet view = SomeView()\nview.delegate = self // you can safely use an IUO here\n```\n\n## Nil Coalescing Operator\n\nThe Nil Coalescing operator (`??`) is a useful tool for working with Optionals. It allows you to provide a default value for an Optional that is nil.\n\nFor example, consider an Optional `count` property that might be nil:\n\n```swift\nlet count: Int? = nil\nlet result = count ?? 0\n```\n\nIn this case, the `result` constant will be assigned a value of `0` since the `count` property is nil.\n\n## Conclusion\n\nSwift Optionals are an important feature of the language that allow you to handle errors effectively. In this article we discussed some practical techniques for working with Optionals including optional binding, the Optional Chaining operator, forced unwrapping, implicitly unwrapped Optionals and the Nil Coalescing operator. Understanding these techniques will help you write more robust and concise code in your Swift projects."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2189,
+   "completion_tokens": 821,
+   "total_tokens": 3010
+  }
+ }
+}
