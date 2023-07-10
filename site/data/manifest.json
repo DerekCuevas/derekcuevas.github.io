@@ -1713,7 +1713,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-10T12:02:38.276Z"
+    },
+    {
+      "title": "Mastering HTTP/2 Server Push: A Comprehensive Guide",
+      "tags": [
+        "http/2",
+        "server push",
+        "web development"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-10T18:02:15.457Z"
     }
   ],
-  "updatedAt": "2023-07-10T12:02:38.276Z"
+  "updatedAt": "2023-07-10T18:02:15.457Z"
 }
