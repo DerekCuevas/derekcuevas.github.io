@@ -1761,7 +1761,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-11T12:02:44.360Z"
+    },
+    {
+      "title": "Understanding the Rust Trait System: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "traits",
+        "object-oriented programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-11T18:02:07.940Z"
     }
   ],
-  "updatedAt": "2023-07-11T12:02:44.360Z"
+  "updatedAt": "2023-07-11T18:02:07.940Z"
 }

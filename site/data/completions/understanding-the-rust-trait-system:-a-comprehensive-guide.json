@@ -1,0 +1,86 @@
+{
+ "model": "gpt-3.5-turbo-0301",
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Mastering Rust's Concurrency Primitives: A Comprehensive Guide\", \"Building High-Performance Microservices with Rust's Actix-Web Framework\", \"Advanced Techniques for Building Serverless Applications with AWS Lambda\", \"Mastering HTTP/2 Server Push: A Comprehensive Guide\", \"Building Scalable Real-Time Applications with Warp in Rust\", \"Mastering Event Sourcing and CQRS: A Comprehensive Guide\", \"The Power of Rust's Ownership System: A Comprehensive Guide\", \"Mastering React Component Lifecycles: A Comprehensive Guide\", \"Practical Techniques for Working with Swift Optionals\", \"Mastering the Decorator Pattern in Clojure\", \"Understanding the Rust Standard Library's `time` Module\", \"The Power of Deno's Built-in Web Server\", \"Mastering Advanced TypeScript Patterns\", \"The Power of Kotlin's Inline Functions\", \"The Power of Rust's const_fn Feature\", \"Understanding the Power of Rust's `Option` Type\", \"Understanding the Principles of Event-Driven Architecture\", \"Mastering the Observer Pattern with Objective-C\", \"The Power of Clojure's Transducers: A Comprehensive Guide\", \"Understanding TypeScript's Union Types\", \"Mastering the Asynchronous Programming in Clojure\", \"Advanced Techniques for Scaling Distributed Systems with Apache Flink\", \"Understanding Rust's String Types\", \"Advanced Error Handling with Rust's Result Type\", \"Building Custom Data Types with Rust's derive Macro\", \"Writing Type-Safe Code with TypeScript's unknown Type\", \"Building High-Performance Websites with Deno\", \"Advanced Techniques for Implementing the Decorator Design Pattern in Rust\", \"Building Robust and Secure GraphQL Servers with Rust\", \"Advanced Techniques for Working with WebSockets in Rust\", \"Understanding the Principles of Reactive Programming in Java\", \"The Power of Rust's Const Generics\", \"Mastering Rust's Parallel Iterator: A Comprehensive Guide\", \"Exploring Advanced Types in TypeScript: Mapped & Conditional Types\", \"Exploring the Rust Standard Library's `io` Module\", \"Mastering the Decorator Pattern in TypeScript\", \"Mastering Protocol Buffers in Rust\", \"Mastering Rust's Memory Allocation System\", \"Modern Web Development with SwiftNIO\", \"Mastering Rust's Result Type\", \"Building High-Performance Machine Learning Pipelines with Rust\", \"Advanced Techniques for Working with PostgreSQL Arrays\", \"Mastering HTML and CSS Accessibility: A Comprehensive Guide\", \"Mastering Apache Pulsar's Message Retention Policy\", \"Mastering TypeScript's Record Type\", \"Mastering Rust's Async/Await Syntax\", \"Mastering the Decorator Pattern in Rust\", \"The Power of Rust's Multithreading Library: A Comprehensive Guide\", \"Mastering the Svelte Framework: A Comprehensive Guide\", \"Best Practices for Integrating React and TypeScript\", \"Deep Dive into Functional Reactive Programming with RxJS\", \"Understanding Java Memory Model: A Comprehensive Guide\", \"Understanding the Fundamentals of Distributed Systems Programming in Go\", \"Effective Techniques for Building Blazing-Fast Mobile Apps with React Native\", \"Understanding the SOLID Principles of Object-Oriented Design\", \"Advanced Techniques for Scaling Node.js Applications\", \"Implementing the Facade Design Pattern in Swift\", \"Building Efficient Mobile Apps with React Native Flexbox\", \"The Power of the Copy-on-Write Methodology\", \"Writing Correct Web3 Smart Contracts with Solidity's Concerned Oxide (SCOCO) Conventions\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7bByIJBtTE4v85Za4m7P7C006jXc6",
+  "object": "chat.completion",
+  "created": 1689098510,
+  "model": "gpt-3.5-turbo-0301",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: Understanding the Rust Trait System: A Comprehensive Guide  \nTags: Rust, Traits, Object-Oriented Programming\n\nRust is a modern system programming language that employs a unique type system with impressive features that make it possible to write safe and efficient systems software. Among those features is a powerful Trait System. Traits are Rust's way of achieving polymorphism, similar to interfaces or abstract classes in Object-Oriented Programming. In this guide, we will take a deep dive into Rust's Trait System, explaining the concepts through examples and code snippets.\n\n## What are Traits?\n\nA Trait is a way to define a set of methods that a type must implement to use a particular piece of functionality. A Trait is similar to an interface in Java or C#, or an abstract class in C++, but with some important differences. \n\nIn Rust, Traits can have default method implementations, whereas in other object-oriented languages, only abstract methods can be defined in interfaces. This means that Traits can provide some method implementations, but these can be overridden by the implementing type. \n\nRust's Traits also allow for generic programming. That means that when defining a Trait, you can use generics to express that some of the methods require a specific type as an argument.\n\nHere's an example of a simple Trait definition with one method:\n\n```rust\ntrait Greet {\n    fn say_hello(&self);\n}\n```\n\nThis code defines a Trait called `Greet` with a single method `say_hello()`. In order to use this Trait, a type must implement this method.\n\n## Implementing Traits\n\nTo implement a Trait for a specific type, you use the `impl` keyword followed by the Trait and the set of methods that type has to implement. \n\n```rust\nstruct Person {\n    name: String,\n    age: i32,\n}\n\nimpl Greet for Person {\n    fn say_hello(&self) {\n        println!(\"Hello, my name is {}.\", self.name);\n    }\n}\n```\n\nIn this example, we defined a `Person` struct with two fields: `name` and `age`. We then implemented the `Greet` Trait for `Person` by defining the `say_hello()` function. Now, all `Person` objects have access to the `say_hello()` method.\n\nIt's important to note that unlike in Object-Oriented languages, in Rust we need to explicitly implement all required methods of a Trait. If a method is not implemented, we get a compilation error.\n\n## Default Implementations\n\nAs previously stated, a Trait can provide default implementations for its methods. In this case, the implementing type can choose to use or override those implementations. Here's an example:\n\n```rust\ntrait Sing {\n    fn sing(&self) {\n        println!(\"La, la, la\");\n    }\n}\n\nstruct Bird;\nstruct Human;\n\nimpl Sing for Bird {}\n\nimpl Sing for Human {\n    fn sing(&self) {\n        println!(\"Tra la la\");\n    }\n}\n```\n\nIn this code, we define a `Sing` Trait with a default `sing()` function. We then implement the Trait for two types: `Bird` and `Human`. Because we didn't provide a custom implementation for `Bird`, it will use the default implementation. However, the `Human` implementation overrides the default implementation.\n\n## Trait Bounds and Generics\n\nTrait Bounds are a way to require that a type must implement a certain Trait in order to be used in a generic context. A bound is specified using the `where` keyword followed by the name of the Trait that is required.\n\nHere's an example:\n\n```rust\nfn print_greeting<T>(item: T)\nwhere\n    T: Greet,\n{\n    item.say_hello();\n}\n```\n\nThis code defines a function called `print_greeting` that takes a generic type `T` and requires that it implements the `Greet` Trait. Now we can call this function with any type that implements `Greet`:\n\n```rust\nlet person = Person {\n    name: String::from(\"Alice\"),\n    age: 27,\n};\nprint_greeting(person);\n```\n\nIn this example, we pass a `Person` object to `print_greeting`, which prints the greeting using the `say_hello()` method implemented for `Person`.\n\nTrait Bounds can be used with multiple Traits as well:\n\n```rust\nfn perform<T>(item: T)\nwhere\n    T: Greet + Sing,\n{\n    item.say_hello();\n    item.sing();\n}\n```\n\nThis code requires that the generic type `T` must implement both `Greet` and `Sing` Traits in order to be used with the `perform()` function.\n\n## Associated Types\n\nAssociated Types allow Traits to define types in their definitions without fixing their implementation. This means that a type implementing such a Trait can choose its own implementation for the defined type.\n\nHere is an example:\n\n```rust\ntrait Stream {\n    type Item;\n\n    fn next(&mut self) -> Option<Self::Item>;\n}\n\nstruct StringStream<'a> {\n    stream: &'a str,\n}\n\nimpl<'a> Stream for StringStream<'a> {\n    type Item = char;\n\n    fn next(&mut self) -> Option<char> {\n        let result = self.stream.chars().next();\n        if result.is_some() {\n            self.stream = &self.stream[result.unwrap().len_utf8()..];\n        }   \n        result\n    }\n}\n```\n\nIn this example, we define a `Stream` Trait with an associated type `Item`. We then implement the Trait for a `StringStream` struct that processes a string character by character. We could have defined a different type for `Item` when implementing `Stream` for another type.\n\n## Conclusion\n\nTraits are a powerful Rust feature that enables polymorphism and generic programming. With Traits, we can define common functionality across different types and require that a type implements certain methods in order to be used in a particular way. By understanding the Trait System, Rust developers can create efficient and safe systems software."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2218,
+   "completion_tokens": 1222,
+   "total_tokens": 3440
+  }
+ }
+}
