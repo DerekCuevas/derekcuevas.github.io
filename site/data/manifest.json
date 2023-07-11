@@ -1749,7 +1749,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-11T06:02:31.814Z"
+    },
+    {
+      "title": "Mastering Rust's Concurrency Primitives: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "concurrency",
+        "multithreading"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-11T12:02:44.360Z"
     }
   ],
-  "updatedAt": "2023-07-11T06:02:31.814Z"
+  "updatedAt": "2023-07-11T12:02:44.360Z"
 }
