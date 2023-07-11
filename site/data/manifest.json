@@ -1725,7 +1725,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-10T18:02:15.457Z"
+    },
+    {
+      "title": "Advanced Techniques for Building Serverless Applications with AWS Lambda",
+      "tags": [
+        "aws",
+        "lambda",
+        "serverless"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-11T00:06:03.129Z"
     }
   ],
-  "updatedAt": "2023-07-10T18:02:15.457Z"
+  "updatedAt": "2023-07-11T00:06:03.129Z"
 }
