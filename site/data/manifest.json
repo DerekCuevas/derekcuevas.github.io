@@ -1809,7 +1809,22 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-12T12:02:55.002Z"
+    },
+    {
+      "title": "The Science of Machine Learning: Explaining the Bias-Variance Tradeoff",
+      "tags": [
+        "machine learning",
+        "data science",
+        "overfitting",
+        "underfitting",
+        "bias",
+        "variance"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-12T18:01:48.061Z"
     }
   ],
-  "updatedAt": "2023-07-12T12:02:55.002Z"
+  "updatedAt": "2023-07-12T18:01:48.061Z"
 }
