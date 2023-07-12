@@ -1797,7 +1797,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-12T06:02:14.587Z"
+    },
+    {
+      "title": "Mastering Advanced Feature-Driven Development: A Comprehensive Guide",
+      "tags": [
+        "feature-driven development",
+        "agile",
+        "software engineering"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-12T12:02:55.002Z"
     }
   ],
-  "updatedAt": "2023-07-12T06:02:14.587Z"
+  "updatedAt": "2023-07-12T12:02:55.002Z"
 }
