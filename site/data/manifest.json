@@ -1785,7 +1785,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-12T00:05:52.879Z"
+    },
+    {
+      "title": "Mastering the Elm Architecture: A Comprehensive Guide",
+      "tags": [
+        "elm",
+        "functional programming",
+        "web development"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-12T06:02:14.587Z"
     }
   ],
-  "updatedAt": "2023-07-12T00:05:52.879Z"
+  "updatedAt": "2023-07-12T06:02:14.587Z"
 }
