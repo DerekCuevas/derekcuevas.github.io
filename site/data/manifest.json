@@ -1860,7 +1860,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-13T12:02:36.097Z"
+    },
+    {
+      "title": "Implementing a Consistent Hashing Algorithm in Rust",
+      "tags": [
+        "rust",
+        "algorithms",
+        "consistent hashing"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-13T18:01:56.308Z"
     }
   ],
-  "updatedAt": "2023-07-13T12:02:36.097Z"
+  "updatedAt": "2023-07-13T18:01:56.308Z"
 }
