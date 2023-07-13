@@ -1836,7 +1836,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-13T00:05:38.308Z"
+    },
+    {
+      "title": "Understanding Tail-Recursion in Elixir",
+      "tags": [
+        "elixir",
+        "functional programming",
+        "recursion"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-13T06:02:12.236Z"
     }
   ],
-  "updatedAt": "2023-07-13T00:05:38.308Z"
+  "updatedAt": "2023-07-13T06:02:12.236Z"
 }
