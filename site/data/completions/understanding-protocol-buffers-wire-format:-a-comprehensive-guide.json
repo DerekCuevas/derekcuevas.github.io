@@ -1,0 +1,87 @@
+{
+ "model": "gpt-3.5-turbo-0301",
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Understanding Tail-Recursion in Elixir\", \"Exploring Kubernetes StatefulSets: A Comprehensive Guide\", \"The Science of Machine Learning: Explaining the Bias-Variance Tradeoff\", \"Mastering Advanced Feature-Driven Development: A Comprehensive Guide\", \"Mastering the Elm Architecture: A Comprehensive Guide\", \"Exploring the Rust Standard Library's `net` Module\", \"Understanding the Rust Trait System: A Comprehensive Guide\", \"Mastering Rust's Concurrency Primitives: A Comprehensive Guide\", \"Building High-Performance Microservices with Rust's Actix-Web Framework\", \"Advanced Techniques for Building Serverless Applications with AWS Lambda\", \"Mastering HTTP/2 Server Push: A Comprehensive Guide\", \"Building Scalable Real-Time Applications with Warp in Rust\", \"Mastering Event Sourcing and CQRS: A Comprehensive Guide\", \"The Power of Rust's Ownership System: A Comprehensive Guide\", \"Mastering React Component Lifecycles: A Comprehensive Guide\", \"Practical Techniques for Working with Swift Optionals\", \"Mastering the Decorator Pattern in Clojure\", \"Understanding the Rust Standard Library's `time` Module\", \"The Power of Deno's Built-in Web Server\", \"Mastering Advanced TypeScript Patterns\", \"The Power of Kotlin's Inline Functions\", \"The Power of Rust's const_fn Feature\", \"Understanding the Power of Rust's `Option` Type\", \"Understanding the Principles of Event-Driven Architecture\", \"Mastering the Observer Pattern with Objective-C\", \"The Power of Clojure's Transducers: A Comprehensive Guide\", \"Understanding TypeScript's Union Types\", \"Mastering the Asynchronous Programming in Clojure\", \"Advanced Techniques for Scaling Distributed Systems with Apache Flink\", \"Understanding Rust's String Types\", \"Advanced Error Handling with Rust's Result Type\", \"Building Custom Data Types with Rust's derive Macro\", \"Writing Type-Safe Code with TypeScript's unknown Type\", \"Building High-Performance Websites with Deno\", \"Advanced Techniques for Implementing the Decorator Design Pattern in Rust\", \"Building Robust and Secure GraphQL Servers with Rust\", \"Advanced Techniques for Working with WebSockets in Rust\", \"Understanding the Principles of Reactive Programming in Java\", \"The Power of Rust's Const Generics\", \"Mastering Rust's Parallel Iterator: A Comprehensive Guide\", \"Exploring Advanced Types in TypeScript: Mapped & Conditional Types\", \"Exploring the Rust Standard Library's `io` Module\", \"Mastering the Decorator Pattern in TypeScript\", \"Mastering Protocol Buffers in Rust\", \"Mastering Rust's Memory Allocation System\", \"Modern Web Development with SwiftNIO\", \"Mastering Rust's Result Type\", \"Building High-Performance Machine Learning Pipelines with Rust\", \"Advanced Techniques for Working with PostgreSQL Arrays\", \"Mastering HTML and CSS Accessibility: A Comprehensive Guide\", \"Mastering Apache Pulsar's Message Retention Policy\", \"Mastering TypeScript's Record Type\", \"Mastering Rust's Async/Await Syntax\", \"Mastering the Decorator Pattern in Rust\", \"The Power of Rust's Multithreading Library: A Comprehensive Guide\", \"Mastering the Svelte Framework: A Comprehensive Guide\", \"Best Practices for Integrating React and TypeScript\", \"Deep Dive into Functional Reactive Programming with RxJS\", \"Understanding Java Memory Model: A Comprehensive Guide\", \"Understanding the Fundamentals of Distributed Systems Programming in Go\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "warning": "This model version is deprecated and a newer version 'gpt-3.5-turbo-0613' is available. Migrate before September 13 to avoid disruption of service. Learn more https://platform.openai.com/docs/deprecations",
+  "id": "chatcmpl-7bpJVBws0uOJP113cmBuBUIHqEivQ",
+  "object": "chat.completion",
+  "created": 1689249741,
+  "model": "gpt-3.5-turbo-0301",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: Understanding Protocol Buffers Wire Format: A Comprehensive Guide\n\nTags: Protocol Buffers, Serialization, Binary format\n\n---\n\nProtocol Buffers is a language-agnostic serialization format library that is widely used for transmitting data across different services. Protocol Buffers have an efficient wire format used to serialize data structures in a binary format. Understanding the Protocol Buffers wire format is crucial as it provides knowledge of the impact of various data types on the size of the serialized data and the deserialization time. In this post, we will dive deep into the Protocol Buffers wire format and how it serializes the data structures.\n\n### Introduction\n\nProtocol Buffers serialization format is a compact, fast, and language-agnostic technique that converts structured data into binary format and vice versa. The process of serialization is beneficial in that it enables the storage, transmission, and retrieval of data. Therefore, it is a crucial concept in computer programming. \n\nThe Protocol Buffers wire format uses a fixed-length field to represent the data in an efficient and compact way. The wire format has the following characteristics:\n\n- Each field of a message has a unique tag, represented using a Varint.\n- Protocol Buffers supports multiple wire types - Varint, Fixed32, Fixed64, Length-delimited, and Groups.\n- The serialization library makes sure that wire types and field types match.\n\n### Varints\n\nA Varint is a variable-length encoding of an integer. In Protocol Buffers, all numeric data types, including signed and unsigned integers, are encoded as varints. The varint format has the following characteristics:\n\n- The most significant bit (MSB) indicates whether the current byte is the last one in the sequence.\n- The remaining Seven bits are used to store the value of the current integer.\n\nIn Protocol Buffers, the Varint wire type is used for the field types uInt32, int32, uInt64, int64, SInt32, SInt64, boolean, and enum.\n\nFor example, suppose you have a person message with a few fields, including age. The age field is encoded using a Varint and has a tag of 2.\n\n```\nmessage Person {\n  string name = 1;\n  int32 age = 2;\n  string email = 3;\n}\n```\n\nThe encoded data will look like:\n\n```\n08        // Tag\n2a        // Varint Encoded value of age (42)\n```\n\n### Fixed-Length fields\n\nA Fixed-length field is a constant-length encoding of 32-bit or 64-bit integers. The Fixed32 and Fixed64 wire types are used to represent 32-bit and 64-bit integers, respectively. Protocol Buffers use Fixed-length fields for the field types fixed32, fixed64, and float and double.\n\nFor example, suppose you have a person message, and the field weight is represented using a fixed32 field type with a tag of 3.\n\n```\nmessage Person {\n  string name = 1;\n  int32 age = 2;\n  fixed32 weight = 3;\n}\n```\n\nThe encoded data will look like:\n\n```\n8a        // Tag\n0000803f  // Fixed32 Encoded value of weight (1.0)\n```\n\n### Length-delimited fields\n\nA Length-delimited field contains two parts - the length of the field and the content of the field. Length-delimited wire type is used to represent the field types string, bytes, and message.\n\nFor example, suppose you have a person message with the field address containing a string value.\n\n```\nmessage Address {\n  string street = 1;\n  string city = 2;\n  string state = 3;\n  string zip = 4;\n}\n\nmessage Person {\n  string name = 1;\n  int32 age = 2;\n  fixed32 weight = 3;\n  Address address = 4;\n}\n```\n\nThe encoded data will look like:\n\n```\n12        // Tag\n0e        // Length (14 bytes)\n48656c6c6f20576f726c64        // Encoded value of street (\"Hello World\")\n```\n\n### Groups\n\nGroups were the original way of representing nested messages, but it is considered deprecated now. Nested messages should be used instead of groups.\n\n### Conclusion\n\nUnderstanding the Protocol Buffers wire format is essentially beneficial for developers to ensure efficient size, faster deserialization time, and maintainability of the data structure. Protocol Buffers is a highly efficient serialization library that makes use of a binary wire format. In this post, we discussed the types of wire format in Protocol Buffers, and by understanding them, you can effectively organize your data model, allowing you to efficiently transmit and store data with minimal overhead."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2210,
+   "completion_tokens": 960,
+   "total_tokens": 3170
+  }
+ }
+}

@@ -1848,7 +1848,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-13T06:02:12.236Z"
+    },
+    {
+      "title": "Understanding Protocol Buffers Wire Format: A Comprehensive Guide",
+      "tags": [
+        "protocol buffers",
+        "serialization",
+        "binary format"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-13T12:02:36.097Z"
     }
   ],
-  "updatedAt": "2023-07-13T06:02:12.236Z"
+  "updatedAt": "2023-07-13T12:02:36.097Z"
 }
