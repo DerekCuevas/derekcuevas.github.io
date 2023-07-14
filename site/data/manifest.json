@@ -1908,7 +1908,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-14T12:02:35.765Z"
+    },
+    {
+      "title": "Exploring the Power of Rust’s Generic Associated Types",
+      "tags": [
+        "rust",
+        "programming languages",
+        "advanced topics"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-14T18:02:00.367Z"
     }
   ],
-  "updatedAt": "2023-07-14T12:02:35.765Z"
+  "updatedAt": "2023-07-14T18:02:00.367Z"
 }
