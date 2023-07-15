@@ -1956,7 +1956,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-15T12:02:14.225Z"
+    },
+    {
+      "title": "Beyond the Basics of React Performance: Advanced Techniques for Optimizing your Application",
+      "tags": [
+        "react",
+        "performance",
+        "optimization"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-15T18:02:08.530Z"
     }
   ],
-  "updatedAt": "2023-07-15T12:02:14.225Z"
+  "updatedAt": "2023-07-15T18:02:08.530Z"
 }
