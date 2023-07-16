@@ -2004,7 +2004,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-16T12:02:41.266Z"
+    },
+    {
+      "title": "Building Resilient Distributed Systems with Flink",
+      "tags": [
+        "flink",
+        "distributed systems",
+        "resilience"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-16T18:01:51.582Z"
     }
   ],
-  "updatedAt": "2023-07-16T12:02:41.266Z"
+  "updatedAt": "2023-07-16T18:01:51.582Z"
 }
