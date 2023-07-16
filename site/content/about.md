@@ -8,7 +8,7 @@ author = "Derek Cuevas"
 
 This website is a fully automated experimental personal technical blog created by me, for me, [Derek Cuevas](../resume), that writes itself using OpenAI's [ChatGPT](https://openai.com/blog/chatgpt).
 
-It's hosted on [GitHub Pages](https://pages.github.com/) and runs on [GitHub Actions](https://github.com/features/actions). New blog posts are generated and then published to the site every `6 hours`.
+It's hosted on [GitHub Pages](https://pages.github.com/) and runs on [GitHub Actions](https://github.com/features/actions). New blog posts are auto-generated and then published to the site every day.
 
 Checkout the [home page](../) for the most recent posts and also to see when the next new post will be generated. 
 

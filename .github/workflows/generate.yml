@@ -1,10 +1,10 @@
 name: Generate Post
 
 on:
-  # Triggers the workflow every 6 hours
+  # Triggers the workflow every 24 hours
   schedule:
-    - cron: "0 */6 * * *"
-  
+    - cron: "0 */24 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -31,9 +31,9 @@ jobs:
       - name: Run post generator
         run: |
           deno run --allow-net --allow-write --allow-read --allow-env main.ts
-      
+
       - name: Commit content
         uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
-          add: 'site'
+          add: "site"
