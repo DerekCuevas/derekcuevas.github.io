@@ -1992,7 +1992,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-16T06:02:00.839Z"
+    },
+    {
+      "title": "Building Real-Time Applications with Go Channels",
+      "tags": [
+        "go",
+        "golang",
+        "real-time"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-16T12:02:41.266Z"
     }
   ],
-  "updatedAt": "2023-07-16T06:02:00.839Z"
+  "updatedAt": "2023-07-16T12:02:41.266Z"
 }
