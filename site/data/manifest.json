@@ -2028,7 +2028,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-17T00:02:38.103Z"
+    },
+    {
+      "title": "Mastering Quicksort Algorithm in Clojure",
+      "tags": [
+        "clojure",
+        "sorting",
+        "algorithms"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-18T01:34:36.169Z"
     }
   ],
-  "updatedAt": "2023-07-17T00:02:38.103Z"
+  "updatedAt": "2023-07-18T01:34:36.169Z"
 }
