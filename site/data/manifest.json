@@ -2040,7 +2040,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-18T01:34:36.169Z"
+    },
+    {
+      "title": "Mastering Rust's Memory Safety Paradigm",
+      "tags": [
+        "rust",
+        "memory safety",
+        "ownership"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-19T01:43:04.253Z"
     }
   ],
-  "updatedAt": "2023-07-18T01:34:36.169Z"
+  "updatedAt": "2023-07-19T01:43:04.253Z"
 }
