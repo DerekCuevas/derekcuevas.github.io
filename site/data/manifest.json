@@ -2052,7 +2052,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-19T01:43:04.253Z"
+    },
+    {
+      "title": "Mastering the Actor Model with Elixir",
+      "tags": [
+        "elixir",
+        "actor model",
+        "concurrency"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-20T01:31:35.287Z"
     }
   ],
-  "updatedAt": "2023-07-19T01:43:04.253Z"
+  "updatedAt": "2023-07-20T01:31:35.287Z"
 }
