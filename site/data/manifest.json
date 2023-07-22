@@ -2076,7 +2076,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-21T01:31:42.427Z"
+    },
+    {
+      "title": "Exploring the Power of React's Context API: A Comprehensive Guide",
+      "tags": [
+        "react",
+        "javascript",
+        "state management"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-22T01:31:20.571Z"
     }
   ],
-  "updatedAt": "2023-07-21T01:31:42.427Z"
+  "updatedAt": "2023-07-22T01:31:20.571Z"
 }
