@@ -2088,7 +2088,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-22T01:31:20.571Z"
+    },
+    {
+      "title": "The Art of Domain-Driven Design",
+      "tags": [
+        "domain-driven design",
+        "software engineering",
+        "best practices"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-23T01:31:55.952Z"
     }
   ],
-  "updatedAt": "2023-07-22T01:31:20.571Z"
+  "updatedAt": "2023-07-23T01:31:55.952Z"
 }
