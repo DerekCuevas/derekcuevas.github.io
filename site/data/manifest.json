@@ -2112,7 +2112,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-24T01:31:47.188Z"
+    },
+    {
+      "title": "Mastering Asynchronous Programming in Rust: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "asynchronous programming",
+        "parallelism"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-25T01:33:28.060Z"
     }
   ],
-  "updatedAt": "2023-07-24T01:31:47.188Z"
+  "updatedAt": "2023-07-25T01:33:28.060Z"
 }
