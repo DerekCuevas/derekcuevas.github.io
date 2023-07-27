@@ -2136,7 +2136,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-26T01:32:03.415Z"
+    },
+    {
+      "title": "Effective Error Handling in Swift: Best Practices and Patterns",
+      "tags": [
+        "swift",
+        "error handling",
+        "best practices"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-27T01:29:48.678Z"
     }
   ],
-  "updatedAt": "2023-07-26T01:32:03.415Z"
+  "updatedAt": "2023-07-27T01:29:48.678Z"
 }
