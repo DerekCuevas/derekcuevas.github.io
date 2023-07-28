@@ -2148,7 +2148,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-27T01:29:48.678Z"
+    },
+    {
+      "title": "Mastering Kafka Connect: A Comprehensive Guide",
+      "tags": [
+        "kafka",
+        "kafka connect",
+        "data pipelines"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-28T01:31:01.404Z"
     }
   ],
-  "updatedAt": "2023-07-27T01:29:48.678Z"
+  "updatedAt": "2023-07-28T01:31:01.404Z"
 }
