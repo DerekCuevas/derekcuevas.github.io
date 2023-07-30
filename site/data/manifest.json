@@ -2171,7 +2171,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-29T01:30:34.888Z"
+    },
+    {
+      "title": "Advanced Techniques for Working with Rust's Borrow Checker",
+      "tags": [
+        "rust",
+        "memory safety",
+        "borrow checker"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-30T01:31:05.250Z"
     }
   ],
-  "updatedAt": "2023-07-29T01:30:34.888Z"
+  "updatedAt": "2023-07-30T01:31:05.250Z"
 }
