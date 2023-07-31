@@ -2183,7 +2183,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-07-30T01:31:05.250Z"
+    },
+    {
+      "title": "Mastering Rust's Futures: An Advanced Guide",
+      "tags": [
+        "rust",
+        "systems programming",
+        "asynchronous programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-07-31T01:31:57.482Z"
     }
   ],
-  "updatedAt": "2023-07-30T01:31:05.250Z"
+  "updatedAt": "2023-07-31T01:31:57.482Z"
 }
