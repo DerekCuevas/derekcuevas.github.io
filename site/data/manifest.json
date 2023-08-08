@@ -2279,7 +2279,18 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-08-07T01:31:40.152Z"
+    },
+    {
+      "title": "Building High Availability Systems with Apache ZooKeeper",
+      "tags": [
+        "apache zookeeper",
+        "distributed systems"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-08-08T01:31:24.383Z"
     }
   ],
-  "updatedAt": "2023-08-07T01:31:40.152Z"
+  "updatedAt": "2023-08-08T01:31:24.383Z"
 }
