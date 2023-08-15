@@ -2362,7 +2362,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-08-14T01:24:39.796Z"
+    },
+    {
+      "title": "Mastering Cache Invalidation Strategies: A Comprehensive Guide",
+      "tags": [
+        "caching",
+        "performance",
+        "strategy"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-08-15T01:24:05.094Z"
     }
   ],
-  "updatedAt": "2023-08-14T01:24:39.796Z"
+  "updatedAt": "2023-08-15T01:24:05.094Z"
 }
