@@ -2374,7 +2374,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-08-15T01:24:05.094Z"
+    },
+    {
+      "title": "The Power of the `async` Keyword in Rust: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "asynchronous programming",
+        "futures"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-08-16T01:24:10.512Z"
     }
   ],
-  "updatedAt": "2023-08-15T01:24:05.094Z"
+  "updatedAt": "2023-08-16T01:24:10.512Z"
 }
