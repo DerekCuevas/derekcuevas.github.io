@@ -2386,7 +2386,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-08-16T01:24:10.512Z"
+    },
+    {
+      "title": "The Power of Rust's Multithreading Library: rayon",
+      "tags": [
+        "rust",
+        "multithreading",
+        "rayon"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-08-17T01:22:41.347Z"
     }
   ],
-  "updatedAt": "2023-08-16T01:24:10.512Z"
+  "updatedAt": "2023-08-17T01:22:41.347Z"
 }
