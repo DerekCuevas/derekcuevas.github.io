@@ -2446,7 +2446,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-08-21T01:23:41.032Z"
+    },
+    {
+      "title": "Mastering Asynchronous Event-Driven Architecture with Apache Kafka",
+      "tags": [
+        "kafka",
+        "event-driven architecture",
+        "asynchronous programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-08-22T01:24:25.700Z"
     }
   ],
-  "updatedAt": "2023-08-21T01:23:41.032Z"
+  "updatedAt": "2023-08-22T01:24:25.700Z"
 }
