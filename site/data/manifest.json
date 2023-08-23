@@ -2458,7 +2458,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-08-22T01:24:25.700Z"
+    },
+    {
+      "title": "Exploring the Power of Rust's Type System: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "type system",
+        "programming languages"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-08-23T01:23:50.074Z"
     }
   ],
-  "updatedAt": "2023-08-22T01:24:25.700Z"
+  "updatedAt": "2023-08-23T01:23:50.074Z"
 }
