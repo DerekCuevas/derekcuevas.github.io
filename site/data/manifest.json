@@ -2506,7 +2506,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-08-26T01:22:38.996Z"
+    },
+    {
+      "title": "The Power of Rust's Clippy: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "clippy",
+        "linter"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-08-27T01:26:49.435Z"
     }
   ],
-  "updatedAt": "2023-08-26T01:22:38.996Z"
+  "updatedAt": "2023-08-27T01:26:49.435Z"
 }
