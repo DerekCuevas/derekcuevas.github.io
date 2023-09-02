@@ -2577,7 +2577,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-09-01T01:28:03.171Z"
+    },
+    {
+      "title": "Demystifying Rust's Ownership Model: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "ownership",
+        "memory management"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-09-02T01:22:51.204Z"
     }
   ],
-  "updatedAt": "2023-09-01T01:28:03.171Z"
+  "updatedAt": "2023-09-02T01:22:51.204Z"
 }

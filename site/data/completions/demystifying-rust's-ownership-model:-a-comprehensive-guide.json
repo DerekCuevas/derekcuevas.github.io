@@ -1,0 +1,86 @@
+{
+ "model": "gpt-3.5-turbo-0301",
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Mastering Java Generics: A Comprehensive Guide\", \"Mastering Reactive Programming with RxJS: Advanced Techniques\", \"A Comprehensive Guide to Threading in Rust\", \"Mastering the Observer Pattern with Rust\", \"Exploring the Power of Rust's Ownership Model: A Comprehensive Guide\", \"The Power of Rust's Clippy: A Comprehensive Guide\", \"Exploring the Disadvantages of Promises in JavaScript\", \"Exploring the Fundamentals of Tail-Call Optimization in JavaScript\", \"Mastering Distributed Systems with Apache BookKeeper\", \"Exploring the Power of Rust's Type System: A Comprehensive Guide\", \"Mastering Asynchronous Event-Driven Architecture with Apache Kafka\", \"Advanced Techniques for Distributed System Design using Apache Cassandra\", \"Exploring the Underlying Architecture of TypeScript\", \"Functional Reactive Programming with Elm: A Comprehensive Guide\", \"Exploring the Power of Clojure's Persistent Data Structures\", \"The Power of Rust's Multithreading Library: rayon\", \"The Power of the `async` Keyword in Rust: A Comprehensive Guide\", \"Mastering Cache Invalidation Strategies: A Comprehensive Guide\", \"Mastering Rust's Serialization and Deserialization: A Comprehensive Guide\", \"Mastering AWS S3 for High Availability: A Comprehensive Guide\", \"Exploring the Fundamentals of Reactive Programming\", \"Mastering Rust's Pinning: An Advanced Guide\", \"Understanding Higher Order Functions in TypeScript\", \"Mastering Async/Await in TypeScript: A Comprehensive Guide\", \"Building High Availability Systems with Apache ZooKeeper\", \"Mastering Rust's Unsafe Keyword: A Comprehensive Guide\", \"The Power of Immutable Data Structures in JavaScript\", \"Building a Highly Available System with Apache ZooKeeper\", \"Mastering Persistent Connections in Java\", \"Mastering Real-Time Communication with WebSockets in Elixir\", \"Understanding the Reactive Stream Pattern\", \"Understanding the Power of Rust's Macros\", \"Mastering Rust's Futures: An Advanced Guide\", \"Advanced Techniques for Working with Rust's Borrow Checker\", \"Understanding the Difference Between Block and Inline Elements in HTML\", \"Mastering Kafka Connect: A Comprehensive Guide\", \"Effective Error Handling in Swift: Best Practices and Patterns\", \"The Power of Kotlin's Coroutines: A Comprehensive Guide\", \"Mastering Asynchronous Programming in Rust: A Comprehensive Guide\", \"Building Custom Collectors in Java: A Comprehensive Guide\", \"The Art of Domain-Driven Design\", \"Exploring the Power of React's Context API: A Comprehensive Guide\", \"Mastering the Observer Pattern with Swift\", \"Mastering the Actor Model with Elixir\", \"Mastering Rust's Memory Safety Paradigm\", \"Mastering Quicksort Algorithm in Clojure\", \"Mastering the Builder Design Pattern in Java\", \"Building Resilient Distributed Systems with Flink\", \"Building Real-Time Applications with Go Channels\", \"Mastering Zero-Knowledge Proofs: A Comprehensive Guide\", \"The Power of Ruby's Metaprogramming Techniques\", \"Beyond the Basics of React Performance: Advanced Techniques for Optimizing your Application\", \"Mastering Zero-Copy I/O in Rust\", \"Mastering GraphQL Subscriptions with Rust\", \"Mastering Git's Interactive Rebase: A Comprehensive Guide\", \"Exploring the Power of Rust’s Generic Associated Types\", \"Mastering WebAssembly Text Format – A Comprehensive Guide\", \"Building Robust and Secure GraphQL Servers with Rust\", \"Mastering Debugging Techniques in Rust: A Comprehensive Guide\", \"Implementing a Consistent Hashing Algorithm in Rust\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7u9dB33ip7oHHnKg961Vd2eJfWiiH",
+  "object": "chat.completion",
+  "created": 1693617745,
+  "model": "gpt-3.5-turbo-0301",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: Demystifying Rust's Ownership Model: A Comprehensive Guide\n\nTags: Rust, Ownership, Memory Management\n\n## Introduction\n\nRust's ownership model is one of its defining features and one that sets it apart from other programming languages. It can, however, also be a source of confusion for those unfamiliar with it. In this guide, we will explore Rust's ownership model in depth, looking at its advantages, how it works, common errors, and best practices.\n\n## Advantages of Rust's Ownership Model\n\nRust's ownership model offers many advantages over other programming languages. Some of these advantages include:\n\n- **Memory safety:**  Ownership rules prevent many common memory-related bugs such as null pointer dereferences, use-after-free errors, and data races.\n- **Efficient memory management:** Rust's ownership model allows for efficient allocation and deallocation of memory, without the need for a garbage collector.\n- **Improved code readability:** Ownership rules help ensure that code is clear and well-organized, even in complex or multi-threaded applications.\n\n## How Rust's Ownership Model Works\n\nIn Rust, every value has an owner. Ownership is enforced at compile-time, with the compiler ensuring that each value has a single owner, and that the owner is responsible for deallocating the memory when the value is no longer needed.\n\n### Ownership and Move Semantics\n\nIn Rust, ownership of a value can be transferred (or \"moved\") from one owner to another. This is done using move semantics. When a value is moved from one owner to another, the original owner no longer has access to the value, and the new owner takes responsibility for deallocating the memory.\n\n```rust\nlet a = vec![1, 2, 3]; // a is the owner of the vector\nlet b = a;            // a moves the ownership of the vector to b\nprintln!(\"{:?}\", b);  // prints [1, 2, 3]\n```\n\nIn the above example, the vector is owned by `a` at first. When `b` is assigned the value of `a`, the ownership of the vector is moved from `a` to `b`. After the move, `a` can no longer access the vector.\n\n### Borrowing\n\nBorrowing allows a reference to a value to be passed to a second owner without transferring ownership. The second owner then has temporary read-only access to the value.\n\n```rust\nfn print_int(v: &i32) {\n    println!(\"{}\", v);\n}\n\nlet a = 5;        // a is the owner of the integer\nlet b = &a;       // b borrows a reference to the integer owned by a\nprint_int(b);     // prints 5\n```\n\nIn the example above, `a` owns the integer. `b` borrows a reference to the integer, allowing `print_int` to read its value without taking ownership. After the function call, `b` returns the borrowed reference to `a`.\n\n### Lifetime\n\nIt is important to understand Rust’s lifetime system, which is designed to prevent dangling pointers, which are pointers that reference deallocated memory. A lifetime is the period of time when a reference is valid. The Rust compiler ensures at compile-time that references are used only in their valid lifetimes.\n\n```rust\nfn get_slice(s: &str) -> &str {\n    &s[1..5]\n}\n\nlet s = String::from(\"hello\");\nlet res = get_slice(&s);\nprintln!(\"{}\", res); // prints \"ello\"\n```\n\nIn the above example, `get_slice` function borrows a string slice of the passed string `s`. Here, it is ensured that the borrowed slice does not exceed the lifetime of `s` and thus prevents dangling pointers.\n\n## Common Errors\n\nRust's ownership model can be difficult to learn, and mistakes in ownership can lead to several common errors. Some of the most common errors include:\n\n- **\"borrow of moved value\" errors:** Occur when a value is moved and then used again by the original owner.\n- **\"cannot move out of borrowed content\" errors:** Occur when trying to move a value out of a borrowed context.\n- **\"cannot borrow as mutable\" errors:** Occur when trying to mutate a borrowed value that is not mutable.\n\n## Best Practices\n\nTo avoid common errors and ensure clear ownership, it is important to follow best practices when using Rust's ownership model. Some of these best practices include:\n\n- **Use borrowing instead of moves whenever possible:** This allows ownership to be shared where possible, improving efficiency and preventing common errors.\n- **Avoid creating unnecessary copies of values:** This can lead to inefficient memory usage and create confusion over which owner is responsible for a value.\n- **Ensure clear ownership of any values with mutable borrows:** Mutating a value borrowed by another owner can lead to data races, which are difficult to debug.\n\n## Conclusion\n\nRust's ownership model is a powerful tool for ensuring memory safety and efficient memory management. With clear understanding and following best practices, Rust developers can take full advantage of this feature, creating code that is both safe and efficient."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2230,
+   "completion_tokens": 1047,
+   "total_tokens": 3277
+  }
+ }
+}
