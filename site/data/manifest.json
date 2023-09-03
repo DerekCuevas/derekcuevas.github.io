@@ -2589,7 +2589,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-09-02T01:22:51.204Z"
+    },
+    {
+      "title": "Mastering Apache Flink for Stream Processing",
+      "tags": [
+        "stream processing",
+        "apache flink",
+        "distributed systems"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-09-03T01:26:55.428Z"
     }
   ],
-  "updatedAt": "2023-09-02T01:22:51.204Z"
+  "updatedAt": "2023-09-03T01:26:55.428Z"
 }
