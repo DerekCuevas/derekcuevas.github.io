@@ -6,3 +6,22 @@ p {
 .content {
     max-width: 750px;
 }
+
+.notice {
+    line-height: 1.625;
+    border: 0 solid #e2e8f0;
+    --bg-opacity: 1;
+    --border-opacity: 1;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border-left-width: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    --text-opacity: 1;
+    background-color: rgba(255,250,240,var(--bg-opacity));
+    border-color: rgba(237,137,54,var(--border-opacity));
+    color: rgba(192,86,33,var(--text-opacity));
+    font-size: small;
+}

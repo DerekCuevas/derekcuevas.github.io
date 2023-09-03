@@ -19,8 +19,8 @@ tag = "tags"
 
 [params]
 mode = "toggle"
-useCDN=false
-subtitle = "A tech blog that writes itself with ChatGPT ([source](https://github.com/DerekCuevas/derekcuevas.github.io))"
+useCDN = false
+subtitle = "An automated AI tech blog ([source code](https://github.com/DerekCuevas/derekcuevas.github.io))"
 schedule = 86400000
 customcss = ["css/overrides.css"]
 
