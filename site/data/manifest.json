@@ -2601,7 +2601,18 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-09-03T01:26:55.428Z"
+    },
+    {
+      "title": "Understanding CQRS and Event Sourcing: A Comprehensive Guide",
+      "tags": [
+        "cqrs",
+        "event sourcing"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-09-04T01:25:41.399Z"
     }
   ],
-  "updatedAt": "2023-09-03T01:26:55.428Z"
+  "updatedAt": "2023-09-04T01:25:41.399Z"
 }
