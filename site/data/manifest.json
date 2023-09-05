@@ -2612,7 +2612,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-09-04T01:25:41.399Z"
+    },
+    {
+      "title": "Exploring the Benefits of Declarative Programming in React",
+      "tags": [
+        "react",
+        "declarative programming",
+        "functional programming"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-09-05T01:24:27.556Z"
     }
   ],
-  "updatedAt": "2023-09-04T01:25:41.399Z"
+  "updatedAt": "2023-09-05T01:24:27.556Z"
 }
