@@ -1,0 +1,86 @@
+{
+ "model": "gpt-3.5-turbo-0301",
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Mastering the Decorator Pattern in TypeScript: Best Practices and Examples\", \"Exploring the Benefits of Declarative Programming in React\", \"Understanding CQRS and Event Sourcing: A Comprehensive Guide\", \"Mastering Apache Flink for Stream Processing\", \"Demystifying Rust's Ownership Model: A Comprehensive Guide\", \"Mastering Java Generics: A Comprehensive Guide\", \"Mastering Reactive Programming with RxJS: Advanced Techniques\", \"A Comprehensive Guide to Threading in Rust\", \"Mastering the Observer Pattern with Rust\", \"Exploring the Power of Rust's Ownership Model: A Comprehensive Guide\", \"The Power of Rust's Clippy: A Comprehensive Guide\", \"Exploring the Disadvantages of Promises in JavaScript\", \"Exploring the Fundamentals of Tail-Call Optimization in JavaScript\", \"Mastering Distributed Systems with Apache BookKeeper\", \"Exploring the Power of Rust's Type System: A Comprehensive Guide\", \"Mastering Asynchronous Event-Driven Architecture with Apache Kafka\", \"Advanced Techniques for Distributed System Design using Apache Cassandra\", \"Exploring the Underlying Architecture of TypeScript\", \"Functional Reactive Programming with Elm: A Comprehensive Guide\", \"Exploring the Power of Clojure's Persistent Data Structures\", \"The Power of Rust's Multithreading Library: rayon\", \"The Power of the `async` Keyword in Rust: A Comprehensive Guide\", \"Mastering Cache Invalidation Strategies: A Comprehensive Guide\", \"Mastering Rust's Serialization and Deserialization: A Comprehensive Guide\", \"Mastering AWS S3 for High Availability: A Comprehensive Guide\", \"Exploring the Fundamentals of Reactive Programming\", \"Mastering Rust's Pinning: An Advanced Guide\", \"Understanding Higher Order Functions in TypeScript\", \"Mastering Async/Await in TypeScript: A Comprehensive Guide\", \"Building High Availability Systems with Apache ZooKeeper\", \"Mastering Rust's Unsafe Keyword: A Comprehensive Guide\", \"The Power of Immutable Data Structures in JavaScript\", \"Building a Highly Available System with Apache ZooKeeper\", \"Mastering Persistent Connections in Java\", \"Mastering Real-Time Communication with WebSockets in Elixir\", \"Understanding the Reactive Stream Pattern\", \"Understanding the Power of Rust's Macros\", \"Mastering Rust's Futures: An Advanced Guide\", \"Advanced Techniques for Working with Rust's Borrow Checker\", \"Understanding the Difference Between Block and Inline Elements in HTML\", \"Mastering Kafka Connect: A Comprehensive Guide\", \"Effective Error Handling in Swift: Best Practices and Patterns\", \"The Power of Kotlin's Coroutines: A Comprehensive Guide\", \"Mastering Asynchronous Programming in Rust: A Comprehensive Guide\", \"Building Custom Collectors in Java: A Comprehensive Guide\", \"The Art of Domain-Driven Design\", \"Exploring the Power of React's Context API: A Comprehensive Guide\", \"Mastering the Observer Pattern with Swift\", \"Mastering the Actor Model with Elixir\", \"Mastering Rust's Memory Safety Paradigm\", \"Mastering Quicksort Algorithm in Clojure\", \"Mastering the Builder Design Pattern in Java\", \"Building Resilient Distributed Systems with Flink\", \"Building Real-Time Applications with Go Channels\", \"Mastering Zero-Knowledge Proofs: A Comprehensive Guide\", \"The Power of Ruby's Metaprogramming Techniques\", \"Beyond the Basics of React Performance: Advanced Techniques for Optimizing your Application\", \"Mastering Zero-Copy I/O in Rust\", \"Mastering GraphQL Subscriptions with Rust\", \"Mastering Git's Interactive Rebase: A Comprehensive Guide\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7vy37NHJTfPGRcIJ4wsmRAXKY2pYB",
+  "object": "chat.completion",
+  "created": 1694049881,
+  "model": "gpt-3.5-turbo-0301",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Title: Deep Dive into Pulsar's Schema Registry\n\nTags: Apache Pulsar, Schema Registry, Confluent Schema Registry\n\n# Introduction\n\nApache Pulsar comes with a built-in Schema Registry that allows the producer to send messages in a structured format, and the consumer to process those messages accordingly. This feature is especially useful when dealing with different versions of messages or when having to process messages with evolving schemas. In this post, we'll take a deep dive into Pulsar's Schema Registry, its architecture, and compare it with other schema management tools like Confluent Schema Registry.\n\n## Prerequisites\n\nBefore diving into this post, you should have basic knowledge of Apache Pulsar. Familiarity with client libraries like `pulsar-client`, and `pulsar-admin` is recommended. You should also have some understanding of the concept of schema management, Apache Avro serialization, and Deserialization.\n\n## Architecture\n\nPulsar's Schema Registry is a lightweight http service that stores the schema version and its corresponding schema data in a registry. When a producer sends a message, it registers the schema version with the schema registry if that version hasn't already been registered. The consumer can fetch the schema from the schema registry when consuming that message to ensure that it's decoding the message in the right format.\n\nThe schema itself is stored in Pulsar as a special 'schema' entry in the namespace or topic policy after being registered by a producer. That way the schema data is stored as part of the topic itself. The schema entry is managed by the schema registry service.\n\nOnce the schema registry is up and running and the broker has the schema registry URL, producers and consumers can start communicating with the schema registry service.\n\n## Using Pulsar's Schema Registry\n\nTo start using the Pulsar Schema Registry feature, you need to enable it in the Pulsar Broker configuration file. You can set the configuration `schema_registry_type` to \"local\" or \"global\". The local schema registry is a registry that's used only for a single Pulsar cluster, and the global schema registry is a registry that's shared across multiple clusters.\n\n```conf\n# Pulsar Broker configuration\n# Enable Schema Registry\nschema_registry_type=local\n```\nOnce you have set up Pulsar Schema Registry, you can start sending messages with schema data.\n\n```python\n# Example of using the schema registry with Python client\nfrom pulsar import Client, Message\n\nclient = Client('pulsar://localhost:6650')\nproducer = client.create_producer('topic-name', schema=\"AvroSchema\")\nmsg = Message({'name': 'John', 'age': 28})\nproducer.send(msg)\n```\n\nIn the above example, we created a Pulsar Producer with the `AvroSchema` serializer and sent a message with a dictionary containing the name and age fields.\n\n## Comparing Pulsar Schema Registry and Confluent Schema Registry\n\nConfluent Schema Registry is a distributed schema registry service provided by Confluent, the company behind Apache Kafka. It's built around Apache Avro for serialization and deserialization.\n\nHere's how Pulsar's Schema Registry compares to Confluent Schema Registry:\n\n### Integration with the messaging system\nPulsar's Schema Registry is built into the messaging system architecture itself, so it's easier to manage and scale. On the other hand, Confluent Schema Registry is a separate component that's managed separately from the messaging system. It requires some additional setup and management effort.\n\n### Multi-tenancy support\nIn Pulsar, the Schema Registry is a service that can be used by any tenant of the cluster. Confluent Schema Registry is a separate service that needs to be run with the Kafka cluster, so it's limited to a single Kafka cluster.\n\n### Performance\nSince Pulsar's Schema Registry is a native part of the Pulsar messaging system, it can be more performant than the Confluent Schema Registry. Benchmarking has shown that Pulsar's Schema Registry has lower latency and generally better performance.\n\n### Schema Evolution\nPulsar's Schema Registry includes built-in schema compatibility checks to ensure that new versions of the schema are compatible with older versions. Confluent Schema Registry has a more relaxed approach and allows the producer to register new versions of the schema even if they're not compatible with previous versions.\n\n## Conclusion\n\nPulsar's Schema Registry is a powerful and easy-to-use feature of the Apache Pulsar messaging system. It simplifies schema management for producers and consumers while ensuring that messages are structured and consistent. We hope this post has given you an understanding of Pulsar's Schema Registry, how it works, and how it compares with other schema management tools like Confluent Schema Registry."
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2234,
+   "completion_tokens": 971,
+   "total_tokens": 3205
+  }
+ }
+}

@@ -2636,7 +2636,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-09-06T01:25:00.025Z"
+    },
+    {
+      "title": "Deep Dive into Pulsar's Schema Registry",
+      "tags": [
+        "apache pulsar",
+        "schema registry",
+        "confluent schema registry"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-09-07T01:25:06.135Z"
     }
   ],
-  "updatedAt": "2023-09-06T01:25:00.025Z"
+  "updatedAt": "2023-09-07T01:25:06.135Z"
 }
