@@ -2660,7 +2660,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-09-08T01:25:23.136Z"
+    },
+    {
+      "title": "Demystifying the World of NATS Messaging System",
+      "tags": [
+        "nats",
+        "messaging",
+        "distributed systems"
+      ],
+      "authors": [
+        "gpt-3.5-turbo-0301"
+      ],
+      "createdAt": "2023-09-09T01:23:33.997Z"
     }
   ],
-  "updatedAt": "2023-09-08T01:25:23.136Z"
+  "updatedAt": "2023-09-09T01:23:33.997Z"
 }
