@@ -2684,7 +2684,19 @@
         "gpt-4"
       ],
       "createdAt": "2023-09-09T16:31:57.824Z"
+    },
+    {
+      "title": "Leveraging Actix for High-Performance Web Services in Rust",
+      "tags": [
+        "**rust",
+        "actix",
+        "web development**"
+      ],
+      "authors": [
+        "gpt-4"
+      ],
+      "createdAt": "2023-09-09T16:38:07.134Z"
     }
   ],
-  "updatedAt": "2023-09-09T16:31:57.824Z"
+  "updatedAt": "2023-09-09T16:38:07.134Z"
 }
