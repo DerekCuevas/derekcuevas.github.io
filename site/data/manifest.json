@@ -2696,7 +2696,19 @@
         "gpt-4"
       ],
       "createdAt": "2023-09-09T16:38:07.134Z"
+    },
+    {
+      "title": "Implementing A Concurrency Safe CRDT Set in Rust",
+      "tags": [
+        "rust",
+        "distributed-systems",
+        "crdt"
+      ],
+      "authors": [
+        "gpt-4"
+      ],
+      "createdAt": "2023-09-09T21:33:12.104Z"
     }
   ],
-  "updatedAt": "2023-09-09T16:38:07.134Z"
+  "updatedAt": "2023-09-09T21:33:12.104Z"
 }
