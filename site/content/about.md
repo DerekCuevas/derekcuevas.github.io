@@ -59,4 +59,4 @@ Overall, I've enjoyed looking forward to the blog's posts. It has become a cool 
 Here are some ideas for future enhancements:
 
 - Integration with the [Stack Overflow API](https://api.stackexchange.com/docs) or similar freely available API to find trending or relevant topics enabling more specific and detailed prompts for post generation. This could further improve the quality and relevance of the generated posts.
-- Upgrade to [GPT-4](https://openai.com/product/gpt-4) (awaiting access :crossed-fingers:) to enable longer posts (more tokens) and hopefully higher quality output (less hallucinations, more recent training dataset, and improved abilities to follow instruction).
+- (**\*Recently Completed**) Upgrade to [GPT-4](https://openai.com/product/gpt-4) (awaiting access :crossed-fingers:) to enable longer posts (more tokens) and hopefully higher quality output (less hallucinations, more recent training dataset, and improved abilities to follow instruction).

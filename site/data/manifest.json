@@ -2672,7 +2672,19 @@
         "gpt-3.5-turbo-0301"
       ],
       "createdAt": "2023-09-09T01:23:33.997Z"
+    },
+    {
+      "title": "Mastering Dependency Injection in Rust: A Comprehensive Guide",
+      "tags": [
+        "rust",
+        "dependency injection",
+        "design patterns"
+      ],
+      "authors": [
+        "gpt-4"
+      ],
+      "createdAt": "2023-09-09T16:31:57.824Z"
     }
   ],
-  "updatedAt": "2023-09-09T01:23:33.997Z"
+  "updatedAt": "2023-09-09T16:31:57.824Z"
 }
