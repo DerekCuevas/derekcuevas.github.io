@@ -1,0 +1,86 @@
+{
+ "model": "gpt-4",
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Exploring Functional Programming with Rust: An Introduction to Frunk\", \"Streamlining High-Performance Concurrency with Rust's Mio Crate\", \"Implementing A Concurrency Safe CRDT Set in Rust\", \"Leveraging Actix for High-Performance Web Services in Rust\", \"Mastering Dependency Injection in Rust: A Comprehensive Guide\", \"Demystifying the World of NATS Messaging System\", \"Mastering Lenses in Swift: A Comprehensive Guide\", \"Deep Dive into Pulsar's Schema Registry\", \"Mastering the Decorator Pattern in TypeScript: Best Practices and Examples\", \"Exploring the Benefits of Declarative Programming in React\", \"Understanding CQRS and Event Sourcing: A Comprehensive Guide\", \"Mastering Apache Flink for Stream Processing\", \"Demystifying Rust's Ownership Model: A Comprehensive Guide\", \"Mastering Java Generics: A Comprehensive Guide\", \"Mastering Reactive Programming with RxJS: Advanced Techniques\", \"A Comprehensive Guide to Threading in Rust\", \"Mastering the Observer Pattern with Rust\", \"Exploring the Power of Rust's Ownership Model: A Comprehensive Guide\", \"The Power of Rust's Clippy: A Comprehensive Guide\", \"Exploring the Disadvantages of Promises in JavaScript\", \"Exploring the Fundamentals of Tail-Call Optimization in JavaScript\", \"Mastering Distributed Systems with Apache BookKeeper\", \"Exploring the Power of Rust's Type System: A Comprehensive Guide\", \"Mastering Asynchronous Event-Driven Architecture with Apache Kafka\", \"Advanced Techniques for Distributed System Design using Apache Cassandra\", \"Exploring the Underlying Architecture of TypeScript\", \"Functional Reactive Programming with Elm: A Comprehensive Guide\", \"Exploring the Power of Clojure's Persistent Data Structures\", \"The Power of Rust's Multithreading Library: rayon\", \"The Power of the `async` Keyword in Rust: A Comprehensive Guide\", \"Mastering Cache Invalidation Strategies: A Comprehensive Guide\", \"Mastering Rust's Serialization and Deserialization: A Comprehensive Guide\", \"Mastering AWS S3 for High Availability: A Comprehensive Guide\", \"Exploring the Fundamentals of Reactive Programming\", \"Mastering Rust's Pinning: An Advanced Guide\", \"Understanding Higher Order Functions in TypeScript\", \"Mastering Async/Await in TypeScript: A Comprehensive Guide\", \"Building High Availability Systems with Apache ZooKeeper\", \"Mastering Rust's Unsafe Keyword: A Comprehensive Guide\", \"The Power of Immutable Data Structures in JavaScript\", \"Building a Highly Available System with Apache ZooKeeper\", \"Mastering Persistent Connections in Java\", \"Mastering Real-Time Communication with WebSockets in Elixir\", \"Understanding the Reactive Stream Pattern\", \"Understanding the Power of Rust's Macros\", \"Mastering Rust's Futures: An Advanced Guide\", \"Advanced Techniques for Working with Rust's Borrow Checker\", \"Understanding the Difference Between Block and Inline Elements in HTML\", \"Mastering Kafka Connect: A Comprehensive Guide\", \"Effective Error Handling in Swift: Best Practices and Patterns\", \"The Power of Kotlin's Coroutines: A Comprehensive Guide\", \"Mastering Asynchronous Programming in Rust: A Comprehensive Guide\", \"Building Custom Collectors in Java: A Comprehensive Guide\", \"The Art of Domain-Driven Design\", \"Exploring the Power of React's Context API: A Comprehensive Guide\", \"Mastering the Observer Pattern with Swift\", \"Mastering the Actor Model with Elixir\", \"Mastering Rust's Memory Safety Paradigm\", \"Mastering Quicksort Algorithm in Clojure\", \"Mastering the Builder Design Pattern in Java\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-7xmPzmY3V0hhWuE7PLUYQBHcDH57O",
+  "object": "chat.completion",
+  "created": 1694481827,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "# Exploring Elm Architecture: Building a SPA with Elm\n\nTags: Elm, Single Page Application, Functional Programming\n\n## Introduction\n\nElm is a delightful language for building reliable web applications with a strict structure and interactive model-view-update (MVU) implementation. This post will provide a comprehensive exploration of the Elm architecture through the development of a simple single page application (SPA). We will delve into the details of the MVU pattern, commands, subscriptions, and general best practices when using Elm.\n\n## What is Elm Architecture?\n\nElm architecture follows a simple paradigm of adopting a unique MVU pattern. This pattern implies every application built with Elm will break down its logic into three distinct segments:\n\n- **Model:** This sector manages the state of your application. The model signifies the values and data types which portray the status of the application at a given time.\n- **View:** This segment takes the current state and transforms it into HTML that can be displayed on a web browser.\n- **Update:** This handles your application’s change in state over time. This function runs every time an event is triggered, adjusting the model which leads to the modification of the view.\n\nWith this flowing cycle, we have an Elm application that is predictable and easy to maintain.\n\n## Building a SPA with Elm\n\nConsider the following simple SPA. We will create a SPA that allows the user to navigate between home, about, and contact pages. Here's how we can start:\n\n```elm\nimport Browser\nimport Html exposing (Html, div, span, text, button, onClick)\nimport Browser.Navigation as Nav\n\ntype Page = Home | About | Contact\n\ntype alias Model =\n  { page : Page\n  }\n\ninit : () -> (Model, Cmd Msg)\ninit _ =\n  let\n    url = Nav.pushUrl \"home\"\n  in\n  { page = Home } ! [ pushUrl ]\n\ntype Msg = NavChange Route | ClickedAbout | ClickedContact\n\nupdate : Msg -> Model -> (Model, Cmd Msg)\nupdate msg model =\n  case msg of\n    NavChange route ->\n      case route of\n        Home ->\n          ( { model | page = Home }, Cmd.none )\n        \n        About ->\n          ( { model | page = About }, Cmd.none )\n\n        Contact -> \n          ( { model | page = Contact }, Cmd.none )\n\n    ClickedAbout ->\n      let url = Nav.pushUrl \"#/about\"\n      in\n      (model, url)\n\n    ClickedContact ->\n      let url = Nav.pushUrl \"#/contact\"\n      in\n      (model, url)\n\nview : Model -> Html Msg\nview model =\n  div []\n    [ div [] [ text (toString model.page) ]\n    , button [ onClick ClickedAbout ] [ text \"About\" ]\n    , button [ onClick ClickedContact ] [ text \"Contact\" ]\n    ]\n\nmain = \n  Browser.document \n    { init = init\n    , update = update\n    , view = view\n    , subscriptions = \\_ -> Sub.none\n    }\n```\n\nOur set up is quite simple:\n\n- `Model` maintains the state of our application.\n- `Msg` handles our application’s navigation changes.\n- `Page` keeps track of the possible pages of our application.\n- `update` function changes the state of our Model when a new message arrives.\n- `view` takes our model and renders our pages along with navigation buttons.\n\n## Conclusion\n\nElm architecture provides a straightforward, manageable, and predictable way of building web applications with a single source of truth - the model. This MVU pattern goes hand-in-hand with the functional programming paradigm and fits graciously with the language features and design of Elm. Adopting such architecture in Elm, especially for SPAs, ensures maintainable and pleasant application development.\n"
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2229,
+   "completion_tokens": 768,
+   "total_tokens": 2997
+  }
+ }
+}
