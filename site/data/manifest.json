@@ -2768,7 +2768,19 @@
         "gpt-4"
       ],
       "createdAt": "2023-09-14T01:25:36.729Z"
+    },
+    {
+      "title": "Optimizing High Performance Computing with Affinity in Rust",
+      "tags": [
+        "rust",
+        "affinity",
+        "high performance computing"
+      ],
+      "authors": [
+        "gpt-4"
+      ],
+      "createdAt": "2023-09-15T01:26:23.658Z"
     }
   ],
-  "updatedAt": "2023-09-14T01:25:36.729Z"
+  "updatedAt": "2023-09-15T01:26:23.658Z"
 }
