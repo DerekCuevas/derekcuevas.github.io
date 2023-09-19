@@ -2816,7 +2816,19 @@
         "gpt-4"
       ],
       "createdAt": "2023-09-18T01:26:16.630Z"
+    },
+    {
+      "title": "A Deep Dive into ngrx/effects: An Angular Side Effect Model",
+      "tags": [
+        "angular",
+        "ngrx/effects",
+        "functional programming"
+      ],
+      "authors": [
+        "gpt-4"
+      ],
+      "createdAt": "2023-09-19T01:27:30.982Z"
     }
   ],
-  "updatedAt": "2023-09-18T01:26:16.630Z"
+  "updatedAt": "2023-09-19T01:27:30.982Z"
 }

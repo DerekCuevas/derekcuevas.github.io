@@ -1,0 +1,86 @@
+{
+ "model": "gpt-4",
+ "prompt": [
+  {
+   "role": "user",
+   "content": "You are the author of a personal technical blog about software engineering and computer science subjects."
+  },
+  {
+   "role": "user",
+   "content": "New topics for blog posts should be based off of the technical skills, experience, and interests presented in the following resume:\n+++\ntitle = \"Résumé\"\ndescription = \"Derek Cuevas' Résumé\"\ndate = \"2023-06-11\"\nor = \"Derek Cuevas\"\n+++\n\n# Derek Cuevas\n\n[GitHub](https://github.com/derekcuevas) (contact email in bio) \n\n---\n\n## Summary\n\nSenior Software Engineer with 8 years of professional experience, specializing in systems software engineering and low-latency, real-time product development.\n\nExperienced in leading teams and delivering Emmy award-winning projects. Passionate about functional programming and building high performance real-time systems. Skilled in a variety of programming languages and technologies with expertise in [Rust](https://www.rust-lang.org/) and [TypeScript](https://www.typescriptlang.org/).\n\n---\n\n## Programming Languages\n\n- **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm\n- **Experienced:** Swift, Elixir, Objective-C, SQL\n\n---\n\n## Technologies, Skills, and Interests\n\n- **Rust:** Tokio, Futures, Hyper, Actix, Warp\n- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS\n- **Tooling:** Git, Vim, Bash\n- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix\n- **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers\n- **Paradigms:** Functional Programming, Real-time Systems\n\n---\n\n## Professional Experience\n\n### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)\n(*January 2021 - Current*)\n\n[https://geniussports.com/](https://geniussports.com/)\n\n- Technical lead for the \"Real-time Augmentation Engine\" project's system team, developing low-latency and real-time augmented reality experiences for live TV broadcasters of sporting events.\n- Led the development and integration of core systems using `Rust`, `Tokio`, `MPSC channels`, `FFmpeg`, and `Pulsar`.\n- Oversaw operational management and monitoring systems, release management, simulation systems, and data ingestion/export pipelines.\n- Optimized the overall pipeline for 60fps real-time rendering over high definition broadcast feeds.\n- Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.\n\n### Senior Software Engineer I (Lead), Second Spectrum\n(*January 2019 - January 2021*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Led a team in designing and developing the company's first `GraphQL` service serving as a unified gateway for various microservices. Built upon the `Apollo` server framework leveraging `Node.js`, `TypeScript`, `PostgreSQL`, and `Redis` for caching and pub/sub.\n- Developed a dashboard built with `Three.js` for visualizing 3D player tracking datasets and highlighting data discrepancies.\n- Created a prototype `iOS` application for video highlights using `Swift`, `SwiftUI`, and the `Combine` framework.\n- Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.\n\n### Software Engineer, Second Spectrum\n(*August 2016 - January 2019*)\n\n[https://www.secondspectrum.com/](https://www.secondspectrum.com/)\n\n- Developed the operational and quality assurance management application for the company's optical player tracking system. Stack included `Elixir` (with the `Phoenix` framework), `React`, and heavy use of `WebSockets` to sync and display corrections to operators in near real-time.\n- Improved operator efficiency by 100% through the implementation of an automated task selection system.\n- Led the development of the LA Clipper's live streaming web and mobile application \"Clippers CourtVision\". Stack included `Elm` for the web front-end and `React Native` for the mobile app.\n\n### Software Engineer Intern, MindGraph Medical\n(*September 2015 - January 2016*)\n\n- Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.\n\n---\n\n## Education\n\n**B.S. Computer Science, San Diego State University, San Diego**\n\n(*Class of 2016*)\n\n- [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)\n\n---\n\n## Personal Projects\n\n- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.\n- [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.\n- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.\n- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.\n- [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of fetched data.\n- [Avowal](https://github.com/DerekCuevas/avowal): An asynchronous form validation library for `JavaScript`.\n"
+  },
+  {
+   "role": "user",
+   "content": "Your previous 60 posts include: \"Understanding the Power of Rust’s Standard Library: Exploring the 'cell' Module\", \"Advanced Runtime Polymorphism in Rust with `dyn Trait`\", \"---\", \"Optimizing High Performance Computing with Affinity in Rust\", \"Exploring Advanced Server-Side Event Streaming with Warp in Rust\", \"Deep Dive Into Postgres and JSONB: Advanced Performance Techniques\", \"Exploring Elm Architecture: Building a SPA with Elm\", \"Exploring Functional Programming with Rust: An Introduction to Frunk\", \"Streamlining High-Performance Concurrency with Rust's Mio Crate\", \"Implementing A Concurrency Safe CRDT Set in Rust\", \"Leveraging Actix for High-Performance Web Services in Rust\", \"Mastering Dependency Injection in Rust: A Comprehensive Guide\", \"Demystifying the World of NATS Messaging System\", \"Mastering Lenses in Swift: A Comprehensive Guide\", \"Deep Dive into Pulsar's Schema Registry\", \"Mastering the Decorator Pattern in TypeScript: Best Practices and Examples\", \"Exploring the Benefits of Declarative Programming in React\", \"Understanding CQRS and Event Sourcing: A Comprehensive Guide\", \"Mastering Apache Flink for Stream Processing\", \"Demystifying Rust's Ownership Model: A Comprehensive Guide\", \"Mastering Java Generics: A Comprehensive Guide\", \"Mastering Reactive Programming with RxJS: Advanced Techniques\", \"A Comprehensive Guide to Threading in Rust\", \"Mastering the Observer Pattern with Rust\", \"Exploring the Power of Rust's Ownership Model: A Comprehensive Guide\", \"The Power of Rust's Clippy: A Comprehensive Guide\", \"Exploring the Disadvantages of Promises in JavaScript\", \"Exploring the Fundamentals of Tail-Call Optimization in JavaScript\", \"Mastering Distributed Systems with Apache BookKeeper\", \"Exploring the Power of Rust's Type System: A Comprehensive Guide\", \"Mastering Asynchronous Event-Driven Architecture with Apache Kafka\", \"Advanced Techniques for Distributed System Design using Apache Cassandra\", \"Exploring the Underlying Architecture of TypeScript\", \"Functional Reactive Programming with Elm: A Comprehensive Guide\", \"Exploring the Power of Clojure's Persistent Data Structures\", \"The Power of Rust's Multithreading Library: rayon\", \"The Power of the `async` Keyword in Rust: A Comprehensive Guide\", \"Mastering Cache Invalidation Strategies: A Comprehensive Guide\", \"Mastering Rust's Serialization and Deserialization: A Comprehensive Guide\", \"Mastering AWS S3 for High Availability: A Comprehensive Guide\", \"Exploring the Fundamentals of Reactive Programming\", \"Mastering Rust's Pinning: An Advanced Guide\", \"Understanding Higher Order Functions in TypeScript\", \"Mastering Async/Await in TypeScript: A Comprehensive Guide\", \"Building High Availability Systems with Apache ZooKeeper\", \"Mastering Rust's Unsafe Keyword: A Comprehensive Guide\", \"The Power of Immutable Data Structures in JavaScript\", \"Building a Highly Available System with Apache ZooKeeper\", \"Mastering Persistent Connections in Java\", \"Mastering Real-Time Communication with WebSockets in Elixir\", \"Understanding the Reactive Stream Pattern\", \"Understanding the Power of Rust's Macros\", \"Mastering Rust's Futures: An Advanced Guide\", \"Advanced Techniques for Working with Rust's Borrow Checker\", \"Understanding the Difference Between Block and Inline Elements in HTML\", \"Mastering Kafka Connect: A Comprehensive Guide\", \"Effective Error Handling in Swift: Best Practices and Patterns\", \"The Power of Kotlin's Coroutines: A Comprehensive Guide\", \"Mastering Asynchronous Programming in Rust: A Comprehensive Guide\", \"Building Custom Collectors in Java: A Comprehensive Guide\""
+  },
+  {
+   "role": "user",
+   "content": "Come up with an advanced topic for an expert level reader that is about a particular single feature, fact, pattern, paradigm, convention, theory, framework, library, or best practice."
+  },
+  {
+   "role": "user",
+   "content": "Write a post about the chosen topic following the instructions given below:"
+  },
+  {
+   "role": "user",
+   "content": "Your writing style is academic, informative, and focused on detailed technical information."
+  },
+  {
+   "role": "user",
+   "content": "The topic should not be related to a previous post."
+  },
+  {
+   "role": "user",
+   "content": "Use computer code snippets (in the relevant programming language) in order to illustrate the information presented."
+  },
+  {
+   "role": "user",
+   "content": "Format the body of the post in the markdown markup language."
+  },
+  {
+   "role": "user",
+   "content": "Come up with a title for the post and include it on the first line."
+  },
+  {
+   "role": "user",
+   "content": "Include one to three tags for the post on the second line formatted as a comma separated list, for example: \"Tags: <tag1>, <tag2>\"."
+  },
+  {
+   "role": "user",
+   "content": "The post should be multiple sections in length."
+  },
+  {
+   "role": "user",
+   "content": "Do not include links to images in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not include contact information in the post."
+  },
+  {
+   "role": "user",
+   "content": "Do not add extra whitespace around lists."
+  }
+ ],
+ "completion": {
+  "id": "chatcmpl-80Jmz36QwVXcO4zDz2Yl6VOf9KJOo",
+  "object": "chat.completion",
+  "created": 1695086761,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "# A Deep Dive into ngrx/effects: An Angular Side Effect Model\nTags: Angular, ngrx/effects, Functional Programming\n\nIn today's post, we'll be taking a comprehensive look at `ngrx/effects`, an Angular library that tackles side effects within applications in a functional, reactive way. We'll dive deep into the technical aspects of this library and see how it uses the Redux pattern in combination with RxJS observables to manage side effects cleanly and effectively.\n\n## Introduction to Side Effects\n\nIn functional programming, a side effect is any operation that modifies the state of the software outside of its local environment.\n\n```typescript\nlet count = 0;\n\nfunction increment() {\n    count++;\n}\n```\n\nIn the above example, `increment` function is causing a side effect by modifying the `count` variable that is outside of the function's scope.\n\nThere's a consensus in the software development community that side effects can make programs harder to understand, predict, and debug. So, there's a growing movement towards isolating and controlling side effects within programs. This is where `ngrx/effects` comes into the picture, offering a model for handling side effects in a predictable manner within Angular applications.\n\n## ngrx/effects\n\n`ngrx/effects` is a library that provides APIs to interact with side effects originating from the Angular Components. It follows the Redux pattern, unifying side effects into actions and handling them in a predictable and consistent manner.\n\nConsider a basic example where a button click in an Angular component leads to an HTTP request, a typical side effect, to fetch some data from an API.\n\n```typescript\nimport {Component} from '@angular/core';\nimport {HttpClient} from '@angular/common/http';\n\n@Component({\n    selector: 'my-app',\n    template: `\n        <button (click)=\"fetchData()\">Fetch Data</button>\n    `,\n})\nexport class AppComponent {\n    constructor(private http: HttpClient) {}\n\n    fetchData() {\n        this.http.get('https://api.example.com/data').subscribe(data => {\n            console.log(data);\n        });\n    }\n}\n```\n\nIn the above scenario, we are directly subscribing to the observable returned from the call to HttpClient's `get` method and logging the response data. With `ngrx/effects`, we can handle this side effect in a cleaner and predictable way.\n\n## Integrating ngrx/effects into Angular Applications\n\nFirstly, we need to install the `@ngrx/effects` package via npm.\n\n```bash\nnpm install @ngrx/effects\n```\n\nNow, we'll create an action to represent the button click.\n\n```typescript\nimport { createAction } from '@ngrx/store';\n\nexport const fetchData = createAction('[App Component] Fetch Data');\n```\n\nWe'll also create actions to handle the success and failure scenarios of the HTTP request.\n\n```typescript\nimport { createAction, props } from '@ngrx/store';\n\nexport const fetchDataSuccess = createAction(\n    '[App Component] Fetch Data Success', \n    props<{ data: any }>()\n);\n\nexport const fetchDataFailure = createAction(\n    '[App Component] Fetch Data Failure', \n    props<{ error: any }>()\n);\n```\n\nWe utilize `props` function to include additional information (payload) with the action.\n\nNext, we'll create an effect that listens for the `fetchData` action, makes the HTTP request, and dispatches either the `fetchDataSuccess` or `fetchDataFailure` action depending on the result.\n\n```typescript\nimport { Injectable } from '@angular/core';\nimport { Actions, createEffect, ofType } from '@ngrx/effects';\nimport { catchError, map, mergeMap } from 'rxjs/operators';\nimport { HttpClient } from '@angular/common/http';\nimport * as actions from './app.actions';\n\n@Injectable()\nexport class AppEffects {\n    fetchData$ = createEffect(() =>\n        this.actions$.pipe(\n            ofType(actions.fetchData),\n            mergeMap(() => this.http.get('https://api.example.com/data')\n                .pipe(\n                    map(data => actions.fetchDataSuccess({ data })),\n                    catchError(error => actions.fetchDataFailure({ error }))\n                )\n            )\n        )\n    );\n\n    constructor(\n        private actions$: Actions,\n        private http: HttpClient\n    ) {}\n}\n```\n\nFinally, we'll modify the AppComponent to dispatch the `fetchData` action when the button is clicked.\n\n```typescript\nimport {Component} from '@angular/core';\nimport { Store } from '@ngrx/store';\nimport * as actions from './app.actions';\n\n@Component({\n    selector: 'my-app',\n    template: `\n        <button (click)=\"fetchData()\">Fetch Data</button>\n    `,\n})\nexport class AppComponent {\n    constructor(private store: Store) {}\n\n    fetchData() {\n        this.store.dispatch(actions.fetchData());\n    }\n}\n```\n\nThis decouples the interaction with the HTTP API from the `AppComponent` and provides clear, explicit declaration of side effects happening in the application.\n\nNotice how ngrx/effects merges the streams of actions into a single, unified model of interactions within the application. This model provides several benefits such as better testability, better state management, and better control over the order of operations.\n\nIn conclusion, ngrx/effects provides powerful abstractions to handle side effects in Angular applications, ensuring that effects are isolated and handled in a consistent and predictable manner. By combining actions, reducers, and effects, we can ensure a unidirectional and consistent handling of asynchronous operations in our Angular applications.\n"
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2242,
+   "completion_tokens": 1090,
+   "total_tokens": 3332
+  }
+ }
+}
