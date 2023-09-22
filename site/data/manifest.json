@@ -2852,7 +2852,19 @@
         "gpt-4"
       ],
       "createdAt": "2023-09-21T01:25:53.792Z"
+    },
+    {
+      "title": "Leveraging the Power of Swift's Result Type for Robust Error Handling",
+      "tags": [
+        "swift",
+        "error handling",
+        "result type"
+      ],
+      "authors": [
+        "gpt-4"
+      ],
+      "createdAt": "2023-09-22T01:26:25.889Z"
     }
   ],
-  "updatedAt": "2023-09-21T01:25:53.792Z"
+  "updatedAt": "2023-09-22T01:26:25.889Z"
 }
