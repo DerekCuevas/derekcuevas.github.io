@@ -2876,7 +2876,19 @@
         "gpt-4"
       ],
       "createdAt": "2023-09-23T01:24:27.924Z"
+    },
+    {
+      "title": "Harnessing Ecto's Multi for Robust Transaction Handling in Elixir",
+      "tags": [
+        "elixir",
+        "ecto",
+        "transactions"
+      ],
+      "authors": [
+        "gpt-4"
+      ],
+      "createdAt": "2023-09-24T01:28:06.269Z"
     }
   ],
-  "updatedAt": "2023-09-23T01:24:27.924Z"
+  "updatedAt": "2023-09-24T01:28:06.269Z"
 }
