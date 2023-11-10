@@ -1,6 +1,6 @@
 baseURL = 'https://derekcuevas.github.io/'
 languageCode = 'en-us'
-title = 'FYGT'
+title = 'Derek Cuevas'
 theme = 'archie'
 copyright = "© Derek Cuevas"
 pygmentsstyle = "github-dark"
@@ -28,23 +28,3 @@ customcss = ["css/overrides.css"]
 name = "GitHub"
 icon = "github"
 url = "https://github.com/derekcuevas"
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 1
-
-[[menu.main]]
-name = "Résumé"
-url = "/resume"
-weight = 2
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 3
-
-[[menu.main]]
-name = "All Articles"
-url = "/posts"
-weight = 4

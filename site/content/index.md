@@ -7,7 +7,7 @@ or = "Derek Cuevas"
 
 # Derek Cuevas
 
-[GitHub](https://github.com/derekcuevas) (contact email in bio) 
+[GitHub](https://github.com/derekcuevas) (contact email in bio)
 
 ---
 
@@ -22,25 +22,27 @@ Experienced in leading teams and delivering Emmy award-winning projects. Passion
 ## Programming Languages
 
 - **Proficient:** Rust, TypeScript (& JavaScript), Clojure, Elm
-- **Experienced:** Swift, Elixir, Objective-C, SQL
+- **Experienced:** Elixir, Swift, Objective-C
 
 ---
 
 ## Technologies, Skills, and Interests
 
-- **Rust:** Tokio, Futures, Hyper, Actix, Warp
-- **Platforms and Services:** AWS, Docker,  PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, GitLab CI/CD, Node.js, Deno, HTML & CSS
-- **Tooling:** Git, Vim, Bash
-- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI, Phoenix
+- **Rust:** Tokio, Futures, Diesel, Actix, Axum
+- **Platforms and Services:** AWS, Docker, PostgreSQL, Redis, Apache Pulsar, RabbitMQ, Prometheus, Grafana, GitLab CI/CD, Node.js, Deno, HTML & CSS
+- **Tooling:** Git, Vim
+- **Frameworks:** React, React Native, Redux, RxJs, SwiftUI
 - **Protocols:** HTTP, GraphQL, WebSockets, ØMQ, Pub/Sub, JSON, MessagePack, Protobuf, FlatBuffers
-- **Paradigms:** Functional Programming, Real-time Systems
 
 ---
 
 ## Professional Experience
 
 ### Senior Software Engineer II (Lead), Second Spectrum (acquired by Genius Sports)
-(*January 2021 - Current*)
+
+(_January 2021 - Current_)
+
+[https://www.secondspectrum.com/](https://www.secondspectrum.com/)
 
 [https://geniussports.com/](https://geniussports.com/)
 
@@ -51,7 +53,8 @@ Experienced in leading teams and delivering Emmy award-winning projects. Passion
 - Key contributor to projects recognized with multiple Emmy awards, including the prestigious [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon's [Outstanding Interactive Experience](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the `Sports Emmys`.
 
 ### Senior Software Engineer I (Lead), Second Spectrum
-(*January 2019 - January 2021*)
+
+(_January 2019 - January 2021_)
 
 [https://www.secondspectrum.com/](https://www.secondspectrum.com/)
 
@@ -61,7 +64,8 @@ Experienced in leading teams and delivering Emmy award-winning projects. Passion
 - Mentored interns and fellow engineers, fostering collaboration and knowledge sharing.
 
 ### Software Engineer, Second Spectrum
-(*August 2016 - January 2019*)
+
+(_August 2016 - January 2019_)
 
 [https://www.secondspectrum.com/](https://www.secondspectrum.com/)
 
@@ -70,7 +74,8 @@ Experienced in leading teams and delivering Emmy award-winning projects. Passion
 - Led the development of the LA Clipper's live streaming web and mobile application "Clippers CourtVision". Stack included `Elm` for the web front-end and `React Native` for the mobile app.
 
 ### Software Engineer Intern, MindGraph Medical
-(*September 2015 - January 2016*)
+
+(_September 2015 - January 2016_)
 
 - Designed, developed, and deployed the MindGraph Medical website using `Node.js`, `jQuery`, and `Bootstrap`.
 
@@ -80,7 +85,7 @@ Experienced in leading teams and delivering Emmy award-winning projects. Passion
 
 **B.S. Computer Science, San Diego State University, San Diego**
 
-(*Class of 2016*)
+(_Class of 2016_)
 
 - [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)
 
@@ -88,7 +93,7 @@ Experienced in leading teams and delivering Emmy award-winning projects. Passion
 
 ## Personal Projects
 
-- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.
+- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io/tree/feature/fygt): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.
 - [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.
 - [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.
 - [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.

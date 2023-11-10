@@ -6,7 +6,7 @@
       {{ partial "head.html" . }}
 
       <main class="list">
-        <div class="site-description">
+        <!-- <div class="site-description">
           {{- if isset .Site.Params "subtitle" -}}
           <p>{{ .Site.Params.Subtitle | markdownify }}</p>
           {{- end -}}
@@ -17,8 +17,9 @@
           >
             New post in: ~~:~~:~~
           </p>
-        </div>
-        {{ $pages := where .Site.RegularPages "Type" "in"
+        </div> -->
+        {{.Content}}
+        <!-- {{ $pages := where .Site.RegularPages "Type" "in"
         .Site.Params.mainSections }} {{ $paginator := .Paginate (where $pages
         "Params.hidden" "ne" true) }} {{ range $paginator.Pages }}
         <section class="list-item">
@@ -30,11 +31,11 @@
           <br />{{ template "partials/pagedescription.html" . }}
           <a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
         </section>
-        {{ end }} {{ template "partials/paginator.html" . }}
+        {{ end }} {{ template "partials/paginator.html" . }} -->
       </main>
-      {{ partial "footer.html" . }}
+      <!-- {{ partial "footer.html" . }} -->
     </div>
-    <script>
+    <!-- <script>
       function msToTime(duration) {
         var seconds = Math.floor((duration / 1000) % 60);
         var minutes = Math.floor((duration / (1000 * 60)) % 60);
@@ -57,6 +58,6 @@
         countdown.innerHTML =
           "New post in: " + msToTime(Math.max(0, timeToNextUpdate));
       }, 1000);
-    </script>
+    </script> -->
   </body>
 </html>
