@@ -1,3 +1,0 @@
----
-name: "Derek Cuevas"
----
