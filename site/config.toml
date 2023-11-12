@@ -19,7 +19,7 @@ tag = "tags"
 
 [params]
 # mode = "toggle"
-mode = "dark"
+mode = "light"
 useCDN = false
 subtitle = "An automated AI generated tech blog ([source code](https://github.com/DerekCuevas/derekcuevas.github.io))"
 schedule = 86400000
