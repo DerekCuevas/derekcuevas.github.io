@@ -93,7 +93,7 @@ Experienced in leading teams and delivering Emmy award-winning projects. Passion
 
 ## Personal Projects
 
-- [FYGT](https://github.com/DerekCuevas/derekcuevas.github.io/tree/feature/fygt): An experimental blog built with `Hugo`, `Deno`, and `ChatGPT`.
+- [Daily Dall-E](https://github.com/DerekCuevas/daily-dall-e): Combining `Google Trends` and `OpenAI`'s `ChatGPT` and `Dall-E` to Create Daily Artwork. Built with `Deno` and deployed onto `GitHub Actions`.
 - [Advent of Code 2022](https://github.com/DerekCuevas/advent-of-code-2022): Solutions to Advent of Code programming problems using functional approaches in `Clojure`.
 - [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems also by exploring functional approaches in `Clojure`.
 - [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial programming challenge exploring asynchronous side effects with different programming patterns.
