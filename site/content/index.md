@@ -1,6 +1,6 @@
 +++
-title = "Résumé"
-description = "Derek Cuevas' Résumé"
+title = "Resume"
+description = "Derek Cuevas' Resume"
 date = "2023-06-11"
 or = "Derek Cuevas"
 +++
