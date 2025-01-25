@@ -18,11 +18,9 @@ author = "authors"
 tag = "tags"
 
 [params]
-# mode = "toggle"
-mode = "light"
+mode = "dark"
 useCDN = false
-subtitle = "An automated AI generated tech blog ([source code](https://github.com/DerekCuevas/derekcuevas.github.io))"
-schedule = 86400000
+subtitle = "Derek Cuevas ([source code](https://github.com/DerekCuevas/derekcuevas.github.io))"
 customcss = ["css/overrides.css"]
 
 [[params.social]]

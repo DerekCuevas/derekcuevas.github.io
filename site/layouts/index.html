@@ -5,59 +5,7 @@
     <div class="content">
       {{ partial "head.html" . }}
 
-      <main class="list">
-        <!-- <div class="site-description">
-          {{- if isset .Site.Params "subtitle" -}}
-          <p>{{ .Site.Params.Subtitle | markdownify }}</p>
-          {{- end -}}
-          <p
-            class="new-post-countdown"
-            data-last-updated-at="{{ .Lastmod.UnixMilli }}"
-            data-update-schedule="{{ .Site.Params.Schedule }}"
-          >
-            New post in: ~~:~~:~~
-          </p>
-        </div> -->
-        {{.Content}}
-        <!-- {{ $pages := where .Site.RegularPages "Type" "in"
-        .Site.Params.mainSections }} {{ $paginator := .Paginate (where $pages
-        "Params.hidden" "ne" true) }} {{ range $paginator.Pages }}
-        <section class="list-item">
-          <h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
-          <time
-            >{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }}
-            <span class="draft-label">DRAFT</span> {{ end }}</time
-          >
-          <br />{{ template "partials/pagedescription.html" . }}
-          <a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
-        </section>
-        {{ end }} {{ template "partials/paginator.html" . }} -->
-      </main>
-      <!-- {{ partial "footer.html" . }} -->
+      <main class="list">{{.Content}}</main>
     </div>
-    <!-- <script>
-      function msToTime(duration) {
-        var seconds = Math.floor((duration / 1000) % 60);
-        var minutes = Math.floor((duration / (1000 * 60)) % 60);
-        var hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
-
-        hours = hours < 10 ? "0" + hours : hours;
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        return hours + ":" + minutes + ":" + seconds;
-      }
-
-      var countdown = document.querySelector(".new-post-countdown");
-      var updatedAt = parseInt(countdown.dataset.lastUpdatedAt, 10);
-      var schedule = parseInt(countdown.dataset.updateSchedule, 10);
-
-      setInterval(() => {
-        var timeSinceLastUpdate = Date.now() - updatedAt;
-        var timeToNextUpdate = schedule - timeSinceLastUpdate;
-        countdown.innerHTML =
-          "New post in: " + msToTime(Math.max(0, timeToNextUpdate));
-      }, 1000);
-    </script> -->
   </body>
 </html>
