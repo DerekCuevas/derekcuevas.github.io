@@ -14,7 +14,7 @@ or = "Derek Cuevas"
 
 `Staff Software Engineer` at Genius Sports working on platforms supporting the next generation of ultra-low latency optical player tracking and eventing systems for sports.
 
-Experience contributing to Emmy award-winning products, such as CBS's RomoVision, which earned the [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon Prime Video for its [Outstanding Interactive Experience Award](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the Sports Emmys. 
+Experience contributing to Emmy award-winning products, such as CBS's RomoVision, which earned the [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon Prime Video for its [Outstanding Interactive Experience Award](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the Sports Emmys.
 
 Passionate about functional programming and skilled in various engineering domains, with a current focus on building backend platforms in [Rust](https://www.rust-lang.org/).
 
@@ -40,9 +40,10 @@ Passionate about functional programming and skilled in various engineering domai
 [**Staff Software Engineer, Genius Sports**](https://www.geniussports.com/)
 (_January 2024 - Current_)
 
-- Designed and developed an immutable and time-series-oriented configuration management service based on `PostgreSQL` and implemented in `Rust`.
-- Built a fault-tolerant run orchestration system leveraging the `Temporal.io` platform in `TypeScript`. 
-- Contributed to services that standardize the indexing, ingestion, and distribution of data streamed through `Pulsar` across the organization.
+- Designed and developed an immutable and time-series-oriented configuration management service based on `PostgreSQL` and implemented in `Rust`.
+- Provided a type-safe and versioned API for storing ML models, settings, and flags, enabling engineering teams to provision settings and query values chronologically for evaluation and simulation needs.
+- Built a fault-tolerant run orchestration system leveraging the `Temporal.io` platform, written in `TypeScript`, enabling the automation of scalable tasks in Temporal’s durable execution model.
+- Contributed to services designed to index, ingest, and distribute data streamed through `Pulsar` to standardize streaming architecture and integrations across the organization.
 
 [**Senior Software Engineer II, Genius Sports**](https://www.geniussports.com/)
 (_January 2021 - January 2024_)
@@ -56,7 +57,7 @@ Passionate about functional programming and skilled in various engineering domai
 
 - Designed the company's first `GraphQL` service, which provided a unified gateway for various microservices across the organization, built on `Apollo` and `Node.js`.
 - Developed a dashboard built with `React`, `Redux`, and `Three.js` for visualizing and searching through 3D tracking datasets.
-- Created an iOS application to display auto-generated video clips in the medium of "stories" using `Swift`, and `SwiftUI`.
+- Created an iOS application to display auto-generated video clips in the medium of "stories" using `Swift` and `SwiftUI`.
 
 [**Software Engineer, Second Spectrum**](https://www.secondspectrum.com/)
 (_August 2016 - January 2019_)
