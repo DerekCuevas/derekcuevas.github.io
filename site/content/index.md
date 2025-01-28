@@ -27,18 +27,18 @@ Passionate about functional programming and skilled in various engineering domai
 ## Technical Stacks
 ---
 
-- **Infra:** Docker, CI/CD, GitLab, GitHub, Prometheus, Grafana
-- **Platforms:** AWS, Temporal.io, Deno
-- **Streaming:** Pulsar, WebSockets, SRT, HLS, DASH, RabbitMQ
-- **Databases:** PostgreSQL, Redis, AWS S3
-- **Protocols:** gRPC, GraphQL, ØMQ, Protobuf, JSON, MessagePack
-- **Tooling:** Git, Vim
+- **Infrastructure:** AWS, Docker, CI/CD, Prometheus, Grafana
+- **Platforms:** Node.js, Deno, Temporal.io
+- **Streaming:** Pulsar, RabbitMQ, SRT, HLS, DASH, WebSockets
+- **Databases:** PostgreSQL, Redis, S3
+- **Protocols:** gRPC, HTTP, GraphQL, ØMQ, JSON, Protobuf, MessagePack
+- **Tooling:** Vim, Git, GitLab, GitHub, Codeium, Copilot
 
 ## Professional Experience
 ---
 
 [**Staff Software Engineer, Genius Sports**](https://www.geniussports.com/)
-(_January 2024 - Current_)
+(_January 2024 - Present_)
 
 - Designed and developed an immutable and time-series-oriented configuration management service based on `PostgreSQL` and implemented in `Rust`.
 - Provided a type-safe and versioned API for storing ML models, settings, and flags, enabling engineering teams to provision settings and query values chronologically for evaluation and simulation needs.
