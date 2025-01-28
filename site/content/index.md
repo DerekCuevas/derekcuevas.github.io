@@ -14,7 +14,7 @@ or = "Derek Cuevas"
 
 `Staff Software Engineer` at Genius Sports working on platforms supporting the next generation of ultra-low latency optical player tracking and eventing systems for sports.
 
-Experience contributing to Emmy award-winning products, such as CBS's RomoVision, which earned the [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon Prime Video for its [Outstanding Interactive Experience Award](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award) at the Sports Emmys.
+Contributed to two Emmy award-winning products, CBS's RomoVision, which earned the [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon Prime Video, which earned the [Outstanding Interactive Experience Award](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award).
 
 Passionate about functional programming and skilled in various engineering domains, with a current focus on building backend platforms in [Rust](https://www.rust-lang.org/).
 
@@ -40,30 +40,31 @@ Passionate about functional programming and skilled in various engineering domai
 [**Staff Software Engineer, Genius Sports**](https://www.geniussports.com/)
 (_January 2024 - Present_)
 
-- Designed and developed an immutable and time-series-oriented configuration management service based on `PostgreSQL` and implemented in `Rust`.
+- Designed and developed an immutable and time-series-oriented configuration management service based on `PostgreSQL` and implemented in `Rust`.
 - Provided a type-safe and versioned API for storing ML models, settings, and flags, enabling engineering teams to provision settings and query values chronologically for evaluation and simulation needs.
-- Built a fault-tolerant run orchestration system leveraging the `Temporal.io` platform, written in `TypeScript`, enabling the automation of scalable tasks in Temporal’s durable execution model.
-- Contributed to services designed to index, ingest, and distribute data streamed through `Pulsar` to standardize streaming architecture and integrations across the organization.
+- Built a fault-tolerant run orchestration system leveraging the `Temporal.io` platform, written in `TypeScript`, automating scalable tasks and enhancing the reliability of critical workflows.
+- Contributed to services designed to index, ingest, and distribute data streamed through `Pulsar`, standardizing streaming architecture and integrations across the organization.
 
 [**Senior Software Engineer II, Genius Sports**](https://www.geniussports.com/)
 (_January 2021 - January 2024_)
 
-- Developed the supporting system for the company's real-time graphics augmentation engine, leveraging an in-house `Rust` based workflow processing framework built as an abstraction on top of `tokio` and `mpsc channels`. 
-- Enabled integrations with high-profile broadcast production teams, including CBS, Amazon Prime Video, and ESPN.
-- Gained experience supporting broadcast operations teams and assisting in high-stakes on-call situations.
+- Developed the supporting system for the company's real-time graphics augmentation engine, leveraging an in-house `Rust`-based workflow processing framework built on `tokio` and `mpsc channels`.
+- Enabled seamless integrations with high-profile broadcast production teams, including CBS, Amazon Prime Video, and ESPN.
+- Optimized real-time broadcast pipelines, reducing latency and increasing reliability for live event augmentations.
+- Supported broadcast operations teams in high-stakes on-call scenarios, ensuring uninterrupted service during live events.
 
 [**Senior Software Engineer I, Second Spectrum**](https://www.secondspectrum.com/)
 (_January 2019 - January 2021_)
 
-- Designed the company's first `GraphQL` service, which provided a unified gateway for various microservices across the organization, built on `Apollo` and `Node.js`.
-- Developed a dashboard built with `React`, `Redux`, and `Three.js` for visualizing and searching through 3D tracking datasets.
-- Created an iOS application to display auto-generated video clips in the medium of "stories" using `Swift` and `SwiftUI`.
+- Designed the company's first `GraphQL` service, providing a unified gateway for various microservices across the organization, built on `Apollo` and `Node.js`.
+- Developed a dashboard using `React`, `Redux`, and `Three.js` for visualizing and searching through 3D tracking datasets, enhancing data accessibility for teams.
+- Created an iOS application using `Swift` and `SwiftUI` to display auto-generated video clips as "stories", streamlining user experience for sports coaches and players.
 
 [**Software Engineer, Second Spectrum**](https://www.secondspectrum.com/)
 (_August 2016 - January 2019_)
 
-- Contributed to the LA Clipper's "Clippers CourtVision" product. Developed both the web frontend written in the functional programming language `Elm`, and the mobile app built with `React Native`.
-- Contributed to the quality assurance application for the company's optical player tracking system built in `Elixir` using the `Phoenix` framework, making significant use of `WebSockets` to broadcast corrections to the operations team.
+- Contributed to the LA Clippers' "Clippers CourtVision" product by developing the web frontend in `Elm` and the mobile app in `React Native`.
+- Improved the quality assurance application for the company's optical player tracking system, built in `Elixir` with the `Phoenix` framework, using `WebSockets` to broadcast corrections to the operations team in real-time.
 
 [**Software Engineer Intern, MindGraph Medical**]()
 (_September 2015 - January 2016_)
@@ -73,10 +74,10 @@ Passionate about functional programming and skilled in various engineering domai
 ## Personal Projects
 ---
 
-- [Daily Dall-E](https://github.com/DerekCuevas/daily-dall-e): Combining `Google Trends` and `OpenAI`'s `GPT` and `Dall-E` to Create Daily Artwork. Built with `Deno` and deployed onto `GitHub Actions`.
-- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to the interview cake programming problems, exploring functional approaches in the `Clojure` programming language.
-- [Friend List](https://github.com/DerekCuevas/friend-list): A non-trivial (yet simple) front-end programming challenge.
+- [Daily Dall-E](https://github.com/DerekCuevas/daily-dall-e): Leveraged `Google Trends` and `OpenAI`'s `GPT` and `Dall-E` to create daily artwork. Built with `Deno` and deployed using `GitHub Actions`.
+- [Interview Cake Algorithms Problem Set](https://github.com/DerekCuevas/interview-cake-clj): Solutions to interview cake programming problems, exploring functional approaches in `Clojure`.
 - [Redux Meta Reducer](https://github.com/DerekCuevas/redux-meta-reducer): A `Redux` higher-order reducer for simplifying the state of remote data.
+- [Friend List](https://github.com/DerekCuevas/friend-list): A front-end programming challenge showcasing clean and reusable code patterns.
 
 ## Education
 ---
@@ -84,4 +85,3 @@ Passionate about functional programming and skilled in various engineering domai
 **B.S. Computer Science, San Diego State University, San Diego**
 
 - [Advanced Certificate in Web and Mobile Applications Development](https://cs.sdsu.edu/about/)
-
