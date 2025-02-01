@@ -16,13 +16,12 @@ or = "Derek Cuevas"
 
 Contributed to two Emmy award-winning products, CBS's RomoVision, which earned the [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon Prime Video, which earned the [Outstanding Interactive Experience Award](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award).
 
-Passionate about functional programming and skilled in various engineering domains, with a current focus on building backend platforms in [Rust](https://www.rust-lang.org/).
+Skilled in various engineering domains, with a current focus on building backend platforms in [Rust](https://www.rust-lang.org/).
 
 ## Programming Languages
 ---
 
-- **Proficient:** Rust, TypeScript
-- **Experienced:** Clojure, Swift, Elixir, Elm
+- Rust, TypeScript, Clojure, Swift, Elixir, Elm
 
 ## Technical Stacks
 ---
