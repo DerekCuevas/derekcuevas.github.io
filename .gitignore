@@ -1,4 +1,3 @@
 .env
 NOTES.md
-resume.pdf
-resume.json
+*.pdf

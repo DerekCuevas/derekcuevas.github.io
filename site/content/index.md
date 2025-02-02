@@ -16,7 +16,7 @@ or = "Derek Cuevas"
 
 Contributed to two Emmy award-winning products, CBS's RomoVision, which earned the [George Wensel Technical Achievement Award](https://geniussports.com/customer-stories/cbs-and-genius-win-sports-emmy-for-romovision/) and Amazon Prime Video, which earned the [Outstanding Interactive Experience Award](https://www.aboutamazon.com/news/entertainment/thursday-night-football-on-prime-video-wins-sports-emmy-award).
 
-Skilled in various engineering domains, with a current focus on building backend platforms in [Rust](https://www.rust-lang.org/).
+Skilled in various engineering domains, with a current focus on building back-end platforms in [Rust](https://www.rust-lang.org/).
 
 ## Programming Languages
 ---
@@ -48,14 +48,14 @@ Skilled in various engineering domains, with a current focus on building backend
 (_January 2021 - January 2024_)
 
 - Developed the supporting system for the company's real-time graphics augmentation engine, leveraging an in-house `Rust`-based workflow processing framework built on `tokio` and `mpsc channels`.
-- Enabled seamless integrations with high-profile broadcast production teams, including CBS, Amazon Prime Video, and ESPN.
+- Enabled seamless integration with high-profile broadcast production teams, including CBS, Amazon Prime Video, and ESPN.
 - Optimized real-time broadcast pipelines, reducing latency and increasing reliability for live event augmentations.
 - Supported broadcast operations teams in high-stakes on-call scenarios, ensuring uninterrupted service during live events.
 
 [**Senior Software Engineer I, Second Spectrum**](https://www.secondspectrum.com/)
 (_January 2019 - January 2021_)
 
-- Designed the company's first `GraphQL` service, providing a unified gateway for various microservices across the organization, built on `Apollo` and `Node.js`.
+- Designed the company's first `GraphQL` service, providing a unified gateway for various microservices across the organization, built on the `Apollo` platform and `Node.js`.
 - Developed a dashboard using `React`, `Redux`, and `Three.js` for visualizing and searching through 3D tracking datasets, enhancing data accessibility for teams.
 - Created an iOS application using `Swift` and `SwiftUI` to display auto-generated video clips as "stories", streamlining user experience for sports coaches and players.
 
