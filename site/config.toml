@@ -20,7 +20,7 @@ tag = "tags"
 [params]
 mode = "toggle"
 useCDN = false
-subtitle = "An automated AI generated tech blog ([source code](https://github.com/DerekCuevas/derekcuevas.github.io))"
+subtitle = "An automated AI generated tech blog ([source code](https://github.com/DerekCuevas/fygt))"
 schedule = 86400000
 customcss = ["css/overrides.css"]
 
@@ -33,11 +33,6 @@ url = "https://github.com/derekcuevas"
 name = "About"
 url = "/about"
 weight = 1
-
-[[menu.main]]
-name = "Résumé"
-url = "/resume"
-weight = 2
 
 [[menu.main]]
 name = "Tags"

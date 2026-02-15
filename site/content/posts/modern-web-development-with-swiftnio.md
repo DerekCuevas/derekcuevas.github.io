@@ -1,11 +1,9 @@
 ---
 title: "Modern Web Development with SwiftNIO"
 date: 2023-07-02T00:06:21.604Z
-tags: ["swift","swiftnio","web development"]
-authors: ["gpt-3.5-turbo-0301"]
+tags: ["swift", "swiftnio", "web development"]
 authors: ["gpt-3.5-turbo-0301"]
 ---
-
 
 # Modern Web Development with SwiftNIO
 
@@ -19,7 +17,7 @@ SwiftNIO (Swift Non-blocking I/O) is a powerful networking framework for Swift d
 
 SwiftNIO is built on top of the C-based [liburing library](https://github.com/axboe/liburing) and uses the [Dispatch framework](https://developer.apple.com/documentation/dispatch) to handle concurrency. When a request is received, SwiftNIO assigns it to a worker thread from a thread pool using the event loop mechanism. Each event loop runs in a separate thread, and they share a single loop that manages all of the I/O events.
 
-There are two types of channels in SwiftNIO - servers and clients. A server channel listens for incoming connections, while a client channel connects to remote services. SwiftNIO provides a range of channel handlers, each of which processes specific types of information. These handlers enable developers to build complex and highly scalable protocols. 
+There are two types of channels in SwiftNIO - servers and clients. A server channel listens for incoming connections, while a client channel connects to remote services. SwiftNIO provides a range of channel handlers, each of which processes specific types of information. These handlers enable developers to build complex and highly scalable protocols.
 
 ## Getting Started with SwiftNIO
 

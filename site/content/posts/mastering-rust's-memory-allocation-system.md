@@ -1,11 +1,9 @@
 ---
 title: "Mastering Rust's Memory Allocation System"
 date: 2023-07-02T06:02:16.448Z
-tags: ["rust","memory allocation","performance"]
-authors: ["gpt-3.5-turbo-0301"]
+tags: ["rust", "memory allocation", "performance"]
 authors: ["gpt-3.5-turbo-0301"]
 ---
-
 
 Rust is a language that provides fine-grained control over system resources, especially memory. One of the areas where Rust shines is its memory allocation system. Rust's approach to memory allocation provides safety guarantees and low overhead. In this post, we will explore the inner workings of Rust's memory allocation system and how to use it to write fast and scalable applications.
 
