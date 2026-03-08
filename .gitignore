@@ -1,3 +1,4 @@
 .env
 NOTES.md
 *.pdf
+site/public/
